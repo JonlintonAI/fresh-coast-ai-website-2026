@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>MOCKUP — Assess.Build.Own. Journey Infographic v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--cloud);line-height:1.7;-webkit-font-smoothing:antialiased;padding:3rem 2rem}
+
+.mockup-label{text-align:center;margin-bottom:2rem;padding:1rem;background:#fff3cd;border-radius:8px;font-size:.85rem;color:#856404;max-width:800px;margin-left:auto;margin-right:auto}
+
+.section-inner{max-width:1140px;margin:0 auto}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem;text-align:center}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.2;margin-bottom:1rem;text-align:center}
+.section-subtitle{font-size:1.15rem;color:var(--steel);max-width:640px;font-weight:300;line-height:1.75;text-align:center;margin:0 auto 3rem}
+
+/* ===== JOURNEY V2: Horizontal timeline with cards ===== */
+.journey-v2{position:relative;max-width:960px;margin:0 auto}
+
+/* Connecting line */
+.journey-v2-track{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.journey-v2-track::before{
+  content:'';position:absolute;
+  top:64px;left:calc(16.66% + 32px);right:calc(16.66% + 32px);
+  height:4px;
+  background:linear-gradient(90deg,var(--lake),var(--lake-deep),var(--wave));
+  border-radius:2px;z-index:1
+}
+
+/* Step */
+.j2-step{text-align:center;position:relative;padding:0 .75rem}
+
+/* Circle marker */
+.j2-marker{
+  width:128px;height:128px;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  margin:0 auto 1.75rem;position:relative;z-index:2;
+  transition:transform .4s var(--ease)
+}
+.j2-step:hover .j2-marker{transform:scale(1.06)}
+.j2-marker-1{background:linear-gradient(135deg,var(--lake),var(--lake-deep));box-shadow:0 8px 32px rgba(43,122,158,.3)}
+.j2-marker-2{background:linear-gradient(135deg,var(--lake-deep),#164B6A);box-shadow:0 8px 32px rgba(29,95,126,.3)}
+.j2-marker-3{background:linear-gradient(135deg,var(--wave),var(--lake));box-shadow:0 8px 32px rgba(72,181,210,.3)}
+
+.j2-marker svg{width:36px;height:36px;stroke:#fff;fill:none;stroke-width:1.75;stroke-linecap:round}
+.j2-marker .j2-weeks{font-size:.65rem;font-weight:600;color:rgba(255,255,255,.65);letter-spacing:.05em;margin-top:.3rem}
+
+/* Phase name */
+.j2-phase{font-family:var(--serif);font-size:1.5rem;color:var(--ink);margin-bottom:.5rem}
+
+/* Description */
+.j2-desc{font-size:.9rem;color:var(--steel);line-height:1.6;max-width:280px;margin:0 auto .85rem}
+
+/* Outcome pill */
+.j2-outcome{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:rgba(43,122,158,.06);border:1px solid rgba(43,122,158,.1);
+  border-radius:100px;padding:.4rem 1rem;
+  font-size:.78rem;color:var(--lake);font-weight:500;
+  margin-bottom:.75rem
+}
+.j2-outcome svg{width:14px;height:14px;stroke:var(--lake);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+
+/* Deliverable tags */
+.j2-deliverables{display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem}
+.j2-del{
+  font-size:.72rem;padding:.25rem .7rem;border-radius:100px;
+  background:var(--white);color:var(--steel);
+  border:1px solid var(--mist);font-weight:500;
+  transition:all .2s
+}
+.j2-del:hover{border-color:var(--lake);color:var(--lake)}
+
+/* What's different callout */
+.j2-callout{
+  max-width:700px;margin:3rem auto 0;
+  background:var(--white);border-radius:14px;
+  padding:1.75rem 2rem;
+  display:flex;align-items:center;gap:1.5rem;
+  border:1px solid var(--mist);
+  box-shadow:0 2px 12px rgba(0,0,0,.04)
+}
+.j2-callout-icon{
+  flex-shrink:0;width:56px;height:56px;border-radius:14px;
+  background:rgba(43,122,158,.06);
+  display:flex;align-items:center;justify-content:center
+}
+.j2-callout-icon svg{width:28px;height:28px;stroke:var(--lake);fill:none;stroke-width:2;stroke-linecap:round}
+.j2-callout h4{font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:.25rem}
+.j2-callout p{font-size:.88rem;color:var(--steel);line-height:1.6;margin:0}
+.j2-callout strong{color:var(--ink)}
+
+/* Progress bar under markers */
+.j2-progress{
+  display:flex;align-items:center;gap:0;
+  max-width:680px;margin:-1rem auto 2rem;
+  padding:0 3rem
+}
+.j2-prog-segment{flex:1;height:6px;border-radius:3px}
+.j2-prog-1{background:var(--lake)}
+.j2-prog-2{background:var(--lake-deep)}
+.j2-prog-3{background:var(--wave)}
+.j2-prog-label{
+  font-size:.65rem;font-weight:600;color:var(--steel);
+  letter-spacing:.05em;text-transform:uppercase;
+  white-space:nowrap;padding:0 .5rem
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .journey-v2-track{grid-template-columns:1fr;gap:2.5rem;max-width:380px;margin:0 auto}
+  .journey-v2-track::before{display:none}
+  .j2-marker{width:100px;height:100px}
+  .j2-marker svg{width:28px;height:28px}
+  .j2-progress{display:none}
+  .j2-callout{flex-direction:column;text-align:center}
+}
+</style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+
+<div class="mockup-label">MOCKUP — Tightened "Assess. Build. Own." journey section. This replaces the existing journey infographic on the homepage.</div>
+
+<div class="section-inner">
+<div class="section-label">How We Work</div>
+<h2 class="section-title">Assess. Build. Own.</h2>
+<p class="section-subtitle">A clear path from "where do we start?" to "we run this ourselves." Most clients see their first working AI workflow within 4 weeks.</p>
+
+<div class="journey-v2">
+
+<div class="journey-v2-track">
+
+  <!-- ASSESS -->
+  <div class="j2-step">
+    <div class="j2-marker j2-marker-1">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <span class="j2-weeks">WEEKS 1–3</span>
+    </div>
+    <div class="j2-phase">Assess</div>
+    <div class="j2-desc">We shadow your team, map workflows, and find the 3–5 spots where AI makes the biggest difference.</div>
+    <div class="j2-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>6-hr bids → 10 minutes</div>
+    <div class="j2-deliverables">
+      <span class="j2-del">AI Readiness Report</span>
+      <span class="j2-del">Strategic Roadmap</span>
+    </div>
+  </div>
+
+  <!-- BUILD -->
+  <div class="j2-step">
+    <div class="j2-marker j2-marker-2">
+      <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      <span class="j2-weeks">WEEKS 3–8</span>
+    </div>
+    <div class="j2-phase">Build</div>
+    <div class="j2-desc">We build AI into your actual tools — not a demo. Your team helps build it so they understand it from day one.</div>
+    <div class="j2-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Friday reports → automated</div>
+    <div class="j2-deliverables">
+      <span class="j2-del">Implementation Blueprint</span>
+      <span class="j2-del">Change Management</span>
+    </div>
+  </div>
+
+  <!-- OWN -->
+  <div class="j2-step">
+    <div class="j2-marker j2-marker-3">
+      <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+      <span class="j2-weeks">ONGOING</span>
+    </div>
+    <div class="j2-phase">Own</div>
+    <div class="j2-desc">Your team runs it independently. We train, document, and hand off. No retainer required.</div>
+    <div class="j2-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>3 more departments on their own</div>
+    <div class="j2-deliverables">
+      <span class="j2-del">AI Capability Playbook</span>
+      <span class="j2-del">Governance Framework</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Differentiator callout -->
+<div class="j2-callout">
+  <div class="j2-callout-icon">
+    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+  </div>
+  <div>
+    <h4>We show up in person when it matters.</h4>
+    <p>We're based in Milwaukee, not a remote-only agency on the coasts. When your team needs someone to sit at the table, shadow a workflow, or train a department — <strong>we're there</strong>.</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

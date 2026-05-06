@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage Restructure Preview — Fresh Coast AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px;font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:#e8e8e8;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* ── Preview chrome ── */
+.preview-bar{position:sticky;top:0;z-index:200;background:var(--ink);padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+.preview-bar h1{font-family:var(--sans);font-size:.9rem;color:var(--white);font-weight:500}
+.preview-bar .badge{padding:.2rem .6rem;border-radius:100px;background:var(--wave);color:var(--ink);font-size:.65rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.preview-bar .stats{font-size:.75rem;color:rgba(255,255,255,.4)}
+
+.section-divider{max-width:1200px;margin:0 auto;padding:1.5rem 2rem .5rem;display:flex;align-items:center;gap:1rem}
+.section-divider .num{width:28px;height:28px;border-radius:50%;background:var(--lake);color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.section-divider .label{font-size:.8rem;color:var(--steel);font-weight:500}
+.section-divider .change{font-size:.7rem;padding:.15rem .5rem;border-radius:100px;font-weight:600}
+.change-kept{background:rgba(43,122,158,.1);color:var(--lake)}
+.change-condensed{background:rgba(232,200,122,.15);color:#b8941e}
+.change-merged{background:rgba(72,181,210,.15);color:var(--lake-deep)}
+.change-new{background:rgba(72,181,210,.2);color:var(--wave)}
+.change-removed{background:rgba(200,60,60,.1);color:#c03c3c}
+
+.page-frame{max-width:1200px;margin:0 auto .5rem;background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,.06);overflow:hidden}
+
+/* ── Shared site styles ── */
+section{padding:5rem 2rem}
+.section-inner{max-width:var(--max-w);margin:0 auto}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--ink);line-height:1.2;margin-bottom:.75rem}
+.section-subtitle{font-size:1.05rem;color:var(--steel);max-width:600px;font-weight:300;line-height:1.7}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border-radius:8px;font-family:var(--sans);font-size:.95rem;font-weight:500;text-decoration:none;transition:all .25s var(--ease);cursor:pointer;border:none}
+.btn-primary{background:var(--lake);color:var(--white);box-shadow:0 4px 16px rgba(43,122,158,.3)}
+.btn-primary:hover{background:var(--lake-light);transform:translateY(-2px)}
+.trust-micro{font-size:.8rem;color:rgba(255,255,255,.4);font-weight:300;display:flex;align-items:center;gap:.4rem;margin-top:.5rem}
+.trust-micro svg{width:14px;height:14px;opacity:.5}
+
+
+/* ════════════════════════════════
+   1. HERO — no change
+   ════════════════════════════════ */
+.hero{min-height:85vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--ink)}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 80%,rgba(43,122,158,.25),transparent),radial-gradient(ellipse 60% 50% at 80% 20%,rgba(72,181,210,.15),transparent)}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:100px;background:var(--white);clip-path:polygon(0 60%,15% 40%,30% 55%,50% 35%,70% 50%,85% 38%,100% 55%,100% 100%,0 100%)}
+.hero-inner{position:relative;z-index:2;max-width:var(--max-w);margin:0 auto;padding:7rem 2rem 9rem;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.hero h1{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.2rem);color:var(--white);line-height:1.15;margin-bottom:1.25rem;font-weight:400}
+.hero h1 em{font-style:italic;color:var(--wave)}
+.hero-sub{font-size:clamp(1rem,1.8vw,1.1rem);color:rgba(255,255,255,.7);max-width:520px;margin-bottom:2rem;font-weight:300;line-height:1.7}
+.hero-cta-group{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start}
+.hero-secondary{margin-top:.35rem}
+.hero-secondary a{color:rgba(255,255,255,.6);font-size:.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1.2rem;border:1px solid rgba(255,255,255,.15);border-radius:8px;transition:all .2s}
+.hero-secondary a:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.hero-photo{display:flex;align-items:center;justify-content:center}
+.hero-photo-frame{width:100%;max-width:340px;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,var(--slate),var(--steel));border:2px solid rgba(255,255,255,.1);position:relative;box-shadow:0 24px 64px rgba(0,0,0,.3)}
+.hero-photo-frame .placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:.8rem}
+.hero-photo-name{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(11,26,43,.9));padding:2rem 1.5rem 1.5rem;color:#fff}
+.hero-photo-name strong{font-size:1.05rem;font-weight:600;display:block;margin-bottom:.1rem}
+.hero-photo-name span{font-size:.8rem;color:rgba(255,255,255,.6)}
+
+
+/* ════════════════════════════════
+   2. PROBLEM — tightened copy
+   ════════════════════════════════ */
+.problem{background:var(--white);padding:5rem 2rem}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.problem-cards{display:flex;flex-direction:column;gap:.75rem}
+.problem-card{background:var(--cloud);border-radius:12px;padding:1.25rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;border-left:3px solid transparent;transition:all .25s var(--ease)}
+.problem-card:hover{border-left-color:var(--lake);transform:translateX(4px)}
+.p-icon{width:36px;height:36px;min-width:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--mist)}
+.p-icon svg{width:18px;height:18px;stroke:var(--lake);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.problem-card h4{font-size:.9rem;font-weight:600;margin-bottom:.2rem;color:var(--ink)}
+.problem-card p{font-size:.82rem;color:var(--steel);line-height:1.5}
+
+
+/* ════════════════════════════════
+   3. JOURNEY + PHILOSOPHY MERGED
+   Original layout: circles + timeline connector + icons
+   ════════════════════════════════ */
+.journey-merged{background:var(--cloud);padding:5rem 2rem}
+.journey-merged-header{text-align:center;margin-bottom:2.5rem}
+.journey-merged-header .section-subtitle{margin:0 auto;text-align:center}
+
+.journey-info{max-width:960px;margin:0 auto;position:relative}
+.journey-info-track{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.journey-info-track::before{content:'';position:absolute;top:48px;left:calc(16.66% + 28px);right:calc(16.66% + 28px);height:3px;background:linear-gradient(90deg,var(--lake),var(--lake-deep),var(--wave));border-radius:2px;z-index:1}
+.ji-step{text-align:center;padding:0 1rem;position:relative}
+.ji-marker{width:96px;height:96px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.25rem;position:relative;z-index:2;transition:transform .3s var(--ease)}
+.ji-step:hover .ji-marker{transform:scale(1.08)}
+.ji-marker-1{background:var(--lake);box-shadow:0 6px 24px rgba(43,122,158,.3)}
+.ji-marker-2{background:var(--lake-deep);box-shadow:0 6px 24px rgba(29,95,126,.3)}
+.ji-marker-3{background:var(--wave);box-shadow:0 6px 24px rgba(72,181,210,.3)}
+.ji-marker svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.ji-marker .ji-weeks{font-size:.6rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.05em;margin-top:.2rem}
+.ji-phase{font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-bottom:.35rem}
+.ji-desc{font-size:.88rem;color:var(--steel);line-height:1.55;max-width:260px;margin:0 auto .75rem}
+.ji-outcome{display:inline-flex;align-items:center;gap:.4rem;background:rgba(43,122,158,.07);border:1px solid rgba(43,122,158,.12);border-radius:100px;padding:.35rem .9rem;font-size:.75rem;color:var(--lake);font-weight:500}
+.ji-outcome svg{width:14px;height:14px;stroke:var(--lake);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.ji-deliverables{display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem;margin-top:.6rem}
+.ji-del{font-size:.68rem;padding:.2rem .6rem;border-radius:100px;background:var(--white);color:var(--steel);border:1px solid var(--mist);font-weight:500}
+
+@media(max-width:900px){.journey-info-track{grid-template-columns:1fr;gap:2.5rem;max-width:340px;margin:0 auto}.journey-info-track::before{display:none}.ji-marker{width:80px;height:80px}.ji-marker svg{width:24px;height:24px}}
+
+
+/* ════════════════════════════════
+   4. WORKFLOWS — condensed to 2 examples, horizontal
+   ════════════════════════════════ */
+.workflows-compact{background:var(--ink);color:var(--white);padding:4rem 2rem;position:relative;overflow:hidden}
+.workflows-compact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(43,122,158,.2),transparent)}
+.wc-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1}
+.wc-header{text-align:center;margin-bottom:2rem}
+.wc-header .section-label{color:var(--wave)}
+.wc-header h2{font-family:var(--serif);font-size:1.8rem;color:var(--white);margin-bottom:.5rem}
+.wc-header p{font-size:.95rem;color:rgba(255,255,255,.5);max-width:500px;margin:0 auto}
+
+.wc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem}
+.wc-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.5rem;transition:all .25s}
+.wc-card:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);transform:translateY(-2px)}
+.wc-card-header{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.wc-card-header svg{width:20px;height:20px;stroke:var(--wave);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.wc-card-header h4{font-size:.9rem;font-weight:500;color:var(--white);line-height:1.3;flex:1}
+.wc-card-header .industry-tag{display:inline-block;font-size:.6rem;padding:.15rem .5rem;border-radius:100px;background:rgba(72,181,210,.15);color:var(--wave);font-weight:500;letter-spacing:.03em;white-space:nowrap}
+.wc-ba{display:flex;flex-direction:column;gap:.45rem}
+.wc-row{display:flex;align-items:flex-start;gap:.6rem;font-size:.82rem;line-height:1.45}
+.wc-label{font-weight:600;letter-spacing:.03em;text-transform:uppercase;font-size:.6rem;min-width:46px;padding:.2rem 0;flex-shrink:0;margin-top:.1rem}
+.wc-label-before{color:rgba(255,255,255,.35)}
+.wc-label-after{color:var(--wave)}
+.wc-text-before{color:rgba(255,255,255,.4);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.15)}
+.wc-text-after{color:rgba(255,255,255,.85)}
+.wc-arrow{display:flex;align-items:center;justify-content:center;margin:.1rem 0 .1rem 16px}
+.wc-arrow svg{width:14px;height:14px;stroke:var(--wave);fill:none;stroke-width:2;stroke-linecap:round;opacity:.5}
+
+.wc-bottom{text-align:center;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)}
+.wc-bottom p{font-size:.9rem;color:rgba(255,255,255,.45)}
+.wc-bottom a{color:var(--wave);text-decoration:underline}
+
+@media(max-width:900px){.wc-grid{grid-template-columns:1fr}}
+
+
+/* ════════════════════════════════
+   5. TESTIMONIALS — removed Janet placeholder
+   ════════════════════════════════ */
+.testimonial-section{background:var(--white);padding:4.5rem 2rem}
+.testimonial-inner{max-width:700px;margin:0 auto;text-align:center}
+.testimonial-quote{position:relative;margin-bottom:1.5rem}
+.testimonial-quote svg{width:36px;height:36px;color:var(--lake);opacity:.2;margin-bottom:.75rem}
+.testimonial-quote blockquote{font-family:var(--serif);font-size:clamp(1.05rem,2.2vw,1.25rem);line-height:1.6;color:var(--ink);font-weight:400;font-style:italic}
+.testimonial-author{display:flex;align-items:center;justify-content:center;gap:1rem}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;background:var(--lake);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:white}
+.testimonial-info{text-align:left}
+.testimonial-name{font-size:.9rem;font-weight:600;color:var(--ink)}
+.testimonial-role{font-size:.8rem;color:var(--steel)}
+
+.supporting-testimonials{max-width:900px;margin:0 auto;padding-top:3rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.supporting-quote{background:var(--cloud);border-radius:12px;padding:1.5rem;text-align:left;position:relative}
+.supporting-quote blockquote{font-family:var(--serif);font-size:.9rem;line-height:1.6;color:var(--ink);font-style:italic;margin-bottom:1rem}
+.supporting-quote .supporting-attribution{font-size:.8rem;color:var(--steel);font-weight:500}
+.supporting-quote .supporting-attribution span{display:block;font-weight:400;font-size:.75rem;margin-top:.1rem}
+.supporting-quote::before{content:"\201C";font-family:var(--serif);font-size:2.5rem;color:var(--lake);opacity:.15;position:absolute;top:.25rem;left:.75rem;line-height:1}
+
+
+/* ════════════════════════════════
+   6. BEST FIT — matches original site
+   ════════════════════════════════ */
+.fit-section{background:var(--cloud);padding:5rem 2rem}
+.fit-inner{max-width:var(--max-w);margin:0 auto}
+.fit-header{text-align:center;margin-bottom:3rem}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:900px;margin:0 auto}
+.fit-col{background:var(--white);border-radius:16px;padding:2rem;border:1px solid var(--mist)}
+.fit-col h3{font-family:var(--serif);font-size:1.2rem;margin-bottom:1.25rem;display:flex;align-items:center;gap:.6rem}
+.fit-col h3 svg{width:22px;height:22px;flex-shrink:0}
+.fit-yes h3 svg{color:var(--lake)}
+.fit-no h3 svg{color:var(--steel)}
+.fit-item{display:flex;gap:.75rem;align-items:flex-start;margin-bottom:1rem}
+.fit-item:last-child{margin-bottom:0}
+.fit-item svg{width:18px;min-width:18px;height:18px;margin-top:.15rem}
+.fit-yes .fit-item svg{color:var(--lake)}
+.fit-no .fit-item svg{color:var(--steel);opacity:.6}
+.fit-item p{font-size:.9rem;color:var(--steel);line-height:1.6;margin:0}
+.fit-bridge{text-align:center;margin-top:2rem;font-size:.95rem;color:var(--steel);font-style:italic}
+
+@media(max-width:900px){.fit-grid{grid-template-columns:1fr}}
+
+
+/* ════════════════════════════════
+   7. FAQ — kept as-is
+   ════════════════════════════════ */
+.faq{background:var(--white);padding:4.5rem 2rem}
+.faq-header{text-align:center;margin-bottom:2.5rem}
+.faq-list{max-width:680px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--mist);overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;cursor:pointer;font-size:1rem;font-weight:500;color:var(--ink);gap:1rem;transition:color .2s}
+.faq-q:hover{color:var(--lake)}
+.faq-q svg{width:18px;min-width:18px;height:18px;transition:transform .3s var(--ease);color:var(--steel)}
+.faq-item.open .faq-q svg{transform:rotate(45deg);color:var(--lake)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a-inner{padding:0 0 1.25rem;font-size:.9rem;color:var(--steel);line-height:1.65}
+
+
+/* ════════════════════════════════
+   8. CTA — simplified
+   ════════════════════════════════ */
+.cta-simple{background:var(--ink);text-align:center;padding:5rem 2rem;position:relative;overflow:hidden}
+.cta-simple::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 80%,rgba(43,122,158,.2),transparent)}
+.cta-simple-inner{position:relative;z-index:1;max-width:560px;margin:0 auto}
+.cta-simple h2{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.2rem);color:var(--white);margin-bottom:.75rem;line-height:1.25}
+.cta-simple p{color:rgba(255,255,255,.55);font-size:1rem;margin-bottom:2rem;line-height:1.7;font-weight:300}
+.cta-simple .btn-primary{font-size:1rem;padding:1rem 2.25rem}
+.cta-industries{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.cta-ind-tag{font-size:.72rem;padding:.25rem .7rem;border-radius:100px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.4);font-weight:500}
+.cta-pricing-hint{display:inline-block;margin-top:1.25rem;padding:.5rem 1.25rem;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font-size:.8rem;color:rgba(255,255,255,.5)}
+
+
+/* ── Footer ── */
+.footer{background:var(--ink);color:rgba(255,255,255,.6);padding:2.5rem 2rem 1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.footer-inner{max-width:var(--max-w);margin:0 auto;text-align:center}
+.footer-contact a{color:var(--wave);text-decoration:none;font-size:1rem;font-weight:500}
+.footer-copy{font-size:.75rem;color:rgba(255,255,255,.25);margin-top:1rem}
+
+
+/* ── Responsive ── */
+@media(max-width:900px){
+.hero-inner{grid-template-columns:1fr;text-align:center;padding:6rem 2rem 8rem}
+.hero-cta-group{align-items:center}
+.hero-photo{order:-1}
+.hero-photo-frame{max-width:200px;aspect-ratio:1/1;border-radius:50%}
+.hero-photo-name{display:none}
+.problem-grid{grid-template-columns:1fr;gap:2rem}
+}
+
+/* ── Removed section indicator ── */
+.removed-placeholder{max-width:1200px;margin:0 auto;background:repeating-linear-gradient(45deg,#fafafa,#fafafa 10px,#f3f3f3 10px,#f3f3f3 20px);border:2px dashed #ddd;border-radius:12px;padding:2rem;text-align:center;color:#999;font-size:.85rem}
+.removed-placeholder strong{color:#c03c3c;display:block;margin-bottom:.25rem}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<!-- Preview Bar -->
+<div class="preview-bar">
+<h1>Homepage Restructure Preview</h1>
+<div style="display:flex;align-items:center;gap:1.5rem">
+<span class="stats">11 sections → 8 sections &nbsp;|&nbsp; ~1,500 words → ~850 words</span>
+<span class="badge">Draft</span>
+</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1: HERO — no change
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">1</div><div class="label">Hero</div><span class="change change-kept">No change</span></div>
+<div class="page-frame">
+<section class="hero">
+<div class="hero-inner">
+<div>
+<h1>Your team using AI <em>confidently</em>, in weeks, not months.</h1>
+<p class="hero-sub">We cut through the noise, find where AI actually fits your business, and help your team own it — not depend on us. A partner you can trust to tell you the truth about AI.</p>
+<div class="hero-cta-group">
+<a href="#" class="btn btn-primary">Book a Free Consultation <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<div class="trust-micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No commitment. No pitch. Just an honest conversation.</div>
+<div class="hero-secondary"><a href="#">Not ready to talk? Check your AI readiness <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+</div>
+<div class="hero-photo"><div class="hero-photo-frame"><div class="placeholder">[Jon's photo]</div><div class="hero-photo-name"><strong>Jon Linton</strong><span>Founder, Fresh Coast AI</span></div></div></div>
+</div>
+</section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2: PROBLEM — tightened
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">2</div><div class="label">Problem</div><span class="change change-condensed">Tightened copy</span></div>
+<div class="page-frame">
+<section class="problem"><div class="section-inner">
+<div class="problem-grid">
+<div>
+<div class="section-label">The Problem</div>
+<h2 class="section-title">AI is everywhere. Clarity is nowhere.</h2>
+<p class="section-subtitle">Every vendor has an AI pitch. Your team hears a new tool name every week. You know AI could help — but who do you actually trust to tell you the truth?</p>
+</div>
+<div class="problem-cards">
+<div class="problem-card"><div class="p-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h4>Hard to know who to trust</h4><p>Most "AI consultants" are really selling a platform. You need someone whose advice leads to your independence, not their invoice.</p></div></div>
+<div class="problem-card"><div class="p-icon"><svg viewBox="0 0 24 24"><path d="M2 17l10-10 4 4 6-6"/><path d="M18 5h4v4"/></svg></div><div><h4>Too much noise, not enough clarity</h4><p>New tools every week. Every vendor has an AI pitch. You don't need more options — you need someone to simplify what matters for your business.</p></div></div>
+<div class="problem-card"><div class="p-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div><h4>Your best people won't stick around doing manual work</h4><p>Top talent wants to work at companies that use modern tools. Leaning into AI helps you retain your team and attract the people you need next.</p></div></div>
+</div>
+</div>
+</div></section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3: JOURNEY + PHILOSOPHY MERGED
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">3</div><div class="label">Journey + Philosophy</div><span class="change change-merged">Merged — was 2 sections</span></div>
+<div class="page-frame">
+<section class="journey-merged"><div class="section-inner">
+<div class="journey-merged-header">
+<div class="section-label">How We Work</div>
+<h2 class="section-title">Assess. Build. Own.</h2>
+<p class="section-subtitle" style="margin:0 auto;text-align:center">A clear path from "where do we start?" to "we run this ourselves." Most clients see their first working AI workflow within 4 weeks.</p>
+</div>
+
+<div class="journey-info">
+<div class="journey-info-track">
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-1"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><span class="ji-weeks">WEEKS 1–3</span></div>
+<div class="ji-phase">Assess</div>
+<div class="ji-desc">We shadow your team, map workflows, and find the 3–5 spots where AI makes the biggest difference.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>6-hr bids → 10 minutes</div>
+<div class="ji-deliverables"><span class="ji-del">AI Readiness Report</span><span class="ji-del">Strategic Roadmap</span></div>
+</div>
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-2"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span class="ji-weeks">WEEKS 3–8</span></div>
+<div class="ji-phase">Build</div>
+<div class="ji-desc">We build AI into your actual tools — not a demo. Your team helps build it so they understand it from day one.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Friday reports → automated</div>
+<div class="ji-deliverables"><span class="ji-del">Implementation Blueprint</span><span class="ji-del">Change Management</span></div>
+</div>
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-3"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span class="ji-weeks">ONGOING</span></div>
+<div class="ji-phase">Own</div>
+<div class="ji-desc">Your team runs it independently. We train, document, and hand off. No retainer required.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>3 more departments on their own</div>
+<div class="ji-deliverables"><span class="ji-del">AI Capability Playbook</span><span class="ji-del">Governance Framework</span></div>
+</div>
+
+</div>
+</div>
+
+<div style="text-align:center;margin-top:2rem"><a href="#" style="color:var(--lake);text-decoration:underline;font-size:.95rem">Our full process and pricing →</a></div>
+</div></section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     REMOVED: Quiz (lives on assessment.html)
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num" style="background:#c03c3c">✕</div><div class="label">Quiz</div><span class="change change-removed">Removed — lives on assessment.html</span></div>
+<div class="removed-placeholder"><strong>Quiz section removed from homepage</strong>Still accessible via the hero link "Not ready to talk? Check your AI readiness →"</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 4: WORKFLOWS — 2 examples
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">4</div><div class="label">Workflows</div><span class="change change-condensed">4 cards → 2 cards</span></div>
+<div class="page-frame">
+<div class="workflows-compact"><div class="wc-inner">
+<div class="wc-header"><div class="section-label">AI-Ready Workflows</div><h2>Sound familiar?</h2><p>The repetitive work costing your team hours every week — transformed.</p></div>
+
+<div class="wc-grid">
+<div class="wc-card">
+<div class="wc-card-header"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg><h4>Invoice processing &amp; expense coding</h4><span class="industry-tag">Finance</span></div>
+<div class="wc-ba">
+<div class="wc-row"><span class="wc-label wc-label-before">Before</span><span class="wc-text-before">Manual review, categorization, and routing for every invoice</span></div>
+<div class="wc-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wc-row"><span class="wc-label wc-label-after">After</span><span class="wc-text-after">AI categorizes and routes automatically — your team just approves exceptions</span></div>
+</div></div>
+
+<div class="wc-card">
+<div class="wc-card-header"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><h4>Process documentation</h4><span class="industry-tag">Operations</span></div>
+<div class="wc-ba">
+<div class="wc-row"><span class="wc-label wc-label-before">Before</span><span class="wc-text-before">SOPs always months behind actual practice, revised manually</span></div>
+<div class="wc-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wc-row"><span class="wc-label wc-label-after">After</span><span class="wc-text-after">AI tracks changes, flags outdated steps, and drafts revisions automatically</span></div>
+</div></div>
+</div>
+
+<div class="wc-bottom"><p>These are starting points. <a href="#">See all the ways AI can fit your workflows →</a></p></div>
+</div></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     REMOVED: Philosophy (merged into Journey above)
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num" style="background:#c03c3c">✕</div><div class="label">Philosophy (Cultivate)</div><span class="change change-removed">Merged into Journey above</span></div>
+<div class="removed-placeholder"><strong>Philosophy section merged into Journey</strong>"Listen First / Build Together / Leave It Behind" now appear as taglines under each phase</div>
+
+
+<!-- ═══════════════════════════════════════════
+     REMOVED: Industries grid
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num" style="background:#c03c3c">✕</div><div class="label">Industries Grid</div><span class="change change-removed">Moved to CTA as compact tags</span></div>
+<div class="removed-placeholder"><strong>Industries grid removed from homepage</strong>Industry names now appear as subtle tags in the CTA section. Individual industry pages still linked from nav/services.</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 5: TESTIMONIALS — Janet removed
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">5</div><div class="label">Testimonials</div><span class="change change-kept">Restored original layout</span></div>
+<div class="page-frame">
+<section class="testimonial-section"><div class="testimonial-inner">
+<div class="testimonial-quote"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"/></svg>
+<blockquote>"Fresh Coast AI made AI feel practical instead of overwhelming. They took the time to understand how our team actually works and built solutions that fit our real workflows."</blockquote></div>
+<div class="testimonial-author"><div class="testimonial-avatar">NL</div><div class="testimonial-info"><div class="testimonial-name">Nick Lombardino</div><div class="testimonial-role">Co-founder, CultureCon</div></div></div>
+</div>
+<div class="supporting-testimonials">
+<div class="supporting-quote"><blockquote>"Working with Jon is extremely collaborative. He seeks to understand and listen to your needs. In our time together I saw him take complex issues and distill them into actionable, objective, and enterprise-wide solutions. His people-first approach makes for easy implementation and adaptation."</blockquote><div class="supporting-attribution">Pete<span>Senior Director of Operations</span></div></div>
+<div class="supporting-quote"><blockquote>"Janet's testimonial coming soon."</blockquote><div class="supporting-attribution">Janet<span>Chief Operating Officer</span></div></div>
+</div>
+</section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 6: BEST FIT — kept
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">6</div><div class="label">Best Fit</div><span class="change change-kept">No change</span></div>
+<div class="page-frame">
+<section class="fit-section"><div class="fit-inner">
+<div class="fit-header"><div class="section-label">Is This Right for You?</div><h2 class="section-title">Honest answer: we're not for everyone.</h2></div>
+<div class="fit-grid">
+<div class="fit-col fit-yes">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>We're a great fit if…</h3>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p>You have 5–250 employees and real workflows AI could improve</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p>Leadership wants a practical plan, not hype</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p>You want your team to own the capability, not depend on a vendor</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><p>You're in the Midwest and value someone who shows up</p></div>
+</div>
+<div class="fit-col fit-no">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>We're not the right fit if…</h3>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><p>You want a vendor to sell and manage an AI platform</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><p>You need a pre-built software product, not consulting</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><p>You want a 12-month engagement with open-ended billing</p></div>
+<div class="fit-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><p>You're after a flashy AI demo, not real workflow change</p></div>
+</div>
+</div>
+<p class="fit-bridge">Not sure where you fall? That's what the first conversation is for.</p>
+</div></section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 7: FAQ — kept
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">7</div><div class="label">FAQ</div><span class="change change-kept">No change</span></div>
+<div class="page-frame">
+<section class="faq"><div class="section-inner">
+<div class="faq-header"><div class="section-label">Common Questions</div><h2 class="section-title">Everything you'd want to ask.</h2></div>
+<div class="faq-list">
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does a typical engagement cost?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">You can get started with a $1,000 AI Strategy Session — standalone value even if you go no further. From there, assessments start around $5,000, implementation runs $8,000–$25,000 per phase, and the full journey is $30,000–$55,000.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long does a typical engagement take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">Assessment phase takes 2–3 weeks. A full Assess → Build → Own engagement is usually 6–10 weeks.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What if my team is resistant to AI?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">That's where we do our best work. Resistance comes from fear. We start by listening and showing people how AI makes their specific job easier.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do we need technical people on our team?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">No. We build AI workflows that non-technical people can own and run. If you can use email, you can use what we build.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What makes you different from other AI consultants?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">We're vendor-neutral, Midwest-based, and our engagements are designed to end. We succeed when you don't need us anymore.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What industries do you work with?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div><div class="faq-a"><div class="faq-a-inner">Professional services, manufacturing, skilled trades, property management, staffing, and operations. The common thread: businesses with 5–250 employees who know they need AI but aren't sure where to start.</div></div></div>
+</div>
+</div></section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 8: CTA — simplified + industry tags
+     ═══════════════════════════════════════════ -->
+<div class="section-divider"><div class="num">8</div><div class="label">CTA</div><span class="change change-condensed">Simplified — 3 path cards → 1 strong CTA</span></div>
+<div class="page-frame">
+<section class="cta-simple"><div class="cta-simple-inner">
+<div class="section-label" style="color:var(--wave)">Get Started</div>
+<h2>Ready for an honest conversation about AI?</h2>
+<p>Book a free 30-minute call. No pitch, no platform to sell — just a straightforward look at your business and whether AI makes sense right now.</p>
+<a href="#" class="btn btn-primary" style="font-size:1rem;padding:1rem 2.25rem">Book a Free Consultation <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<div class="trust-micro" style="justify-content:center;margin-top:.75rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No commitment. First conversation is always free.</div>
+<div class="cta-pricing-hint">Or start with a <strong style="color:rgba(255,255,255,.7)">$1,000 AI Strategy Session</strong> — clarity in one week</div>
+
+<div class="cta-industries">
+<span class="cta-ind-tag">Professional Services</span>
+<span class="cta-ind-tag">Manufacturing</span>
+<span class="cta-ind-tag">Skilled Trades</span>
+<span class="cta-ind-tag">Staffing</span>
+<span class="cta-ind-tag">Property Management</span>
+<span class="cta-ind-tag">Your Industry</span>
+</div>
+</div></section>
+</div>
+
+
+<!-- Footer hint -->
+<div style="max-width:1200px;margin:1rem auto 3rem;text-align:center;color:#999;font-size:.8rem">
+<p>Footer remains unchanged below this point.</p>
+</div>
+
+<script>
+function toggleFaq(el){
+const item=el.parentElement;
+const a=item.querySelector('.faq-a');
+const inner=item.querySelector('.faq-a-inner');
+if(item.classList.contains('open')){
+a.style.maxHeight='0';item.classList.remove('open');
+}else{
+document.querySelectorAll('.faq-item.open').forEach(function(o){o.querySelector('.faq-a').style.maxHeight='0';o.classList.remove('open')});
+a.style.maxHeight=inner.scrollHeight+'px';item.classList.add('open');
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Fit Mockup B — Compact Comparison Matrix Table</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;padding:0}
+.section-wrap{padding:4rem 2rem;max-width:var(--max-w);margin:0 auto}
+.mockup-tag{text-align:center;background:var(--lake-deep);color:#fff;display:block;width:fit-content;padding:.3rem 1rem;border-radius:100px;font-size:.75rem;font-weight:600;letter-spacing:.05em;margin:0 auto 2rem}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem;text-align:center}
+h2{text-align:center;font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--ink);line-height:1.2;margin-bottom:2rem}
+
+/*
+  CONCEPT: A compact comparison matrix table.
+  Two columns: "What you're looking for" | "Us" | "Typical AI vendor"
+  Each row shows a criteria with ✓ or ✗ for each column.
+  Reframes the "fit/not fit" as a comparison that highlights
+  Fresh Coast's differentiators. Dense, scannable, visually strong.
+  ~40-50% less vertical space.
+*/
+
+.matrix-wrap{max-width:700px;margin:0 auto}
+
+.matrix{
+  width:100%;border-collapse:separate;border-spacing:0;
+  background:var(--white);border:1px solid var(--mist);border-radius:14px;overflow:hidden;
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+
+/* Header row */
+.matrix thead th{
+  padding:.9rem 1rem;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  text-align:center;border-bottom:2px solid var(--mist);
+}
+.matrix thead th:first-child{text-align:left;color:var(--steel);width:55%}
+.matrix .col-us{color:var(--lake);background:rgba(43,122,158,.03);width:22.5%}
+.matrix .col-them{color:var(--steel);opacity:.5;width:22.5%}
+
+/* Data rows */
+.matrix tbody tr{transition:background .15s}
+.matrix tbody tr:hover{background:rgba(43,122,158,.02)}
+.matrix tbody td{
+  padding:.7rem 1rem;border-bottom:1px solid var(--mist);font-size:.85rem;line-height:1.45;
+  vertical-align:middle;
+}
+.matrix tbody tr:last-child td{border-bottom:0}
+
+.matrix tbody td:first-child{color:var(--ink)}
+.matrix tbody td:nth-child(2){text-align:center;background:rgba(43,122,158,.02)}
+.matrix tbody td:nth-child(3){text-align:center}
+
+/* Check & X icons */
+.m-yes{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:rgba(43,122,158,.1);
+}
+.m-yes svg{width:14px;height:14px;stroke:var(--lake);fill:none;stroke-width:2.5;stroke-linecap:round}
+
+.m-no{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.04);
+}
+.m-no svg{width:12px;height:12px;stroke:var(--steel);fill:none;stroke-width:2;stroke-linecap:round;opacity:.3}
+
+.fc-bridge{text-align:center;margin-top:1.5rem;font-size:.9rem;color:var(--steel)}
+
+@media(max-width:500px){
+  .matrix tbody td{padding:.5rem .6rem;font-size:.8rem}
+  .matrix thead th{padding:.6rem;font-size:.6rem}
+}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+<div class="section-wrap">
+<div class="mockup-tag">MOCKUP B — Best Fit: Comparison Matrix Table</div>
+<div class="section-label">Is This Right for You?</div>
+<h2>Honest answer: we're not for everyone.</h2>
+
+<div class="matrix-wrap">
+<table class="matrix">
+<thead>
+  <tr>
+    <th>What you're looking for</th>
+    <th class="col-us">Fresh Coast</th>
+    <th class="col-them">Typical Vendor</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Team learns to own and run the AI themselves</td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Built around your actual workflows, not generic demos</td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Fixed-fee, defined engagement — not open-ended billing</td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Practical AI plan for 5–250 person companies</td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Midwest-based, shows up in person when it matters</td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Pre-built SaaS platform you subscribe to</td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Vendor-managed, ongoing dependency</td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+  </tr>
+  <tr>
+    <td>Flashy AI demo, no real workflow change</td>
+    <td><span class="m-no"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span></td>
+    <td><span class="m-yes"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<p class="fc-bridge">Not sure where you fall? That's what the first conversation is for.</p>
+</div>
+</body>
+</html>

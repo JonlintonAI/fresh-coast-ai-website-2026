@@ -1,0 +1,28 @@
+Campaign,Campaign ID,Ad group,Keyword,Match type,Status
+Campaign #1,23639524551,,"aiops",Negative phrase,Enabled
+Campaign #1,23639524551,,"data lake",Negative phrase,Enabled
+Campaign #1,23639524551,,"remote management",Negative phrase,Enabled
+Campaign #1,23639524551,,"dynatrace",Negative phrase,Enabled
+Campaign #1,23639524551,,"training course",Negative phrase,Enabled
+Campaign #1,23639524551,,"certification",Negative phrase,Enabled
+Campaign #1,23639524551,,software,Negative broad,Enabled
+Campaign #1,23639524551,,saas,Negative broad,Enabled
+Campaign #1,23639524551,,platform,Negative broad,Enabled
+Campaign #1,23639524551,,free,Negative broad,Enabled
+Campaign #1,23639524551,,"tools list",Negative phrase,Enabled
+Campaign #1,23639524551,,chatgpt,Negative broad,Enabled
+Campaign #1,23639524551,,openai,Negative broad,Enabled
+Campaign #1,23639524551,,jobs,Negative broad,Enabled
+Campaign #1,23639524551,,career,Negative broad,Enabled
+Campaign #1,23639524551,,salary,Negative broad,Enabled
+Campaign #1,23639524551,,resume,Negative broad,Enabled
+Campaign #1,23639524551,,hire,Negative broad,Enabled
+Campaign #1,23639524551,,hiring,Negative broad,Enabled
+Campaign #1,23639524551,,developer,Negative broad,Enabled
+Campaign #1,23639524551,,engineer,Negative broad,Enabled
+Campaign #1,23639524551,,python,Negative broad,Enabled
+Campaign #1,23639524551,,tutorial,Negative broad,Enabled
+Campaign #1,23639524551,,course,Negative broad,Enabled
+Campaign #1,23639524551,,class,Negative broad,Enabled
+Campaign #1,23639524551,,degree,Negative broad,Enabled
+Campaign #1,23639524551,,mba,Negative broad,Enabled

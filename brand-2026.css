@@ -1,0 +1,256 @@
+/* ============================================================
+   Fresh Coast AI · brand-2026.css
+   Site-wide design-language override.
+   Loaded AFTER each page's inline <style> so it wins on cascade.
+   Carries the homepage redesign across every interior page:
+   - terracotta replacing yellow as warm accent
+   - JetBrains Mono added for status/section markers
+   - Light sticky nav (instead of dark fixed)
+   - § NN-style section labels
+   - Pill-shaped buttons
+   - Footer with mono accents + version stamp
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ---- TOKENS (override) ---- */
+:root{
+  --sand:#D97757;
+  --sand-deep:#B85A3D;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --max-w:1240px;
+}
+
+html{scroll-padding-top:90px}
+body{font-feature-settings:'ss01' on,'cv11' on}
+
+/* ============================================================
+   NAV — light sticky bar with mono-accented logo lockup
+============================================================ */
+nav.nav{
+  position:sticky!important;
+  top:0;left:0;right:0;
+  background:rgba(255,255,255,.92)!important;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--mist);
+  box-shadow:none!important;
+  padding:1rem 2.4rem!important;
+  transition:none!important;
+}
+nav.nav.scrolled{padding:1rem 2.4rem!important}
+nav.nav .nav-inner{max-width:var(--max-w);gap:2rem}
+
+/* Swap the white-on-dark logo for the full-color one (root-relative) */
+nav.nav .nav-logo{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  font-family:var(--serif);
+  color:var(--ink)!important;
+  text-decoration:none;
+}
+nav.nav .nav-logo img{
+  height:44px!important;
+  width:auto!important;
+  content:url('freshcoastai_logo_fullcolor_transparent.png');
+}
+
+nav.nav .nav-links a{
+  color:var(--steel)!important;
+  font-family:var(--sans)!important;
+  font-size:.92rem!important;
+  font-weight:500!important;
+}
+nav.nav .nav-links a:hover{color:var(--ink)!important}
+nav.nav .nav-links a.active::after{display:none!important}
+nav.nav .nav-cta{
+  background:var(--lake)!important;
+  color:#fff!important;
+  border-radius:999px!important;
+  padding:.7rem 1.2rem!important;
+  font-size:.92rem!important;
+}
+nav.nav .nav-cta:hover{background:var(--lake-deep)!important;box-shadow:0 6px 16px rgba(43,122,158,.28)}
+
+nav.nav .mobile-toggle span{background:var(--ink)!important}
+
+/* Page-content top spacing — old design used fixed nav (needed padding-top on body),
+   new sticky nav doesn't need it. Pull hero up only when sticky:
+   pages that have a .page-hero immediately under the nav will overlap. Add safety. */
+nav.nav + section.page-hero{padding-top:4rem!important}
+
+/* Mobile nav menu open state */
+@media(max-width:900px){
+  nav.nav .nav-links.open{
+    background:#fff!important;
+    border-top:1px solid var(--mist);
+    box-shadow:0 8px 24px rgba(0,0,0,.06)!important;
+  }
+  nav.nav .nav-links.open a{color:var(--ink)!important}
+  nav.nav .nav-links.open .nav-cta{color:#fff!important}
+}
+
+/* ============================================================
+   PAGE HERO — keep dark, add mono status strip on top
+============================================================ */
+.page-hero{position:relative}
+.page-hero::after{
+  content:"fresh-coast-ai · v.2026 · milwaukee, wi";
+  position:absolute;top:1.4rem;left:0;right:0;
+  text-align:center;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;
+  color:rgba(255,255,255,.4);
+  pointer-events:none;
+}
+.page-hero h1 em,.page-hero h1 i{font-style:italic;color:var(--wave)}
+
+/* ============================================================
+   SECTION LABELS — mono kicker w/ § marker
+============================================================ */
+.section-label,.section-kicker{
+  font-family:var(--mono)!important;
+  font-size:.78rem!important;
+  letter-spacing:.08em!important;
+  font-weight:500!important;
+  text-transform:uppercase;
+  color:var(--lake)!important;
+  display:inline-flex;
+  align-items:baseline;
+  gap:.6rem;
+  margin-bottom:1rem;
+}
+.section-label::before{
+  content:"§";
+  color:var(--lake);
+  opacity:.65;
+  margin-right:.15rem;
+}
+.page-hero .section-label,
+.principles .section-label,
+.dark-section .section-label,
+section[style*="background:var(--ink)"] .section-label{
+  color:var(--wave)!important;
+}
+.page-hero .section-label::before,
+.principles .section-label::before{color:var(--wave);opacity:.65}
+
+/* SECTION TITLES — italic accent on <em> */
+.section-title em,.section-title i,h1 em,h2 em,h3 em{
+  font-style:italic;
+  color:var(--lake);
+  font-family:var(--serif);
+}
+.page-hero h1 em,.principles h2 em,.dark-section h2 em{color:var(--wave)}
+
+/* ============================================================
+   BUTTONS — pill, lake hover-deepens
+============================================================ */
+.btn,a.btn,button.btn{
+  border-radius:999px!important;
+  padding:.95em 1.6em!important;
+  font-weight:500!important;
+}
+.btn-primary,a.btn-primary{
+  background:var(--lake)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+.btn-primary:hover,a.btn-primary:hover{
+  background:var(--lake-deep)!important;
+  box-shadow:0 8px 20px rgba(43,122,158,.32)!important;
+  transform:translateY(-1px);
+}
+.btn-outline,a.btn-outline{
+  background:transparent!important;
+  color:var(--ink)!important;
+  border:1px solid rgba(11,26,43,.18)!important;
+}
+.btn-outline:hover,a.btn-outline:hover{
+  border-color:var(--ink)!important;
+  background:var(--cloud)!important;
+  color:var(--ink)!important;
+}
+
+/* Sand button variant — terracotta now */
+.btn-sand,a.btn-sand{background:var(--sand)!important;color:#fff!important}
+.btn-sand:hover,a.btn-sand:hover{background:var(--sand-deep)!important;box-shadow:0 8px 20px rgba(217,119,87,.32)!important}
+
+/* ============================================================
+   FOOTER — keep dark, add mono accents + version stamp
+============================================================ */
+footer.footer{position:relative;border-top:1px solid rgba(255,255,255,.08)}
+footer.footer .footer-contact-label,
+footer.footer .footer-nav-col h4{
+  font-family:var(--mono)!important;
+  letter-spacing:.1em!important;
+  font-weight:500!important;
+  color:var(--wave)!important;
+}
+footer.footer .footer-contact a{color:var(--wave)!important}
+footer.footer .footer-cta{
+  background:var(--lake)!important;
+  border-radius:999px!important;
+}
+footer.footer .footer-cta:hover{background:var(--lake-deep)!important}
+footer.footer .footer-bottom{
+  font-family:var(--mono)!important;
+  font-size:.78rem!important;
+  color:rgba(255,255,255,.5)!important;
+}
+/* Tagline (italic) inside footer-contact-label parent */
+footer.footer .footer-contact{position:relative}
+footer.footer .footer-contact::before{
+  content:"Listen first. Build together. Leave it behind.";
+  display:block;
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:1.05rem;
+  color:rgba(255,255,255,.85);
+  margin-bottom:1.4rem;
+  line-height:1.5;
+}
+/* Version stamp at the bottom */
+footer.footer .footer-copy::after{
+  content:" · v.2026.05 · last shipped May 4";
+  color:rgba(255,255,255,.35);
+  font-family:var(--mono);
+}
+
+/* ============================================================
+   CARDS — subtle warmth on existing card structures
+============================================================ */
+.phil-card::before,.problem-card::before{background:var(--lake)!important}
+.phil-card .phil-number,.problem-card .pn{font-family:var(--mono)!important;letter-spacing:.08em!important}
+
+/* Strategy session card border, accents */
+.btn-primary[href*="strategy-session"]{background:var(--sand)!important;color:#fff!important}
+.btn-primary[href*="strategy-session"]:hover{background:var(--sand-deep)!important;box-shadow:0 8px 20px rgba(217,119,87,.32)!important}
+
+/* ============================================================
+   FORMS — pill submit
+============================================================ */
+.form-submit .btn,#submitBtn{border-radius:999px!important}
+
+/* ============================================================
+   LINKS — underline-on-hover style for inline article links
+============================================================ */
+.about-text p a,.timeline-content p a,article a{
+  color:var(--lake);
+  text-decoration:none;
+  border-bottom:1px solid rgba(43,122,158,.25);
+  transition:border-color .2s,color .2s;
+}
+.about-text p a:hover,.timeline-content p a:hover,article a:hover{
+  color:var(--lake-deep);
+  border-bottom-color:var(--lake-deep);
+}
+
+/* ============================================================
+   RESPONSIVE — keep nav sticky behavior consistent
+============================================================ */
+@media(max-width:900px){
+  nav.nav{padding:.85rem 1.25rem!important}
+  .page-hero::after{font-size:.68rem;top:1rem}
+  footer.footer .footer-contact::before{font-size:.95rem}
+}

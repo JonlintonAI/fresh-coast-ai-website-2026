@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>MOCKUP — Comparison Table for Problem Section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;padding:3rem 2rem}
+
+.mockup-label{text-align:center;margin-bottom:2rem;padding:1rem;background:#fff3cd;border-radius:8px;font-size:.85rem;color:#856404;max-width:800px;margin-left:auto;margin-right:auto}
+
+/* Section wrapper — mimics the site's problem section */
+.section-inner{max-width:1140px;margin:0 auto}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ink);line-height:1.2;margin-bottom:.75rem;text-align:center}
+.section-subtitle{font-size:1rem;color:var(--steel);max-width:640px;font-weight:300;line-height:1.75;text-align:center;margin:0 auto 2.5rem}
+
+/* Comparison Table */
+.compare-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1000px;margin:0 auto}
+
+.compare-col{border-radius:14px;padding:1.75rem 1.5rem;display:flex;flex-direction:column;transition:all .3s var(--ease)}
+.compare-col:hover{transform:translateY(-4px)}
+
+.compare-others{background:var(--cloud);border:1px solid var(--mist)}
+.compare-highlight{background:var(--ink);color:var(--white);border:2px solid var(--wave);position:relative;box-shadow:0 12px 32px rgba(0,0,0,.12)}
+
+.compare-header{text-align:center;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(0,0,0,.06)}
+.compare-highlight .compare-header{border-bottom-color:rgba(255,255,255,.1)}
+
+.compare-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto .75rem}
+.compare-others .compare-icon{background:var(--mist)}
+.compare-others .compare-icon svg{stroke:var(--steel)}
+.compare-highlight .compare-icon{background:rgba(72,181,210,.15)}
+.compare-highlight .compare-icon svg{stroke:var(--wave)}
+.compare-icon svg{width:24px;height:24px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.compare-name{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.25rem}
+.compare-highlight .compare-name{color:var(--white)}
+.compare-type{font-size:.75rem;color:var(--steel);font-weight:400}
+.compare-highlight .compare-type{color:rgba(255,255,255,.5)}
+
+.compare-row{display:flex;align-items:flex-start;gap:.5rem;margin-bottom:.9rem;font-size:.82rem;line-height:1.5;color:var(--steel)}
+.compare-highlight .compare-row{color:rgba(255,255,255,.7)}
+
+.row-icon{flex-shrink:0;width:18px;height:18px;margin-top:.1rem}
+.row-icon.check svg{stroke:var(--lake)}
+.row-icon.warn svg{stroke:var(--sand)}
+.row-icon.x svg{stroke:#C0392B}
+.compare-highlight .row-icon.check svg{stroke:var(--wave)}
+.row-icon svg{width:18px;height:18px;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+.compare-bottom{margin-top:auto;padding-top:1rem;text-align:center}
+.compare-verdict{font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.35rem .9rem;border-radius:100px;display:inline-block}
+.verdict-red{background:rgba(192,57,43,.08);color:#C0392B}
+.verdict-amber{background:rgba(212,160,23,.08);color:#D4A017}
+.verdict-green{background:rgba(72,181,210,.12);color:var(--wave)}
+
+/* Badge */
+.compare-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--wave);color:var(--ink);font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem 1rem;border-radius:100px;white-space:nowrap}
+
+/* CTA below table */
+.compare-cta{text-align:center;margin-top:2.5rem}
+.compare-cta a{display:inline-flex;align-items:center;gap:.5rem;background:var(--lake);color:var(--white);text-decoration:none;padding:.85rem 2rem;border-radius:8px;font-weight:500;font-size:.95rem;transition:all .25s var(--ease)}
+.compare-cta a:hover{background:var(--lake-light);transform:translateY(-2px)}
+
+/* Responsive */
+@media(max-width:900px){
+  .compare-grid{grid-template-columns:1fr 1fr;gap:.75rem}
+}
+@media(max-width:600px){
+  .compare-grid{grid-template-columns:1fr;max-width:400px}
+}
+</style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+
+<div class="mockup-label">MOCKUP — This comparison table would sit inside or just below the Problem section on the homepage.</div>
+
+<div class="section-inner">
+<div style="text-align:center"><div class="section-label">Why it matters who you choose</div></div>
+<h2 class="section-title">Not all AI help is the same.</h2>
+<p class="section-subtitle">The partner you pick determines whether AI actually sticks — or becomes another shelf project.</p>
+
+<div class="compare-grid">
+
+<!-- Big Consulting Firms -->
+<div class="compare-col compare-others">
+  <div class="compare-header">
+    <div class="compare-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M6 21V10M10 21V10M14 21V10M18 21V10M12 3l9 4H3l9-4z"/></svg></div>
+    <div class="compare-name">Big Consulting Firms</div>
+    <div class="compare-type">Accenture, Deloitte, etc.</div>
+  </div>
+  <div class="compare-row"><div class="row-icon warn"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div><span>Overkill for most SMBs — designed for enterprises with $1M+ budgets</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Junior staff does the work; senior partners only show up to sell</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Long timelines (6–12+ months) before you see any results</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Built to create dependency, not independence</span></div>
+  <div class="compare-bottom"><span class="compare-verdict verdict-red">Wrong scale</span></div>
+</div>
+
+<!-- Freelancers -->
+<div class="compare-col compare-others">
+  <div class="compare-header">
+    <div class="compare-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+    <div class="compare-name">Solo Freelancers</div>
+    <div class="compare-type">Upwork, referrals, etc.</div>
+  </div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Affordable — great for narrow, one-off tasks</span></div>
+  <div class="compare-row"><div class="row-icon warn"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div><span>Technical skills but rarely understand organizational change</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>No framework for adoption — builds it, then disappears</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Hard to vet quality; wide range of actual experience</span></div>
+  <div class="compare-bottom"><span class="compare-verdict verdict-amber">Risky bet</span></div>
+</div>
+
+<!-- Software Resellers -->
+<div class="compare-col compare-others">
+  <div class="compare-header">
+    <div class="compare-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+    <div class="compare-name">Software Resellers</div>
+    <div class="compare-type">Tool vendors, VARs</div>
+  </div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Deep knowledge of their specific product</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Recommends their tool whether it fits or not — incentive misalignment</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>Solves for the tool, not your workflow or your team</span></div>
+  <div class="compare-row"><div class="row-icon x"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></div><span>You end up paying for licenses you don't fully use</span></div>
+  <div class="compare-bottom"><span class="compare-verdict verdict-red">Wrong incentive</span></div>
+</div>
+
+<!-- Fresh Coast AI -->
+<div class="compare-col compare-highlight">
+  <span class="compare-badge">Built for companies like yours</span>
+  <div class="compare-header">
+    <div class="compare-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div class="compare-name">Fresh Coast AI</div>
+    <div class="compare-type">SMB-focused, Midwest-based</div>
+  </div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Built for 5–250 person companies — not scaled-down enterprise playbooks</span></div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Vendor-neutral — we recommend what fits, not what earns us a commission</span></div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Your team learns by doing — we build with you, not for you</span></div>
+  <div class="compare-row"><div class="row-icon check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Fixed-fee, scoped upfront — first workflows running in weeks</span></div>
+  <div class="compare-bottom"><span class="compare-verdict verdict-green">Right fit</span></div>
+</div>
+
+</div>
+
+<div class="compare-cta">
+  <a href="contact.html">See if we're a fit — book a free call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+
+</div>
+
+</body>
+</html>

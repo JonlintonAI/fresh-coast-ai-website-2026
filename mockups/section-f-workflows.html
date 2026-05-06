@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section F: Workflow Examples — Mockup</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--cloud);line-height:1.7;padding:2rem}
+
+.compare-header{max-width:860px;margin:0 auto 2rem;text-align:center}
+.compare-header h1{font-family:var(--serif);font-size:1.8rem;margin-bottom:.5rem}
+.compare-header p{color:var(--steel);font-size:.95rem}
+
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1200px;margin:0 auto}
+.compare-side{background:var(--white);border-radius:16px;padding:2.5rem;border:1px solid var(--mist);box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.compare-side h2{font-family:var(--serif);font-size:1rem;margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:2px solid var(--mist)}
+.compare-side.proposed h2{color:var(--lake);border-bottom-color:var(--lake)}
+.compare-side.current h2{color:var(--steel)}
+
+/* Dark section preview */
+.dark-section{background:var(--ink);border-radius:12px;padding:2rem;color:var(--white)}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--wave);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:1.4rem;color:var(--white);line-height:1.2;margin-bottom:.5rem}
+.section-subtitle{font-size:.9rem;color:rgba(255,255,255,.55);font-weight:300;line-height:1.75;margin-bottom:1.5rem}
+
+/* Tab pills */
+.tabs{display:flex;gap:.35rem;margin-bottom:1rem;flex-wrap:wrap}
+.tab{padding:.4rem .8rem;border-radius:100px;font-size:.75rem;font-weight:500;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5)}
+.tab.on{background:rgba(43,122,158,.2);border-color:var(--lake);color:var(--wave)}
+
+/* Workflow card */
+.wf-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem}
+.wf-title{font-size:.95rem;font-weight:600;color:var(--white);margin-bottom:1rem}
+.wf-row{display:grid;grid-template-columns:1fr auto 1fr;gap:.5rem;align-items:center}
+.wf-label{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+.wf-before .wf-label{color:rgba(255,255,255,.25)}
+.wf-after .wf-label{color:var(--wave)}
+.wf-before p{font-size:.82rem;color:rgba(255,255,255,.35);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.1);line-height:1.5}
+.wf-after p{font-size:.82rem;color:rgba(255,255,255,.85);font-weight:500;line-height:1.5}
+.wf-arrow{width:28px;height:28px;border-radius:50%;background:var(--lake);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff}
+.bottom-note{font-size:.82rem;color:rgba(255,255,255,.55);margin-top:1rem;text-align:center}
+.bottom-note strong{color:rgba(255,255,255,.8)}
+
+/* Highlight */
+.highlight-change{position:relative}.highlight-change::after{content:'';position:absolute;inset:-4px;border:2px dashed var(--lake);border-radius:8px;pointer-events:none;opacity:.3}
+
+/* Changes summary */
+.changes-summary{max-width:1200px;margin:2rem auto 0}
+.changes-box{background:var(--white);border:2px solid var(--lake);border-radius:12px;padding:1.75rem 2rem}
+.changes-box h3{font-family:var(--serif);font-size:1.1rem;color:var(--lake);margin-bottom:1rem}
+.changes-box ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.changes-box li{font-size:.88rem;color:var(--steel);line-height:1.6}
+.changes-box strong{color:var(--ink)}
+.tag-changed{display:inline-block;font-size:.65rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.15rem .5rem;border-radius:100px;background:rgba(232,200,122,.15);color:#b8860b;margin-left:.5rem;vertical-align:middle}
+.tag-kept{display:inline-block;font-size:.65rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.15rem .5rem;border-radius:100px;background:rgba(43,122,158,.1);color:var(--lake);margin-left:.5rem;vertical-align:middle}
+.tag-removed{display:inline-block;font-size:.65rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.15rem .5rem;border-radius:100px;background:rgba(200,50,50,.1);color:#c83232;margin-left:.5rem;vertical-align:middle}
+</style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+
+<div class="compare-header">
+  <h1>F. Workflow Examples</h1>
+  <p>Tighten the "Sound familiar?" before/after workflow section. Sharpen copy, remove the em dash in Finance card.</p>
+</div>
+
+<div class="compare-grid">
+
+<!-- CURRENT -->
+<div class="compare-side current">
+<h2>▸ Current</h2>
+<div class="dark-section">
+  <div class="section-label">AI-Ready Workflows</div>
+  <div class="section-title">Sound familiar?</div>
+  <p class="section-subtitle">The repetitive, manual work that's costing your team time every week — transformed.</p>
+
+  <div class="tabs">
+    <div class="tab on">Finance</div><div class="tab">HR</div><div class="tab">Recruiting</div><div class="tab">Operations</div><div class="tab">Website</div>
+  </div>
+  <div class="wf-card">
+    <div class="wf-title">Invoice processing & expense coding</div>
+    <div class="wf-row">
+      <div class="wf-before"><div class="wf-label">Before</div><p>Manual review, categorization, and routing for every invoice</p></div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-after"><div class="wf-label">After</div><p>AI categorizes and routes automatically — your team just approves exceptions</p></div>
+    </div>
+  </div>
+  <div class="bottom-note">These are starting points. <strong>We find the workflows that matter most for your business.</strong></div>
+</div>
+</div>
+
+<!-- PROPOSED -->
+<div class="compare-side proposed">
+<h2>▸ Proposed</h2>
+<div class="dark-section">
+  <div class="section-label">AI-Ready Workflows</div>
+  <div class="section-title">Sound familiar?</div>
+  <p class="section-subtitle highlight-change">The repetitive, manual work costing your team hours every week, transformed.</p>
+
+  <div class="tabs">
+    <div class="tab on">Finance</div><div class="tab">HR</div><div class="tab">Recruiting</div><div class="tab">Operations</div><div class="tab">Website</div>
+  </div>
+  <div class="wf-card">
+    <div class="wf-title">Invoice processing & expense coding</div>
+    <div class="wf-row">
+      <div class="wf-before"><div class="wf-label">Before</div><p>Manual review, categorization, and routing for every invoice</p></div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-after"><div class="wf-label">After</div><p class="highlight-change">AI categorizes and routes automatically. Your team just approves exceptions.</p></div>
+    </div>
+  </div>
+  <div class="bottom-note highlight-change">These are starting points. <strong>We find the workflows that matter most for your business.</strong></div>
+</div>
+</div>
+
+</div>
+
+<!-- Changes summary -->
+<div class="changes-summary">
+<div class="changes-box">
+  <h3>What changed & why</h3>
+  <ul>
+    <li><strong>Section title "Sound familiar?":</strong> Kept. It's conversational and effective. <span class="tag-kept">kept</span></li>
+    <li><strong>Subtitle:</strong> Removed the em dash. "that's costing your team time every week — transformed" → "costing your team hours every week, transformed." Also swapped "time" for "hours" (more concrete). <span class="tag-changed">changed</span></li>
+    <li><strong>Finance "After" copy:</strong> Removed the em dash. "routes automatically — your team just approves" → "routes automatically. Your team just approves." Split into two sentences. <span class="tag-changed">changed</span></li>
+    <li><strong>Tabbed UI, all 5 workflow cards, before/after format:</strong> Kept as-is. The interactive tabs and contrast format work well. <span class="tag-kept">kept</span></li>
+    <li><strong>HR card:</strong> No changes needed. No em dashes. <span class="tag-kept">kept</span></li>
+    <li><strong>Recruiting card:</strong> Remove the em dash: "pre-screens and ranks candidates — your team focuses" → "pre-screens and ranks candidates so your team focuses on conversations." <span class="tag-changed">changed</span></li>
+    <li><strong>Operations card:</strong> No changes needed. <span class="tag-kept">kept</span></li>
+    <li><strong>Website card:</strong> No changes needed. <span class="tag-kept">kept</span></li>
+    <li><strong>Bottom note:</strong> Kept as-is. <span class="tag-kept">kept</span></li>
+    <li><strong>Em dashes:</strong> Two removed (subtitle and Finance card). One removed from Recruiting card. Zero remain in this section. <span class="tag-changed">changed</span></li>
+  </ul>
+</div>
+</div>
+
+</body>
+</html>

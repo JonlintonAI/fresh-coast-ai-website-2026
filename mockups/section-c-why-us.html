@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section C: Why Fresh Coast AI — Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:#1a1a2e;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+.compare-header{text-align:center;padding:2.5rem 2rem 1.5rem;color:#fff}
+.compare-header h1{font-family:var(--serif);font-size:1.8rem;margin-bottom:.5rem;font-weight:400}
+.compare-header p{color:rgba(255,255,255,.5);font-size:.95rem;max-width:600px;margin:0 auto}
+.compare-labels{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1400px;margin:0 auto;padding:0 2rem}
+.compare-label{text-align:center;padding:.6rem 1rem;border-radius:8px 8px 0 0;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.compare-label.current{background:rgba(255,255,255,.08);color:rgba(255,255,255,.4)}
+.compare-label.proposed{background:rgba(43,122,158,.2);color:var(--wave)}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1400px;margin:0 auto;padding:0 2rem 3rem}
+.compare-side{border-radius:0 0 12px 12px;overflow:hidden;position:relative}
+.compare-side.current{opacity:.7;border:1px solid rgba(255,255,255,.08)}
+.compare-side.proposed{border:2px solid var(--wave);box-shadow:0 0 40px rgba(72,181,210,.15)}
+
+.changes-summary{max-width:1400px;margin:0 auto;padding:0 2rem 2rem}
+.changes-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.5rem 2rem;color:#fff}
+.changes-box h3{font-family:var(--serif);font-size:1.1rem;margin-bottom:.75rem;color:var(--wave)}
+.changes-box ul{list-style:none;padding:0}
+.changes-box li{padding:.4rem 0;font-size:.9rem;color:rgba(255,255,255,.7);display:flex;align-items:flex-start;gap:.5rem}
+.changes-box li::before{content:'→';color:var(--wave);font-weight:700;flex-shrink:0}
+.tag-changed{display:inline-block;font-size:.65rem;font-weight:700;background:rgba(232,200,122,.2);color:var(--sand);padding:.15rem .5rem;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;margin-left:.3rem;vertical-align:middle}
+.tag-kept{display:inline-block;font-size:.65rem;font-weight:700;background:rgba(100,200,100,.15);color:#88cc88;padding:.15rem .5rem;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;margin-left:.3rem;vertical-align:middle}
+.tag-removed{display:inline-block;font-size:.65rem;font-weight:700;background:rgba(255,100,100,.15);color:#ff8888;padding:.15rem .5rem;border-radius:4px;letter-spacing:.04em;text-transform:uppercase;margin-left:.3rem;vertical-align:middle}
+
+.highlight-change{position:relative}
+.highlight-change::after{content:'';position:absolute;inset:-4px;border:2px dashed var(--wave);border-radius:8px;pointer-events:none;opacity:.4}
+
+/* SECTION BASE */
+section{padding:5rem 2rem}
+.section-inner{max-width:var(--max-w);margin:0 auto}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--ink);line-height:1.2;margin-bottom:1rem}
+.section-subtitle{font-size:1.05rem;color:var(--steel);max-width:640px;font-weight:300;line-height:1.75}
+
+/* PHILOSOPHY / WHY US */
+.philosophy{background:var(--white)}
+.philosophy-header{text-align:center;margin-bottom:3.5rem}
+.philosophy-header .section-subtitle{margin:0 auto;text-align:center}
+.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem}
+.phil-card{padding:2.25rem 1.75rem;border-radius:16px;background:var(--cloud);border:1px solid var(--mist);transition:all .3s var(--ease);position:relative;overflow:hidden}
+.phil-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--lake);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.phil-card:hover::before{transform:scaleX(1)}
+.phil-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.phil-number{font-family:var(--serif);font-size:2.2rem;color:var(--lake);opacity:.3;line-height:1;margin-bottom:.85rem}
+.phil-card h3{font-size:1.1rem;font-weight:600;margin-bottom:.65rem}
+.phil-card p{font-size:.85rem;color:var(--steel);line-height:1.65}
+
+.phil-banner{grid-column:1/-1;display:flex;align-items:center;gap:1.75rem;padding:1.75rem 2.25rem;border-radius:16px;background:var(--cloud);border:1px solid var(--mist);transition:all .3s var(--ease);position:relative;overflow:hidden}
+.phil-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--lake);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.phil-banner:hover::before{transform:scaleX(1)}
+.phil-banner:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.phil-banner-icon{flex-shrink:0;width:44px;height:44px;border-radius:12px;background:rgba(43,122,158,.08);display:flex;align-items:center;justify-content:center}
+.phil-banner-icon svg{width:22px;height:22px;color:var(--lake)}
+.phil-banner h3{font-size:1.1rem;font-weight:600;margin-bottom:.3rem}
+.phil-banner p{font-size:.85rem;color:var(--steel);line-height:1.65;margin:0}
+
+.exit-banner{grid-column:1/-1;background:var(--ink);border-radius:16px;padding:1.75rem 2.25rem;display:flex;align-items:center;gap:1.75rem;margin-top:.5rem;position:relative;overflow:hidden}
+.exit-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 100% at 90% 50%,rgba(72,181,210,.12),transparent)}
+.exit-banner>*{position:relative;z-index:1}
+.exit-banner-icon{width:50px;height:50px;min-width:50px;border-radius:50%;background:rgba(72,181,210,.15);display:flex;align-items:center;justify-content:center}
+.exit-banner-icon svg{width:24px;height:24px;stroke:var(--wave);fill:none;stroke-width:2;stroke-linecap:round}
+.exit-banner h3{font-family:var(--serif);font-size:1.05rem;color:var(--white);margin-bottom:.25rem}
+.exit-banner p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.6;margin:0}
+
+@media(max-width:900px){
+  .compare-grid,.compare-labels{grid-template-columns:1fr}
+  .philosophy-grid{grid-template-columns:1fr}
+  .phil-banner,.exit-banner{flex-direction:column;text-align:center}
+}
+</style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+
+<div class="compare-header">
+  <h1>Section C: Why Fresh Coast AI</h1>
+  <p>Keep the branded title. Tighten copy, make cards benefit-oriented, fold exit banner into card 03.</p>
+</div>
+
+<div class="compare-labels">
+  <div class="compare-label current">Current</div>
+  <div class="compare-label proposed">Proposed</div>
+</div>
+
+<div class="compare-grid">
+
+<!-- CURRENT -->
+<div class="compare-side current">
+<section class="philosophy">
+<div class="section-inner">
+<div class="philosophy-header">
+  <div class="section-label">What Makes Us Different</div>
+  <h2 class="section-title">The Cultivate Philosophy</h2>
+  <p class="section-subtitle">Most AI consultants sell tools. We build capability. This philosophy is behind everything we do, and why our engagements stick.</p>
+</div>
+<div class="philosophy-grid">
+  <div class="phil-card"><div class="phil-number">01</div><h3>Listen First</h3><p>We start with your people's pain points and workflows, not tools. Understanding how your team actually works is the foundation everything else is built on.</p></div>
+  <div class="phil-card"><div class="phil-number">02</div><h3>Build Together</h3><p>We work alongside your team so every solution feels like theirs from day one. No black-box deliverables. Your people learn by doing.</p></div>
+  <div class="phil-card"><div class="phil-number">03</div><h3>Leave It Behind</h3><p>We build your capability and confidence, not a dependency. When we're done, your team runs it. That's the whole point.</p></div>
+  <div class="phil-banner"><div class="phil-banner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Show Up</h3><p>Midwest-based. In-person when it matters. We're not a remote-only agency on the coasts. We're in Milwaukee and we'll sit at your table.</p></div></div>
+  <div class="exit-banner"><div class="exit-banner-icon"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></div><div><h3>Every engagement is designed to end.</h3><p>We succeed when you don't need us anymore. Fixed scope, named deliverables, trained team, documented handoff. No recurring fees. No open-ended retainers. When we leave, your team runs it.</p></div></div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- PROPOSED -->
+<div class="compare-side proposed">
+<section class="philosophy">
+<div class="section-inner">
+<div class="philosophy-header">
+  <div class="section-label">What Makes Us Different</div>
+  <h2 class="section-title">The Cultivate Philosophy</h2>
+  <p class="section-subtitle highlight-change">We're not here to sell you software or lock you into a retainer. We build your team's AI capability, then get out of the way.</p>
+</div>
+<div class="philosophy-grid">
+  <div class="phil-card highlight-change"><div class="phil-number">01</div><h3>We start with your people, not the tools</h3><p>Before we recommend anything, we shadow your workflows and talk to your team. The right AI solution depends on how your business actually operates today.</p></div>
+  <div class="phil-card highlight-change"><div class="phil-number">02</div><h3>We build it with you, not for you</h3><p>Your team helps build every solution so they understand it from day one. No black-box deliverables. No handoff that nobody can maintain.</p></div>
+  <div class="phil-card highlight-change"><div class="phil-number">03</div><h3>We're designed to leave</h3><p>Fixed scope. Named deliverables. Trained team. Documented handoff. We succeed when you don't need us anymore.</p></div>
+  <div class="phil-banner"><div class="phil-banner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3 class="highlight-change">Midwest-based. We show up.</h3><p class="highlight-change">We're in Milwaukee and we'll sit at your table. Not a remote-only agency on the coasts. When it matters, we're there in person.</p></div></div>
+</div>
+</div>
+</section>
+</div>
+
+</div>
+
+<!-- Changes summary -->
+<div class="changes-summary">
+<div class="changes-box">
+  <h3>What changed & why</h3>
+  <ul>
+    <li><strong>Section title:</strong> Kept "The Cultivate Philosophy." It's distinctive, memorable, and the word "cultivate" reinforces the grow-capability positioning. The subtitle does the explaining. <span class="tag-kept">kept</span></li>
+    <li><strong>Subtitle:</strong> Tightened. Replaced abstract "philosophy is behind everything we do" with direct commercial language: "build your team's AI capability, then get out of the way." <span class="tag-changed">changed</span></li>
+    <li><strong>Card titles:</strong> Converted from abstract labels ("Listen First," "Build Together," "Leave It Behind") to benefit-oriented statements that communicate the value immediately ("We start with your people, not the tools"). <span class="tag-changed">changed</span></li>
+    <li><strong>Card copy:</strong> Tightened to be more concrete and outcome-oriented. Card 3 now absorbs the key line from the old exit banner ("Fixed scope. Named deliverables.") <span class="tag-changed">changed</span></li>
+    <li><strong>"Show Up" banner:</strong> Title changed to "Midwest-based. We show up." More direct. Copy reordered to lead with the Milwaukee detail. <span class="tag-changed">changed</span></li>
+    <li><strong>Exit banner:</strong> Removed. Its best content ("Fixed scope. Named deliverables. Trained team.") is now in card 03. The dark banner was visually strong but redundant once card 03 carries that message. <span class="tag-removed">removed</span></li>
+  </ul>
+</div>
+</div>
+
+</body>
+</html>

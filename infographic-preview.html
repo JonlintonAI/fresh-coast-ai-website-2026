@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infographic Preview — Fresh Coast AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px;font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:#f0f0f0;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* Preview chrome */
+.preview-nav{position:sticky;top:0;z-index:100;background:var(--ink);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.preview-nav h1{font-family:var(--sans);font-size:1rem;color:var(--white);font-weight:500}
+.preview-nav span{font-size:.8rem;color:rgba(255,255,255,.4)}
+.preview-badge{display:inline-block;padding:.25rem .75rem;border-radius:100px;background:var(--wave);color:var(--ink);font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+
+.preview-section{max-width:1200px;margin:3rem auto;background:var(--white);border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);overflow:hidden}
+.preview-label{background:var(--ink);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.preview-label h2{font-family:var(--sans);font-size:1rem;color:var(--white);font-weight:500}
+.preview-label .page-tag{font-size:.7rem;padding:.2rem .6rem;border-radius:100px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.6)}
+.preview-content{padding:3rem 2rem}
+
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.2;margin-bottom:1rem}
+.section-subtitle{font-size:1.15rem;color:var(--steel);max-width:640px;font-weight:300;line-height:1.75}
+
+/* ========================================
+   INFOGRAPHIC 1: Journey (Assess. Build. Own.)
+   ======================================== */
+.journey-header{text-align:center;margin-bottom:3rem}
+.journey-header .section-subtitle{margin:0 auto;text-align:center}
+
+.journey-info{max-width:960px;margin:0 auto;position:relative}
+.journey-info-track{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.journey-info-track::before{content:'';position:absolute;top:48px;left:calc(16.66% + 28px);right:calc(16.66% + 28px);height:3px;background:linear-gradient(90deg,var(--lake),var(--lake-deep),var(--wave));border-radius:2px;z-index:1}
+.ji-step{text-align:center;padding:0 1rem;position:relative}
+.ji-marker{width:96px;height:96px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.25rem;position:relative;z-index:2;transition:transform .3s var(--ease)}
+.ji-step:hover .ji-marker{transform:scale(1.08)}
+.ji-marker-1{background:var(--lake);box-shadow:0 6px 24px rgba(43,122,158,.3)}
+.ji-marker-2{background:var(--lake-deep);box-shadow:0 6px 24px rgba(29,95,126,.3)}
+.ji-marker-3{background:var(--wave);box-shadow:0 6px 24px rgba(72,181,210,.3)}
+.ji-marker svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.ji-marker .ji-weeks{font-size:.6rem;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.05em;margin-top:.2rem}
+.ji-phase{font-family:var(--serif);font-size:1.3rem;color:var(--ink);margin-bottom:.35rem}
+.ji-desc{font-size:.88rem;color:var(--steel);line-height:1.55;max-width:260px;margin:0 auto .75rem}
+.ji-outcome{display:inline-flex;align-items:center;gap:.4rem;background:rgba(43,122,158,.07);border:1px solid rgba(43,122,158,.12);border-radius:100px;padding:.35rem .9rem;font-size:.75rem;color:var(--lake);font-weight:500}
+.ji-outcome svg{width:14px;height:14px;stroke:var(--lake);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0}
+.ji-deliverables{display:flex;flex-wrap:wrap;justify-content:center;gap:.35rem;margin-top:.6rem}
+.ji-del{font-size:.68rem;padding:.2rem .6rem;border-radius:100px;background:var(--white);color:var(--steel);border:1px solid var(--mist);font-weight:500}
+@media(max-width:900px){.journey-info-track{grid-template-columns:1fr;gap:2.5rem;max-width:340px;margin:0 auto}.journey-info-track::before{display:none}.ji-marker{width:80px;height:80px}.ji-marker svg{width:24px;height:24px}}
+
+
+/* ========================================
+   INFOGRAPHIC 2: Workflow Before/After
+   ======================================== */
+.results-section-preview{background:var(--ink);color:var(--white);padding:4.5rem 2rem;position:relative;overflow:hidden;border-radius:0 0 16px 16px}
+.results-section-preview::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(43,122,158,.2),transparent)}
+.results-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1}
+.results-header{text-align:center;margin-bottom:3rem}
+.results-header .section-label{color:var(--wave)}
+.results-header h2{font-family:var(--serif);font-size:2rem;color:var(--white);line-height:1.3;margin-bottom:.75rem}
+.results-header p{font-size:1rem;color:rgba(255,255,255,.55);max-width:560px;margin:0 auto;line-height:1.6}
+
+.wf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-bottom:2.5rem}
+.wf-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.5rem;transition:all .25s}
+.wf-card:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12);transform:translateY(-2px)}
+.wf-card-header{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.wf-card-header svg{width:20px;height:20px;stroke:var(--wave);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.wf-card-header h4{font-size:.9rem;font-weight:500;color:var(--white);line-height:1.3;flex:1}
+.wf-card-header .industry-tag{display:inline-block;font-size:.6rem;padding:.15rem .5rem;border-radius:100px;background:rgba(72,181,210,.15);color:var(--wave);font-weight:500;letter-spacing:.03em;white-space:nowrap}
+.wf-ba{display:flex;flex-direction:column;gap:.5rem}
+.wf-row{display:flex;align-items:flex-start;gap:.6rem;font-size:.82rem;line-height:1.45}
+.wf-label{font-weight:600;letter-spacing:.03em;text-transform:uppercase;font-size:.6rem;min-width:46px;padding:.2rem 0;flex-shrink:0;margin-top:.1rem}
+.wf-label-before{color:rgba(255,255,255,.35)}
+.wf-label-after{color:var(--wave)}
+.wf-text-before{color:rgba(255,255,255,.4);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.15)}
+.wf-text-after{color:rgba(255,255,255,.85)}
+.wf-arrow{display:flex;align-items:center;justify-content:center;margin:.15rem 0 .15rem 16px}
+.wf-arrow svg{width:16px;height:16px;stroke:var(--wave);fill:none;stroke-width:2;stroke-linecap:round;opacity:.5}
+.results-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.results-bottom p{font-size:.95rem;color:rgba(255,255,255,.5);line-height:1.6;max-width:600px;margin:0 auto}
+.results-bottom strong{color:rgba(255,255,255,.8)}
+@media(max-width:900px){.wf-grid{grid-template-columns:1fr}}
+
+
+/* ========================================
+   INFOGRAPHIC 3: First Week Timeline
+   ======================================== */
+.first-week-preview{background:var(--cloud);padding:3rem 2rem;border-radius:0 0 16px 16px}
+
+.fw-timeline{margin-top:2.5rem;position:relative;display:flex;gap:0;max-width:960px;margin-left:auto;margin-right:auto}
+.fw-step{flex:1;position:relative;text-align:center;padding:0 .5rem}
+.fw-step::before{content:'';position:absolute;top:20px;left:0;right:0;height:3px;background:var(--mist);z-index:0}
+.fw-step:first-child::before{left:50%}
+.fw-step:last-child::before{right:50%}
+.fw-dot{width:40px;height:40px;border-radius:50%;margin:0 auto 1rem;position:relative;z-index:2;display:flex;align-items:center;justify-content:center;transition:transform .3s var(--ease)}
+.fw-step:hover .fw-dot{transform:scale(1.15)}
+.fw-dot-1{background:var(--lake);box-shadow:0 3px 12px rgba(43,122,158,.3)}
+.fw-dot-2{background:var(--lake);box-shadow:0 3px 12px rgba(43,122,158,.25)}
+.fw-dot-3{background:var(--lake-deep);box-shadow:0 3px 12px rgba(29,95,126,.25)}
+.fw-dot-4{background:var(--wave);box-shadow:0 3px 12px rgba(72,181,210,.25)}
+.fw-dot-5{background:var(--cloud);border:2px solid var(--lake);box-shadow:0 3px 12px rgba(43,122,158,.15)}
+.fw-dot svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.fw-dot-5 svg{stroke:var(--lake)}
+.fw-day{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:.35rem}
+.fw-title{font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:.3rem;line-height:1.3}
+.fw-desc{font-size:.78rem;color:var(--steel);line-height:1.5}
+@media(max-width:900px){.fw-timeline{flex-direction:column;gap:1.5rem;max-width:360px}.fw-step{display:grid;grid-template-columns:40px 1fr;gap:.75rem;text-align:left;padding:0}.fw-step::before{display:none}.fw-dot{margin:0}.fw-day,.fw-title,.fw-desc{text-align:left}}
+
+.week-note{margin-top:2rem;text-align:center;font-size:.95rem;color:var(--steel);font-style:italic}
+
+/* Footer */
+.preview-footer{text-align:center;padding:3rem 2rem;color:#999;font-size:.85rem}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<!-- Preview Nav -->
+<div class="preview-nav">
+<h1>Fresh Coast AI — Infographic Preview</h1>
+<div style="display:flex;align-items:center;gap:1rem">
+<span>Review before deploying</span>
+<span class="preview-badge">Draft</span>
+</div>
+</div>
+
+<!-- ============================================
+     INFOGRAPHIC 1: Assess. Build. Own. Journey
+     (Homepage — replaces old text-heavy 3-card layout)
+     ============================================ -->
+<div class="preview-section">
+<div class="preview-label">
+<h2>1. "Assess. Build. Own." Journey</h2>
+<span class="page-tag">Homepage</span>
+</div>
+<div class="preview-content" style="background:var(--cloud)">
+<div class="journey-header">
+<div class="section-label">How We Work</div>
+<h2 class="section-title">Assess. Build. Own.</h2>
+<p class="section-subtitle" style="margin:0 auto;text-align:center">A clear path from "where do we start?" to "we run this ourselves." Most clients see their first working AI workflow within 4 weeks.</p>
+</div>
+
+<div class="journey-info">
+<div class="journey-info-track">
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-1"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><span class="ji-weeks">WEEKS 1–3</span></div>
+<div class="ji-phase">Assess</div>
+<div class="ji-desc">We shadow your team, map workflows, and find the 3–5 spots where AI makes the biggest difference.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>6-hr bids → 10 minutes</div>
+<div class="ji-deliverables"><span class="ji-del">AI Readiness Report</span><span class="ji-del">Strategic Roadmap</span></div>
+</div>
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-2"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><span class="ji-weeks">WEEKS 3–8</span></div>
+<div class="ji-phase">Build</div>
+<div class="ji-desc">We build AI into your actual tools — not a demo. Your team helps build it so they understand it from day one.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Friday reports → automated</div>
+<div class="ji-deliverables"><span class="ji-del">Implementation Blueprint</span><span class="ji-del">Change Management</span></div>
+</div>
+
+<div class="ji-step">
+<div class="ji-marker ji-marker-3"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span class="ji-weeks">ONGOING</span></div>
+<div class="ji-phase">Own</div>
+<div class="ji-desc">Your team runs it independently. We train, document, and hand off. No retainer required.</div>
+<div class="ji-outcome"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>3 more departments on their own</div>
+<div class="ji-deliverables"><span class="ji-del">AI Capability Playbook</span><span class="ji-del">Governance Framework</span></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- ============================================
+     INFOGRAPHIC 2: AI-Ready Workflows Before/After
+     (Homepage — replaces paragraph-heavy result cards)
+     ============================================ -->
+<div class="preview-section">
+<div class="preview-label">
+<h2>2. "AI-Ready Workflows" Before/After</h2>
+<span class="page-tag">Homepage</span>
+</div>
+<div class="results-section-preview">
+<div class="results-inner">
+<div class="results-header"><div class="section-label">AI-Ready Workflows</div><h2>Sound familiar?</h2><p>The repetitive, manual work that's costing your team time every week — transformed.</p></div>
+<div class="wf-grid">
+
+<div class="wf-card">
+<div class="wf-card-header"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg><h4>Invoice processing &amp; expense coding</h4><span class="industry-tag">Finance</span></div>
+<div class="wf-ba">
+<div class="wf-row"><span class="wf-label wf-label-before">Before</span><span class="wf-text-before">Manual review, categorization, and routing for every invoice</span></div>
+<div class="wf-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wf-row"><span class="wf-label wf-label-after">After</span><span class="wf-text-after">AI categorizes and routes automatically — your team just approves exceptions</span></div>
+</div></div>
+
+<div class="wf-card">
+<div class="wf-card-header"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg><h4>Onboarding prep</h4><span class="industry-tag">HR</span></div>
+<div class="wf-ba">
+<div class="wf-row"><span class="wf-label wf-label-before">Before</span><span class="wf-text-before">Weeks assembling role-specific docs from scattered SOPs and policies</span></div>
+<div class="wf-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wf-row"><span class="wf-label wf-label-after">After</span><span class="wf-text-after">AI generates customized onboarding packages from your knowledge base in hours</span></div>
+</div></div>
+
+<div class="wf-card">
+<div class="wf-card-header"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><h4>Resume screening &amp; candidate matching</h4><span class="industry-tag">Recruiting</span></div>
+<div class="wf-ba">
+<div class="wf-row"><span class="wf-label wf-label-before">Before</span><span class="wf-text-before">Reading every application, manually comparing qualifications to requirements</span></div>
+<div class="wf-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wf-row"><span class="wf-label wf-label-after">After</span><span class="wf-text-after">AI pre-screens and ranks candidates — your team focuses on conversations</span></div>
+</div></div>
+
+<div class="wf-card">
+<div class="wf-card-header"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><h4>Process documentation</h4><span class="industry-tag">Operations</span></div>
+<div class="wf-ba">
+<div class="wf-row"><span class="wf-label wf-label-before">Before</span><span class="wf-text-before">SOPs always months behind actual practice, revised manually</span></div>
+<div class="wf-arrow"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
+<div class="wf-row"><span class="wf-label wf-label-after">After</span><span class="wf-text-after">AI tracks changes, flags outdated steps, and drafts revisions automatically</span></div>
+</div></div>
+
+</div>
+<div class="results-bottom"><p>These are starting points. <strong>We find the workflows that matter most for your business.</strong></p></div>
+</div>
+</div>
+</div>
+
+
+<!-- ============================================
+     INFOGRAPHIC 3: Your First Week Timeline
+     (How We Work page — replaces old equal-weight card grid)
+     ============================================ -->
+<div class="preview-section">
+<div class="preview-label">
+<h2>3. "Your First Week" Timeline</h2>
+<span class="page-tag">How We Work</span>
+</div>
+<div class="preview-content first-week-preview">
+<div class="section-label">What to Expect</div>
+<h2 class="section-title">Your first week with us.</h2>
+<p class="section-subtitle">Most clients start with the $1,000 AI Strategy Session. Here's what that first week actually looks like.</p>
+
+<div class="fw-timeline">
+
+<div class="fw-step">
+<div class="fw-dot fw-dot-1"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+<div><div class="fw-day">Day 1</div>
+<div class="fw-title">Kickoff Call</div>
+<div class="fw-desc">60-min conversation about your business, goals, and where AI might fit.</div></div>
+</div>
+
+<div class="fw-step">
+<div class="fw-dot fw-dot-2"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+<div><div class="fw-day">Days 2–3</div>
+<div class="fw-title">Operations Research</div>
+<div class="fw-desc">We dig into your workflows, tools, and pain points firsthand.</div></div>
+</div>
+
+<div class="fw-step">
+<div class="fw-dot fw-dot-3"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+<div><div class="fw-day">Day 4</div>
+<div class="fw-title">Opportunity Mapping</div>
+<div class="fw-desc">Where AI fits, what's realistic, and what the quick wins are.</div></div>
+</div>
+
+<div class="fw-step">
+<div class="fw-dot fw-dot-4"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+<div><div class="fw-day">Day 5</div>
+<div class="fw-title">Brief Delivery</div>
+<div class="fw-desc">Your AI Opportunity Brief with top opportunities and a path forward.</div></div>
+</div>
+
+<div class="fw-step">
+<div class="fw-dot fw-dot-5"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+<div><div class="fw-day">After</div>
+<div class="fw-title">Your Call</div>
+<div class="fw-desc">The brief is yours to keep. $1,000 credits toward a full assessment if you continue.</div></div>
+</div>
+
+</div>
+<p class="week-note">By Friday, you'll have clarity on where AI fits your business. Not a pitch deck, a real plan.</p>
+</div>
+</div>
+
+<div class="preview-footer">
+<p>This is a preview file — not deployed to the live site. Review and provide feedback before pushing.</p>
+</div>
+
+</body>
+</html>

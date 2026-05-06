@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV8X9234S6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EV8X9234S6');gtag('config','AW-18008252065');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Is Your Business Ready for AI? | Fresh Coast AI</title>
+    <meta name="description" content="Assess your AI readiness across 7 dimensions: leadership, people, data, process, governance, security, and vendor ecosystem.">
+    <link rel="canonical" href="https://freshcoast.ai/blog/how-to-know-if-your-business-is-ready-for-ai.html">
+    <link rel="icon" type="image/png" href="../favicon.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="How to Know If Your Business Is Ready for AI: 7 Dimensions to Assess | Fresh Coast AI">
+    <meta property="og:description" content="Not sure if your business is ready for AI? Assess yourself across 7 dimensions — leadership, people, data, process, governance, security, and vendor ecosystem — with our simple framework.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://freshcoast.ai/blog/how-to-know-if-your-business-is-ready-for-ai.html">
+    <meta property="og:image" content="https://freshcoast.ai/og-image.png">
+    <meta property="article:published_time" content="2026-02-10">
+    <meta property="article:author" content="Jon Linton">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Know If Your Business Is Ready for AI: 7 Dimensions to Assess",
+        "description": "Not sure if your business is ready for AI? Assess yourself across 7 dimensions — leadership, people, data, process, governance, security, and vendor ecosystem — with our simple framework.",
+        "author": {
+            "@type": "Person",
+            "name": "Jon Linton"
+        },
+        "datePublished": "2026-02-10",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Fresh Coast AI"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "If we score under 14, should we just wait forever?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Use it as a starting point for improvement. Maybe it's documentation. Maybe it's leadership alignment. Maybe it's security policies. Maybe it's finding one person on your team who's interested in exploring this. You don't have to wait for perfection. But work on the foundation strategically."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does our team really need to be trained on AI if we hire an AI consultant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, eventually. A consultant can implement tools for you, but if your team doesn't understand how to use them or why they matter, it won't stick. The best implementations have both: expert help getting started, and team involvement from the beginning."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if our leadership team can't agree on priorities at all?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "That's actually the more important problem to solve first. AI isn't going to save a company with misaligned leadership. Address that first. Everything else depends on it."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should we wait for AI technology to get better before we start?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI is already good enough for most business problems right now. The companies waiting for \"better\" technology are usually the ones not ready for other reasons—they just don't want to admit it yet."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://freshcoast.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://freshcoast.ai/blog/"},{"@type":"ListItem","position":3,"name":"Is Your Business Ready for AI?"}]}
+    </script>
+
+
+    <style>
+        :root {
+            --ink: #0B1A2B;
+            --slate: #1B2D42;
+            --steel: #3A506B;
+            --mist: #E8EDF2;
+            --cloud: #F4F6F8;
+            --white: #FFF;
+            --lake: #2B7A9E;
+            --lake-deep: #1D5F7E;
+            --lake-light: #3A9BC5;
+            --wave: #48B5D2;
+            --sand: #E8C87A;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'Outfit', -apple-system, sans-serif;
+            --max-w: 1140px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--white);
+            color: var(--steel);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            background: rgba(11, 26, 43, 1);
+            box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-logo img {
+            height: 70px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex: 1;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--lake-light);
+        }
+        .nav-links a.active {
+            color: var(--white);
+            position: relative;
+        }
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--wave);
+            border-radius: 1px;
+        }
+
+
+        .nav-links a.active {
+            color: var(--lake-light);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            background: var(--lake) !important;
+            color: var(--white) !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .nav-cta:hover {
+            background: var(--lake-deep) !important;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--white);
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--ink);
+            padding: 8rem 2rem 5rem;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            color: var(--mist);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .breadcrumb a {
+            color: var(--lake-light);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: 2.8rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-meta {
+            color: var(--mist);
+            font-size: 0.95rem;
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--lake);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Content */
+        .article-content h2 {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--ink);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content p {
+            font-size: 1.05rem;
+            color: var(--steel);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content a {
+            color: var(--lake);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--lake);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--steel);
+            margin: 2rem 0;
+        }
+
+        .article-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: var(--steel);
+            line-height: 1.8;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        /* HR */
+        hr {
+            border: none;
+            height: 1px;
+            background: var(--mist);
+            margin: 3rem 0;
+        }
+
+        /* Author Bio */
+        .author-bio {
+            background: var(--cloud);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .author-bio-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .author-bio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-bio h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .author-bio p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            margin: 3rem 0;
+        }
+
+        .faq-section h2 {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--mist);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--cloud);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--ink);
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--mist);
+        }
+
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1.5rem;
+            background: var(--white);
+            border-top: 1px solid var(--mist);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--steel);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--lake);
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-section h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--lake);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Related Posts */
+        .related-posts {
+            margin: 4rem 0;
+        }
+
+        .related-posts h3 {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .related-post-card {
+            background: var(--cloud);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .related-post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-post-card h4 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .related-post-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: var(--steel);
+        }
+
+        .related-post-link {
+            color: var(--lake);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .related-post-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--ink);
+            color: var(--white);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+
+        .footer-contact {
+            margin-bottom: 2rem;
+        }
+
+        .footer-contact-label {
+            font-size: 0.9rem;
+            color: var(--mist);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-contact a {
+            color: var(--lake-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+
+        .nav-logo img {
+            height: 36px;
+            width: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-link {
+            color: var(--mist);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-link:hover {
+            color: var(--lake-light);
+        }
+
+        .footer-copy {
+            color: var(--mist);
+            font-size: 0.85rem;
+            text-align: right;
+            flex: 1;
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--slate);
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem;
+            }
+
+            .nav-links a {
+                padding: 1rem;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .related-posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-row {
+                flex-direction: column;
+            }
+
+            .footer-copy {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 5rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .article-container {
+                padding: 2rem 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-content p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">
+                <img src="../FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../about.html">About</a>
+                <a href="../how-we-work.html">How We Work</a>
+                <a href="../services.html">Services</a>
+                <a href="../blog/index.html" class="active">Blog</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../contact.html" class="nav-cta">Book a Free Call</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> > <a href="../blog/index.html">Blog</a> > How to Know If Your Business Is Ready for AI
+        </div>
+        <h1>How to Know If Your Business <em>Is Ready for AI.</em></h1>
+        <div class="hero-meta">By Jon Linton • February 10, 2026</div>
+    </section>
+
+    <!-- Article -->
+    <div class="article-container">
+        <a href="../blog/index.html" class="back-link">← Back to all posts</a>
+
+        <article class="article-content">
+            <p><strong>TL;DR:</strong> Most businesses aren't ready for AI yet—and that's fine. It's not about having the right technology; it's about having alignment on why you need it, clear processes to improve, accessible data, people who are ready for change, governance to manage risk, security practices to protect what matters, and a clear picture of your vendor landscape. This post walks through the seven dimensions of readiness and helps you honestly assess where you stand.</p>
+
+            <hr>
+
+            <h2>The Pressure Is Real, But "Ready" Doesn't Mean What You Think</h2>
+            <p>I get it. You're scrolling through LinkedIn, reading about some competitor's AI initiative, and you're thinking, "We need to do something." Your board is asking questions. Your team is watching what other companies are doing. And somewhere in your head, a voice is saying, "If we don't move on this, we're going to get left behind."</p>
+
+            <p>I've been in change management and AI consulting for 13 years, and I've sat across from hundreds of business leaders in the Midwest having this exact conversation. Here's what I've learned: the companies that actually win with AI aren't the ones that moved fastest. They're the ones that moved smart.</p>
+
+            <p>"Ready" doesn't mean you need a Chief AI Officer or a seven-figure budget. But it does mean something specific, and most readiness assessments miss it entirely.</p>
+
+            <hr>
+
+            <h2>The Seven Dimensions of AI Readiness</h2>
+            <p>When people talk about AI readiness, they usually check one box: "Do we have decent data?" or "Do we have a big enough IT budget?" That's why so many AI projects fizzle. They're missing the complete picture.</p>
+
+            <p>Here are the seven dimensions that actually matter.</p>
+
+            <h3>1. Leadership & Strategy</h3>
+            <p>Before you implement anything, your leadership team needs to agree on <strong>why</strong> you're exploring AI. Not "why" in the abstract sense—literally, what business problem are you trying to solve?</p>
+
+            <p>If your executive team can't finish this sentence together, you're not ready for implementation. You're ready for a conversation: "AI could help us with [specific problem] by [specific outcome]."</p>
+
+            <p>I've seen companies spend months building AI pilots for the wrong reason—because the CEO was excited about the technology, but nobody asked whether the problem was actually worth solving. That's not an AI problem. That's a leadership problem.</p>
+
+            <p>Before you talk to any vendors or consultants, get your leadership team in a room and make sure you're solving for the same thing. That alignment is worth more than any fancy technology.</p>
+
+            <h3>2. People & Culture</h3>
+            <p>Let's be honest: If your team is already drowning, adding AI training to their plate will feel like punishment.</p>
+
+            <p>Adopting something new requires time and mental space. It requires people to learn, experiment, probably make some mistakes, and figure out how to do their jobs differently. If they're already at max capacity, that's not going to happen well. Before you move forward, think honestly about whether your team has the bandwidth to learn.</p>
+
+            <p>But capacity is only half of it. Has your organization successfully adopted new technology before? I don't mean "Do you use software?" I mean, when you've rolled out something new—a new system, a new process, new tools—did it actually land? Or is the last software implementation still a sore subject?</p>
+
+            <p>Culture matters more than people think. If your team is change-fatigued, or if there's a history of initiatives that didn't work out, you're starting from a trust deficit. AI will feel like another thing management is throwing at them. That doesn't mean you can't move forward. It means you need to acknowledge it, learn from what didn't work before, and probably involve your team earlier in the process.</p>
+
+            <h3>3. Data & Infrastructure</h3>
+            <p>I want to be really clear about this one: You don't need perfect data. You don't need a data lake. You don't need a Chief Data Officer.</p>
+
+            <p>You need accessible data.</p>
+
+            <p>Can you actually get to the information that an AI tool would need? Is it in one system, or is it scattered across twelve spreadsheets, three different databases, and someone's email? If it's scattered, that's a data accessibility problem.</p>
+
+            <p>The good news? That's usually fixable. And it doesn't require perfection. A lot of the best AI use cases—document drafting, meeting summaries, knowledge management—don't need clean, structured data. They work fine with messy information as long as you can actually find it. Your current tech stack matters too: can it support new tools without a major overhaul, or are you running systems from 2008 that don't talk to each other?</p>
+
+            <h3>4. Processes & Workflows</h3>
+            <p>Here's a tough question: Can you explain how your core workflows actually happen?</p>
+
+            <p>AI can improve a process, but it can't improve a process nobody understands. If the answer to "How does this get done?" is "Ask Janet—she's been here fifteen years and she just knows," then you've got a documentation problem, not an AI problem.</p>
+
+            <p>Before you can automate something or get AI to help optimize it, you need to understand it well enough to describe it. That means documented workflows, even if the documentation is just a few pages someone wrote last month. And you should be able to point to the repetitive, time-consuming tasks that follow predictable patterns—those are your best AI candidates.</p>
+
+            <p>If your processes are all in people's heads, that's your first project. Not AI. Documentation.</p>
+
+            <h3>5. Governance & Risk</h3>
+            <p>This one sounds corporate, but it's actually about something simple: Do you have rules for how your team uses new technology?</p>
+
+            <p>AI tools can generate content, make recommendations, and process sensitive information. If someone on your team starts using ChatGPT to draft client proposals, who reviews the output? What happens if the AI hallucinates a fact that ends up in a deliverable? What's your policy on feeding proprietary data into third-party AI tools?</p>
+
+            <p>You don't need a 200-page compliance manual. But you do need to understand the basic risks—data privacy, accuracy, bias—well enough to have an informed conversation about them. And you need policies, even simple ones, that give your team guardrails so they can experiment without creating liability.</p>
+
+            <p>Companies that skip governance don't move faster. They just create problems they have to clean up later.</p>
+
+            <h3>6. Security & Compliance</h3>
+            <p>This is related to governance but distinct enough to matter on its own. It's about the nuts and bolts: How is your sensitive data stored, accessed, and shared?</p>
+
+            <p>AI tools often need access to company data to be useful. Client records, financial information, internal communications—the more context an AI tool has, the better it performs. But that creates real risk if you don't have clear guidelines for who can access what, where data goes, and what happens if something goes wrong.</p>
+
+            <p>Here's a good litmus test: Could you explain your data security practices to a client or auditor with reasonable confidence? If the answer is yes, you're in decent shape. If the answer is "We should probably figure that out," then that's work worth doing before you start piping company data into AI systems.</p>
+
+            <p>This doesn't have to be expensive or complicated. It just has to exist.</p>
+
+            <h3>7. Vendor & Tool Ecosystem</h3>
+            <p>Finally, take a hard look at your current tool landscape. Do you have a clear picture of what you're already using and what each tool costs you?</p>
+
+            <p>Most mid-sized businesses I work with have accumulated tools over the years—some chosen strategically, some because someone's cousin recommended them, some because they were bundled with something else. Before you add AI tools to the mix, you should understand what you've got.</p>
+
+            <p>The companies that get the most value from AI aren't the ones buying the shiniest new tool. They're the ones who evaluate purchases based on how well they integrate with existing systems. AI that sits in isolation—that doesn't connect to your CRM, your project management tool, your document systems—creates more work, not less.</p>
+
+            <p>A quick inventory of your current tools, their costs, and how they connect to each other will save you from buying something that doesn't fit.</p>
+
+            <hr>
+
+            <h2>Red Flags: When You Should Actually Wait</h2>
+            <p>Let me say something that sounds strange coming from an AI consultant: Sometimes "not yet" is the right answer.</p>
+
+            <p>You should probably wait if:</p>
+
+            <ul>
+                <li><strong>Your team just went through major change.</strong> Merger, reorganization, new system rollout, leadership transition—something significant happened in the last six months. Let that settle. Give people time to breathe.</li>
+                <li><strong>Leadership doesn't agree on basic business priorities.</strong> If your executives can't align on the company's main goals, you're not going to align on AI strategy. That's foundational work.</li>
+                <li><strong>You're hoping AI will fix a fundamentally broken process.</strong> If a process is broken now, it'll be a broken process, just faster and automated. AI amplifies—it doesn't fix broken foundations.</li>
+                <li><strong>You just had a failed technology implementation.</strong> You need to rebuild trust and learn what went wrong before you add something new. That's not weak. That's smart.</li>
+            </ul>
+
+            <p>Waiting isn't failure. It's strategy. The companies that struggle most are the ones that pushed forward when the foundation wasn't there.</p>
+
+            <hr>
+
+            <h2>Green Lights Most Businesses Overlook</h2>
+            <p>On the flip side, here are some signals that suggest you're more ready than you think:</p>
+
+            <ul>
+                <li><strong>Your team constantly complains about the same repetitive tasks.</strong> "Every week, someone spends two days just formatting reports." "We keep answering the same customer questions." That's a real problem AI can help with. If your team sees it, that's good.</li>
+                <li><strong>You have "good enough" data, even if it's messy.</strong> You don't need perfection. You need data that exists and you can access. That's usually enough to start.</li>
+                <li><strong>One or two people on your team are already experimenting with ChatGPT.</strong> If people are already curious and trying things, that's a cultural signal that you're more ready than you think. Channel that curiosity.</li>
+                <li><strong>You've successfully adopted new tools before.</strong> Even simple ones. If people remember that new thing being helpful, that builds confidence for the next new thing.</li>
+            </ul>
+
+            <hr>
+
+            <h2>The "Good Enough Data" Myth</h2>
+            <p>I want to spend a moment on this because I see it hold companies back.</p>
+
+            <p>A lot of business leaders think, "We can't do AI because our data isn't clean enough." So they wait. They build data lakes. They spend money on data management projects. And they keep waiting.</p>
+
+            <p>Here's the thing: Many of the best use cases for AI in mid-sized businesses don't require pristine, structured data. Document generation doesn't care if your data is messy—it's working with language. Meeting summaries don't require a perfect database. Knowledge management systems work fine with rough, unstructured information.</p>
+
+            <p>Yes, if you're building predictive models or doing serious analytics, clean data matters. But most companies starting with AI aren't there yet. They're starting with use cases that can work with accessible, imperfect data.</p>
+
+            <p>Don't let "perfect data" become an excuse for "never starting."</p>
+
+            <hr>
+
+            <h2>How to Score Yourself: A Simple Framework</h2>
+            <p>Here's something you can do right now:</p>
+
+            <p>Rate your organization on each of these seven dimensions on a scale of 1 to 5:</p>
+
+            <ol style="margin-left: 1.5rem; margin-bottom: 1.25rem;">
+                <li><strong>Leadership & Strategy</strong>: Does your executive team agree on what problem you're solving with AI?</li>
+                <li><strong>People & Culture</strong>: Does your team have bandwidth to learn, and has your organization handled change well before?</li>
+                <li><strong>Data & Infrastructure</strong>: Can you get to the data you need, and can your tech stack support new tools?</li>
+                <li><strong>Processes & Workflows</strong>: Are your core workflows documented enough that someone else could understand them?</li>
+                <li><strong>Governance & Risk</strong>: Do you have policies for how employees use new technology and handle sensitive data?</li>
+                <li><strong>Security & Compliance</strong>: Do you have clear guidelines for how sensitive data is stored, accessed, and shared?</li>
+                <li><strong>Vendor & Tool Ecosystem</strong>: Do you know what tools you're using, what they cost, and how they connect?</li>
+            </ol>
+
+            <p>Add those numbers up.</p>
+
+            <ul>
+                <li><strong>21 or higher</strong>: You're probably ready to start. Pick a specific problem and run a small pilot.</li>
+                <li><strong>14 to 21</strong>: You're close, but there's foundational work to do. Focus on the lowest-scoring dimensions.</li>
+                <li><strong>Under 14</strong>: There's work ahead, and that's okay. You're not ready for an implementation, but you might be ready for a conversation with someone who can help you get there.</li>
+            </ul>
+
+            <p>This isn't a perfect science, but it's a useful reality check.</p>
+
+            <p>(Full disclosure: At Fresh Coast AI, we offer a more detailed version of this assessment for free. Check out our <a href="../assessment.html">AI readiness assessment</a> if you want to dig deeper. But this simple scoring will tell you a lot.)</p>
+
+            <hr>
+        </article>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>If we score under 14, should we just wait forever?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    No. Use it as a starting point for improvement. Maybe it's documentation. Maybe it's leadership alignment. Maybe it's security policies. Maybe it's finding one person on your team who's interested in exploring this. You don't have to wait for perfection. But work on the foundation strategically.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Does our team really need to be trained on AI if we hire an AI consultant?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, eventually. A consultant can implement tools for you, but if your team doesn't understand how to use them or why they matter, it won't stick. The best implementations have both: expert help getting started, and team involvement from the beginning.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What if our leadership team can't agree on priorities at all?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    That's actually the more important problem to solve first. AI isn't going to save a company with misaligned leadership. Address that first. Everything else depends on it.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Should we wait for AI technology to get better before we start?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    AI is already good enough for most business problems right now. The companies waiting for "better" technology are usually the ones not ready for other reasons—they just don't want to admit it yet.
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h3>Ready to Assess Your AI Readiness?</h3>
+            <p>Take our detailed assessment and get specific recommendations for your business.</p>
+            <a href="../assessment.html" class="cta-button">Start Free Assessment</a>
+        </section>
+
+        <!-- Author Bio -->
+        <section class="author-bio">
+            <div class="author-bio-image"><img src="../headshot-7-400w.webp" alt="Jon Linton" loading="lazy"></div>
+            <div>
+                <h4>About the Author</h4>
+                <p>Jon Linton is the founder of Fresh Coast AI, a vendor-neutral AI consulting firm based in Milwaukee. He helps businesses cut through AI noise and build capability their teams actually own. His background spans international business development in Southeast Asia, Fortune 500 change management, and leading AI adoption at a regulated professional services firm — always at the intersection of technology and people.</p>
+            </div>
+        </section>
+
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <h3>Related Posts</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4>How to Evaluate AI Tools: Cut Through the Vendor Noise</h4>
+                    <p>Thousands of AI tools, endless demos, unclear pricing. Here are the four questions to ask before any demo.</p>
+                    <a href="the-ai-vendor-landscape.html" class="related-post-link">Read: Cut Through the Vendor Noise →</a>
+                </div>
+                <div class="related-post-card">
+                    <h4>AI Governance for Small Business: A Practical Framework</h4>
+                    <p>Your 75-person company doesn't need a 200-page compliance manual. Here's the minimum viable governance framework.</p>
+                    <a href="ai-governance-for-small-businesses.html" class="related-post-link">Read: AI Governance for Small Business →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, WI</div></div>
+<div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="../about.html">About</a><a href="../how-we-work.html">How We Work</a><a href="../contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="../services.html#assess">Assess</a><a href="../services.html#build">Build</a><a href="../services.html#own">Own</a><a href="../services.html#ongoing">Ongoing</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="../industries/manufacturing.html">Manufacturing</a><a href="../industries/professional-services.html">Professional Services</a><a href="../industries/staffing.html">Staffing</a><a href="../industries/trades.html">Trades</a><a href="../industries/property-management.html">Property Management</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="../milwaukee-ai-consulting.html">Milwaukee</a><a href="../madison-ai-consulting.html">Madison</a><a href="../green-bay-fox-valley-ai-consulting.html">Green Bay</a><a href="../wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="../blog/index.html">Blog</a><a href="../deliverables.html">Deliverables</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
+<div class="footer-bottom"><div class="footer-bottom-left"><a href="../index.html" class="nav-logo"><img src="../FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="../contact.html" class="footer-cta">Book a Free Call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // Close menu when link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.faq-item, .related-post-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

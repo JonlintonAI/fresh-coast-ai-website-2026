@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option B — Click-to-Expand Accordion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:var(--cloud);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.2;margin-bottom:1rem}
+
+.mockup-header{text-align:center;padding:2.5rem 2rem 1.5rem;background:var(--white);border-bottom:1px solid var(--mist)}
+.mockup-header h2{font-family:var(--serif);font-size:1.3rem;color:var(--lake);font-weight:400}
+.mockup-header p{font-size:.85rem;color:var(--steel);opacity:.6;margin-top:.5rem}
+
+/* ── OPTION B: ACCORDION ── */
+.industries-b{padding:4rem 2rem;background:var(--cloud)}
+.industries-b-inner{max-width:700px;margin:0 auto;text-align:center}
+.industries-b-inner .section-title{font-size:clamp(1.6rem,3vw,2rem);margin-bottom:.5rem}
+.industries-b-inner .section-subtitle{font-size:1rem;color:var(--steel);margin-bottom:2rem;font-weight:300}
+
+.ind-accordion{display:flex;flex-direction:column;gap:.5rem;text-align:left}
+
+.ind-acc-item{
+  background:var(--white);
+  border:1px solid var(--mist);
+  border-radius:12px;
+  overflow:hidden;
+  transition:all .3s var(--ease);
+}
+.ind-acc-item:hover{border-color:rgba(43,122,158,.3)}
+.ind-acc-item.open{border-color:var(--lake);box-shadow:0 6px 20px rgba(43,122,158,.1)}
+
+.ind-acc-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 1.4rem;
+  cursor:pointer;
+  user-select:none;
+  transition:all .2s var(--ease);
+}
+.ind-acc-item.open .ind-acc-header{
+  background:var(--lake);
+  color:var(--white);
+}
+.ind-acc-header h4{
+  font-family:var(--sans);
+  font-size:.95rem;
+  font-weight:600;
+  margin:0;
+}
+.ind-acc-header .acc-icon{
+  width:20px;
+  height:20px;
+  transition:transform .3s var(--ease);
+  flex-shrink:0;
+}
+.ind-acc-item.open .ind-acc-header .acc-icon{
+  transform:rotate(180deg);
+  color:var(--white);
+}
+
+.ind-acc-body{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .35s var(--ease);
+}
+.ind-acc-body-inner{
+  padding:1rem 1.4rem 1.2rem;
+}
+.ind-acc-body-inner p{
+  font-size:.88rem;
+  color:var(--steel);
+  line-height:1.6;
+  margin:0;
+}
+.ind-acc-body-inner .ind-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.3rem;
+  margin-top:.6rem;
+  font-size:.82rem;
+  font-weight:500;
+  color:var(--lake);
+  text-decoration:none;
+}
+.ind-acc-body-inner .ind-link:hover{color:var(--lake-light)}
+.ind-acc-body-inner .ind-link svg{width:12px;height:12px}
+
+/* Dashed open item */
+.ind-acc-item-open{border:2px dashed rgba(43,122,158,.3);background:transparent}
+.ind-acc-item-open .ind-acc-header h4{color:var(--lake)}
+.ind-acc-item-open.open{border-color:var(--lake);background:var(--white)}
+.ind-acc-item-open.open .ind-acc-header{background:var(--lake)}
+.ind-acc-item-open.open .ind-acc-header h4{color:var(--white)}
+
+@media(max-width:600px){
+  .ind-acc-header{padding:.85rem 1.1rem}
+  .ind-acc-body-inner{padding:.85rem 1.1rem 1rem}
+}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<div class="mockup-header">
+  <h2>Option B — Click-to-Expand Accordion</h2>
+  <p>Click any industry to expand its description below the header</p>
+</div>
+
+<section class="industries-b">
+<div class="industries-b-inner">
+  <div class="section-label">Industries We Serve</div>
+  <h2 class="section-title">AI looks different in every industry.</h2>
+  <p class="section-subtitle">We learn how your people actually work, then find where AI fits.</p>
+
+  <div class="ind-accordion">
+
+    <div class="ind-acc-item">
+      <div class="ind-acc-header">
+        <h4>Professional Services</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>Proposals, reports, and client deliverables — generated faster and reviewed smarter.</p>
+          <a href="industries/professional-services.html" class="ind-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-acc-item">
+      <div class="ind-acc-header">
+        <h4>Manufacturing &amp; Distribution</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>Less manual data entry, smarter inventory, streamlined dispatch. Starting where your team actually works.</p>
+          <a href="industries/manufacturing.html" class="ind-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-acc-item">
+      <div class="ind-acc-header">
+        <h4>Skilled Trades &amp; Home Services</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>AI handles the phones, the schedule, and the paperwork. Your techs do the work.</p>
+          <a href="industries/trades.html" class="ind-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-acc-item">
+      <div class="ind-acc-header">
+        <h4>Staffing &amp; Recruiting</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>Faster candidate matching, automated intake, and client communication that scales.</p>
+          <a href="industries/staffing.html" class="ind-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-acc-item">
+      <div class="ind-acc-header">
+        <h4>Property Management</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>Manage more doors without more headcount: tenant comms, maintenance triage, and listings on autopilot.</p>
+          <a href="industries/property-management.html" class="ind-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-acc-item ind-acc-item-open">
+      <div class="ind-acc-header">
+        <h4>Your Industry →</h4>
+        <svg class="acc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="ind-acc-body">
+        <div class="ind-acc-body-inner">
+          <p>We learn how your people work first. If your team runs on repeatable processes, AI can help — regardless of industry.</p>
+          <a href="contact.html" class="ind-link">Let's talk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<script>
+const items = document.querySelectorAll('.ind-acc-item');
+items.forEach(item => {
+  const header = item.querySelector('.ind-acc-header');
+  const body = item.querySelector('.ind-acc-body');
+  const inner = item.querySelector('.ind-acc-body-inner');
+
+  header.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+    items.forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.ind-acc-body').style.maxHeight = '0';
+    });
+
+    // Toggle clicked
+    if (!isOpen) {
+      item.classList.add('open');
+      body.style.maxHeight = inner.scrollHeight + 'px';
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV8X9234S6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EV8X9234S6');gtag('config','AW-18008252065');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Governance for Small Business | Fresh Coast AI</title>
+    <meta name="description" content="Your 75-person company doesn't need a 200-page compliance manual. Here's the minimum viable AI governance framework that actually works.">
+    <link rel="canonical" href="https://freshcoast.ai/blog/ai-governance-for-small-businesses.html">
+    <link rel="icon" type="image/png" href="../favicon.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="AI Governance for Small Business: A Practical Framework | Fresh Coast AI">
+    <meta property="og:description" content="Your 75-person company doesn't need a 200-page compliance manual. Here's the minimum viable AI governance framework that actually works.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://freshcoast.ai/blog/ai-governance-for-small-businesses.html">
+    <meta property="og:image" content="https://freshcoast.ai/og-image.png">
+    <meta property="article:published_time" content="2026-01-13">
+    <meta property="article:author" content="Jon Linton">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "AI Governance for Small Business: A Practical Framework",
+        "description": "Your 75-person company doesn't need a 200-page compliance manual. Here's the minimum viable AI governance framework that actually works.",
+        "author": {
+            "@type": "Person",
+            "name": "Jon Linton"
+        },
+        "datePublished": "2026-01-13",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Fresh Coast AI"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do I really need all this if we're just using ChatGPT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You need at least the basics — an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. It takes an afternoon to set this up. It might take months to fix a data breach."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I'm in a regulated industry?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your stakes are higher. You probably need to document your approach to AI tool governance for compliance reasons. But the framework is still the same — just with more specificity around what \"confidential\" means and possibly some documentation of how decisions got made. Talk to your compliance person, but it doesn't require a major overhaul."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does my policy have to be perfect?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. It has to be clear. A clear one-pager that your team actually reads and follows is a thousand times better than a perfect 30-pager that sits in a shared drive. You'll refine it over time. Start with something that works."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I handle employees who are already using AI tools I don't know about?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Don't come at it as punishment. Come at it as clarification. \"We're defining how we use AI responsibly. Here are the tools we're approving. Here's what data is off-limits. Here's who to ask questions. We're not banning anything — we're giving you permission to use these tools confidently.\" People usually respond well to that framing."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://freshcoast.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://freshcoast.ai/blog/"},{"@type":"ListItem","position":3,"name":"AI Governance for Small Business"}]}
+    </script>
+
+
+    <style>
+        :root {
+            --ink: #0B1A2B;
+            --slate: #1B2D42;
+            --steel: #3A506B;
+            --mist: #E8EDF2;
+            --cloud: #F4F6F8;
+            --white: #FFF;
+            --lake: #2B7A9E;
+            --lake-deep: #1D5F7E;
+            --lake-light: #3A9BC5;
+            --wave: #48B5D2;
+            --sand: #E8C87A;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'Outfit', -apple-system, sans-serif;
+            --max-w: 1140px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--white);
+            color: var(--steel);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            background: rgba(11, 26, 43, 1);
+            box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-logo img {
+            height: 70px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex: 1;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--lake-light);
+        }
+        .nav-links a.active {
+            color: var(--white);
+            position: relative;
+        }
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--wave);
+            border-radius: 1px;
+        }
+
+
+        .nav-links a.active {
+            color: var(--lake-light);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            background: var(--lake) !important;
+            color: var(--white) !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .nav-cta:hover {
+            background: var(--lake-deep) !important;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--white);
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--ink);
+            padding: 8rem 2rem 5rem;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            color: var(--mist);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .breadcrumb a {
+            color: var(--lake-light);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: 2.8rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-meta {
+            color: var(--mist);
+            font-size: 0.95rem;
+        }
+
+        /* Article Container */
+        .article-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--lake);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Content */
+        .article-content h2 {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--ink);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content p {
+            font-size: 1.05rem;
+            color: var(--steel);
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content a {
+            color: var(--lake);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--lake);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--steel);
+            margin: 2rem 0;
+        }
+
+        .article-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: var(--steel);
+            line-height: 1.8;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        /* HR */
+        hr {
+            border: none;
+            height: 1px;
+            background: var(--mist);
+            margin: 3rem 0;
+        }
+
+        /* Author Bio */
+        .author-bio {
+            background: var(--cloud);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .author-bio-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .author-bio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-bio h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .author-bio p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            margin: 3rem 0;
+        }
+
+        .faq-section h2 {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--mist);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: var(--cloud);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--ink);
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--mist);
+        }
+
+        .faq-toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1.5rem;
+            background: var(--white);
+            border-top: 1px solid var(--mist);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--steel);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--lake);
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-section h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--lake);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Related Posts */
+        .related-posts {
+            margin: 4rem 0;
+        }
+
+        .related-posts h3 {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .related-post-card {
+            background: var(--cloud);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .related-post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-post-card h4 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .related-post-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: var(--steel);
+        }
+
+        .related-post-link {
+            color: var(--lake);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .related-post-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--ink);
+            color: var(--white);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+
+        .footer-contact {
+            margin-bottom: 2rem;
+        }
+
+        .footer-contact-label {
+            font-size: 0.9rem;
+            color: var(--mist);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-contact a {
+            color: var(--lake-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+        }
+
+        .nav-logo img {
+            height: 36px;
+            width: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-link {
+            color: var(--mist);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-link:hover {
+            color: var(--lake-light);
+        }
+
+        .footer-copy {
+            color: var(--mist);
+            font-size: 0.85rem;
+            text-align: right;
+            flex: 1;
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--slate);
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem;
+            }
+
+            .nav-links a {
+                padding: 1rem;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .related-posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-row {
+                flex-direction: column;
+            }
+
+            .footer-copy {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 5rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .article-container {
+                padding: 2rem 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.3rem;
+            }
+
+            .article-content p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">
+                <img src="../FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../about.html">About</a>
+                <a href="../how-we-work.html">How We Work</a>
+                <a href="../services.html">Services</a>
+                <a href="../blog/index.html" class="active">Blog</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../contact.html" class="nav-cta">Book a Free Call</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> > <a href="../blog/index.html">Blog</a> > AI Governance for Small Business
+        </div>
+        <h1>AI Governance for Small Business: <em>A Practical Framework.</em></h1>
+        <div class="hero-meta">By Jon Linton • January 13, 2026</div>
+    </section>
+
+    <!-- Article -->
+    <div class="article-container">
+        <a href="../blog/index.html" class="back-link">← Back to all posts</a>
+
+        <article class="article-content">
+            <p><strong>TL;DR:</strong> Your 75-person company doesn't need a 200-page compliance manual. But you do need a one-page acceptable use policy, a simple data classification guide, and someone who can answer questions. Start there. Governance at your size is about enabling safe adoption, not preventing it.</p>
+
+            <hr>
+
+            <h2>The Governance Disconnect</h2>
+            <p>When most people hear "AI governance," they picture mahogany conference rooms, 200-page policy documents, and a whole department whose job is saying no to things. That's what governance looks like at Fortune 500 companies. That's not what it looks like for you.</p>
+
+            <p>I spent years designing AI governance frameworks at a regulated professional services firm where we had compliance teams, audit trails, and enough red tape to choke a horse. But here's what I've learned since: the principles that made that work are actually <strong>simpler</strong> when you're smaller, not harder.</p>
+
+            <p>The problem is that most small business owners either assume they don't need governance at all, or they try to copy the enterprise playbook and end up creating processes so bureaucratic that nobody follows them. Both approaches are mistakes.</p>
+
+            <p>You need governance. It just needs to be right-sized.</p>
+
+            <h2>Why Governance Matters When You're "Just Using ChatGPT"</h2>
+            <p>Let me be direct: your employees are already using AI tools. Studies consistently show that 50-70% of workers use AI tools at work without their employer's explicit knowledge. That's not a judgment — it's reality.</p>
+
+            <p>Here's where it gets risky. Without guidelines, someone will eventually paste client data into ChatGPT. Or your Q&A. Or financial information from your last budget review. Or that proposal that includes intellectual property you can't afford to lose. They won't do it maliciously. They'll do it because it's convenient and because nobody ever told them not to.</p>
+
+            <p>If you're in any regulated industry — financial services, anything healthcare-adjacent, professional services — the stakes are higher. Regulators expect you to have <strong>some</strong> documented approach to data handling, even if you're small.</p>
+
+            <p>But here's the thing that usually gets overlooked: governance is not about control. It's not about making it harder for your team to do their jobs. Good governance is about making it <strong>safe</strong> for them to use AI confidently, without constantly wondering whether they're about to get the company sued.</p>
+
+            <p>That's worth doing right.</p>
+
+            <hr>
+
+            <h2>The Minimum Viable Governance Framework</h2>
+            <p>You don't need to boil the ocean. Here's what you actually need on day one:</p>
+
+            <h3>An Acceptable Use Policy (1-2 pages, maximum)</h3>
+            <p>This answers three questions: What tools are approved? What data can and can't go into AI tools? Who do people ask when they're unsure?</p>
+
+            <p>That's it. Keep it short enough that people will actually read it. A 30-page document sits in a drawer. A one-pager goes on a slack channel and gets referenced.</p>
+
+            <h3>A Data Classification Guide</h3>
+            <p>Create three simple buckets:</p>
+
+            <ul>
+                <li><strong>Public</strong>: Information that's already public. Use any tool you want.</li>
+                <li><strong>Internal</strong>: Information that's yours but not confidential. Use only approved enterprise tools (like Copilot or Claude for Work, where your data isn't fed into training models).</li>
+                <li><strong>Confidential</strong>: Client data, employee information, financial details, anything covered by NDA or regulation. Never put this in an AI tool, period.</li>
+            </ul>
+
+            <p>Give two or three examples in each category so people actually understand it. "Client financials" is more useful than "sensitive business data."</p>
+
+            <h3>An Approved Tools List</h3>
+            <p>Name the specific tools your team is allowed to use. Update it quarterly. The tools change fast enough that this list will be outdated before you know it, but having <strong>a</strong> list removes ambiguity. People know what they're supposed to use.</p>
+
+            <h3>A Point Person</h3>
+            <p>Someone your team can ask questions to. Doesn't need to be a full-time role. Could be your operations manager, your tech-savvy admin, or whoever you trust to learn this stuff. Someone people can ping and say, "Hey, can I use this tool for this?" and get an answer in under an hour.</p>
+
+            <p>That's your governance framework. You're welcome to add more, but that foundation will handle 90% of your needs.</p>
+
+            <hr>
+
+            <h2>Writing a Policy People Will Actually Follow</h2>
+            <p>Here's where most governance frameworks fail: they're written by lawyers for lawyers, and nobody else reads them.</p>
+
+            <p>Your policy should be two pages. Use plain English. Say "Don't paste client information into ChatGPT" instead of "Confidential data shall not be processed by unauthorized AI systems." Real people will read the first one.</p>
+
+            <p>Give specific examples. Talk about what people <strong>can</strong> do, not just what they can't. Most people respond better to permissions than prohibitions. Tell them: "You can brainstorm project ideas in ChatGPT, draft emails, ask research questions, create meeting notes." That's more useful than just saying "don't do bad things."</p>
+
+            <p>Review it every six months. The AI landscape changes too fast to set it and forget it. New tools emerge. Your risk profile changes. Your team learns what works. Update the policy to reflect reality.</p>
+
+            <hr>
+
+            <h2>Data Handling Basics: What to Feed AI and What to Keep Out</h2>
+            <p>This is the practical stuff. Let's talk about what actually goes into those categories.</p>
+
+            <p><strong>Safe to use with any AI tool</strong>: Publicly available information, general templates, your own draft writing, brainstorming sessions, research questions, publicly available competitor analysis.</p>
+
+            <p><strong>Caution — use enterprise tools only</strong>: Internal processes and procedures, proprietary methods that aren't obvious, non-confidential client names, general project timelines, anything that's yours but could give a competitor an advantage if they knew it.</p>
+
+            <p><strong>Never put into AI</strong>: Client data of any kind, employee personal information (names, addresses, Social Security numbers), financial account numbers, details from contracts, anything covered by an NDA, anything regulated (HIPAA, GDPR, state privacy laws), legal documents, passwords or credentials.</p>
+
+            <p>Here's my rule of thumb: If you wouldn't paste it into an email to your entire company in the break room, don't paste it into a public AI tool. Your employees can see an all-company email. So can strangers if Anthropic or OpenAI decides to use it for training.</p>
+
+            <hr>
+
+            <h2>Governance That Grows With You</h2>
+            <p>Start with the minimum framework I outlined. Really. Don't overthink this.</p>
+
+            <p>Then add complexity only as your AI usage actually matures. After a few months, you might realize you need a tool for image generation, or you're using AI heavily enough that you want a tool usage log. Add those things then.</p>
+
+            <p>Revisit your policy every quarter in the first year. The tools are changing fast. Your team is learning. You'll discover use cases you didn't anticipate. Build governance for the AI adoption you actually have today, not the adoption you think you should have.</p>
+
+            <p>The biggest mistake I see is governance that's so restrictive nobody follows it. A policy that says "AI is only for executives with written approval" is worse than no policy at all, because now your team is just going around you anyway — only now they're doing it in secret.</p>
+
+            <p>Governance should enable adoption. It should make people feel confident that they can use these tools. That's the goal.</p>
+
+            <hr>
+
+            <h2>The Real Conversation</h2>
+            <p>Governance sounds heavy. Compliance sounds like a buzzkill. Policy sounds boring.</p>
+
+            <p>But what we're really talking about is this: "How do we use these tools responsibly so everyone on our team feels confident they're not about to create a problem?"</p>
+
+            <p>That's a conversation worth having. And it doesn't take a Fortune 500 budget. It doesn't take a dedicated department. It takes an afternoon with your leadership team and maybe a few hours to write it down.</p>
+
+            <p>The Midwest doesn't need more complexity. We need clarity, practicality, and permission to move forward. That's what good governance gives you. Learn more about <a href="../services.html">how we help companies implement this</a>, or <a href="../assessment.html">take our assessment</a> to identify where governance fits into your broader AI strategy.</p>
+
+            <hr>
+        </article>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do I really need all this if we're just using ChatGPT?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    You need at least the basics — an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. It takes an afternoon to set this up. It might take months to fix a data breach.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What if I'm in a regulated industry?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Your stakes are higher. You probably need to document your approach to AI tool governance for compliance reasons. But the framework is still the same — just with more specificity around what "confidential" means and possibly some documentation of how decisions got made. Talk to your compliance person, but it doesn't require a major overhaul.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Does my policy have to be perfect?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    No. It has to be clear. A clear one-pager that your team actually reads and follows is a thousand times better than a perfect 30-pager that sits in a shared drive. You'll refine it over time. Start with something that works.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How do I handle employees who are already using AI tools I don't know about?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Don't come at it as punishment. Come at it as clarification. "We're defining how we use AI responsibly. Here are the tools we're approving. Here's what data is off-limits. Here's who to ask questions. We're not banning anything — we're giving you permission to use these tools confidently." People usually respond well to that framing.
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h3>Ready to Build Your Governance Framework?</h3>
+            <p>We help businesses implement practical AI governance that actually works.</p>
+            <a href="../contact.html" class="cta-button">Get Started</a>
+        </section>
+
+        <!-- Author Bio -->
+        <section class="author-bio">
+            <div class="author-bio-image"><img src="../headshot-7-400w.webp" alt="Jon Linton" loading="lazy"></div>
+            <div>
+                <h4>About the Author</h4>
+                <p>Jon Linton is the founder of Fresh Coast AI, a vendor-neutral AI consulting firm based in Milwaukee. He helps businesses cut through AI noise and build capability their teams actually own. His background spans international business development in Southeast Asia, Fortune 500 change management, and leading AI adoption at a regulated professional services firm — always at the intersection of technology and people.</p>
+            </div>
+        </section>
+
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <h3>Related Posts</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4>How to Know If Your Business Is Ready for AI</h4>
+                    <p>Assess yourself across 7 dimensions — leadership, people, data, process, governance, security, and vendor ecosystem — with our simple framework.</p>
+                    <a href="how-to-know-if-your-business-is-ready-for-ai.html" class="related-post-link">Read: Is Your Business Ready for AI? →</a>
+                </div>
+                <div class="related-post-card">
+                    <h4>How to Evaluate AI Tools: Cut Through the Vendor Noise</h4>
+                    <p>Thousands of AI tools, endless demos, unclear pricing. Here are the four questions to ask before any demo.</p>
+                    <a href="the-ai-vendor-landscape.html" class="related-post-link">Read: Cut Through the Vendor Noise →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, WI</div></div>
+<div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="../about.html">About</a><a href="../how-we-work.html">How We Work</a><a href="../contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="../services.html#assess">Assess</a><a href="../services.html#build">Build</a><a href="../services.html#own">Own</a><a href="../services.html#ongoing">Ongoing</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="../industries/manufacturing.html">Manufacturing</a><a href="../industries/professional-services.html">Professional Services</a><a href="../industries/staffing.html">Staffing</a><a href="../industries/trades.html">Trades</a><a href="../industries/property-management.html">Property Management</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="../milwaukee-ai-consulting.html">Milwaukee</a><a href="../madison-ai-consulting.html">Madison</a><a href="../green-bay-fox-valley-ai-consulting.html">Green Bay</a><a href="../wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="../blog/index.html">Blog</a><a href="../deliverables.html">Deliverables</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
+<div class="footer-bottom"><div class="footer-bottom-left"><a href="../index.html" class="nav-logo"><img src="../FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="../contact.html" class="footer-cta">Book a Free Call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // Close menu when link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.faq-item, .related-post-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

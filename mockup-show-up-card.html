@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup: Show Up Card Redesign</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;scroll-padding-top:90px}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+.mockup-nav{position:fixed;top:0;left:0;right:0;background:var(--ink);padding:1rem 2rem;z-index:100;display:flex;align-items:center;gap:2rem}
+.mockup-nav h1{color:var(--white);font-size:.9rem;font-weight:600;white-space:nowrap}
+.mockup-nav a{color:var(--wave);font-size:.85rem;text-decoration:none;padding:.4rem .8rem;border:1px solid rgba(72,181,210,.3);border-radius:6px}
+.mockup-nav a:hover{background:rgba(72,181,210,.1)}
+
+.section-wrapper{max-width:var(--max-w);margin:0 auto;padding:6rem 2rem 4rem}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+
+/* Philosophy section — exact match of live site */
+.philosophy{background:var(--white);padding:5rem 2rem}
+.philosophy .section-inner{max-width:var(--max-w);margin:0 auto}
+.philosophy-header{text-align:center;margin-bottom:4rem}
+.philosophy-header .section-subtitle{margin:0 auto;text-align:center;max-width:640px;color:var(--steel);font-size:1.05rem;line-height:1.7}
+.section-title{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.4rem);margin-bottom:1rem}
+
+.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.phil-card{padding:2.5rem 2rem;border-radius:16px;background:var(--cloud);border:1px solid var(--mist);transition:all .3s var(--ease);position:relative;overflow:hidden}
+.phil-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--lake);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.phil-card:hover::before{transform:scaleX(1)}
+.phil-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.phil-number{font-family:var(--serif);font-size:2.5rem;color:var(--lake);opacity:.3;line-height:1;margin-bottom:1rem}
+.phil-card h3{font-size:1.2rem;font-weight:600;margin-bottom:.75rem}
+.phil-card p{font-size:.9rem;color:var(--steel);line-height:1.65}
+
+/* Show Up — full-width banner below the 3-card grid */
+.phil-banner{grid-column:1/-1;display:flex;align-items:center;gap:2rem;padding:2rem 2.5rem;border-radius:16px;background:var(--cloud);border:1px solid var(--mist);transition:all .3s var(--ease);position:relative;overflow:hidden}
+.phil-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--lake);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.phil-banner:hover::before{transform:scaleX(1)}
+.phil-banner:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.phil-banner-icon{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:rgba(43,122,158,.08);display:flex;align-items:center;justify-content:center}
+.phil-banner-icon svg{width:24px;height:24px;color:var(--lake)}
+.phil-banner h3{font-size:1.2rem;font-weight:600;margin-bottom:.35rem}
+.phil-banner p{font-size:.9rem;color:var(--steel);line-height:1.65;margin:0}
+
+/* Divider */
+.mockup-divider{max-width:var(--max-w);margin:0 auto;padding:3rem 2rem;text-align:center;border-top:2px dashed var(--mist)}
+.mockup-divider h2{font-family:var(--serif);font-size:1.3rem;color:var(--steel);margin-bottom:.5rem}
+.mockup-divider p{color:var(--steel);font-size:.9rem;opacity:.6}
+
+/* Option B — subtle dark accent */
+.phil-banner-dark{grid-column:1/-1;display:flex;align-items:center;gap:2rem;padding:2rem 2.5rem;border-radius:16px;background:var(--ink);border:1px solid rgba(255,255,255,.08);transition:all .3s var(--ease);position:relative;overflow:hidden}
+.phil-banner-dark::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--wave);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.phil-banner-dark:hover::before{transform:scaleX(1)}
+.phil-banner-dark:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.2)}
+.phil-banner-dark .phil-banner-icon{background:rgba(72,181,210,.12)}
+.phil-banner-dark .phil-banner-icon svg{color:var(--wave)}
+.phil-banner-dark h3{font-size:1.2rem;font-weight:600;margin-bottom:.35rem;color:var(--white)}
+.phil-banner-dark p{font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.65;margin:0}
+
+@media(max-width:900px){
+  .philosophy-grid{grid-template-columns:1fr}
+  .phil-banner,.phil-banner-dark{flex-direction:column;align-items:flex-start;gap:1rem}
+}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<div class="mockup-nav">
+  <h1>Mockup: "Show Up" Card Redesign</h1>
+  <a href="#option-a">Option A: Light banner</a>
+  <a href="#option-b">Option B: Dark accent</a>
+</div>
+
+<!-- OPTION A: Light full-width banner (matches card style) -->
+<div id="option-a">
+<section class="philosophy">
+<div class="section-inner">
+  <div class="philosophy-header">
+    <div class="section-label">What Makes Us Different</div>
+    <h2 class="section-title">The Cultivate Philosophy</h2>
+    <p class="section-subtitle">Most AI consultants sell tools. We build capability. This philosophy is behind everything we do, and why our engagements stick.</p>
+  </div>
+  <div class="philosophy-grid">
+    <div class="phil-card"><div class="phil-number">01</div><h3>Listen First</h3><p>We start with your people's pain points and workflows, not tools. Understanding how your team actually works is the foundation everything else is built on.</p></div>
+    <div class="phil-card"><div class="phil-number">02</div><h3>Build Together</h3><p>We work alongside your team so every solution feels like theirs from day one. No black-box deliverables. Your people learn by doing.</p></div>
+    <div class="phil-card"><div class="phil-number">03</div><h3>Leave It Behind</h3><p>We build your capability and confidence, not a dependency. When we're done, your team runs it. That's the whole point.</p></div>
+
+    <div class="phil-banner">
+      <div class="phil-banner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div>
+        <h3>Show Up</h3>
+        <p>Midwest-based. In-person when it matters. We're not a remote-only agency on the coasts. We're in Milwaukee and we'll sit at your table.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<div class="mockup-divider">
+  <h2>Option B: Dark accent banner</h2>
+  <p>Same layout, but the banner uses the dark ink background to set it apart visually</p>
+</div>
+
+<!-- OPTION B: Dark full-width banner -->
+<div id="option-b">
+<section class="philosophy">
+<div class="section-inner">
+  <div class="philosophy-header">
+    <div class="section-label">What Makes Us Different</div>
+    <h2 class="section-title">The Cultivate Philosophy</h2>
+    <p class="section-subtitle">Most AI consultants sell tools. We build capability. This philosophy is behind everything we do, and why our engagements stick.</p>
+  </div>
+  <div class="philosophy-grid">
+    <div class="phil-card"><div class="phil-number">01</div><h3>Listen First</h3><p>We start with your people's pain points and workflows, not tools. Understanding how your team actually works is the foundation everything else is built on.</p></div>
+    <div class="phil-card"><div class="phil-number">02</div><h3>Build Together</h3><p>We work alongside your team so every solution feels like theirs from day one. No black-box deliverables. Your people learn by doing.</p></div>
+    <div class="phil-card"><div class="phil-number">03</div><h3>Leave It Behind</h3><p>We build your capability and confidence, not a dependency. When we're done, your team runs it. That's the whole point.</p></div>
+
+    <div class="phil-banner-dark">
+      <div class="phil-banner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div>
+        <h3>Show Up</h3>
+        <p>Midwest-based. In-person when it matters. We're not a remote-only agency on the coasts. We're in Milwaukee and we'll sit at your table.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<div style="height:4rem"></div>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV8X9234S6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EV8X9234S6');gtag('config','AW-18008252065');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Readiness Self-Assessment | Fresh Coast AI</title>
+<meta name="description" content="Free AI readiness self-assessment for businesses. Rate your organization across 7 dimensions in 5 minutes. Get your score and personalized next steps.">
+<meta property="og:title" content="AI Readiness Self-Assessment | Fresh Coast AI">
+<meta property="og:description" content="How ready is your business for AI? Take this free 5-minute assessment and find out.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freshcoast.ai/assessment.html">
+<meta property="og:image" content="https://freshcoast.ai/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://freshcoast.ai/assessment.html">
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--max-w:1140px;--ease:cubic-bezier(.22,1,.36,1)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px;font-size:17px}body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;background:rgba(11,26,43,1);box-shadow:0 2px 24px rgba(0,0,0,.2)}.nav-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between}.nav-logo{text-decoration:none;display:flex;align-items:center}.nav-logo img{height:70px;width:auto;transition:height .3s var(--ease)}.nav-links{display:flex;gap:2rem;align-items:center}.nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:1rem;font-weight:400;transition:color .2s;letter-spacing:.03em}.nav-links a:hover,.nav-links a.active{color:var(--white);position:relative}.nav-links a.active::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--wave);border-radius:1px}.nav-cta{background:var(--lake)!important;color:var(--white)!important;padding:.65rem 1.6rem!important;border-radius:6px;font-weight:500!important;font-size:1rem!important;transition:all .2s!important}.nav-cta:hover{background:var(--lake-light)!important;transform:translateY(-1px)}.mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem}.mobile-toggle span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.3s}
+
+/* SHARED */
+section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.2;margin-bottom:1rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;border-radius:8px;font-family:var(--sans);font-size:.95rem;font-weight:500;text-decoration:none;transition:all .25s var(--ease);cursor:pointer;border:none}.btn-primary{background:var(--lake);color:var(--white);box-shadow:0 4px 16px rgba(43,122,158,.3)}.btn-primary:hover{background:var(--lake-light);transform:translateY(-2px);box-shadow:0 6px 24px rgba(43,122,158,.4)}
+
+/* PAGE HERO */
+.page-hero{background:var(--ink);padding:8rem 2rem 5rem;position:relative;overflow:hidden}.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 80%,rgba(43,122,158,.2),transparent),radial-gradient(ellipse 60% 50% at 80% 20%,rgba(72,181,210,.1),transparent)}.page-hero-inner{position:relative;z-index:1;max-width:var(--max-w);margin:0 auto;text-align:center}.page-hero .section-label{color:var(--wave)}.page-hero h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);color:var(--white);line-height:1.2;margin-bottom:1rem;max-width:700px;margin-left:auto;margin-right:auto}.page-hero p{font-size:1.1rem;color:rgba(255,255,255,.6);max-width:560px;font-weight:300;line-height:1.7;margin:0 auto}.page-hero-meta{display:flex;justify-content:center;gap:2rem;margin-top:1.5rem}.page-hero-meta span{font-size:.85rem;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:.4rem}.page-hero-meta svg{width:16px;height:16px}
+
+/* ASSESSMENT */
+.assessment{background:var(--white);padding:4rem 2rem 6rem}.assessment-inner{max-width:720px;margin:0 auto}
+
+/* PROGRESS */
+.assess-progress{margin-bottom:3rem;position:sticky;top:80px;z-index:10;background:var(--white);padding:1rem 0}.assess-progress-header{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);opacity:.5;margin-bottom:.5rem;text-align:center}.assess-progress-items{display:flex;gap:.5rem}.assess-progress-item{flex:1;text-align:center;cursor:pointer;padding:.25rem 0;border-radius:6px;transition:background .2s}.assess-progress-item:hover{background:rgba(43,122,158,.04)}.assess-progress-item:hover .assess-progress-label{color:var(--lake)}.assess-progress-bar{height:4px;border-radius:4px;background:var(--mist);margin-bottom:.4rem;transition:background .4s var(--ease)}.assess-progress-bar.done{background:var(--lake)}.assess-progress-bar.active{background:var(--wave)}.assess-progress-label{font-size:.65rem;color:var(--steel);font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+
+/* DIMENSION */
+.dimension{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--mist)}.dimension:last-child{border-bottom:none}.dimension-header{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem}.dimension-icon{width:40px;height:40px;min-width:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--white)}.dimension-icon svg{width:20px;height:20px}.dim-leadership{background:var(--lake)}.dim-people{background:var(--lake-deep)}.dim-data{background:var(--wave)}.dim-process{background:var(--steel)}.dim-governance{background:var(--slate)}.dim-security{background:#5B6B7D}.dim-vendor{background:#6A8A7B}.dimension-header h3{font-size:1.15rem;font-weight:600;color:var(--ink)}
+
+/* QUESTION */
+.question{background:var(--cloud);border-radius:12px;padding:1.5rem;margin-bottom:1rem}.question p{font-size:.95rem;color:var(--ink);margin-bottom:1rem;line-height:1.55}.rating-scale{display:flex;gap:.5rem}.rating-btn{flex:1;padding:.7rem .5rem;border-radius:8px;border:1px solid var(--mist);background:var(--white);cursor:pointer;text-align:center;transition:all .2s var(--ease);font-family:var(--sans)}.rating-btn:hover{border-color:var(--lake);background:rgba(43,122,158,.04)}.rating-btn.selected{background:var(--lake);border-color:var(--lake);color:var(--white)}.rating-num{font-size:1.1rem;font-weight:600;display:block}.rating-label{font-size:.65rem;color:var(--steel);text-transform:uppercase;letter-spacing:.03em;margin-top:.2rem;display:block;line-height:1.2}.rating-btn.selected .rating-label{color:rgba(255,255,255,.7)}
+
+/* SUBMIT */
+.assess-submit{text-align:center;margin-top:2rem;padding-top:2rem}
+
+/* RESULTS */
+.results-section{display:none;background:var(--cloud);padding:5rem 2rem}.results-inner{max-width:720px;margin:0 auto;text-align:center}
+.score-display{margin:2rem auto;position:relative;width:180px;height:180px}.score-display svg{transform:rotate(-90deg)}.score-display circle{fill:none;stroke-width:10}.score-bg{stroke:var(--mist)}.score-fill{stroke:var(--wave);stroke-linecap:round;transition:stroke-dashoffset 1.5s var(--ease)}.score-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}.score-num{font-family:var(--serif);font-size:3.2rem;color:var(--ink);line-height:1}.score-of{font-size:.85rem;color:var(--steel)}
+.score-tier{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-bottom:1rem}.score-desc{font-size:1rem;color:var(--steel);line-height:1.7;max-width:560px;margin:0 auto 2.5rem}
+.dimension-scores{display:grid;grid-template-columns:repeat(5,1fr);gap:.75rem;margin-bottom:2.5rem;text-align:center}.dim-score{padding:1rem .5rem;background:var(--white);border-radius:10px;border:1px solid var(--mist)}.dim-score-num{font-family:var(--serif);font-size:1.5rem;color:var(--lake);line-height:1}.dim-score-label{font-size:.65rem;color:var(--steel);margin-top:.25rem;text-transform:uppercase;letter-spacing:.03em}
+.results-cta{padding:2rem;background:var(--white);border-radius:16px;border:1px solid var(--mist);text-align:center}.results-cta h3{font-family:var(--serif);font-size:1.3rem;margin-bottom:.75rem;color:var(--ink)}.results-cta p{font-size:.95rem;color:var(--steel);line-height:1.6;margin-bottom:1.5rem;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* FOOTER */
+.footer{background:var(--ink);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06)}.footer-inner{max-width:var(--max-w);margin:0 auto}.footer-contact{text-align:center;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08)}.footer-contact-label{font-size:.75rem;color:rgba(255,255,255,.35);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem}.footer-contact a{color:var(--wave);text-decoration:none;font-size:1.1rem;font-weight:500;transition:opacity .2s}.footer-contact a:hover{opacity:.8}
+.footer-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:2rem;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08)}.footer-nav-col h4{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.85rem}.footer-nav-col a{display:block;color:rgba(255,255,255,.4);text-decoration:none;font-size:.88rem;line-height:2;transition:color .2s}.footer-nav-col a:hover{color:var(--wave)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}.footer-bottom-left{display:flex;align-items:center;gap:1.25rem}.footer-social a{display:inline-flex;align-items:center;color:rgba(255,255,255,.35);transition:color .2s}.footer-social a:hover{color:var(--wave)}.footer-social svg{width:20px;height:20px}.footer-cta-wrap{display:flex;align-items:center;gap:1.5rem}.footer-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.4rem;border-radius:6px;background:var(--lake);color:var(--white);font-size:.88rem;font-weight:500;text-decoration:none;transition:all .2s}.footer-cta:hover{background:var(--lake-light);transform:translateY(-1px)}.footer-copy{font-size:.8rem;color:rgba(255,255,255,.3)}
+@media(max-width:700px){.footer-nav{grid-template-columns:repeat(2,1fr);gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}.footer-bottom-left{justify-content:center}}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease),transform .7s var(--ease);animation:fallback-show .01s 1.5s forwards}.fade-up.visible{opacity:1;transform:translateY(0);animation:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){.nav .nav-logo img{height:50px}.nav-links{display:none}.mobile-toggle{display:block}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--ink);padding:1.5rem 2rem;gap:1rem;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 8px 24px rgba(0,0,0,.3)}.nav-links.open .nav-cta{text-align:center;margin-top:.5rem}.dimension-scores{grid-template-columns:repeat(3,1fr)}.assess-progress-items{flex-wrap:wrap;gap:.35rem}.footer-row{flex-direction:column;text-align:center}}
+@media(max-width:600px){section{padding:4rem 1.25rem}.page-hero{padding:8rem 1.25rem 4rem}.page-hero-meta{flex-direction:column;gap:.5rem;align-items:center}.rating-scale{gap:.35rem}.rating-label{display:block;font-size:.5rem}.dimension-scores{grid-template-columns:repeat(2,1fr)}.btn{width:100%;max-width:340px;justify-content:center}.assess-progress-label{font-size:.55rem}#emailFormWrap{flex-direction:column}#emailFormWrap .btn{max-width:none}}
+@keyframes fallback-show{to{opacity:1;transform:translateY(0)}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"AI Readiness Self-Assessment","url":"https://freshcoast.ai/assessment.html","description":"Free AI readiness self-assessment for businesses. Rate your organization across 7 dimensions and get your readiness score instantly.","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Fresh Coast AI"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Quiz","name":"AI Readiness Self-Assessment","description":"Rate your organization across 7 dimensions of AI readiness. 14 questions, scored out of 70, with instant results and dimension-by-dimension breakdown.","url":"https://freshcoast.ai/assessment.html","about":[{"@type":"Thing","name":"Leadership & Strategy"},{"@type":"Thing","name":"People & Culture"},{"@type":"Thing","name":"Data & Infrastructure"},{"@type":"Thing","name":"Processes & Workflows"},{"@type":"Thing","name":"Governance & Risk"},{"@type":"Thing","name":"Security & Compliance"},{"@type":"Thing","name":"Vendor & Tool Ecosystem"}],"educationalLevel":"Professional","provider":{"@type":"Organization","name":"Fresh Coast AI","url":"https://freshcoast.ai"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free online self-assessment with instant results"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://freshcoast.ai/"},{"@type":"ListItem","position":2,"name":"AI Readiness Assessment","item":"https://freshcoast.ai/assessment.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"AI Readiness Self-Assessment | Fresh Coast AI","speakable":{"@type":"SpeakableSpecification","cssSelector":["meta[name='description']",".page-hero h1",".page-hero p"]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the 7 dimensions of AI readiness?","acceptedAnswer":{"@type":"Answer","text":"The seven dimensions are Leadership and Strategy, People and Culture, Data and Infrastructure, Processes and Workflows, Governance and Risk, Security and Compliance, and Vendor and Tool Ecosystem. Each dimension is assessed independently to give a complete picture of your organization's AI preparedness."}},{"@type":"Question","name":"How does the AI readiness self-assessment work?","acceptedAnswer":{"@type":"Answer","text":"The free self-assessment includes 14 questions, two per dimension. You rate each statement on a scale from Strongly Disagree to Strongly Agree. The tool generates a readiness score out of 70 with a breakdown by dimension, helping you see exactly where your organization is strong and where gaps exist."}},{"@type":"Question","name":"Is the AI readiness assessment free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The online self-assessment is completely free and gives you an instant readiness score. For a deeper analysis with benchmarking and recommendations, Fresh Coast AI offers a professional AI Readiness Report as part of their consulting services."}}]}
+</script>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<!-- NAV -->
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI" style="height:70px;width:auto"></a><div class="nav-links" id="navLinks"><a href="about.html">About</a><a href="how-we-work.html">How We Work</a><a href="services.html">Services</a><a href="blog/index.html">Blog</a><a href="contact.html">Contact</a><a href="contact.html" class="nav-cta">Book a Free Call</a></div><button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero"><div class="page-hero-inner fade-up"><div class="section-label">01 · Free Tool</div><h1>How <em>ready</em> is your business for AI?</h1><p>Rate each statement honestly. There are no wrong answers; the goal is to give you a clear starting point for informed decisions.</p><div class="page-hero-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>5 minutes</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>14 questions</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>No email required</span></div></div></section>
+
+<!-- ASSESSMENT -->
+<section class="assessment" id="assessmentSection"><div class="assessment-inner">
+
+<div class="assess-progress" id="progressBar">
+<div class="assess-progress-header">Your progress: click to jump</div>
+<div class="assess-progress-items">
+<div class="assess-progress-item" onclick="scrollToDim(0)" title="Jump to Leadership &amp; Strategy"><div class="assess-progress-bar active" id="prog0"></div><div class="assess-progress-label">Leadership</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(1)" title="Jump to People &amp; Culture"><div class="assess-progress-bar" id="prog1"></div><div class="assess-progress-label">People</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(2)" title="Jump to Data &amp; Infrastructure"><div class="assess-progress-bar" id="prog2"></div><div class="assess-progress-label">Data</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(3)" title="Jump to Processes &amp; Workflows"><div class="assess-progress-bar" id="prog3"></div><div class="assess-progress-label">Processes</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(4)" title="Jump to Governance &amp; Risk"><div class="assess-progress-bar" id="prog4"></div><div class="assess-progress-label">Governance</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(5)" title="Jump to Security &amp; Compliance"><div class="assess-progress-bar" id="prog5"></div><div class="assess-progress-label">Security</div></div>
+<div class="assess-progress-item" onclick="scrollToDim(6)" title="Jump to Vendor &amp; Tool Ecosystem"><div class="assess-progress-bar" id="prog6"></div><div class="assess-progress-label">Vendors</div></div>
+</div>
+</div>
+
+<div class="dimension fade-up" id="industrySelect" style="border-bottom:1px solid var(--mist);padding-bottom:2rem;margin-bottom:3rem;position:relative;z-index:50">
+<div class="dimension-header"><div class="dimension-icon" style="background:var(--lake)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>What industry are you in?</h3></div>
+<p style="font-size:.95rem;color:var(--steel);margin-bottom:1rem">This helps us tailor your results. Select the closest match.</p>
+<div id="industryCombobox" style="position:relative;width:100%">
+<input type="text" id="industryInput" placeholder="Search or select your industry…" autocomplete="off"
+  style="width:100%;padding:.75rem 1rem;padding-right:2.5rem;border-radius:8px;border:1px solid var(--mist);font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);cursor:text;outline:none;transition:border-color .2s"
+  onfocus="openIndustryList()" oninput="filterIndustries()">
+<svg style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);pointer-events:none;opacity:.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A506B" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+<ul id="industryList" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;max-height:260px;overflow-y:auto;background:var(--white);border:1px solid var(--mist);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.15);list-style:none;z-index:9999;padding:4px 0;margin:0;scrollbar-width:thin"></ul>
+<input type="hidden" id="industryDropdown" value="">
+</div>
+<div id="industryOtherWrap" style="display:none;margin-top:.75rem">
+<input type="text" id="industryOtherInput" placeholder="Type your industry…"
+  style="width:100%;padding:.75rem 1rem;border-radius:8px;border:1px solid var(--mist);font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);outline:none;transition:border-color .2s"
+  oninput="document.getElementById('industryDropdown').value=this.value||'Other'">
+</div>
+<script>
+const industryOptions=[
+  {label:'Professional Services',group:'Services'},
+  {label:'Accounting & Financial Services',group:'Services'},
+  {label:'Legal Services',group:'Services'},
+  {label:'Marketing & Advertising',group:'Services'},
+  {label:'IT Services & Managed IT',group:'Services'},
+  {label:'Engineering & Architecture',group:'Services'},
+  {label:'Consulting',group:'Services'},
+  {label:'Insurance',group:'Services'},
+  {label:'Manufacturing & Distribution',group:'Industrial'},
+  {label:'Food & Beverage Manufacturing',group:'Industrial'},
+  {label:'Metal Fabrication & Machining',group:'Industrial'},
+  {label:'Plastics & Packaging',group:'Industrial'},
+  {label:'Printing & Print Services',group:'Industrial'},
+  {label:'Automotive & Transportation',group:'Industrial'},
+  {label:'Warehousing & Logistics',group:'Industrial'},
+  {label:'Wholesale & Distribution',group:'Industrial'},
+  {label:'Skilled Trades & Home Services',group:'Trades'},
+  {label:'HVAC & Plumbing',group:'Trades'},
+  {label:'Electrical Contractors',group:'Trades'},
+  {label:'General Contracting & Remodeling',group:'Trades'},
+  {label:'Landscaping & Lawn Care',group:'Trades'},
+  {label:'Cleaning & Janitorial Services',group:'Trades'},
+  {label:'Staffing & Recruiting',group:'Workforce'},
+  {label:'Human Resources & Payroll',group:'Workforce'},
+  {label:'Property Management',group:'Real Estate'},
+  {label:'Real Estate & Brokerage',group:'Real Estate'},
+  {label:'Construction & Development',group:'Real Estate'},
+  {label:'Healthcare & Medical Practices',group:'Healthcare'},
+  {label:'Dental Practices',group:'Healthcare'},
+  {label:'Veterinary Services',group:'Healthcare'},
+  {label:'Behavioral Health & Counseling',group:'Healthcare'},
+  {label:'Senior Care & Assisted Living',group:'Healthcare'},
+  {label:'Home Health & Hospice',group:'Healthcare'},
+  {label:'Pharmacy & Medical Supplies',group:'Healthcare'},
+  {label:'Nonprofit & Social Services',group:'Community'},
+  {label:'Education & Training',group:'Community'},
+  {label:'Religious & Faith-Based Organizations',group:'Community'},
+  {label:'Agriculture & Farming',group:'Agriculture'},
+  {label:'Retail & E-Commerce',group:'Retail'},
+  {label:'Restaurants & Hospitality',group:'Retail'},
+  {label:'Fitness & Wellness',group:'Retail'},
+  {label:'Auto Dealerships & Repair',group:'Retail'},
+  {label:'Salon, Spa & Personal Care',group:'Retail'},
+  {label:'Media & Publishing',group:'Creative'},
+  {label:'Graphic Design & Creative Services',group:'Creative'},
+  {label:'Photography & Videography',group:'Creative'},
+  {label:'Other',group:''}
+];
+let industryListOpen=false;
+
+function renderIndustryList(filter=''){
+  const ul=document.getElementById('industryList');
+  const f=filter.toLowerCase().trim();
+  const matches=f?industryOptions.filter(o=>o.label.toLowerCase().includes(f)):industryOptions;
+  if(matches.length===0){
+    ul.innerHTML='<li style="padding:.6rem 1rem;color:var(--steel);font-size:.9rem;font-style:italic">No matches, select "Other" to enter your own</li>';
+    if(f){
+      ul.innerHTML+='<li class="ind-opt" data-val="Other" style="padding:.6rem 1rem;cursor:pointer;font-size:.95rem;border-top:1px solid var(--mist)" onmousedown="selectIndustry(\'Other\')">Other (enter your own)</li>';
+    }
+    return;
+  }
+  let currentGroup='';
+  ul.innerHTML=matches.map(o=>{
+    let groupHeader='';
+    if(o.group && o.group!==currentGroup && !f){
+      currentGroup=o.group;
+      groupHeader=`<li style="padding:.35rem 1rem .2rem;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--steel);background:var(--cloud);pointer-events:none">${o.group}</li>`;
+    }
+    const highlight=f?o.label.replace(new RegExp('('+f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<strong>$1</strong>'):o.label;
+    return groupHeader+`<li class="ind-opt" data-val="${o.label}" style="padding:.55rem 1rem;cursor:pointer;font-size:.95rem;transition:background .15s" onmouseenter="this.style.background='var(--cloud)'" onmouseleave="this.style.background=''" onmousedown="selectIndustry('${o.label.replace(/'/g,"\\'")}')">${o.label==='Other'?'Other (enter your own)':highlight}</li>`;
+  }).join('');
+}
+
+function openIndustryList(){
+  const ul=document.getElementById('industryList');
+  renderIndustryList(document.getElementById('industryInput').value);
+  ul.style.display='block';
+  industryListOpen=true;
+  document.getElementById('industryInput').style.borderColor='var(--lake)';
+}
+
+function closeIndustryList(){
+  setTimeout(()=>{
+    document.getElementById('industryList').style.display='none';
+    industryListOpen=false;
+    document.getElementById('industryInput').style.borderColor='var(--mist)';
+  },150);
+}
+
+function filterIndustries(){
+  renderIndustryList(document.getElementById('industryInput').value);
+  if(!industryListOpen)openIndustryList();
+  // If typed text doesn't match any option, clear hidden value
+  const v=document.getElementById('industryInput').value;
+  const exact=industryOptions.find(o=>o.label.toLowerCase()===v.toLowerCase());
+  document.getElementById('industryDropdown').value=exact?exact.label:'';
+}
+
+function selectIndustry(val){
+  const inp=document.getElementById('industryInput');
+  const hidden=document.getElementById('industryDropdown');
+  const otherWrap=document.getElementById('industryOtherWrap');
+  if(val==='Other'){
+    inp.value='Other';
+    hidden.value='Other';
+    otherWrap.style.display='block';
+    setTimeout(()=>document.getElementById('industryOtherInput').focus(),50);
+  } else {
+    inp.value=val;
+    hidden.value=val;
+    otherWrap.style.display='none';
+    document.getElementById('industryOtherInput').value='';
+  }
+  closeIndustryList();
+}
+
+document.getElementById('industryInput').addEventListener('blur',closeIndustryList);
+document.getElementById('industryInput').addEventListener('keydown',function(e){
+  if(e.key==='Escape'){closeIndustryList();this.blur();}
+  if(e.key==='Enter'){
+    e.preventDefault();
+    const opts=document.querySelectorAll('.ind-opt');
+    if(opts.length===1)selectIndustry(opts[0].dataset.val);
+    else if(opts.length>1){
+      const v=this.value.toLowerCase();
+      const exact=[...opts].find(o=>o.dataset.val.toLowerCase()===v);
+      if(exact)selectIndustry(exact.dataset.val);
+      else selectIndustry(opts[0].dataset.val);
+    }
+  }
+});
+</script>
+</div>
+
+<div id="questionsContainer"></div>
+
+<div class="assess-submit" id="submitArea" style="display:none"><button class="btn btn-primary" onclick="showResults()">See My Results <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button><p style="font-size:.8rem;color:var(--steel);margin-top:.75rem">We save your anonymous scores to improve this tool. No personal information is collected.</p></div>
+
+</div></section>
+
+<!-- RESULTS -->
+<section class="results-section" id="resultsSection"><div class="results-inner fade-up">
+<div class="section-label">Your Results</div>
+<h2 class="section-title" id="resultTitle"></h2>
+<div class="score-display"><svg width="180" height="180" viewBox="0 0 180 180"><circle class="score-bg" cx="90" cy="90" r="80"/><circle class="score-fill" id="scoreCircle" cx="90" cy="90" r="80" stroke-dasharray="502" stroke-dashoffset="502"/></svg><div class="score-text"><div class="score-num" id="scoreNum">0</div><div class="score-of">out of 70</div></div></div>
+<div class="score-tier" id="scoreTier"></div>
+<p class="score-desc" id="scoreDesc"></p>
+<div class="dimension-scores" id="dimScores"></div>
+<p id="industryNote" style="display:none;font-size:.9rem;color:var(--lake);background:rgba(43,122,158,.06);border:1px solid rgba(43,122,158,.12);border-radius:10px;padding:1rem 1.25rem;margin-bottom:2rem;line-height:1.6;text-align:left"></p>
+
+<!-- OPTIONAL EMAIL CAPTURE -->
+<div id="emailCapture" style="padding:2rem;background:var(--white);border-radius:16px;border:1px solid var(--mist);text-align:center;margin-bottom:2rem">
+<div style="font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:.5rem">Optional</div>
+<h3 style="font-family:var(--serif);font-size:1.15rem;margin-bottom:.5rem;color:var(--ink)">Want tailored follow-up resources?</h3>
+<p style="font-size:.9rem;color:var(--steel);line-height:1.6;max-width:420px;margin:0 auto .75rem">Drop your email and we'll send tips specific to your score and industry. No spam, just useful stuff.</p>
+<div id="emailFormWrap" style="display:flex;gap:.5rem;max-width:420px;margin:0 auto">
+<input type="email" id="leadEmail" placeholder="you@company.com" style="flex:1;padding:.75rem 1rem;border-radius:8px;border:1px solid var(--mist);font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--cloud);outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--lake)'" onblur="this.style.borderColor='var(--mist)'">
+<button onclick="submitLeadEmail()" class="btn btn-primary" style="padding:.75rem 1.5rem;white-space:nowrap;font-size:.9rem">Send It</button>
+</div>
+<p id="emailSuccess" style="display:none;font-size:.9rem;color:var(--lake);margin-top:.75rem;font-weight:500">Thanks! We'll be in touch with resources for your team.</p>
+<p id="emailError" style="display:none;font-size:.85rem;color:#c0392b;margin-top:.5rem"></p>
+</div>
+
+<div class="results-cta"><h3>Want to go deeper?</h3><p>This self-assessment is a starting point. Our full AI Strategy Session evaluates your workflows across seven dimensions and delivers a prioritized plan your team believes in because they helped shape it.</p><a href="contact.html" class="btn btn-primary">Book a Free Consultation <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div></section>
+
+<!-- HIDDEN NETLIFY FORM (captures anonymous assessment data) -->
+<form name="assessment-results" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:none">
+<input type="hidden" name="form-name" value="assessment-results">
+<input type="hidden" name="bot-field">
+<input type="hidden" name="industry">
+<input type="hidden" name="total-score">
+<input type="hidden" name="tier">
+<input type="hidden" name="leadership">
+<input type="hidden" name="people">
+<input type="hidden" name="data">
+<input type="hidden" name="processes">
+<input type="hidden" name="governance">
+<input type="hidden" name="security">
+<input type="hidden" name="vendors">
+</form>
+
+<!-- HIDDEN NETLIFY FORM (captures email leads from assessment) -->
+<form name="assessment-leads" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:none">
+<input type="hidden" name="form-name" value="assessment-leads">
+<input type="hidden" name="bot-field">
+<input type="hidden" name="email">
+<input type="hidden" name="industry">
+<input type="hidden" name="total-score">
+<input type="hidden" name="tier">
+<input type="hidden" name="leadership">
+<input type="hidden" name="people">
+<input type="hidden" name="data">
+<input type="hidden" name="processes">
+<input type="hidden" name="governance">
+<input type="hidden" name="security">
+<input type="hidden" name="vendors">
+</form>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, WI</div></div>
+<div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About</a><a href="how-we-work.html">How We Work</a><a href="contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="services.html#assess">Assess</a><a href="services.html#build">Build</a><a href="services.html#own">Own</a><a href="services.html#ongoing">Ongoing</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="industries/manufacturing.html">Manufacturing</a><a href="industries/professional-services.html">Professional Services</a><a href="industries/staffing.html">Staffing</a><a href="industries/trades.html">Trades</a><a href="industries/property-management.html">Property Management</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="milwaukee-ai-consulting.html">Milwaukee</a><a href="madison-ai-consulting.html">Madison</a><a href="green-bay-fox-valley-ai-consulting.html">Green Bay</a><a href="wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="blog/index.html">Blog</a><a href="deliverables.html">Deliverables</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+<div class="footer-bottom"><div class="footer-bottom-left"><a href="index.html" class="nav-logo"><img src="FreshCoastAI_Logo_1Color_White_Transparent.png" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="contact.html" class="footer-cta">Book a Free Call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
+
+<script>
+const toggle=document.getElementById('mobileToggle'),linksEl=document.getElementById('navLinks');toggle.addEventListener('click',()=>linksEl.classList.toggle('open'));
+try{const obs=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')})},{threshold:.15,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.fade-up').forEach(e=>obs.observe(e))}catch(e){document.querySelectorAll('.fade-up').forEach(e=>e.classList.add('visible'))}
+
+const dimensions=[
+{name:'Leadership & Strategy',cls:'dim-leadership',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>',questions:[
+'Our leadership team has discussed how AI could impact our business or industry.',
+'We have identified at least one business problem or opportunity where AI could create measurable value.'
+]},
+{name:'People & Culture',cls:'dim-people',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>',questions:[
+'Our team is generally open to adopting new technology and changing how they work.',
+'We have at least one person (internal or external) who could champion an AI initiative.'
+]},
+{name:'Data & Infrastructure',cls:'dim-data',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>',questions:[
+'Our key business data (client records, financial data, operational metrics) is organized and digitally accessible.',
+'Our current technology stack could support new AI tools without a major overhaul.'
+]},
+{name:'Processes & Workflows',cls:'dim-process',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',questions:[
+'We have documented or well-understood workflows for our core business processes.',
+'We can identify repetitive, time-consuming tasks that follow predictable patterns.'
+]},
+{name:'Governance & Risk',cls:'dim-governance',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',questions:[
+'We have policies (or could create them quickly) for how employees use new technology and handle sensitive data.',
+'We understand the basic risks of AI (data privacy, accuracy, bias) well enough to have an informed conversation about them.'
+]},
+{name:'Security & Compliance',cls:'dim-security',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>',questions:[
+'We have clear guidelines for how sensitive data (client records, financials, IP) is stored, accessed, and shared.',
+'We could explain our data security practices to a client or auditor with reasonable confidence.'
+]},
+{name:'Vendor & Tool Ecosystem',cls:'dim-vendor',icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 16v1a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2h2m5.66 0H14a2 2 0 012 2v3.34"/><path d="M14 3v4a2 2 0 002 2h4"/><path d="M5 3h6l2 3h6a2 2 0 012 2v5"/></svg>',questions:[
+'We have a clear picture of the tools and vendors we currently use and what each one costs us.',
+'We evaluate new technology purchases based on how well they integrate with our existing systems rather than buying ad hoc.'
+]}
+];
+
+const answers={};
+const labels=['Strongly Disagree','Disagree','Neutral','Agree','Strongly Agree'];
+
+function renderQuestions(){
+const container=document.getElementById('questionsContainer');
+let qIdx=0;
+container.innerHTML=dimensions.map((dim,di)=>`
+<div class="dimension fade-up" id="dim${di}">
+<div class="dimension-header"><div class="dimension-icon ${dim.cls}">${dim.icon}</div><h3>${dim.name}</h3></div>
+${dim.questions.map(q=>{const idx=qIdx++;return`
+<div class="question"><p>${q}</p><div class="rating-scale">${[1,2,3,4,5].map(v=>`<button class="rating-btn" data-q="${idx}" data-v="${v}" onclick="selectRating(${idx},${v},this)"><span class="rating-num">${v}</span><span class="rating-label">${labels[v-1]}</span></button>`).join('')}</div></div>`}).join('')}
+</div>`).join('');
+document.querySelectorAll('.dimension.fade-up').forEach(e=>obs.observe(e));
+}
+
+function selectRating(q,v,btn){
+answers[q]=v;
+btn.parentElement.querySelectorAll('.rating-btn').forEach(b=>b.classList.remove('selected'));
+btn.classList.add('selected');
+updateProgress();
+if(Object.keys(answers).length===14){document.getElementById('submitArea').style.display='block'}
+}
+
+function updateProgress(){
+dimensions.forEach((dim,di)=>{
+const startQ=di*2;
+const bar=document.getElementById('prog'+di);
+const a1=answers[startQ]!==undefined;
+const a2=answers[startQ+1]!==undefined;
+if(a1&&a2){bar.className='assess-progress-bar done'}
+else if(a1||a2){bar.className='assess-progress-bar active'}
+else{bar.className='assess-progress-bar'}
+});
+}
+
+function showResults(){
+if(Object.keys(answers).length<14){alert('Please answer all 14 questions before viewing your results.');return}
+const total=Object.values(answers).reduce((s,v)=>s+v,0);
+document.getElementById('assessmentSection').style.display='none';
+const rs=document.getElementById('resultsSection');rs.style.display='block';
+window.scrollTo({top:0,behavior:'smooth'});
+setTimeout(()=>{rs.querySelector('.fade-up').classList.add('visible')},100);
+
+// Animate score
+const circ=document.getElementById('scoreCircle');
+const offset=502-(502*total/70);
+setTimeout(()=>{circ.style.strokeDashoffset=offset},200);
+let num=0;const scoreEl=document.getElementById('scoreNum');
+const interval=setInterval(()=>{num++;if(num>=total){num=total;clearInterval(interval)}scoreEl.textContent=num},40);
+
+// Tier
+let tier,desc;
+if(total<=35){tier='Early Stage';desc='Your organization is in the early stages of AI readiness, and that\'s completely normal. Most businesses start here. The important thing is that you\'re thinking about it. Your next step is building AI awareness at the leadership level and identifying one or two concrete problems where AI could help.'}
+else if(total<=53){tier='Building Momentum';desc='You have a solid foundation. Leadership is engaged, your data is reasonably organized, and your team is open to change. The risk at this stage is moving too fast without a plan or too slow out of caution. Your next step is developing an AI strategy that prioritizes the right use cases and includes change management so adoption sticks.'}
+else{tier='Ready to Move';desc='Your organization has strong fundamentals for AI adoption. You have leadership buy-in, capable infrastructure, identifiable use cases, and a culture that supports change. Your next step is selecting the right tools, building governance, and executing with structured implementation support.'}
+
+document.getElementById('resultTitle').textContent='Your AI Readiness Score';
+document.getElementById('scoreTier').textContent=tier;
+document.getElementById('scoreDesc').textContent=desc;
+
+// Show industry context
+const industry=document.getElementById('industryDropdown').value;
+const customIndustry=document.getElementById('industryOtherInput').value.trim();
+if(industry==='Other'&&customIndustry){document.getElementById('industryNote').style.display='block';document.getElementById('industryNote').textContent='Industry: '+customIndustry+'. We work with businesses across many industries, including '+customIndustry.toLowerCase()+'. Book a call to discuss AI opportunities specific to your field.';}
+else if(industry&&industry!=='Other'){document.getElementById('industryNote').style.display='block';document.getElementById('industryNote').textContent='Industry: '+industry+'. We work with '+industry.toLowerCase()+' businesses nationwide. Book a call to discuss AI opportunities specific to your industry.';}
+else if(industry==='Other'){document.getElementById('industryNote').style.display='block';document.getElementById('industryNote').textContent='We work with businesses across many industries. Book a call to discuss how AI applies to your specific workflows.';}
+
+// Dimension scores
+const dimNames=['Leadership','People','Data','Processes','Governance','Security','Vendors'];
+const dimScoresEl=document.getElementById('dimScores');
+const dimScoreValues=[];
+dimScoresEl.innerHTML=dimensions.map((dim,di)=>{
+const score=answers[di*2]+answers[di*2+1];
+dimScoreValues.push(score);
+return`<div class="dim-score"><div class="dim-score-num">${score}/10</div><div class="dim-score-label">${dimNames[di]}</div></div>`;
+}).join('');
+
+// Submit anonymous results to Netlify Forms
+try{
+const formData=new FormData();
+formData.append('form-name','assessment-results');
+formData.append('industry',industry==='Other'&&customIndustry?customIndustry:(industry||'Not selected'));
+formData.append('total-score',total+'/70');
+formData.append('tier',tier);
+formData.append('leadership',dimScoreValues[0]+'/10');
+formData.append('people',dimScoreValues[1]+'/10');
+formData.append('data',dimScoreValues[2]+'/10');
+formData.append('processes',dimScoreValues[3]+'/10');
+formData.append('governance',dimScoreValues[4]+'/10');
+formData.append('security',dimScoreValues[5]+'/10');
+formData.append('vendors',dimScoreValues[6]+'/10');
+fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(formData).toString()}).catch(()=>{});
+}catch(e){}
+}
+
+function scrollToDim(idx){
+const el=document.getElementById('dim'+idx);
+if(el){const offset=el.getBoundingClientRect().top+window.scrollY-140;window.scrollTo({top:offset,behavior:'smooth'})}
+}
+
+renderQuestions();
+
+function submitLeadEmail(){
+  const emailInput=document.getElementById('leadEmail');
+  const email=emailInput.value.trim();
+  const errEl=document.getElementById('emailError');
+  const successEl=document.getElementById('emailSuccess');
+  errEl.style.display='none';
+
+  if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    errEl.textContent='Please enter a valid email address.';errEl.style.display='block';return;
+  }
+
+  const total=Object.values(answers).reduce((s,v)=>s+v,0);
+  const industry=document.getElementById('industryDropdown').value;
+  const customIndustry=document.getElementById('industryOtherInput').value.trim();
+  const industryVal=industry==='Other'&&customIndustry?customIndustry:(industry||'Not selected');
+  let tier='Early Stage';
+  if(total>53)tier='Ready to Move';else if(total>35)tier='Building Momentum';
+  const dimScoreValues=dimensions.map((_,di)=>answers[di*2]+answers[di*2+1]);
+
+  const formData=new URLSearchParams();
+  formData.append('form-name','assessment-leads');
+  formData.append('email',email);
+  formData.append('industry',industryVal);
+  formData.append('total-score',total+'/70');
+  formData.append('tier',tier);
+  formData.append('leadership',dimScoreValues[0]+'/10');
+  formData.append('people',dimScoreValues[1]+'/10');
+  formData.append('data',dimScoreValues[2]+'/10');
+  formData.append('processes',dimScoreValues[3]+'/10');
+  formData.append('governance',dimScoreValues[4]+'/10');
+  formData.append('security',dimScoreValues[5]+'/10');
+  formData.append('vendors',dimScoreValues[6]+'/10');
+
+  const btn=document.querySelector('#emailFormWrap .btn');
+  btn.textContent='Sending…';btn.disabled=true;
+
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:formData.toString()})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('emailFormWrap').style.display='none';
+        successEl.style.display='block';
+        try{
+          if(typeof gtag==='function'){
+            gtag('event','conversion',{'send_to':'AW-18008252065/KVesCOLWyoYcEKG9gItD','event_callback':function(){window.location.href='assessment-thank-you.html'}});
+            setTimeout(function(){window.location.href='assessment-thank-you.html'},1200);
+          } else {
+            setTimeout(function(){window.location.href='assessment-thank-you.html'},800);
+          }
+        }catch(err){setTimeout(function(){window.location.href='assessment-thank-you.html'},800);}
+      } else {
+        errEl.textContent='Something went wrong. Try again or email us directly.';errEl.style.display='block';
+        btn.textContent='Send It';btn.disabled=false;
+      }
+    })
+    .catch(()=>{
+      errEl.textContent='Something went wrong. Try again or email us directly.';errEl.style.display='block';
+      btn.textContent='Send It';btn.disabled=false;
+    });
+}
+</script>
+</body>
+</html>

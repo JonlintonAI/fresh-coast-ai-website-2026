@@ -1,0 +1,19 @@
+Campaign,Campaign ID,Ad group,Keyword,Match type,Status
+Campaign #1,23639524551,,"free ai courses",Negative phrase,Enabled
+Campaign #1,23639524551,,"free ai course",Negative phrase,Enabled
+Campaign #1,23639524551,,certificate,Negative broad,Enabled
+Campaign #1,23639524551,,certification,Negative broad,Enabled
+Campaign #1,23639524551,,"ai learning",Negative phrase,Enabled
+Campaign #1,23639524551,,"ai training",Negative phrase,Enabled
+Campaign #1,23639524551,,beginner,Negative broad,Enabled
+Campaign #1,23639524551,,scale ai,Negative phrase,Enabled
+Campaign #1,23639524551,,snorkel ai,Negative phrase,Enabled
+Campaign #1,23639524551,,dynatrace,Negative phrase,Enabled
+Campaign #1,23639524551,,datadog,Negative phrase,Enabled
+Campaign #1,23639524551,,"new york",Negative phrase,Enabled
+Campaign #1,23639524551,,summit,Negative broad,Enabled
+Campaign #1,23639524551,,"custom software development",Negative phrase,Enabled
+Campaign #1,23639524551,,"ai companies",Negative phrase,Enabled
+Campaign #1,23639524551,,"consulting company",Negative phrase,Enabled
+Campaign #1,23639524551,,"consulting firm",Negative phrase,Enabled
+Campaign #1,23639524551,,mastermind,Negative broad,Enabled

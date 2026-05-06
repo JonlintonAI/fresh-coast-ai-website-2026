@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option A — Shared Detail Panel Below Tags</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1A2B;--slate:#1B2D42;--steel:#3A506B;--mist:#E8EDF2;--cloud:#F4F6F8;--white:#FFF;--lake:#2B7A9E;--lake-deep:#1D5F7E;--lake-light:#3A9BC5;--wave:#48B5D2;--sand:#E8C87A;--serif:'DM Serif Display',Georgia,serif;--sans:'Outfit',-apple-system,sans-serif;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{font-family:var(--sans);color:var(--ink);background:var(--cloud);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.2;margin-bottom:1rem}
+
+.mockup-header{text-align:center;padding:2.5rem 2rem 1.5rem;background:var(--white);border-bottom:1px solid var(--mist)}
+.mockup-header h2{font-family:var(--serif);font-size:1.3rem;color:var(--lake);font-weight:400}
+.mockup-header p{font-size:.85rem;color:var(--steel);opacity:.6;margin-top:.5rem}
+
+/* ── OPTION A: SHARED PANEL BELOW ── */
+.industries-a{padding:4rem 2rem;background:var(--cloud)}
+.industries-a-inner{max-width:900px;margin:0 auto;text-align:center}
+.industries-a-inner .section-title{font-size:clamp(1.6rem,3vw,2rem);margin-bottom:.5rem}
+.industries-a-inner .section-subtitle{font-size:1rem;color:var(--steel);margin-bottom:2rem;font-weight:300}
+
+.ind-tags-a{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-bottom:0}
+
+.ind-tag-a{
+  background:var(--white);
+  border:1px solid var(--mist);
+  border-radius:10px;
+  padding:.7rem 1.3rem;
+  font-size:.9rem;
+  font-weight:500;
+  color:var(--ink);
+  cursor:pointer;
+  transition:all .3s var(--ease);
+  text-decoration:none;
+  display:block;
+  user-select:none;
+}
+.ind-tag-a:hover,
+.ind-tag-a.active{
+  border-color:var(--lake);
+  background:var(--lake);
+  color:var(--white);
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(43,122,158,.2);
+}
+
+.ind-tag-a-open{
+  border:2px dashed rgba(43,122,158,.3);
+  background:transparent;
+  color:var(--lake);
+}
+.ind-tag-a-open:hover,
+.ind-tag-a-open.active{
+  border-color:var(--lake);
+  background:var(--lake);
+  color:var(--white);
+}
+
+/* Shared detail panel */
+.ind-detail-panel{
+  max-width:600px;
+  margin:0 auto;
+  margin-top:1.5rem;
+  background:var(--white);
+  border:1px solid var(--mist);
+  border-radius:14px;
+  padding:1.5rem 2rem;
+  box-shadow:0 8px 28px rgba(0,0,0,.06);
+  text-align:left;
+  opacity:0;
+  max-height:0;
+  overflow:hidden;
+  transition:all .35s var(--ease);
+}
+.ind-detail-panel.visible{
+  opacity:1;
+  max-height:200px;
+  padding:1.5rem 2rem;
+}
+.ind-detail-panel h4{
+  font-family:var(--serif);
+  font-size:1.1rem;
+  color:var(--ink);
+  margin-bottom:.4rem;
+}
+.ind-detail-panel p{
+  font-size:.9rem;
+  color:var(--steel);
+  line-height:1.6;
+  margin:0;
+}
+.ind-detail-panel .ind-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.3rem;
+  margin-top:.75rem;
+  font-size:.85rem;
+  font-weight:500;
+  color:var(--lake);
+  text-decoration:none;
+}
+.ind-detail-panel .ind-link:hover{color:var(--lake-light)}
+.ind-detail-panel .ind-link svg{width:13px;height:13px}
+
+@media(max-width:600px){
+  .ind-tags-a{gap:.5rem}
+  .ind-tag-a{font-size:.82rem;padding:.6rem 1rem}
+  .ind-detail-panel{padding:1.2rem 1.4rem}
+}
+</style>
+<link rel="stylesheet" href="brand-2026.css"></head>
+<body>
+
+<div class="mockup-header">
+  <h2>Option A — Shared Detail Panel Below Tags</h2>
+  <p>Click any tag to show its description in a single panel below</p>
+</div>
+
+<section class="industries-a">
+<div class="industries-a-inner">
+  <div class="section-label">Industries We Serve</div>
+  <h2 class="section-title">AI looks different in every industry.</h2>
+  <p class="section-subtitle">We learn how your people actually work, then find where AI fits.</p>
+
+  <div class="ind-tags-a">
+    <div class="ind-tag-a" data-title="Professional Services" data-desc="Proposals, reports, and client deliverables — generated faster and reviewed smarter." data-link="industries/professional-services.html" data-linktext="Learn more">Professional Services</div>
+    <div class="ind-tag-a" data-title="Manufacturing, Distribution &amp; Logistics" data-desc="Less manual data entry, smarter inventory, streamlined dispatch. Starting where your team actually works." data-link="industries/manufacturing.html" data-linktext="Learn more">Manufacturing &amp; Distribution</div>
+    <div class="ind-tag-a" data-title="Skilled Trades &amp; Home Services" data-desc="AI handles the phones, the schedule, and the paperwork. Your techs do the work." data-link="industries/trades.html" data-linktext="Learn more">Skilled Trades</div>
+    <div class="ind-tag-a" data-title="Staffing &amp; Recruiting" data-desc="Faster candidate matching, automated intake, and client communication that scales." data-link="industries/staffing.html" data-linktext="Learn more">Staffing &amp; Recruiting</div>
+    <div class="ind-tag-a" data-title="Property Management" data-desc="Manage more doors without more headcount: tenant comms, maintenance triage, and listings on autopilot." data-link="industries/property-management.html" data-linktext="Learn more">Property Management</div>
+    <div class="ind-tag-a ind-tag-a-open" data-title="Your Industry" data-desc="We learn how your people work first. If your team runs on repeatable processes, AI can help — regardless of industry." data-link="contact.html" data-linktext="Let's talk">Your Industry →</div>
+  </div>
+
+  <div class="ind-detail-panel" id="detailPanel">
+    <h4 id="detailTitle"></h4>
+    <p id="detailDesc"></p>
+    <a href="#" class="ind-link" id="detailLink"><span id="detailLinkText"></span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+  </div>
+</div>
+</section>
+
+<script>
+const tags = document.querySelectorAll('.ind-tag-a');
+const panel = document.getElementById('detailPanel');
+const dTitle = document.getElementById('detailTitle');
+const dDesc = document.getElementById('detailDesc');
+const dLink = document.getElementById('detailLink');
+const dLinkText = document.getElementById('detailLinkText');
+let activeTag = null;
+
+tags.forEach(tag => {
+  tag.addEventListener('click', () => {
+    if (activeTag === tag) {
+      tag.classList.remove('active');
+      panel.classList.remove('visible');
+      activeTag = null;
+      return;
+    }
+    tags.forEach(t => t.classList.remove('active'));
+    tag.classList.add('active');
+    dTitle.textContent = tag.dataset.title;
+    dDesc.textContent = tag.dataset.desc;
+    dLink.href = tag.dataset.link;
+    dLinkText.textContent = tag.dataset.linktext;
+    panel.classList.add('visible');
+    activeTag = tag;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+# Fresh Coast AI
+
+> Practical AI adoption for businesses ready to own it. Fixed-fee engagements from readiness assessment to implementation. Founded by Jon Linton in Milwaukee, Wisconsin.
+
+Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and every engagement is designed to end — your team owns the capability when we're done.
+
+## Core Pages
+
+- [Homepage](https://freshcoast.ai/): Overview of Fresh Coast AI's approach to AI consulting
+- [About](https://freshcoast.ai/about.html): Background on founder Jon Linton — 13 years in change management, international business development, and AI transformation
+- [Services](https://freshcoast.ai/services.html): AI consulting service tiers, pricing, and what's included
+- [How We Work](https://freshcoast.ai/how-we-work.html): The Assess → Build → Own methodology
+- [Deliverables](https://freshcoast.ai/deliverables.html): Sample deliverables clients receive
+
+## Service Tiers & Pricing
+
+- AI Strategy Session: $1,000 — focused session to identify top AI opportunities
+- AI Readiness Assessment: Starting around $5,000 — full organizational AI readiness evaluation
+- AI Implementation: $8,000–$55,000 — end-to-end workflow design, build, and team training
+
+## Industries Served
+
+- [Professional Services](https://freshcoast.ai/industries/professional-services.html)
+- [Manufacturing](https://freshcoast.ai/industries/manufacturing.html)
+- [Skilled Trades](https://freshcoast.ai/industries/trades.html)
+- [Staffing](https://freshcoast.ai/industries/staffing.html)
+- [Property Management](https://freshcoast.ai/industries/property-management.html)
+
+## Location Pages
+
+- [Milwaukee AI Consulting](https://freshcoast.ai/milwaukee-ai-consulting.html)
+- [Wisconsin AI Consulting](https://freshcoast.ai/wisconsin-ai-consulting.html)
+- [Madison AI Consulting](https://freshcoast.ai/madison-ai-consulting.html)
+- [Green Bay & Fox Valley AI Consulting](https://freshcoast.ai/green-bay-fox-valley-ai-consulting.html)
+
+## Blog
+
+- [AI Consulting Costs in 2026](https://freshcoast.ai/blog/ai-consulting-costs-2026.html)
+- [How to Hire an AI Consultant](https://freshcoast.ai/blog/how-to-hire-an-ai-consultant.html)
+- [Where Should My Business Start with AI?](https://freshcoast.ai/blog/where-should-my-business-start-with-ai.html)
+- [Five AI Quick Wins for Small Businesses](https://freshcoast.ai/blog/five-ai-quick-wins.html)
+- [AI for Midwest Manufacturers](https://freshcoast.ai/blog/ai-for-midwest-manufacturers.html)
+- [AI Governance for Small Businesses](https://freshcoast.ai/blog/ai-governance-for-small-businesses.html)
+- [How to Know If Your Business Is Ready for AI](https://freshcoast.ai/blog/how-to-know-if-your-business-is-ready-for-ai.html)
+- [The AI Vendor Landscape](https://freshcoast.ai/blog/the-ai-vendor-landscape.html)
+- [Your Team Isn't Afraid of AI](https://freshcoast.ai/blog/your-team-isnt-afraid-of-ai.html)
+- [AI Change Management](https://freshcoast.ai/blog/ai-change-management.html)
+- [Why We Publish Our Pricing](https://freshcoast.ai/blog/why-we-publish-our-pricing.html)
+
+## Contact
+
+- Phone: (414) 737-1749
+- Email: jon@freshcoast.ai
+- Free consultation: https://freshcoast.ai/contact.html
+- AI Readiness Assessment: https://freshcoast.ai/assessment.html
