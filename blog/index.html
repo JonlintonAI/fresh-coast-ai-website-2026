@@ -375,7 +375,7 @@
                 <a href="../contact.html">Contact</a>
                 <a href="../contact.html" class="nav-cta">Book a Free Call</a>
             </div>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -575,14 +575,16 @@
         const navLinks = document.getElementById('navLinks');
 
         mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+            const open = navLinks.classList.toggle('open');
+            mobileToggle.setAttribute('aria-expanded', String(open));
         });
 
         // Close menu when link is clicked
         const navItems = navLinks.querySelectorAll('a');
         navItems.forEach(item => {
             item.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+                navLinks.classList.remove('open');
+                mobileToggle.setAttribute('aria-expanded','false');
             });
         });
     </script>

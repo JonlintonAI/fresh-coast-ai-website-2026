@@ -49,11 +49,30 @@ nav.nav .nav-logo{
   font-family:var(--serif);
   color:var(--ink)!important;
   text-decoration:none;
+  flex:0 0 auto;
+  white-space:nowrap;
 }
 nav.nav .nav-logo img{
-  height:44px!important;
+  height:42px!important;
   width:auto!important;
+  max-width:64px;
+  object-fit:contain;
   content:url('freshcoastai_logo_fullcolor_transparent.png');
+}
+nav.nav .nav-logo:has(img)::after{
+  content:"Fresh Coast AI";
+  color:var(--ink);
+  font-family:var(--serif);
+  font-size:1.08rem;
+  line-height:1;
+  letter-spacing:0;
+}
+nav.nav .nav-inner{
+  min-height:56px;
+}
+nav.nav .nav-links{
+  min-width:0;
+  gap:clamp(1rem,1.9vw,2rem);
 }
 
 nav.nav .nav-links a{
@@ -70,6 +89,7 @@ nav.nav .nav-cta{
   border-radius:999px!important;
   padding:.7rem 1.2rem!important;
   font-size:.92rem!important;
+  white-space:nowrap;
 }
 nav.nav .nav-cta:hover{background:var(--lake-deep)!important;box-shadow:0 6px 16px rgba(43,122,158,.28)}
 
@@ -81,8 +101,16 @@ nav.nav .mobile-toggle span{background:var(--ink)!important}
 nav.nav + section.page-hero{padding-top:4rem!important}
 
 /* Mobile nav menu open state */
-@media(max-width:900px){
+@media(max-width:1020px){
+  nav.nav .nav-links{display:none!important}
+  nav.nav .mobile-toggle{display:block!important}
   nav.nav .nav-links.open{
+    display:flex!important;
+    flex-direction:column;
+    position:absolute;
+    top:100%;left:0;right:0;
+    padding:1.5rem 2rem;
+    gap:1rem;
     background:#fff!important;
     border-top:1px solid var(--mist);
     box-shadow:0 8px 24px rgba(0,0,0,.06)!important;
@@ -104,6 +132,7 @@ nav.nav + section.page-hero{padding-top:4rem!important}
   pointer-events:none;
 }
 .page-hero h1 em,.page-hero h1 i{font-style:italic;color:var(--wave)}
+.page-hero p{color:rgba(255,255,255,.72)!important}
 
 /* ============================================================
    SECTION LABELS — mono kicker w/ § marker
@@ -212,7 +241,7 @@ footer.footer .footer-contact::before{
 }
 /* Version stamp at the bottom */
 footer.footer .footer-copy::after{
-  content:" · v.2026.05 · last shipped May 4";
+  content:" · v.2026.05 · last shipped May 6";
   color:rgba(255,255,255,.35);
   font-family:var(--mono);
 }
@@ -249,8 +278,13 @@ footer.footer .footer-copy::after{
 /* ============================================================
    RESPONSIVE — keep nav sticky behavior consistent
 ============================================================ */
-@media(max-width:900px){
+@media(max-width:1020px){
   nav.nav{padding:.85rem 1.25rem!important}
   .page-hero::after{font-size:.68rem;top:1rem}
   footer.footer .footer-contact::before{font-size:.95rem}
+}
+@media(max-width:600px){
+  .page-hero::after{display:none}
+  nav.nav + section.page-hero{padding-top:3rem!important}
+  nav.nav .nav-logo:has(img)::after{font-size:1rem}
 }
