@@ -42,7 +42,7 @@ a:hover{color:var(--lake-deep)}
 .nav{position:sticky;top:0;left:0;right:0;z-index:100;padding:1rem 2.4rem;transition:all .3s var(--ease);background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--mist)}
 .nav-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .nav-logo{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--serif);font-size:1.18rem;color:var(--ink);letter-spacing:-.01em;white-space:nowrap;flex:none}
-.nav-logo img{height:44px;width:auto;max-width:190px;object-fit:contain;display:block}
+.nav-logo img{height:44px;width:auto;max-width:245px;object-fit:contain;display:block}
 .nav-links{display:flex;gap:1.8rem;align-items:center;font-family:var(--sans);font-size:.92rem;font-weight:500}
 .nav-links a{color:var(--steel);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
@@ -322,7 +322,7 @@ a:hover{color:var(--lake-deep)}
 .footer-inner{max-width:var(--max-w);margin:0 auto;position:relative}
 .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:2.4rem;margin-bottom:3rem}
 .footer-brand .nav-logo{color:var(--white);font-size:1.3rem}
-.footer-brand .nav-logo img{height:42px;width:auto;max-width:190px;object-fit:contain;display:block}
+.footer-brand .nav-logo img{height:42px;width:auto;max-width:240px;object-fit:contain;display:block}
 .footer-tagline{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:rgba(255,255,255,.85);margin-top:1.2rem;line-height:1.5}
 .footer-contact{font-family:var(--mono);font-size:.82rem;margin-top:1.4rem;line-height:1.7}
 .footer-contact a{color:var(--wave)}
@@ -342,6 +342,7 @@ a:hover{color:var(--lake-deep)}
 @media(max-width:900px){
   .nav-links{display:none}
   .mobile-toggle{display:block}
+  .nav-logo img{height:36px;max-width:205px}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1.5rem 2rem;gap:1rem;border-top:1px solid var(--mist);box-shadow:0 8px 24px rgba(0,0,0,.06);z-index:99}
 }
 @media(max-width:700px){
@@ -386,7 +387,7 @@ a:hover{color:var(--lake-deep)}
 <!-- NAV -->
 <nav class="nav" id="nav"><div class="nav-inner">
 <a href="index.html" class="nav-logo">
-<img src="freshcoastai_logo_fullcolor_transparent.png" alt="Fresh Coast AI" width="1800" height="520">
+<img src="freshcoastai_nav_logo.svg" alt="Fresh Coast AI" width="1800" height="330">
 </a>
 <div class="nav-links" id="navLinks">
 <a href="about.html">About</a>
@@ -674,7 +675,7 @@ a:hover{color:var(--lake-deep)}
 <footer class="footer"><div class="footer-inner">
 <div class="footer-grid">
 <div class="footer-brand">
-<a href="index.html" class="nav-logo"><img src="freshcoastai_logo_1color_white_transparent.png" alt="Fresh Coast AI" width="1800" height="520"></a>
+<a href="index.html" class="nav-logo"><img src="freshcoastai_nav_logo_white.svg" alt="Fresh Coast AI" width="1800" height="330"></a>
 <p class="footer-tagline">Listen first. Build together. Leave it behind.</p>
 <div class="footer-contact">
 <a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a><br>

@@ -55,7 +55,7 @@ nav.nav .nav-logo{
 nav.nav .nav-logo img{
   height:42px!important;
   width:auto!important;
-  max-width:190px;
+  max-width:240px;
   object-fit:contain;
 }
 nav.nav .nav-logo-text{
@@ -295,5 +295,5 @@ footer.footer .footer-version{
 @media(max-width:600px){
   .decorative-meta{display:none}
   nav.nav + section.page-hero{padding-top:3rem!important}
-  nav.nav .nav-logo-text{font-size:1rem}
+  nav.nav .nav-logo img{height:36px!important;max-width:205px}
 }

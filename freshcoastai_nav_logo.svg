@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="330" viewBox="0 0 1800 330" role="img" aria-labelledby="freshcoastai-nav-title">
+  <title id="freshcoastai-nav-title">Fresh Coast AI</title>
+  <defs>
+    <linearGradient id="topGrad" x1="80" y1="70" x2="800" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#087FC4"/>
+      <stop offset="0.55" stop-color="#22C1C3"/>
+      <stop offset="1" stop-color="#7BD7D0"/>
+    </linearGradient>
+    <linearGradient id="midGrad" x1="80" y1="110" x2="790" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#051D3C"/>
+      <stop offset="0.45" stop-color="#087FC4"/>
+      <stop offset="1" stop-color="#22C1C3"/>
+    </linearGradient>
+    <linearGradient id="lowGrad" x1="80" y1="160" x2="830" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#051D3C"/>
+      <stop offset="0.68" stop-color="#087FC4"/>
+      <stop offset="1" stop-color="#22C1C3"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(70,42) scale(0.64)">
+    <path fill="url(#topGrad)" d="M86 153 C176 64 324 32 454 65 C548 89 618 143 718 148 C773 151 823 137 860 112 C802 174 710 204 604 185 C498 165 423 107 314 105 C225 103 151 125 86 153 Z"/>
+    <path fill="url(#midGrad)" d="M84 204 C187 143 291 128 386 151 C485 176 557 224 662 219 C746 215 810 177 855 147 C813 219 735 257 626 257 C514 258 433 204 332 185 C241 168 161 181 84 204 Z"/>
+    <path fill="url(#lowGrad)" d="M70 236 C188 204 297 213 420 245 C520 271 614 281 707 255 C761 240 811 214 854 185 C804 264 710 309 584 307 C475 306 389 264 284 243 C204 226 133 224 70 236 Z"/>
+    <path fill="rgba(255,255,255,0.22)" d="M272 142 C342 124 409 136 476 168 C410 151 347 150 282 170 C210 192 153 209 92 207 C159 187 212 160 272 142 Z"/>
+  </g>
+  <text x="730" y="185" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="95" font-weight="700" letter-spacing="14" fill="#051D3C">FRESH COAST <tspan fill="#22C1C3">AI</tspan></text>
+</svg>
