@@ -41,13 +41,13 @@ a:hover{color:var(--lake-deep)}
 /* NAV */
 .nav{position:sticky;top:0;left:0;right:0;z-index:100;padding:1rem 2.4rem;transition:all .3s var(--ease);background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--mist)}
 .nav-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.nav-logo{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--serif);font-size:1.18rem;color:var(--ink);letter-spacing:-.01em}
+.nav-logo{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--serif);font-size:1.18rem;color:var(--ink);letter-spacing:-.01em;white-space:nowrap;flex:none}
 .nav-logo em{color:var(--lake);font-style:italic}
 .nav-logo svg{width:24px;height:24px;flex:none}
 .nav-links{display:flex;gap:1.8rem;align-items:center;font-family:var(--sans);font-size:.92rem;font-weight:500}
 .nav-links a{color:var(--steel);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
-.nav-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.2rem;border-radius:999px;background:var(--lake);color:var(--white)!important;font-weight:500;font-size:.92rem;transition:all .2s}
+.nav-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.2rem;border-radius:999px;background:var(--lake);color:var(--white)!important;font-weight:500;font-size:.92rem;transition:all .2s;white-space:nowrap}
 .nav-cta:hover{background:var(--lake-deep);transform:translateY(-1px);box-shadow:0 6px 16px rgba(43,122,158,.28)}
 .mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem}
 .mobile-toggle span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.3s}
@@ -319,10 +319,12 @@ a:hover{color:var(--lake-deep)}
   .timeline-rail{display:none}
   .ind-grid{grid-template-columns:1fr 1fr}
 }
-@media(max-width:700px){
+@media(max-width:900px){
   .nav-links{display:none}
   .mobile-toggle{display:block}
   .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1.5rem 2rem;gap:1rem;border-top:1px solid var(--mist);box-shadow:0 8px 24px rgba(0,0,0,.06);z-index:99}
+}
+@media(max-width:700px){
   .hero{padding:2rem 1.25rem 4rem}
   .problem,.journey,.phil,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq{padding:4rem 1.25rem}
   .problem-grid{grid-template-columns:1fr}
@@ -375,7 +377,7 @@ Fresh Coast <em>AI</em>
 <a href="contact.html">Contact</a>
 <a href="contact.html" class="nav-cta">Book a Free Call</a>
 </div>
-<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
 </div></nav>
 
 <!-- HERO -->
@@ -626,12 +628,12 @@ Fresh Coast <em>AI</em>
 <div class="section-mark fade-up"><span class="num">§ 10</span><span class="rule"></span><span class="label">Questions We Hear</span></div>
 <h2 class="section-title fade-up">Straight <em>answers</em> only.</h2>
 <div class="faq-list">
-<div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">01</span><span class="qtxt">How much does a typical engagement cost?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Every engagement is fixed-fee, scoped and priced upfront so there are no surprises. Most clients start with the AI Strategy Session ($1,000), and full engagements range from $5,000 to $55,000 depending on company size and scope. You'll get a specific number after a free consultation. <a href="how-we-work.html">See how we price engagements →</a></div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">02</span><span class="qtxt">How long does a typical engagement take?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">The Assessment phase takes 2 to 3 weeks. A full Assess to Build to Own engagement is usually 6 to 10 weeks. You'll see early wins within the first few weeks, not months.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">03</span><span class="qtxt">What if my team is resistant to AI?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">That's where we do our best work. Resistance usually comes from fear: of being replaced, of looking stupid, of more busywork. We start by listening and showing people how AI makes their specific job easier. Skeptics tend to become the biggest advocates. <a href="contact.html">Let's talk about it →</a></div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">04</span><span class="qtxt">Do we need technical people on our team?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">No. We work with teams that have zero technical background all the time. We build AI workflows that non-technical people can own and run. If you can use email, you can use what we build.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">05</span><span class="qtxt">What makes you different from other AI consultants?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Three things: vendor-neutral (no software to sell), Milwaukee-based but work anywhere, and our engagements are designed to end. Most consultants build dependencies because recurring revenue is their business model. Ours is built on your independence.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="qn">06</span><span class="qtxt">What industries do you work with?</span><span class="toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">We've worked across professional services, manufacturing, skilled trades, property management, and operations. The common thread is businesses that know they need AI but aren't sure where to start.</div></div></div>
+<div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faq-a-1"><span class="qn">01</span><span class="qtxt">How much does a typical engagement cost?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-1" aria-hidden="false"><div class="faq-a-inner">Every engagement is fixed-fee, scoped and priced upfront so there are no surprises. Most clients start with the AI Strategy Session ($1,000), and full engagements range from $5,000 to $55,000 depending on company size and scope. You'll get a specific number after a free consultation. <a href="how-we-work.html">See how we price engagements →</a></div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-2"><span class="qn">02</span><span class="qtxt">How long does a typical engagement take?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-2" aria-hidden="true"><div class="faq-a-inner">The Assessment phase takes 2 to 3 weeks. A full Assess to Build to Own engagement is usually 6 to 10 weeks. You'll see early wins within the first few weeks, not months.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-3"><span class="qn">03</span><span class="qtxt">What if my team is resistant to AI?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-3" aria-hidden="true"><div class="faq-a-inner">That's where we do our best work. Resistance usually comes from fear: of being replaced, of looking stupid, of more busywork. We start by listening and showing people how AI makes their specific job easier. Skeptics tend to become the biggest advocates. <a href="contact.html">Let's talk about it →</a></div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-4"><span class="qn">04</span><span class="qtxt">Do we need technical people on our team?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-4" aria-hidden="true"><div class="faq-a-inner">No. We work with teams that have zero technical background all the time. We build AI workflows that non-technical people can own and run. If you can use email, you can use what we build.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-5"><span class="qn">05</span><span class="qtxt">What makes you different from other AI consultants?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-5" aria-hidden="true"><div class="faq-a-inner">Three things: vendor-neutral (no software to sell), Milwaukee-based but work anywhere, and our engagements are designed to end. Most consultants build dependencies because recurring revenue is their business model. Ours is built on your independence.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-6"><span class="qn">06</span><span class="qtxt">What industries do you work with?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-6" aria-hidden="true"><div class="faq-a-inner">We've worked across professional services, manufacturing, skilled trades, property management, and operations. The common thread is businesses that know they need AI but aren't sure where to start.</div></div></div>
 </div>
 </div></section>
 
@@ -664,7 +666,7 @@ Fresh Coast <em>AI</em>
 <script>
 // Mobile nav
 const toggle=document.getElementById('mobileToggle'),links=document.getElementById('navLinks');
-toggle&&toggle.addEventListener('click',()=>links.classList.toggle('open'));
+toggle&&toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});
 
 // Fade-up
 try{const obs=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.fade-up').forEach(e=>obs.observe(e))}catch(e){document.querySelectorAll('.fade-up').forEach(e=>e.classList.add('visible'))}
@@ -677,7 +679,7 @@ wfTabs.forEach(t=>t.addEventListener('click',()=>{showWf(parseInt(t.dataset.i,10
 wfTimer=setInterval(()=>{wfCur=(wfCur+1)%5;showWf(wfCur)},5000);
 
 // FAQ
-function toggleFaq(btn){const item=btn.parentElement;const a=item.querySelector('.faq-a');const inner=item.querySelector('.faq-a-inner');if(item.classList.contains('open')){a.style.maxHeight='0';item.classList.remove('open')}else{document.querySelectorAll('.faq-item.open').forEach(o=>{o.querySelector('.faq-a').style.maxHeight='0';o.classList.remove('open')});a.style.maxHeight=inner.scrollHeight+'px';item.classList.add('open')}}
+function toggleFaq(btn){const item=btn.parentElement;const a=item.querySelector('.faq-a');const inner=item.querySelector('.faq-a-inner');if(item.classList.contains('open')){a.style.maxHeight='0';a.setAttribute('aria-hidden','true');btn.setAttribute('aria-expanded','false');item.classList.remove('open')}else{document.querySelectorAll('.faq-item.open').forEach(o=>{const oa=o.querySelector('.faq-a');const ob=o.querySelector('.faq-q');oa.style.maxHeight='0';oa.setAttribute('aria-hidden','true');ob.setAttribute('aria-expanded','false');o.classList.remove('open')});a.style.maxHeight=inner.scrollHeight+'px';a.setAttribute('aria-hidden','false');btn.setAttribute('aria-expanded','true');item.classList.add('open')}}
 // Open the first FAQ on load
 window.addEventListener('load',()=>{const first=document.querySelector('.faq-item.open');if(first){const a=first.querySelector('.faq-a');const inner=first.querySelector('.faq-a-inner');a.style.maxHeight=inner.scrollHeight+'px'}});
 
