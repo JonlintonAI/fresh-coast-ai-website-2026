@@ -123,6 +123,24 @@ a:hover{color:var(--lake-deep)}
 .logo-bar-label{font-family:var(--mono);font-size:.74rem;color:var(--steel);text-transform:uppercase;letter-spacing:.1em}
 .logo-bar-name{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--steel)}
 
+/* START PATHS */
+.start-paths{padding:4.5rem 2.4rem;background:var(--white)}
+.start-paths-inner{max-width:var(--max-w);margin:0 auto}
+.start-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:end;margin-bottom:2rem}
+.start-head h2{font-size:clamp(2rem,3.5vw,3rem)}
+.start-head p{color:var(--steel);font-size:1.04rem;line-height:1.65;max-width:620px}
+.start-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.start-card{display:flex;flex-direction:column;gap:.75rem;padding:1.5rem;border:1px solid var(--mist);border-radius:8px;background:var(--cloud);color:inherit;text-decoration:none;min-height:100%}
+.start-card:hover{border-color:rgba(43,122,158,.35);background:var(--white);color:inherit;box-shadow:0 10px 28px rgba(11,26,43,.08);transform:translateY(-2px)}
+.start-card.featured{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.start-card .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lake)}
+.start-card.featured .tag{color:var(--wave)}
+.start-card h3{font-family:var(--serif);font-size:1.3rem;line-height:1.15;color:inherit}
+.start-card p{font-size:.94rem;color:var(--steel);line-height:1.55}
+.start-card.featured p{color:rgba(255,255,255,.68)}
+.start-card .action{margin-top:auto;font-size:.9rem;font-weight:600;color:var(--lake)}
+.start-card.featured .action{color:var(--wave)}
+
 /* PROBLEM */
 .problem{padding:6rem 2.4rem;background:var(--white)}
 .problem-inner{max-width:var(--max-w);margin:0 auto}
@@ -314,7 +332,7 @@ a:hover{color:var(--lake-deep)}
 
 /* RESPONSIVE */
 @media(max-width:1000px){
-  .hero-grid,.journey-head,.phil-head,.strategy-card,.wf-shell,.t-grid,.fit-grid,.ind-grid,.path-grid,.t-supporting{grid-template-columns:1fr;gap:2.4rem}
+  .hero-grid,.journey-head,.phil-head,.strategy-card,.wf-shell,.t-grid,.fit-grid,.ind-grid,.path-grid,.t-supporting,.start-head,.start-grid{grid-template-columns:1fr;gap:2.4rem}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
   .timeline-rail{display:none}
   .ind-grid{grid-template-columns:1fr 1fr}
@@ -326,7 +344,7 @@ a:hover{color:var(--lake-deep)}
 }
 @media(max-width:700px){
   .hero{padding:2rem 1.25rem 4rem}
-  .problem,.journey,.phil,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq{padding:4rem 1.25rem}
+  .problem,.journey,.phil,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq,.start-paths{padding:4rem 1.25rem}
   .problem-grid{grid-template-columns:1fr}
   .problem-card{border-right:none;border-bottom:1px solid var(--mist);padding:2rem 0}
   .ind-grid{grid-template-columns:1fr}
@@ -377,7 +395,7 @@ Fresh Coast <em>AI</em>
 <a href="contact.html">Contact</a>
 <a href="contact.html" class="nav-cta">Book a Free Call</a>
 </div>
-<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+<button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
 </div></nav>
 
 <!-- HERO -->
@@ -419,16 +437,16 @@ Fresh Coast <em>AI</em>
 <div>Invoice</div><div>Vendor</div><div style="text-align:right">Amount</div><div>GL Code</div>
 </div>
 <div class="console-row" data-i="0">
-<div class="inv">INV-2841</div><div>Northshore Logistics</div><div class="amt">$ 4,210.00</div><div class="gl">—</div>
+<div class="inv">INV-2841</div><div>Freight vendor</div><div class="amt">$ 4,210.00</div><div class="gl">—</div>
 </div>
 <div class="console-row" data-i="1">
-<div class="inv">INV-2842</div><div>Hartford Office Supply</div><div class="amt">$ 1,489.50</div><div class="gl">—</div>
+<div class="inv">INV-2842</div><div>Office supplier</div><div class="amt">$ 1,489.50</div><div class="gl">—</div>
 </div>
 <div class="console-row" data-i="2">
-<div class="inv">INV-2843</div><div>Milwaukee Steel Co.</div><div class="amt">$ 12,640.00</div><div class="gl">—</div>
+<div class="inv">INV-2843</div><div>Materials vendor</div><div class="amt">$ 12,640.00</div><div class="gl">—</div>
 </div>
 <div class="console-row" data-i="3">
-<div class="inv">INV-2844</div><div>Lake Park Cafe</div><div class="amt">$ 320.00</div><div class="gl">—</div>
+<div class="inv">INV-2844</div><div>Catering vendor</div><div class="amt">$ 320.00</div><div class="gl">—</div>
 </div>
 <div class="console-foot">
 <span id="consoleFootText">avg time per invoice: 6 min · manual</span>
@@ -444,9 +462,20 @@ Fresh Coast <em>AI</em>
 <span class="logo-bar-label">Trusted by</span>
 <span class="logo-bar-name">CultureCon</span>
 <span class="logo-bar-name">Trusted Electric</span>
-<span class="logo-bar-name">Hartford Group</span>
-<span class="logo-bar-name">Northshore Logistics</span>
-<span class="logo-bar-name">Lake Park CPA</span>
+</div></section>
+
+<!-- START PATHS -->
+<section class="start-paths"><div class="start-paths-inner">
+<div class="section-mark fade-up"><span class="num">START</span><span class="rule"></span><span class="label">Choose Your Next Step</span></div>
+<div class="start-head">
+<h2 class="section-title fade-up">Pick the path that fits <em>where you are.</em></h2>
+<p class="fade-up stagger-1">Most teams do not need a giant AI transformation plan on day one. They need the next credible step, sized to their confidence, budget, and urgency.</p>
+</div>
+<div class="start-grid">
+<a href="assessment.html" class="start-card fade-up"><div class="tag">Curious</div><h3>Get a readiness baseline.</h3><p>Use the free assessment to see where your organization is strong, where it is exposed, and what to fix first.</p><div class="action">Take the assessment &rarr;</div></a>
+<a href="contact.html" class="start-card featured fade-up stagger-1"><div class="tag">Exploring</div><h3>Talk through your options.</h3><p>Book a free call when you want a practical read on whether AI makes sense for your team right now.</p><div class="action">Book a free call &rarr;</div></a>
+<a href="contact.html?service=strategy-session" class="start-card fade-up stagger-2"><div class="tag">Ready</div><h3>Leave with a paid plan.</h3><p>Start with the $1,000 Strategy Session when you want a concrete Opportunity Brief you can act on.</p><div class="action">Start the strategy session &rarr;</div></a>
+</div>
 </div></section>
 
 <!-- PROBLEM -->
@@ -545,11 +574,11 @@ Fresh Coast <em>AI</em>
 <p class="workflows-sub fade-up">The repetitive, manual work costing your team hours every week, transformed.</p>
 <div class="wf-shell fade-up">
 <div class="wf-tabs" id="wfTabs">
-<button class="wf-tab on" data-i="0">Finance</button>
-<button class="wf-tab" data-i="1">HR</button>
-<button class="wf-tab" data-i="2">Recruiting</button>
-<button class="wf-tab" data-i="3">Operations</button>
-<button class="wf-tab" data-i="4">Website</button>
+<button type="button" class="wf-tab on" data-i="0">Finance</button>
+<button type="button" class="wf-tab" data-i="1">HR</button>
+<button type="button" class="wf-tab" data-i="2">Recruiting</button>
+<button type="button" class="wf-tab" data-i="3">Operations</button>
+<button type="button" class="wf-tab" data-i="4">Website</button>
 </div>
 <div id="wfPanes">
 <div class="wf-pane on" data-i="0"><h3>Invoice processing &amp; expense coding</h3><div class="wf-split"><div class="wf-before"><div class="wf-lab">BEFORE</div><p>Manual review, categorization, and routing for every invoice.</p></div><div class="wf-after"><div class="wf-lab">AFTER</div><p>AI categorizes and routes automatically. Your team approves exceptions only.</p></div></div><div class="wf-metric"><span class="dot"></span>6 min → 4 sec per invoice</div></div>
@@ -628,12 +657,12 @@ Fresh Coast <em>AI</em>
 <div class="section-mark fade-up"><span class="num">§ 10</span><span class="rule"></span><span class="label">Questions We Hear</span></div>
 <h2 class="section-title fade-up">Straight <em>answers</em> only.</h2>
 <div class="faq-list">
-<div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faq-a-1"><span class="qn">01</span><span class="qtxt">How much does a typical engagement cost?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-1" aria-hidden="false"><div class="faq-a-inner">Every engagement is fixed-fee, scoped and priced upfront so there are no surprises. Most clients start with the AI Strategy Session ($1,000), and full engagements range from $5,000 to $55,000 depending on company size and scope. You'll get a specific number after a free consultation. <a href="how-we-work.html">See how we price engagements →</a></div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-2"><span class="qn">02</span><span class="qtxt">How long does a typical engagement take?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-2" aria-hidden="true"><div class="faq-a-inner">The Assessment phase takes 2 to 3 weeks. A full Assess to Build to Own engagement is usually 6 to 10 weeks. You'll see early wins within the first few weeks, not months.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-3"><span class="qn">03</span><span class="qtxt">What if my team is resistant to AI?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-3" aria-hidden="true"><div class="faq-a-inner">That's where we do our best work. Resistance usually comes from fear: of being replaced, of looking stupid, of more busywork. We start by listening and showing people how AI makes their specific job easier. Skeptics tend to become the biggest advocates. <a href="contact.html">Let's talk about it →</a></div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-4"><span class="qn">04</span><span class="qtxt">Do we need technical people on our team?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-4" aria-hidden="true"><div class="faq-a-inner">No. We work with teams that have zero technical background all the time. We build AI workflows that non-technical people can own and run. If you can use email, you can use what we build.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-5"><span class="qn">05</span><span class="qtxt">What makes you different from other AI consultants?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-5" aria-hidden="true"><div class="faq-a-inner">Three things: vendor-neutral (no software to sell), Milwaukee-based but work anywhere, and our engagements are designed to end. Most consultants build dependencies because recurring revenue is their business model. Ours is built on your independence.</div></div></div>
-<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-6"><span class="qn">06</span><span class="qtxt">What industries do you work with?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-6" aria-hidden="true"><div class="faq-a-inner">We've worked across professional services, manufacturing, skilled trades, property management, and operations. The common thread is businesses that know they need AI but aren't sure where to start.</div></div></div>
+<div class="faq-item open"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faq-a-1"><span class="qn">01</span><span class="qtxt">How much does a typical engagement cost?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-1" aria-hidden="false"><div class="faq-a-inner">Every engagement is fixed-fee, scoped and priced upfront so there are no surprises. Most clients start with the AI Strategy Session ($1,000), and full engagements range from $5,000 to $55,000 depending on company size and scope. You'll get a specific number after a free consultation. <a href="how-we-work.html">See how we price engagements →</a></div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-2"><span class="qn">02</span><span class="qtxt">How long does a typical engagement take?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-2" aria-hidden="true"><div class="faq-a-inner">The Assessment phase takes 2 to 3 weeks. A full Assess to Build to Own engagement is usually 6 to 10 weeks. You'll see early wins within the first few weeks, not months.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-3"><span class="qn">03</span><span class="qtxt">What if my team is resistant to AI?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-3" aria-hidden="true"><div class="faq-a-inner">That's where we do our best work. Resistance usually comes from fear: of being replaced, of looking stupid, of more busywork. We start by listening and showing people how AI makes their specific job easier. Skeptics tend to become the biggest advocates. <a href="contact.html">Let's talk about it →</a></div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-4"><span class="qn">04</span><span class="qtxt">Do we need technical people on our team?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-4" aria-hidden="true"><div class="faq-a-inner">No. We work with teams that have zero technical background all the time. We build AI workflows that non-technical people can own and run. If you can use email, you can use what we build.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-5"><span class="qn">05</span><span class="qtxt">What makes you different from other AI consultants?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-5" aria-hidden="true"><div class="faq-a-inner">Three things: vendor-neutral (no software to sell), Milwaukee-based but work anywhere, and our engagements are designed to end. Most consultants build dependencies because recurring revenue is their business model. Ours is built on your independence.</div></div></div>
+<div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" aria-controls="faq-a-6"><span class="qn">06</span><span class="qtxt">What industries do you work with?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-6" aria-hidden="true"><div class="faq-a-inner">We've worked across professional services, manufacturing, skilled trades, property management, and operations. The common thread is businesses that know they need AI but aren't sure where to start.</div></div></div>
 </div>
 </div></section>
 

@@ -59,8 +59,7 @@ nav.nav .nav-logo img{
   object-fit:contain;
   content:url('freshcoastai_logo_fullcolor_transparent.png');
 }
-nav.nav .nav-logo:has(img)::after{
-  content:"Fresh Coast AI";
+nav.nav .nav-logo-text{
   color:var(--ink);
   font-family:var(--serif);
   font-size:1.08rem;
@@ -123,8 +122,7 @@ nav.nav + section.page-hero{padding-top:4rem!important}
    PAGE HERO — keep dark, add mono status strip on top
 ============================================================ */
 .page-hero{position:relative}
-.page-hero::after{
-  content:"fresh-coast-ai · v.2026 · milwaukee, wi";
+.decorative-meta{
   position:absolute;top:1.4rem;left:0;right:0;
   text-align:center;
   font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;
@@ -239,9 +237,7 @@ footer.footer .footer-contact::before{
   margin-bottom:1.4rem;
   line-height:1.5;
 }
-/* Version stamp at the bottom */
-footer.footer .footer-copy::after{
-  content:" · v.2026.05 · last shipped May 6";
+footer.footer .footer-version{
   color:rgba(255,255,255,.35);
   font-family:var(--mono);
 }
@@ -280,11 +276,11 @@ footer.footer .footer-copy::after{
 ============================================================ */
 @media(max-width:1020px){
   nav.nav{padding:.85rem 1.25rem!important}
-  .page-hero::after{font-size:.68rem;top:1rem}
+  .decorative-meta{font-size:.68rem;top:1rem}
   footer.footer .footer-contact::before{font-size:.95rem}
 }
 @media(max-width:600px){
-  .page-hero::after{display:none}
+  .decorative-meta{display:none}
   nav.nav + section.page-hero{padding-top:3rem!important}
-  nav.nav .nav-logo:has(img)::after{font-size:1rem}
+  nav.nav .nav-logo-text{font-size:1rem}
 }
