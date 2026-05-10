@@ -122,6 +122,11 @@ a:hover{color:var(--lake-deep)}
 .logo-bar{background:var(--cloud);padding:1.6rem 2.4rem;border-top:1px solid var(--mist);border-bottom:1px solid var(--mist)}
 .logo-bar-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
 .logo-bar-label{font-family:var(--mono);font-size:.74rem;color:var(--steel);text-transform:uppercase;letter-spacing:.1em}
+.logo-bar-client{display:inline-flex;align-items:center;gap:.65rem;min-height:36px;white-space:nowrap}
+.logo-bar-logo{display:block;width:auto;height:28px;object-fit:contain;opacity:.9}
+.logo-bar-logo--culture{height:28px}
+.logo-bar-logo--trusted{height:32px}
+.logo-bar-logo--living{height:24px;max-width:108px}
 .logo-bar-name{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--steel)}
 
 /* START PATHS */
@@ -348,6 +353,9 @@ a:hover{color:var(--lake-deep)}
 @media(max-width:700px){
   .hero{padding:2rem 1.25rem 4rem}
   .problem,.journey,.phil,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq,.start-paths{padding:4rem 1.25rem}
+  .logo-bar{padding:1.4rem 1.25rem}
+  .logo-bar-inner{gap:1.1rem 1.5rem}
+  .logo-bar-label{flex-basis:100%}
   .problem-grid{grid-template-columns:1fr}
   .problem-card{border-right:none;border-bottom:1px solid var(--mist);padding:2rem 0}
   .ind-grid{grid-template-columns:1fr}
@@ -462,9 +470,9 @@ a:hover{color:var(--lake-deep)}
 <!-- LOGO BAR -->
 <section class="logo-bar"><div class="logo-bar-inner">
 <span class="logo-bar-label">Trusted by</span>
-<span class="logo-bar-name">CultureCon</span>
-<span class="logo-bar-name">Trusted Electric</span>
-<span class="logo-bar-name">Living Canvas Foundation</span>
+<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--culture" src="culturecon-logo.png" alt="" width="69" height="54" loading="lazy"><span class="logo-bar-name">CultureCon</span></span>
+<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--trusted" src="trusted-electric-logo.png" alt="" width="300" height="232" loading="lazy"><span class="logo-bar-name">Trusted Electric</span></span>
+<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--living" src="living-canvas-foundation-logo.png" alt="" width="500" height="141" loading="lazy"><span class="logo-bar-name">Living Canvas Foundation</span></span>
 </div></section>
 
 <!-- START PATHS -->
