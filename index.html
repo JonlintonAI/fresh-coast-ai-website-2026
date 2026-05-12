@@ -179,23 +179,6 @@ a:hover{color:var(--lake-deep)}
 .tl-proof{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--lake)}
 .timeline-foot{margin-top:2rem;text-align:center;font-family:var(--sans);font-size:.92rem}
 
-/* PHILOSOPHY */
-.phil{padding:6rem 2.4rem;background:var(--white)}
-.phil-inner{max-width:var(--max-w);margin:0 auto}
-.phil-head{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;margin-bottom:3.5rem}
-.phil h2{font-size:clamp(2.4rem,4.4vw,3.6rem)}
-.phil-lede{font-family:var(--sans);font-size:1.1rem;color:var(--steel);line-height:1.7;padding-top:.8rem}
-.phil-lede strong{color:var(--ink)}
-.phil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-.phil-card{background:var(--cloud);border-radius:14px;padding:2rem 1.8rem;border-top:3px solid var(--lake);transition:transform .25s,box-shadow .25s}
-.phil-card:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(11,26,43,.1)}
-.phil-card .pn{font-family:var(--mono);font-size:.78rem;color:var(--lake);letter-spacing:.08em;margin-bottom:1rem}
-.phil-card h3{font-family:var(--serif);font-size:1.4rem;color:var(--ink);line-height:1.2;margin-bottom:.9rem}
-.phil-card p{font-family:var(--sans);font-size:.95rem;color:var(--steel);line-height:1.6}
-.phil-banner{margin-top:2rem;background:var(--ink);color:var(--white);border-radius:14px;padding:2rem 2.4rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.4rem}
-.phil-banner-text h3{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--sand);margin-bottom:.3rem}
-.phil-banner-text p{font-family:var(--sans);font-size:.98rem;color:rgba(255,255,255,.78);max-width:620px}
-
 /* STRATEGY */
 .strategy{padding:6rem 2.4rem;background:var(--cloud)}
 .strategy-inner{max-width:var(--max-w);margin:0 auto}
@@ -339,7 +322,7 @@ a:hover{color:var(--lake-deep)}
 
 /* RESPONSIVE */
 @media(max-width:1000px){
-  .hero-grid,.journey-head,.phil-head,.strategy-card,.wf-shell,.t-grid,.fit-grid,.ind-grid,.path-grid,.t-supporting,.start-head,.start-grid{grid-template-columns:1fr;gap:2.4rem}
+  .hero-grid,.journey-head,.strategy-card,.wf-shell,.t-grid,.fit-grid,.ind-grid,.path-grid,.t-supporting,.start-head,.start-grid{grid-template-columns:1fr;gap:2.4rem}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
   .timeline-rail{display:none}
   .ind-grid{grid-template-columns:1fr 1fr}
@@ -352,7 +335,7 @@ a:hover{color:var(--lake-deep)}
 }
 @media(max-width:700px){
   .hero{padding:2rem 1.25rem 4rem}
-  .problem,.journey,.phil,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq,.start-paths{padding:4rem 1.25rem}
+  .problem,.journey,.strategy,.workflows,.testimonials,.fit,.industries,.next-steps,.faq,.start-paths{padding:4rem 1.25rem}
   .logo-bar{padding:1.4rem 1.25rem}
   .logo-bar-inner{gap:1.1rem 1.5rem}
   .logo-bar-label{flex-basis:100%}
@@ -533,30 +516,9 @@ a:hover{color:var(--lake-deep)}
 <div class="timeline-foot fade-up"><a href="how-we-work.html">Our full process and pricing →</a></div>
 </div></section>
 
-<!-- PHILOSOPHY -->
-<section class="phil"><div class="phil-inner">
-<div class="section-mark fade-up"><span class="num">§ 03</span><span class="rule"></span><span class="label">What Makes Us Different</span></div>
-<div class="phil-head fade-up">
-<h2 class="section-title">The Cultivate <em>Philosophy.</em></h2>
-<p class="phil-lede"><strong>Listen first. Build together. Leave it behind.</strong> Most AI consultants sell tools. We build capability. This is how we do it, and why it sticks.</p>
-</div>
-<div class="phil-grid">
-<div class="phil-card fade-up"><div class="pn">01</div><h3>We start with your people, not the tools.</h3><p>Before we touch any technology, we sit with your team. We learn how they actually work, where time gets wasted, and what frustrates them. That understanding is the foundation everything else is built on.</p></div>
-<div class="phil-card fade-up stagger-1"><div class="pn">02</div><h3>We build it with you, not for you.</h3><p>Every solution is built alongside your team so it feels like theirs from day one. No black-box deliverables. Your people learn by doing, and they carry that knowledge forward.</p></div>
-<div class="phil-card fade-up stagger-2"><div class="pn">03</div><h3>We're designed to leave.</h3><p>Every engagement is designed to end. Fixed scope, named deliverables, trained team, documented handoff. No recurring fees. We succeed when you don't need us anymore.</p></div>
-</div>
-<div class="phil-banner fade-up">
-<div class="phil-banner-text">
-<h3>Show up.</h3>
-<p>Based in Milwaukee. In-person when it matters. We're not a remote-only agency. We'll sit at your table, wherever that table is.</p>
-</div>
-<a href="contact.html?intent=visit" class="btn btn-sand">Schedule a Visit →</a>
-</div>
-</div></section>
-
 <!-- STRATEGY -->
 <section class="strategy"><div class="strategy-inner">
-<div class="section-mark fade-up"><span class="num">§ 04</span><span class="rule"></span><span class="label">Start Here · Strategy Session</span></div>
+<div class="section-mark fade-up"><span class="num">§ 03</span><span class="rule"></span><span class="label">Start Here · Strategy Session</span></div>
 <div class="strategy-card fade-up">
 <div>
 <h2 class="section-title">The AI <em>Strategy Session.</em></h2>
@@ -580,7 +542,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- WORKFLOWS -->
 <section class="workflows"><div class="workflows-inner">
-<div class="section-mark fade-up"><span class="num">§ 05</span><span class="rule"></span><span class="label">AI-Ready Workflows</span></div>
+<div class="section-mark fade-up"><span class="num">§ 04</span><span class="rule"></span><span class="label">AI-Ready Workflows</span></div>
 <h2 class="section-title fade-up">Sound <em>familiar?</em></h2>
 <p class="workflows-sub fade-up">The repetitive, manual work costing your team hours every week, transformed.</p>
 <div class="wf-shell fade-up">
@@ -603,7 +565,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- TESTIMONIALS -->
 <section class="testimonials"><div class="testimonials-inner">
-<div class="section-mark fade-up"><span class="num">§ 06</span><span class="rule"></span><span class="label">Proof It Works</span></div>
+<div class="section-mark fade-up"><span class="num">§ 05</span><span class="rule"></span><span class="label">Proof It Works</span></div>
 <h2 class="section-title fade-up">Don't take our <em>word</em> for it.</h2>
 <div class="t-grid">
 <div class="t-card fade-up"><div class="t-logo"><img src="culturecon-logo.png" alt="CultureCon"></div><blockquote>"Fresh Coast AI made AI feel practical instead of overwhelming. They didn't just hand us tools, they took the time to understand how our team actually works and built solutions that fit our real workflows. The best part is we actually understand what was built. We're not dependent on anyone to keep it running."</blockquote><div class="t-author"><div class="t-avatar"><img src="nick-lombardino.jpeg" alt="Nick Lombardino"></div><div><div class="t-name">Nick Lombardino</div><div class="t-role">Co-founder, CultureCon</div></div></div></div>
@@ -617,7 +579,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- FIT -->
 <section class="fit"><div class="fit-inner">
-<div class="section-mark fade-up"><span class="num">§ 07</span><span class="rule"></span><span class="label">Is This Right for You?</span></div>
+<div class="section-mark fade-up"><span class="num">§ 06</span><span class="rule"></span><span class="label">Is This Right for You?</span></div>
 <h2 class="section-title fade-up">Honest answer: <em>we're not</em> for everyone.</h2>
 <div class="fit-grid">
 <div class="fit-col yes fade-up"><h3>Great fit if…</h3>
@@ -638,7 +600,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- INDUSTRIES -->
 <section class="industries"><div class="industries-inner">
-<div class="section-mark fade-up"><span class="num">§ 08</span><span class="rule"></span><span class="label">Industries We Serve</span></div>
+<div class="section-mark fade-up"><span class="num">§ 07</span><span class="rule"></span><span class="label">Industries We Serve</span></div>
 <h2 class="section-title fade-up">AI looks <em>different</em> in every industry.</h2>
 <p class="industries-sub fade-up">We learn how your people actually work, then find where AI fits.</p>
 <div class="ind-grid fade-up">
@@ -653,7 +615,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- NEXT STEPS -->
 <section class="next-steps dark-section"><div class="next-steps-inner">
-<div class="section-mark fade-up"><span class="num">§ 09</span><span class="rule"></span><span class="label">Next Steps</span></div>
+<div class="section-mark fade-up"><span class="num">§ 08</span><span class="rule"></span><span class="label">Next Steps</span></div>
 <h2 class="section-title fade-up">Where are you in your <em>AI journey?</em></h2>
 <p class="next-steps-sub fade-up">No wrong answer. Pick the path that fits.</p>
 <div class="path-grid">
@@ -665,7 +627,7 @@ a:hover{color:var(--lake-deep)}
 
 <!-- FAQ -->
 <section class="faq"><div class="faq-inner">
-<div class="section-mark fade-up"><span class="num">§ 10</span><span class="rule"></span><span class="label">Questions We Hear</span></div>
+<div class="section-mark fade-up"><span class="num">§ 09</span><span class="rule"></span><span class="label">Questions We Hear</span></div>
 <h2 class="section-title fade-up">Straight <em>answers</em> only.</h2>
 <div class="faq-list">
 <div class="faq-item open"><button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="true" aria-controls="faq-a-1"><span class="qn">01</span><span class="qtxt">How much does a typical engagement cost?</span><span class="toggle">+</span></button><div class="faq-a" id="faq-a-1" aria-hidden="false"><div class="faq-a-inner">Every engagement is fixed-fee, scoped and priced upfront so there are no surprises. Most clients start with the AI Strategy Session ($1,000), and full engagements range from $5,000 to $55,000 depending on company size and scope. You'll get a specific number after a free consultation. <a href="how-we-work.html">See how we price engagements →</a></div></div></div>

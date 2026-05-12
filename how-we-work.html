@@ -35,6 +35,11 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 /* PROCESS */
 .process{background:var(--white)}.process-inner{max-width:var(--max-w);margin:0 auto}.process-steps{margin-top:3rem;display:flex;flex-direction:column;gap:0;position:relative;max-width:780px}.process-step{display:grid;grid-template-columns:80px 1fr;gap:2rem;padding-bottom:3rem;position:relative}.process-step:not(:last-child)::after{content:'';position:absolute;left:39px;top:80px;bottom:0;width:2px;background:var(--mist)}.step-marker{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;z-index:2}.step-marker-free{background:rgba(43,122,158,.1);border:2px solid var(--lake)}.step-marker-assess{background:var(--lake);box-shadow:0 4px 16px rgba(43,122,158,.25)}.step-marker-build{background:var(--lake-deep);box-shadow:0 4px 16px rgba(29,95,126,.25)}.step-marker-own{background:var(--wave);box-shadow:0 4px 16px rgba(72,181,210,.25)}.step-marker svg{width:28px;height:28px}.step-content{padding-top:.75rem}.step-content .step-phase{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:.35rem}.step-content h3{font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}.step-content p{font-size:1rem;color:var(--steel);line-height:1.7;max-width:560px}.step-deliverables{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}.step-deliverable{font-size:.75rem;padding:.3rem .75rem;border-radius:100px;background:rgba(43,122,158,.06);color:var(--lake);font-weight:500;border:1px solid rgba(43,122,158,.12)}
 
+/* PHILOSOPHY */
+.philosophy{background:var(--white);padding:5rem 2rem;border-top:1px solid var(--mist);border-bottom:1px solid var(--mist)}.philosophy-inner{max-width:var(--max-w);margin:0 auto}.philosophy-head{display:grid;grid-template-columns:1fr 1.25fr;gap:3rem;align-items:start;margin-bottom:2.8rem}.philosophy h2{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--ink);line-height:1.15;margin-bottom:0}.philosophy-lede{font-size:1.05rem;color:var(--steel);line-height:1.75;padding-top:.35rem}.philosophy-lede strong{color:var(--ink);font-weight:600}.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}.philosophy-card{background:var(--cloud);border-radius:14px;padding:1.8rem 1.6rem;border-top:3px solid var(--lake);box-shadow:0 2px 16px rgba(0,0,0,.04);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}.philosophy-card:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(11,26,43,.08)}.philosophy-card .pn{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:.85rem}.philosophy-card h3{font-family:var(--serif);font-size:1.25rem;line-height:1.2;color:var(--ink);margin-bottom:.75rem}.philosophy-card p{font-size:.92rem;color:var(--steel);line-height:1.65}.philosophy-banner{margin-top:1.5rem;background:var(--ink);color:var(--white);border-radius:14px;padding:1.8rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap}.philosophy-banner h3{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--sand);margin-bottom:.25rem}.philosophy-banner p{font-size:.95rem;color:rgba(255,255,255,.72);max-width:620px;line-height:1.6}.btn-sand{background:var(--sand);color:var(--ink);font-weight:600}.btn-sand:hover{background:#f0d98f;transform:translateY(-2px)}
+@media(max-width:900px){.philosophy-head,.philosophy-grid{grid-template-columns:1fr}.philosophy-head{gap:1rem;margin-bottom:2rem}}
+@media(max-width:600px){.philosophy{padding:4rem 1.25rem}.philosophy-card{padding:1.5rem}.philosophy-banner{padding:1.5rem}}
+
 /* FIRST WEEK */
 .first-week{background:var(--cloud);padding:5rem 2rem}.first-week-inner{max-width:var(--max-w);margin:0 auto}
 /* First Week Timeline Infographic */
@@ -134,9 +139,26 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 
 </div></div></section>
 
+<!-- PHILOSOPHY -->
+<section class="philosophy" id="cultivate-philosophy"><div class="philosophy-inner">
+<div class="philosophy-head fade-up">
+<div><div class="section-label">03 · What Makes Us Different</div><h2>The Cultivate <em>Philosophy.</em></h2></div>
+<p class="philosophy-lede"><strong>Listen first. Build together. Leave it behind.</strong> Most AI consultants sell tools. We build capability. This is how we do it, and why it sticks.</p>
+</div>
+<div class="philosophy-grid">
+<div class="philosophy-card fade-up"><div class="pn">01</div><h3>We start with your people, not the tools.</h3><p>Before we touch any technology, we sit with your team. We learn how they actually work, where time gets wasted, and what frustrates them. That understanding is the foundation everything else is built on.</p></div>
+<div class="philosophy-card fade-up stagger-1"><div class="pn">02</div><h3>We build it with you, not for you.</h3><p>Every solution is built alongside your team so it feels like theirs from day one. No black-box deliverables. Your people learn by doing, and they carry that knowledge forward.</p></div>
+<div class="philosophy-card fade-up stagger-2"><div class="pn">03</div><h3>We're designed to leave.</h3><p>Every engagement is designed to end. Fixed scope, named deliverables, trained team, documented handoff. No recurring fees. We succeed when you don't need us anymore.</p></div>
+</div>
+<div class="philosophy-banner fade-up">
+<div><h3>Show up.</h3><p>Based in Milwaukee. In-person when it matters. We're not a remote-only agency. We'll sit at your table, wherever that table is.</p></div>
+<a href="contact.html?intent=visit" class="btn btn-sand">Schedule a Visit →</a>
+</div>
+</div></section>
+
 <!-- FIRST WEEK -->
 <section class="first-week"><div class="first-week-inner">
-<div class="accent-row accent-row--flip fade-up"><div><picture><source srcset="group-boardroom-800w.webp" type="image/webp"><img src="group-boardroom-800w.jpeg" alt="AI consulting strategy session with client team in boardroom" loading="lazy" width="800" height="1066"></picture></div><div><div class="section-label">03 · What to Expect</div><h2 class="section-title">Your <em>first week</em> with us.</h2><p class="section-subtitle">Most clients start with an AI Strategy Session ($1,000).<br>Here's what that first week actually looks like.</p></div></div>
+<div class="accent-row accent-row--flip fade-up"><div><picture><source srcset="group-boardroom-800w.webp" type="image/webp"><img src="group-boardroom-800w.jpeg" alt="AI consulting strategy session with client team in boardroom" loading="lazy" width="800" height="1066"></picture></div><div><div class="section-label">04 · What to Expect</div><h2 class="section-title">Your <em>first week</em> with us.</h2><p class="section-subtitle">Most clients start with an AI Strategy Session ($1,000).<br>Here's what that first week actually looks like.</p></div></div>
 <div class="fw-timeline fade-up stagger-1">
 
 <div class="fw-step">
@@ -179,7 +201,7 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 </div></section>
 
 <!-- PRICING -->
-<section class="pricing"><div class="pricing-inner"><div class="fade-up"><div class="section-label">04 · Pricing</div><h2 class="section-title">What it <em>costs.</em></h2><p class="pricing-intro">All engagements are fixed-fee, scoped and priced upfront based on your specific situation and engagement length. No hourly billing surprises.</p></div>
+<section class="pricing"><div class="pricing-inner"><div class="fade-up"><div class="section-label">05 · Pricing</div><h2 class="section-title">What it <em>costs.</em></h2><p class="pricing-intro">All engagements are fixed-fee, scoped and priced upfront based on your specific situation and engagement length. No hourly billing surprises.</p></div>
 
 <div class="pricing-entry fade-up stagger-1">
 <div class="pricing-entry-text"><h3>AI Strategy Session</h3><p>A focused deep-dive into your operations. You'll leave with a clear picture of where AI fits and what's worth pursuing. Credits toward your next engagement if you continue.</p></div>
@@ -202,7 +224,7 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 </div></section>
 
 <!-- COMMITMENTS -->
-<section class="commitments"><div class="commitments-inner fade-up"><div class="section-label">05 · Our Commitments</div><h2>What you <em>can expect.</em></h2><div class="commitments-grid">
+<section class="commitments"><div class="commitments-inner fade-up"><div class="section-label">06 · Our Commitments</div><h2>What you <em>can expect.</em></h2><div class="commitments-grid">
 
 <div class="commitment-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><div><strong>Fixed pricing, agreed upfront.</strong><span>No hourly billing surprises. You'll know the total investment before we start.</span></div></div>
 
@@ -216,7 +238,7 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 
 <!-- DATA / SECURITY / PRIVACY -->
 <section class="trust-section"><div class="trust-inner fade-up">
-<div class="section-label">06 · Your Data, Your Rules</div>
+<div class="section-label">07 · Your Data, Your Rules</div>
 <h2>How we handle security and privacy.</h2>
 <p class="trust-intro">AI raises real questions about data, privacy, and control. Here's how we think about it, and what we commit to in every engagement.</p>
 <div class="trust-grid">
