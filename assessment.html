@@ -511,14 +511,7 @@ function submitLeadEmail(){
       if(r.ok){
         document.getElementById('emailFormWrap').style.display='none';
         successEl.style.display='block';
-        try{
-          if(typeof gtag==='function'){
-            gtag('event','conversion',{'send_to':'AW-18008252065/KVesCOLWyoYcEKG9gItD','event_callback':function(){window.location.href='assessment-thank-you.html'}});
-            setTimeout(function(){window.location.href='assessment-thank-you.html'},1200);
-          } else {
-            setTimeout(function(){window.location.href='assessment-thank-you.html'},800);
-          }
-        }catch(err){setTimeout(function(){window.location.href='assessment-thank-you.html'},800);}
+        setTimeout(function(){window.location.href='assessment-thank-you.html'},800);
       } else {
         errEl.textContent='Something went wrong. Try again or email us directly.';errEl.style.display='block';
         btn.textContent='Send It';btn.disabled=false;

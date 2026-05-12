@@ -41,11 +41,7 @@ Static HTML site for [freshcoast.ai](https://freshcoast.ai). Served via Netlify.
 
 - **Google Analytics 4**: `G-EV8X9234S6` (every production page)
 - **Google Ads**: `AW-18008252065` (every production page)
-- **Conversion event**: `AW-18008252065/KVesCOLWyoYcEKG9gItD` fires on:
-  - `/contact-thank-you.html` (page load)
-  - `/assessment-thank-you.html` (page load)
-  - `/contact.html` (form-submit success, JS-fired)
-  - `/assessment.html` (lead-email submit success, JS-fired)
+- **Manual conversion event snippets**: removed. Lead tracking should be handled by Google Tag / Ads configuration, not page-level conversion calls.
 
 ## Forms
 
