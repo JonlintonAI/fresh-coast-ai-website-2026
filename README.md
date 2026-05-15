@@ -39,7 +39,7 @@ Static HTML site for [freshcoast.ai](https://freshcoast.ai). Served via Netlify.
 
 ## Tracking
 
-- **Google Analytics 4**: `G-EV8X9234S6` (every production page)
+- **Google tag**: `GT-TQSC2BPG` (every production page)
 - **Google Ads**: `AW-18008252065` (every production page)
 - **Manual conversion event snippets**: removed. Lead tracking should be handled by Google Tag / Ads configuration, not page-level conversion calls.
 
