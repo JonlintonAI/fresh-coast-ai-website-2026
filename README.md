@@ -1,6 +1,6 @@
 # Fresh Coast AI — Website (May 2026 redesign)
 
-Static HTML site for [freshcoast.ai](https://freshcoast.ai). Served via Netlify.
+Static HTML site for [freshcoast.ai](https://www.freshcoast.ai). Served via Netlify.
 
 ## Structure
 

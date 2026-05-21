@@ -1,5 +1,5 @@
 # 301 redirect old domain to new domain (all variants)
-http://freshcoastai.com/* https://freshcoast.ai/:splat 301!
-https://freshcoastai.com/* https://freshcoast.ai/:splat 301!
-http://www.freshcoastai.com/* https://freshcoast.ai/:splat 301!
-https://www.freshcoastai.com/* https://freshcoast.ai/:splat 301!
+http://freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
+https://freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
+http://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
+https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!

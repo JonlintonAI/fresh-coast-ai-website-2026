@@ -6,11 +6,11 @@ Fresh Coast AI helps businesses across the United States adopt AI confidently. W
 
 ## Core Pages
 
-- [Homepage](https://freshcoast.ai/): Overview of Fresh Coast AI's approach to AI consulting
-- [About](https://freshcoast.ai/about.html): Background on founder Jon Linton — 13 years in change management, international business development, and AI transformation
-- [Services](https://freshcoast.ai/services.html): AI consulting service tiers, pricing, and what's included
-- [How We Work](https://freshcoast.ai/how-we-work.html): The Assess → Build → Own methodology
-- [Deliverables](https://freshcoast.ai/deliverables.html): Sample deliverables clients receive
+- [Homepage](https://www.freshcoast.ai/): Overview of Fresh Coast AI's approach to AI consulting
+- [About](https://www.freshcoast.ai/about): Background on founder Jon Linton — 13 years in change management, international business development, and AI transformation
+- [Services](https://www.freshcoast.ai/services): AI consulting service tiers, pricing, and what's included
+- [How We Work](https://www.freshcoast.ai/how-we-work): The Assess → Build → Own methodology
+- [Deliverables](https://www.freshcoast.ai/deliverables): Sample deliverables clients receive
 
 ## Service Tiers & Pricing
 
@@ -20,36 +20,36 @@ Fresh Coast AI helps businesses across the United States adopt AI confidently. W
 
 ## Industries Served
 
-- [Professional Services](https://freshcoast.ai/industries/professional-services.html)
-- [Manufacturing](https://freshcoast.ai/industries/manufacturing.html)
-- [Skilled Trades](https://freshcoast.ai/industries/trades.html)
-- [Staffing](https://freshcoast.ai/industries/staffing.html)
-- [Property Management](https://freshcoast.ai/industries/property-management.html)
+- [Professional Services](https://www.freshcoast.ai/industries/professional-services)
+- [Manufacturing](https://www.freshcoast.ai/industries/manufacturing)
+- [Skilled Trades](https://www.freshcoast.ai/industries/trades)
+- [Staffing](https://www.freshcoast.ai/industries/staffing)
+- [Property Management](https://www.freshcoast.ai/industries/property-management)
 
 ## Location Pages
 
-- [Milwaukee AI Consulting](https://freshcoast.ai/milwaukee-ai-consulting.html)
-- [Wisconsin AI Consulting](https://freshcoast.ai/wisconsin-ai-consulting.html)
-- [Madison AI Consulting](https://freshcoast.ai/madison-ai-consulting.html)
-- [Green Bay & Fox Valley AI Consulting](https://freshcoast.ai/green-bay-fox-valley-ai-consulting.html)
+- [Milwaukee AI Consulting](https://www.freshcoast.ai/milwaukee-ai-consulting)
+- [Wisconsin AI Consulting](https://www.freshcoast.ai/wisconsin-ai-consulting)
+- [Madison AI Consulting](https://www.freshcoast.ai/madison-ai-consulting)
+- [Green Bay & Fox Valley AI Consulting](https://www.freshcoast.ai/green-bay-fox-valley-ai-consulting)
 
 ## Blog
 
-- [AI Consulting Costs in 2026](https://freshcoast.ai/blog/ai-consulting-costs-2026.html)
-- [How to Hire an AI Consultant](https://freshcoast.ai/blog/how-to-hire-an-ai-consultant.html)
-- [Where Should My Business Start with AI?](https://freshcoast.ai/blog/where-should-my-business-start-with-ai.html)
-- [Five AI Quick Wins for Small Businesses](https://freshcoast.ai/blog/five-ai-quick-wins.html)
-- [AI for Midwest Manufacturers](https://freshcoast.ai/blog/ai-for-midwest-manufacturers.html)
-- [AI Governance for Small Businesses](https://freshcoast.ai/blog/ai-governance-for-small-businesses.html)
-- [How to Know If Your Business Is Ready for AI](https://freshcoast.ai/blog/how-to-know-if-your-business-is-ready-for-ai.html)
-- [The AI Vendor Landscape](https://freshcoast.ai/blog/the-ai-vendor-landscape.html)
-- [Your Team Isn't Afraid of AI](https://freshcoast.ai/blog/your-team-isnt-afraid-of-ai.html)
-- [AI Change Management](https://freshcoast.ai/blog/ai-change-management.html)
-- [Why We Publish Our Pricing](https://freshcoast.ai/blog/why-we-publish-our-pricing.html)
+- [AI Consulting Costs in 2026](https://www.freshcoast.ai/blog/ai-consulting-costs-2026)
+- [How to Hire an AI Consultant](https://www.freshcoast.ai/blog/how-to-hire-an-ai-consultant)
+- [Where Should My Business Start with AI?](https://www.freshcoast.ai/blog/where-should-my-business-start-with-ai)
+- [Five AI Quick Wins for Small Businesses](https://www.freshcoast.ai/blog/five-ai-quick-wins)
+- [AI for Midwest Manufacturers](https://www.freshcoast.ai/blog/ai-for-midwest-manufacturers)
+- [AI Governance for Small Businesses](https://www.freshcoast.ai/blog/ai-governance-for-small-businesses)
+- [How to Know If Your Business Is Ready for AI](https://www.freshcoast.ai/blog/how-to-know-if-your-business-is-ready-for-ai)
+- [The AI Vendor Landscape](https://www.freshcoast.ai/blog/the-ai-vendor-landscape)
+- [Your Team Isn't Afraid of AI](https://www.freshcoast.ai/blog/your-team-isnt-afraid-of-ai)
+- [AI Change Management](https://www.freshcoast.ai/blog/ai-change-management)
+- [Why We Publish Our Pricing](https://www.freshcoast.ai/blog/why-we-publish-our-pricing)
 
 ## Contact
 
 - Phone: (414) 737-1749
 - Email: jon@freshcoast.ai
-- Free consultation: https://freshcoast.ai/contact.html
-- AI Readiness Assessment: https://freshcoast.ai/assessment.html
+- Free consultation: https://www.freshcoast.ai/contact
+- AI Readiness Assessment: https://www.freshcoast.ai/assessment

@@ -29,4 +29,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://freshcoast.ai/sitemap.xml
+Sitemap: https://www.freshcoast.ai/sitemap.xml
