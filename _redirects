@@ -3,3 +3,7 @@ http://freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 https://freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 http://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
+
+# Internal Codex context files should stay in the repo but not on the public site.
+/AGENTS.md /404.html 404!
+/docs/* /404.html 404!
