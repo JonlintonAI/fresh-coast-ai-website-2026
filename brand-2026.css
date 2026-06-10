@@ -261,10 +261,6 @@ footer.footer .footer-version{
 .phil-card::before,.problem-card::before{background:var(--lake)!important}
 .phil-card .phil-number,.problem-card .pn{font-family:var(--mono)!important;letter-spacing:.08em!important}
 
-/* Strategy session card border, accents */
-.btn-primary[href*="strategy-session"]{background:var(--sand)!important;color:#fff!important}
-.btn-primary[href*="strategy-session"]:hover{background:var(--sand-deep)!important;box-shadow:0 8px 20px rgba(217,119,87,.32)!important}
-
 /* ============================================================
    FORMS — pill submit
 ============================================================ */

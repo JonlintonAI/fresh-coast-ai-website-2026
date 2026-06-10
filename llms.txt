@@ -2,21 +2,22 @@
 
 > Practical AI adoption for businesses ready to own it. Fixed-fee engagements from readiness assessment to implementation. Founded by Jon Linton in Milwaukee, Wisconsin.
 
-Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and every engagement is designed to end — your team owns the capability when we're done.
+Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and every engagement is designed to end: your team owns the capability when we're done.
 
 ## Core Pages
 
 - [Homepage](https://www.freshcoast.ai/): Overview of Fresh Coast AI's approach to AI consulting
-- [About](https://www.freshcoast.ai/about): Background on founder Jon Linton — 13 years in change management, international business development, and AI transformation
+- [About](https://www.freshcoast.ai/about): Background on founder Jon Linton: 13 years in change management, international business development, and AI transformation
 - [Services](https://www.freshcoast.ai/services): AI consulting service tiers, pricing, and what's included
 - [How We Work](https://www.freshcoast.ai/how-we-work): The Assess → Build → Own methodology
 - [Deliverables](https://www.freshcoast.ai/deliverables): Sample deliverables clients receive
 
 ## Service Tiers & Pricing
 
-- AI Strategy Session: $1,000 — focused session to identify top AI opportunities
-- AI Readiness Assessment: Starting around $5,000 — full organizational AI readiness evaluation
-- AI Implementation: $8,000–$55,000 — end-to-end workflow design, build, and team training
+- AI Readiness Assessment: starting around $5,000, a full organizational AI readiness evaluation
+- AI Implementation: $8,000–$55,000, end-to-end workflow design, build, and team training
+
+Engagements are fixed-fee, scoped and priced upfront, with a $5,000 minimum.
 
 ## Industries Served
 
@@ -52,4 +53,4 @@ Fresh Coast AI helps businesses across the United States adopt AI confidently. W
 - Phone: (414) 737-1749
 - Email: jon@freshcoast.ai
 - Free consultation: https://www.freshcoast.ai/contact
-- AI Readiness Assessment: https://www.freshcoast.ai/assessment
+- Free Readiness Assessment: https://www.freshcoast.ai/assessment
