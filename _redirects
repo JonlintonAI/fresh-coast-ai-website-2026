@@ -7,3 +7,8 @@ https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 # Internal Codex context files should stay in the repo but not on the public site.
 /AGENTS.md /404.html 404!
 /docs/* /404.html 404!
+
+# Internal ad setup artifacts are not website content.
+/google-ads-health-check-2026-03-24.md /404.html 404!
+/google-ads-import/* /404.html 404!
+/README.md /404.html 404!
