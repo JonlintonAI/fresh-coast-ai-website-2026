@@ -93,7 +93,21 @@ nav.nav .nav-links a.nav-cta:focus-visible{
   color:#fff!important;
 }
 
-nav.nav .mobile-toggle span{background:var(--ink)!important}
+nav.nav .mobile-toggle{
+  align-items:center!important;
+  justify-content:center!important;
+  flex-direction:column!important;
+  gap:5px!important;
+  width:44px!important;
+  height:44px!important;
+}
+nav.nav .mobile-toggle span{
+  display:block!important;
+  width:25px!important;
+  height:3px!important;
+  border-radius:2px;
+  background:var(--ink)!important;
+}
 
 /* Page-content top spacing — old design used fixed nav (needed padding-top on body),
    new sticky nav doesn't need it. Pull hero up only when sticky:
@@ -103,7 +117,7 @@ nav.nav + section.page-hero{padding-top:4rem!important}
 /* Mobile nav menu open state */
 @media(max-width:1020px){
   nav.nav .nav-links{display:none!important}
-  nav.nav .mobile-toggle{display:block!important}
+  nav.nav .mobile-toggle{display:inline-flex!important}
   nav.nav .nav-links.open{
     display:flex!important;
     flex-direction:column;
