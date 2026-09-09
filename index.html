@@ -123,6 +123,8 @@ a:hover{color:var(--lake-deep)}
 .logo-bar-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
 .logo-bar-label{font-family:var(--mono);font-size:.74rem;color:var(--steel);text-transform:uppercase;letter-spacing:.1em}
 .logo-bar-client{display:inline-flex;align-items:center;gap:.65rem;min-height:36px;white-space:nowrap}
+.logo-bar-client:hover .logo-bar-name,.logo-bar-client:focus-visible .logo-bar-name{color:var(--lake-deep);text-decoration:underline;text-underline-offset:.2em}
+.logo-bar-client:focus-visible{outline:2px solid var(--lake);outline-offset:6px;border-radius:2px}
 .logo-bar-logo{display:block;width:auto;height:28px;object-fit:contain;opacity:.9}
 .logo-bar-logo--culture{height:28px}
 .logo-bar-logo--trusted{height:32px}
@@ -459,11 +461,11 @@ a:hover{color:var(--lake-deep)}
 <!-- LOGO BAR -->
 <section class="logo-bar"><div class="logo-bar-inner">
 <span class="logo-bar-label">Trusted by</span>
-<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--culture" src="culturecon-logo.png" alt="" width="69" height="54" loading="lazy"><span class="logo-bar-name">CultureCon</span></span>
-<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--trusted" src="trusted-electric-logo.png" alt="" width="300" height="232" loading="lazy"><span class="logo-bar-name">Trusted Electric</span></span>
-<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--living" src="living-canvas-foundation-logo.png" alt="" width="500" height="141" loading="lazy"><span class="logo-bar-name">Living Canvas Foundation</span></span>
-<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--stanton" src="stanton-company-logo.png" alt="" width="702" height="171" loading="lazy"><span class="logo-bar-name">Stanton &amp; Co</span></span>
-<span class="logo-bar-client"><img class="logo-bar-logo logo-bar-logo--edie" src="edie-ford-logo.png" alt="" width="600" height="444" loading="lazy"><span class="logo-bar-name">Edie Ford</span></span>
+<a class="logo-bar-client" href="https://www.cultureconusa.org/" target="_blank" rel="noopener noreferrer" aria-label="CultureCon website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--culture" src="culturecon-logo.png" alt="" width="69" height="54" loading="lazy"><span class="logo-bar-name">CultureCon</span></a>
+<a class="logo-bar-client" href="https://trustedelectricco.com/" target="_blank" rel="noopener noreferrer" aria-label="Trusted Electric website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--trusted" src="trusted-electric-logo.png" alt="" width="300" height="232" loading="lazy"><span class="logo-bar-name">Trusted Electric</span></a>
+<a class="logo-bar-client" href="https://livingcanvasfoundation.org/" target="_blank" rel="noopener noreferrer" aria-label="Living Canvas Foundation website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--living" src="living-canvas-foundation-logo.png" alt="" width="500" height="141" loading="lazy"><span class="logo-bar-name">Living Canvas Foundation</span></a>
+<a class="logo-bar-client" href="https://stanton-company.com/" target="_blank" rel="noopener noreferrer" aria-label="Stanton &amp; Co website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--stanton" src="stanton-company-logo.png" alt="" width="702" height="171" loading="lazy"><span class="logo-bar-name">Stanton &amp; Co</span></a>
+<a class="logo-bar-client" href="https://www.edieford.com/" target="_blank" rel="noopener noreferrer" aria-label="Edie Ford website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--edie" src="edie-ford-logo.png" alt="" width="600" height="444" loading="lazy"><span class="logo-bar-name">Edie Ford</span></a>
 </div></section>
 
 <!-- START PATHS -->
