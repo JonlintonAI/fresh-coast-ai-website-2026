@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-TQSC2BPG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GT-TQSC2BPG');gtag('config','AW-18008252065');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owning an AI System Means Being Able to Change It | Fresh Coast AI</title>
+    <meta name="description" content="A field note on practical ownership: editable instructions, portable knowledge, a clear handoff, and optional support when the work changes.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.freshcoast.ai/blog/owning-an-ai-system">
+    <link rel="icon" type="image/png" href="../favicon.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Owning an AI System Means Being Able to Change It">
+    <meta property="og:description" content="A field note on practical ownership: editable instructions, portable knowledge, a clear handoff, and optional support when the work changes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.freshcoast.ai/blog/owning-an-ai-system">
+    <meta property="og:image" content="https://www.freshcoast.ai/og-image.png">
+    <meta property="article:published_time" content="2026-09-20">
+    <meta property="article:author" content="Jon Linton">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Owning an AI System Means Being Able to Change It",
+      "description": "A field note on practical ownership: editable instructions, portable knowledge, a clear handoff, and optional support when the work changes.",
+      "author": {
+        "@type": "Person",
+        "name": "Jon Linton"
+      },
+      "datePublished": "2026-09-20",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fresh Coast AI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.freshcoast.ai/freshcoastai_logo_fullcolor_transparent.png"
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["meta[name='description']", ".page-hero h1", "article p:first-of-type"]
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshcoast.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.freshcoast.ai/blog/"},{"@type":"ListItem","position":3,"name":"Owning an AI System Means Being Able to Change It"}]}
+    </script>
+
+    <style>
+        :root {
+            --ink: #0B1A2B;
+            --slate: #1B2D42;
+            --steel: #3A506B;
+            --mist: #E8EDF2;
+            --cloud: #F4F6F8;
+            --white: #FFF;
+            --lake: #2B7A9E;
+            --lake-deep: #1D5F7E;
+            --lake-light: #3A9BC5;
+            --wave: #48B5D2;
+            --sand: #E8C87A;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'Outfit', -apple-system, sans-serif;
+            --max-w: 1140px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { font-family: var(--sans); color: var(--ink); background: var(--white); line-height: 1.6; }
+
+        /* Navigation */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 2rem; background: rgba(11, 26, 43, 1); box-shadow: 0 2px 24px rgba(0,0,0,0.2); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: var(--max-w); margin: 0 auto; }
+        .nav-logo img { height: 70px; width: auto; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: var(--white); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--wave); }
+        .nav-links a.active { position: relative; }
+        .nav-links a.active::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; background: var(--wave); border-radius: 1px; }
+        .nav-cta { background: var(--lake) !important; padding: 0.6rem 1.2rem !important; border-radius: 4px; color: var(--white) !important; }
+        .nav-cta:hover { background: var(--lake-deep) !important; }
+        .mobile-toggle { display: none; flex-direction: column; background: none; border: none; cursor: pointer; gap: 0.4rem; }
+        .mobile-toggle span { width: 25px; height: 3px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+
+        /* Page Hero */
+        .page-hero { background: var(--ink); padding: 8rem 2rem 5rem; position: relative; overflow: hidden; margin-top: 70px; }
+        .page-hero-content { max-width: var(--max-w); margin: 0 auto; color: var(--white); }
+        .breadcrumb { font-size: 0.9rem; color: var(--mist); margin-bottom: 1.5rem; }
+        .breadcrumb a { color: var(--wave); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .page-hero h1 { font-family: var(--serif); font-size: 3rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+        .hero-meta { font-size: 0.95rem; color: var(--mist); }
+
+        /* Article */
+        .article-container { max-width: 720px; margin: 0 auto; padding: 4rem 2rem; }
+        .back-link { display: inline-block; color: var(--lake); text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        article { font-size: 1.05rem; color: var(--steel); line-height: 1.8; }
+        article p { margin-bottom: 1.25rem; }
+        article h2 { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 400; }
+        article h3 { font-size: 1.2rem; font-weight: 600; color: var(--ink); margin-top: 2rem; margin-bottom: 0.75rem; }
+        article strong { color: var(--ink); font-weight: 600; }
+        article blockquote { border-left: 3px solid var(--lake); padding-left: 1.5rem; margin: 1.5rem 0; font-style: italic; color: var(--steel); }
+        article a { color: var(--lake); text-decoration: none; transition: color 0.3s; }
+        article a:hover { text-decoration: underline; color: var(--lake-deep); }
+        article ul { margin: 1.5rem 0 1.5rem 1.5rem; padding-left: 1.5rem; }
+        article li { margin-bottom: 0.75rem; }
+        .hr-divider { border: none; height: 2px; background: var(--mist); margin: 2.5rem 0; }
+
+        /* FAQ */
+        .faq-section { background: var(--cloud); border-radius: 8px; padding: 2rem; margin: 3rem 0; }
+        .faq-section h3 { font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--ink); }
+        .faq-item { margin-bottom: 1rem; border-bottom: 1px solid var(--mist); padding-bottom: 1rem; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question { cursor: pointer; font-weight: 600; color: var(--ink); display: flex; justify-content: space-between; align-items: center; user-select: none; padding: 0.75rem 0; }
+        .faq-question:hover { color: var(--lake); }
+        .faq-toggle { color: var(--lake); font-size: 1.3rem; transition: transform 0.3s; }
+        .faq-toggle.active { transform: rotate(180deg); }
+        .faq-answer { display: none; padding-top: 0.75rem; color: var(--steel); font-size: 0.95rem; line-height: 1.7; }
+        .faq-answer.active { display: block; }
+
+        /* Author Bio */
+        .author-bio { background: var(--cloud); border-radius: 8px; padding: 2rem; margin: 3rem 0; display: flex; gap: 2rem; align-items: flex-start; }
+        .author-photo { width: 120px; height: 120px; min-width: 120px; background: var(--mist); border-radius: 8px; overflow: hidden; }
+        .author-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .author-info h4 { font-size: 1.1rem; color: var(--ink); margin-bottom: 0.5rem; font-weight: 600; }
+        .author-info p { font-size: 0.95rem; color: var(--steel); line-height: 1.6; }
+
+        /* Related Posts */
+        .related-posts { margin: 4rem 0 3rem; padding-top: 2rem; border-top: 2px solid var(--mist); }
+        .related-posts h3 { font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--ink); }
+        .related-posts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .related-post-card { background: var(--cloud); padding: 1.5rem; border-radius: 8px; text-decoration: none; transition: all 0.3s; }
+        .related-post-card:hover { background: var(--mist); transform: translateY(-2px); }
+        .related-post-card h4 { color: var(--ink); font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600; line-height: 1.4; }
+        .related-post-card p { color: var(--steel); font-size: 0.9rem; margin-bottom: 0; }
+
+        /* CTA Section */
+        .cta-section { background: var(--lake); color: var(--white); border-radius: 8px; padding: 2rem; margin: 3rem 0; text-align: center; }
+        .cta-section h3 { color: var(--white); margin-bottom: 1rem; }
+        .cta-section p { color: rgba(255,255,255,0.95); margin-bottom: 1.5rem; }
+        .cta-button { display: inline-block; background: var(--white); color: var(--lake); padding: 0.8rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .cta-button:hover { background: var(--mist); transform: translateY(-2px); }
+
+        /* Footer */
+        .footer{background:var(--ink);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;border-top:1px solid rgba(255,255,255,.06);margin-top:4rem}.footer-inner{max-width:var(--max-w);margin:0 auto}.footer-contact{text-align:center;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08)}.footer-contact-label{font-size:.75rem;color:rgba(255,255,255,.35);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem}.footer-contact a{color:var(--wave);text-decoration:none;font-size:1.1rem;font-weight:500;transition:opacity .2s}.footer-contact a:hover{opacity:.8}
+        .footer-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:2rem;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08)}.footer-nav-col h4{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.85rem}.footer-nav-col a{display:block;color:rgba(255,255,255,.4);text-decoration:none;font-size:.88rem;line-height:2;transition:color .2s}.footer-nav-col a:hover{color:var(--wave)}
+        .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}.footer-bottom-left{display:flex;align-items:center;gap:1.25rem}.footer-social a{display:inline-flex;align-items:center;color:rgba(255,255,255,.35);transition:color .2s}.footer-social a:hover{color:var(--wave)}.footer-social svg{width:20px;height:20px}.footer-cta-wrap{display:flex;align-items:center;gap:1.5rem}.footer-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.4rem;border-radius:6px;background:var(--lake);color:var(--white);font-size:.88rem;font-weight:500;text-decoration:none;transition:all .2s}.footer-cta:hover{background:var(--lake-light);transform:translateY(-1px)}.footer-copy{font-size:.8rem;color:rgba(255,255,255,.3)}
+        @media(max-width:700px){.footer-nav{grid-template-columns:repeat(2,1fr);gap:1.5rem}.footer-bottom{flex-direction:column;text-align:center}.footer-bottom-left{justify-content:center}}
+
+        /* Animations */
+        .fade-up { opacity: 0; transform: translateY(20px); }
+        .fade-up.visible { animation: fadeUp 0.6s ease-out forwards; }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .related-posts-grid { grid-template-columns: 1fr; }
+            .author-bio { flex-direction: column; align-items: center; text-align: center; }
+            .page-hero { padding: 5rem 1rem 3rem; margin-top: 60px; }
+            .page-hero h1 { font-size: 1.6rem; }
+            .article-container { padding: 2rem 1rem; }
+            article { font-size: 1rem; }
+            article h2 { font-size: 1.3rem; margin-top: 2rem; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 80px; left: 0; right: 0; background: var(--slate); padding: 1rem; gap: 1rem; }
+            .nav-links.open { display: flex; }
+            .mobile-toggle { display: flex; }
+            .faq-section, .author-bio, .cta-section { padding: 1.5rem; }
+        }
+    </style>
+<link rel="stylesheet" href="../brand-2026.css"></head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo"><img src="../freshcoastai_nav_logo.svg" alt="Fresh Coast AI"><span class="nav-logo-text">Fresh Coast AI</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../about.html">About</a>
+                <a href="../how-we-work.html">How We Work</a>
+                <a href="../services.html">Services</a>
+                <a href="index.html" class="active">Blog</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../contact.html" class="nav-cta">Book a Free Call</a>
+            </div>
+            <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-hero"><span class="decorative-meta" aria-hidden="true">fresh-coast-ai · v.2026 · milwaukee, wi</span>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> <span>&gt;</span>
+                <a href="index.html">Blog</a> <span>&gt;</span>
+                <span>Field Note</span>
+            </div>
+            <h1>Owning an AI System Means <em>Being Able to Change It.</em></h1>
+            <div class="hero-meta">By Jon Linton • September 20, 2026</div>
+        </div>
+    </section>
+
+    <div class="article-container">
+        <a href="index.html" class="back-link">← Back to all posts</a>
+
+        <article>
+            <p>A working demo answers one question: can this do something useful? Ownership asks another: when the work changes, can you change the system with it?</p>
+            <p>That is the standard I want Fresh Coast AI projects to meet. An owner should know how to update an instruction, correct the source material, and get help when a change reaches beyond their comfort level. A handoff should make those choices clear.</p>
+            <h2>The first version cannot know everything.</h2>
+            <p>Think about a simple meeting-preparation workflow. It brings together notes, decisions, and open questions before a call. Then a project changes direction. A document moves. Someone starts using a different name for the same client. The useful question is who can fix that, and how.</p>
+            <p>This is an illustrative example, not a client result. The point is to test ownership against an ordinary change, rather than only against the polished demonstration.</p>
+            <p>Before calling a system ready, I want to walk through that change with the person who will use it. Can they find the relevant instruction? Can they tell which document the answer came from? Can they try an update without losing the version that worked?</p>
+            <h2>Put the editable parts within reach.</h2>
+            <p>A useful handoff separates everyday adjustments from changes that need technical help. Editing guidance, maintaining a knowledge base, and correcting a template may belong with the owner. Changing access permissions, connecting a new data source, or altering the underlying application may need a specialist.</p>
+            <p>The boundary depends on the system. It should be written down in plain language, with a way to test a change and return to the previous version. A settings screen alone does not settle this. The person using it needs to understand what each setting changes.</p>
+            <h2>Your knowledge deserves a home of its own.</h2>
+            <p>For a personal AI system, I start with a practical question: where will your useful material live? Notes, reference documents, decisions, and reusable instructions need an organized home that you can inspect and maintain.</p>
+            <p>Choose what the AI should be able to read deliberately. Keep the source material distinguishable from generated summaries. Document how to export or move it, and check that the export is useful before relying on it. Moving tools should be a decision you can evaluate, not something you discover is impossible after your working knowledge has accumulated.</p>
+            <p>You do not need to connect every account at once. Begin with one recurring task and the information it actually needs. Add more only when the extra access has a clear purpose.</p>
+            <h2>Support should be a choice.</h2>
+            <p>Independence does not mean you can never ask for help. It means the system does not require a consulting subscription just to remain useful.</p>
+            <p>That is why the promise is <strong>no required retainer</strong>. A project has an agreed scope and a handoff. Optional advisory can provide a continuing sounding board; a separately scoped support block can cover a defined change. Those are choices about help, not conditions for keeping what you already own. Any software subscriptions are a separate part of the operating cost.</p>
+            <h2>Three questions for the handoff.</h2>
+            <ol>
+                <li><strong>What can I change myself?</strong> Ask for a walkthrough using a realistic update, with an explanation of what needs specialist help.</li>
+                <li><strong>Where does my information live?</strong> Locate the source documents, the instructions, and the export path. Know who has access.</li>
+                <li><strong>What happens when something goes wrong?</strong> Know how to report the problem, pause the affected workflow, and recover a working version.</li>
+            </ol>
+            <p>These questions belong in the scope before the build starts. They help define what a useful finish line looks like.</p>
+            <p>For me, ownership is practical: you can understand the system, keep it current, and choose when you want another pair of hands.</p>
+            <div class="article-cta"><h3>Build around the way you actually work.</h3><p>Explore <a href="../services.html#personal-ai">personal AI systems</a> or <a href="../contact.html">talk through a workflow</a> you want to own.</p></div>
+
+            <!-- Author Bio -->
+            <div class="author-bio">
+                <div class="author-photo">
+                    <img src="../headshot-7-400w.webp" alt="Jon Linton" loading="lazy">
+                </div>
+                <div class="author-info">
+                    <h4>About the Author</h4>
+                    <p>Jon Linton is the founder of Fresh Coast AI, a vendor-neutral AI consulting practice based in Milwaukee and working with teams wherever they are. He helps businesses build AI capability their people can actually own. His background spans international business development in Southeast Asia, Fortune 500 change management, and leading AI adoption at a regulated professional services firm, always at the intersection of technology and people.</p>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-posts">
+                <h3>Related Articles</h3>
+                <div class="related-posts-grid">
+                    <a href="how-to-hire-an-ai-consultant.html" class="related-post-card">
+                        <h4>How to Hire an AI Consultant</h4>
+                        <p>What to look for, red flags to avoid, and the right questions to ask before signing anything.</p>
+                    </a>
+                    <a href="five-ai-quick-wins.html" class="related-post-card">
+                        <h4>5 AI Quick Wins Any Small Business Can Implement</h4>
+                        <p>Start small and prove value. Here are five AI implementations you can set up this month.</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, working with teams wherever they are.</div></div>
+<div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="../about.html">About</a><a href="../how-we-work.html">How We Work</a><a href="../contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="../services.html#assess">Assess</a><a href="../services.html#build">Build</a><a href="../services.html#own">Own</a><a href="../services.html#ongoing">Ongoing</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="../industries/manufacturing.html">Manufacturing</a><a href="../industries/professional-services.html">Professional Services</a><a href="../industries/staffing.html">Staffing</a><a href="../industries/trades.html">Trades</a><a href="../industries/property-management.html">Property Management</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="../milwaukee-ai-consulting.html">Milwaukee</a><a href="../madison-ai-consulting.html">Madison</a><a href="../green-bay-fox-valley-ai-consulting.html">Green Bay</a><a href="../wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="../blog/index.html">Blog</a><a href="../deliverables.html">Deliverables</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
+<div class="footer-bottom"><div class="footer-bottom-left"><a href="../index.html" class="nav-logo"><img src="../freshcoastai_nav_logo_white.svg" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="../contact.html" class="footer-cta">Book a Free Call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
+
+    <script>
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        mobileToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            mobileToggle.setAttribute('aria-expanded', String(open));
+        });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open');
+                mobileToggle.setAttribute('aria-expanded','false'); }); });
+
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            document.querySelectorAll('.faq-answer.active').forEach(activeAnswer => {
+                if (activeAnswer !== answer) {
+                    activeAnswer.classList.remove('active');
+                    activeAnswer.previousElementSibling.querySelector('.faq-toggle').classList.remove('active');
+                }
+            });
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.fade-up').forEach(el => { observer.observe(el); });
+    </script>
+</body>
+</html>

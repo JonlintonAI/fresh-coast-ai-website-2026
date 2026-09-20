@@ -1,6 +1,8 @@
 # Fresh Coast AI Website Context
 
-Last updated: 2026-06-09.
+Last updated: 2026-09-20.
+
+Current editorial decisions: see [editorial-decisions-2026-09-20.md](editorial-decisions-2026-09-20.md). That record supersedes older commercial language and client lists below. Deployment history below is historical, not a claim about the latest release.
 
 ## Current State
 
@@ -123,7 +125,10 @@ The main page currently displays:
 
 - CultureCon
 - Trusted Electric
-- Living Canvas Foundation
+- Stanton & Co
+- Edie Ford
+
+Living Canvas has been removed because the organization is closed. Additional client names and work require explicit publication approval. Stanton case-study approval remains separate from logo permission.
 
 Earlier placeholder or unverified client names were removed.
 

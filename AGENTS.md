@@ -56,7 +56,8 @@
 
 ## Known Content Decisions
 
-- Current displayed clients include CultureCon, Trusted Electric, and Living Canvas Foundation.
+- Current displayed clients: CultureCon, Trusted Electric, Stanton & Co, and Edie Ford. Living Canvas was removed because it is closed. Additional client names and work require explicit publication approval. Stanton logo permission does not approve a case study.
+- Use “No required retainer”; optional advisory and support are separate choices. Public founding date: September 2025. See `docs/editorial-decisions-2026-09-20.md` for the current service timelines and publishing decisions.
 - Trusted Electric website-related language on the homepage is real client/testimonial material. If full consistency around the website-rebuild theme is requested, consider renaming the workflow card before altering the quote.
 - The optional Bourdain line for the About page should not be added unless the user explicitly confirms it.
 - Do not create new metro/location pages without user direction.
