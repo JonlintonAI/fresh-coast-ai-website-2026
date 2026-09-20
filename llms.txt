@@ -1,8 +1,8 @@
 # Fresh Coast AI
 
-> Practical AI adoption for businesses ready to own it. Fixed-fee engagements from readiness assessment to implementation. Founded by Jon Linton in Milwaukee, Wisconsin.
+> Practical AI adoption for businesses ready to own it. Fixed-fee engagements from readiness assessment to implementation. Founded by Jon Linton in September 2025 in Milwaukee, Wisconsin.
 
-Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and every engagement is designed to end: your team owns the capability when we're done.
+Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and project work includes a documented handoff so your team can run it. No required retainer; ongoing advisory and prepaid support blocks are optional and agreed separately.
 
 ## Core Pages
 
@@ -17,7 +17,7 @@ Fresh Coast AI helps businesses across the United States adopt AI confidently. W
 - AI Readiness Assessment: starting around $5,000, a full organizational AI readiness evaluation
 - AI Implementation: $8,000–$55,000, end-to-end workflow design, build, and team training
 
-Engagements are fixed-fee, scoped and priced upfront, with a $5,000 minimum.
+Business projects are fixed-fee, scoped and priced upfront, with a $5,000 minimum. Readiness Assessments take 2–4 weeks, proofs of concept take 2–4 weeks, implementation rollouts take 1–3 months, and the Full Journey takes 3–5 months. Personal AI systems for individuals are scoped and priced separately. Optional advisory has an agreed monthly fee; defined follow-up work can be scoped as a prepaid support block.
 
 ## Industries Served
 
@@ -35,6 +35,8 @@ Engagements are fixed-fee, scoped and priced upfront, with a $5,000 minimum.
 - [Green Bay & Fox Valley AI Consulting](https://www.freshcoast.ai/green-bay-fox-valley-ai-consulting)
 
 ## Blog
+
+- [Owning an AI System Means Being Able to Change It](https://www.freshcoast.ai/blog/owning-an-ai-system)
 
 - [AI Consulting Costs in 2026](https://www.freshcoast.ai/blog/ai-consulting-costs-2026)
 - [How to Hire an AI Consultant](https://www.freshcoast.ai/blog/how-to-hire-an-ai-consultant)
