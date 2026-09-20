@@ -162,7 +162,7 @@
 
         .editorial-lanes {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             gap: 1rem;
             margin-bottom: 3rem;
         }
@@ -197,10 +197,6 @@
             color: var(--steel);
             font-size: .95rem;
             line-height: 1.6;
-        }
-
-        .lane-card.is-reserved {
-            background: var(--cloud);
         }
 
         /* Blog Grid */
@@ -516,21 +512,11 @@
         </section>
 
         <div class="blog-container">
-            <section class="editorial-lanes" aria-label="Editorial lanes">
+            <section class="editorial-lanes" aria-label="Practical guides">
                 <div class="lane-card">
                     <div class="lane-kicker">Practical Guides</div>
                     <h2>Clear advice you can use.</h2>
                     <p>These guides cover pricing, readiness, governance, vendor evaluation, and the early workflow decisions that make or break AI adoption.</p>
-                </div>
-                <div class="lane-card">
-                    <div class="lane-kicker">Field Notes</div>
-                    <h2>Lessons from real adoption work.</h2>
-                    <p>Notes on the decisions behind practical AI work. Illustrative examples are labeled. Any client story needs approval before publication, with no private details or borrowed proof.</p>
-                </div>
-                <div class="lane-card is-reserved">
-                    <div class="lane-kicker">Case Studies</div>
-                    <h2>Reserved for approved stories.</h2>
-                    <p>Named case studies will appear here only after the client signs off on the facts, outcomes, and context. Until then, this stays intentionally quiet.</p>
                 </div>
             </section>
 
