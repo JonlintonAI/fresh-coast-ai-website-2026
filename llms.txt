@@ -12,6 +12,10 @@ Fresh Coast AI helps businesses across the United States adopt AI confidently. W
 - [How We Work](https://www.freshcoast.ai/how-we-work): The Assess → Build → Own methodology
 - [Deliverables](https://www.freshcoast.ai/deliverables): Sample deliverables clients receive
 
+## Client Case Study
+
+- [Stanton & Company: weekly KPI digest](https://www.freshcoast.ai/case-studies/stanton-company-kpi-digest): A named implementation story. Leadership sees every client's KPI pace each Monday; Stanton's team rolled out and runs the system. The displayed digest uses illustrative sample data, not client results.
+
 ## Service Tiers & Pricing
 
 - AI Readiness Assessment: starting around $5,000, a full organizational AI readiness evaluation

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Stanton &amp; Company case study | Fresh Coast AI</title>
+<desc id="desc">Every client's KPI pace. One Monday view. Weekly visibility, calculated in code, run by their team.</desc>
+<rect width="1200" height="630" fill="#f4f6f8"/>
+<rect width="1200" height="10" fill="#2b7a9e"/>
+<text x="70" y="88" fill="#0b1a2b" font-family="Georgia,serif" font-size="30">Fresh Coast AI</text>
+<text x="70" y="158" fill="#2b7a9e" font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="2">STANTON &amp; COMPANY / CLIENT CASE STUDY</text>
+<text x="66" y="270" fill="#0b1a2b" font-family="Georgia,serif" font-size="76" letter-spacing="-2">Every client's KPI pace.</text>
+<text x="66" y="367" fill="#2b7a9e" font-family="Georgia,serif" font-style="italic" font-size="76" letter-spacing="-2">One Monday view.</text>
+<line x1="70" y1="431" x2="1130" y2="431" stroke="#cedce5"/>
+<g font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#3a506b">
+<text x="70" y="488">Weekly visibility</text>
+<text x="406" y="488">Calculated in code</text>
+<text x="798" y="488">Run by their team</text>
+</g>
+<text x="70" y="575" fill="#3a506b" font-family="Helvetica,Arial,sans-serif" font-size="18">freshcoast.ai</text>
+</svg>
