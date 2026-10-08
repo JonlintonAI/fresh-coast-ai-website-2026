@@ -2,6 +2,14 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 8, 2026 update
+
+Jonathan requested removal of the Personal AI Systems offering and correction of the documentation result. These decisions supersede the September 20 personal AI approval below:
+
+- Remove the personal AI offering from the homepage, Services page, site summary, and article links. Keep the ownership field note focused on team workflows.
+- The documentation result is 25 hours to 12 hours per workflow, a 52% reduction. Use the baseline and result in public copy. Do not reuse the older 40-hour baseline or the claim of a reduction above 70%.
+- This records the requested content decisions, not production deployment status.
+
 ## Public language
 - Use “No required retainer.” Project fees, optional monthly advisory, separately scoped prepaid support blocks, and third-party software costs are different things.
 - Readiness Assessment: 2–4 weeks. Proof of concept: 2–4 weeks. Rollout: 1–3 months. Full Journey: 3–5 months. Agree each schedule at scoping; do not describe all engagements as 6–10 weeks or add the ranges as a guaranteed schedule.
