@@ -2,6 +2,17 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 9, 2026 revision after preview review
+
+Jonathan found the first preview less personal and agreed to a warmer revision for review.
+
+- Firm attribution does not require third-person narration throughout. Use natural we/us language while FCAI owns delivery, methods, and client results.
+- Restore the founder portrait near the top of About and a fuller first-person founder note. Its content draws on the existing About narrative; prior career results remain clearly separate from FCAI client work.
+- Bring back the plainspoken point of view about team participation, skepticism, and human judgment. Keep the outcome-led services and approved client evidence.
+- Restore more of the established ink-and-lake visual character, with human imagery on Home, About, and Contact.
+- Concentrate commercial detail on How We Work. Pricing, security claim limits, form behavior, and the Stanton case study remain unchanged.
+- This is a revised draft for preview only. Production publication still requires Jonathan's approval.
+
 ## October 9, 2026 core page preview
 
 Jonathan approved implementing the October 9 copy draft as a full review preview and explicitly reserved production publication until after review.
