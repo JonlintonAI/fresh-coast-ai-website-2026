@@ -53,6 +53,8 @@
 - Avoid em dashes in site copy. Use periods, commas, colons, or parentheses.
 - Avoid filler words in generated or touched site copy: leverage, utilize, robust, comprehensive, seamless, holistic, paradigm, synergy, empower, game-changer, pivotal, tapestry, landscape.
 - Keep the voice direct, warm, plain, and specific.
+- Firm voice: attribute FCAI's work, methods, commitments, and results to FCAI or Fresh Coast AI. Do not write “Jon did,” “I built,” or other founder-only delivery claims. Use Fresh Coast AI for case-study bylines and author metadata. Preserve client quotations and their attributions as quoted.
+- Case-study calls to action should invite a conversation about the visitor's business. Do not imply that FCAI is selling copies of the featured client's workflow.
 
 ## Known Content Decisions
 
