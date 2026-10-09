@@ -1,27 +1,28 @@
 # Fresh Coast AI
 
-> Practical AI adoption for businesses ready to own it. Fixed-fee engagements from readiness assessment to implementation. Founded by Jon Linton in September 2025 in Milwaukee, Wisconsin.
+> AI consulting and implementation for businesses. Clearer information, less repetitive work, better tool decisions, and team adoption. Founded in September 2025 in Milwaukee, Wisconsin.
 
-Fresh Coast AI helps businesses across the United States adopt AI confidently. We are vendor-neutral, people-first, and project work includes a documented handoff so your team can run it. No required retainer; ongoing advisory and prepaid support blocks are optional and agreed separately.
+Fresh Coast AI helps businesses reduce manual work, connect information, and put useful AI into everyday operations. FCAI combines practical implementation with change management. Project scopes and fees are agreed before work begins. Ongoing advisory and support have their own agreed scope, availability, and fee.
 
 ## Core Pages
 
 - [Homepage](https://www.freshcoast.ai/): Overview of Fresh Coast AI's approach to AI consulting
-- [About](https://www.freshcoast.ai/about): Background on founder Jon Linton: 13 years in change management, international business development, and AI transformation
-- [Services](https://www.freshcoast.ai/services): AI consulting service tiers, pricing, and what's included
-- [How We Work](https://www.freshcoast.ai/how-we-work): The Assess → Build → Own methodology
+- [About](https://www.freshcoast.ai/about): FCAI's approach, principles, and the founder's prior operating experience
+- [Services](https://www.freshcoast.ai/services): Reporting and information access, workflow improvement, tool decisions, team adoption, and ongoing support
+- [How We Work](https://www.freshcoast.ai/how-we-work): Project scoping, implementation, pricing, continued operation, and data requirements
 - [Deliverables](https://www.freshcoast.ai/deliverables): Sample deliverables clients receive
 
 ## Client Case Study
 
 - [Stanton & Company: weekly KPI digest](https://www.freshcoast.ai/case-studies/stanton-company-kpi-digest): A named implementation story. Leadership sees every client's KPI pace each Monday; Stanton's team rolled out and runs the system. The displayed digest uses illustrative sample data, not client results.
 
-## Service Tiers & Pricing
+## Services and Pricing
 
-- AI Readiness Assessment: starting around $5,000, a full organizational AI readiness evaluation
-- AI Implementation: $8,000–$55,000, end-to-end workflow design, build, and team training
+- Assessment and planning: workflow review, prioritized opportunities, requirements, and a recommended next step
+- Implementation: agreed workflows, integrations, testing, documentation, and training
+- Ongoing advisory and support: agreed priorities, availability, reviews, and follow-up work
 
-Business projects are fixed-fee, scoped and priced upfront, with a $5,000 minimum. Readiness Assessments take 2–4 weeks, proofs of concept take 2–4 weeks, implementation rollouts take 1–3 months, and the Full Journey takes 3–5 months. Optional advisory has an agreed monthly fee; defined follow-up work can be scoped as a prepaid support block.
+Current project prices range from $5,000 to $55,000 depending on scope. Project work is fixed-fee. Third-party software and ongoing advisory are separate. Readiness assessments take 2–4 weeks, proofs of concept take 2–4 weeks, and broader rollouts take 1–3 months. A program combining assessment, implementation, and training may span 3–5 months. These describe different scopes; the proposal sets the schedule. Defined follow-up work can be scoped as a prepaid support block.
 
 ## Industries Served
 

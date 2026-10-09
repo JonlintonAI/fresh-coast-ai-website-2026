@@ -2,6 +2,19 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 9, 2026 core page preview
+
+Jonathan approved implementing the October 9 copy draft as a full review preview and explicitly reserved production publication until after review.
+
+- Core pages use firm voice and business outcomes, with process detail on How We Work. First person appears in the About founder note; approved client quotations retain their wording.
+- Replace the generic invoice demo and unsupported savings examples with the approved Stanton story and CultureCon quotation. Prior career experience stays attributed to the founder.
+- Retain the currently published $5,000–$55,000 project range in this preview. New assessment, implementation, and advisory price bands have not been selected. Do not invent them or publish placeholders.
+- Security copy describes the requirements to address during scoping. It does not assert BAA availability, insurance coverage, compliance certification, or verified retention/deletion controls.
+- Remove departure slogans, repeated no-retainer messaging, the 12-month exclusion, and the bundle discount/automatic 90-day support pitch. Support is defined in the scope.
+- Keep industry positioning open and preserve existing industry and local resources. Shared navigation follows the new core-page order; legacy service section anchors remain valid.
+- Contact field names, required states, existing interest values, Netlify submission, and thank-you routing remain compatible. Display labels describe the business need. Two additional interest values cover reporting/information access and workflow improvement; no repository script routes on those values.
+- This update supersedes conflicting older copy guidance below. It authorizes a preview, not a production deployment.
+
 ## October 8, 2026 update
 
 Jonathan requested removal of the Personal AI Systems offering and correction of the documentation result. These decisions supersede the September 20 personal AI approval below:

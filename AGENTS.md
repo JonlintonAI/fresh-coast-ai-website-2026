@@ -59,7 +59,7 @@
 ## Known Content Decisions
 
 - Current displayed clients: CultureCon, Trusted Electric, Stanton & Co, and Edie Ford. Living Canvas was removed because it is closed. Additional client names and work require explicit publication approval. The October 8 named Stanton case study is authorized from Jonathan’s supplied final PDF; see the editorial record. Logo permission alone does not approve other case studies.
-- Use “No required retainer”; optional advisory and support are separate choices. Public founding date: September 2025. See `docs/editorial-decisions-2026-09-20.md` for the current service timelines and publishing decisions.
+- Lead core pages with business outcomes and supported client evidence. Process details belong on How We Work. Do not reintroduce departure slogans or repeated no-retainer messaging. Ongoing advisory and support have an agreed scope and fee. Public founding date: September 2025. See the October 9 update in `docs/editorial-decisions-2026-09-20.md` for current copy and preview decisions.
 - Trusted Electric website-related language on the homepage is real client/testimonial material. If full consistency around the website-rebuild theme is requested, consider renaming the workflow card before altering the quote.
 - The optional Bourdain line for the About page should not be added unless the user explicitly confirms it.
 - Do not create new metro/location pages without user direction.
