@@ -1,0 +1,17 @@
+/* Named client proof, shared by the homepage and Services. */
+.case-feature{padding:3.5rem 2.4rem;background:#edf4f6;border-bottom:1px solid #dbe6ec}
+.case-feature-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:3rem;align-items:center}
+.case-feature-label{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--lake);margin-bottom:.9rem}
+.case-feature h2{font-family:var(--serif);font-size:clamp(1.9rem,3.1vw,2.8rem);font-weight:400;line-height:1.15;letter-spacing:-.015em;color:var(--ink);margin:0 0 1rem}
+.case-feature-description{font-size:1.02rem;color:var(--steel);max-width:38em;line-height:1.7;margin:0 0 1.4rem}
+.case-feature-link{display:inline-flex;align-items:center;gap:.6rem;font-weight:500;font-size:.94rem;color:var(--lake);text-decoration:underline;text-underline-offset:.25em}
+.case-feature-link:hover{color:var(--lake-deep)}
+.case-feature-proof{padding:1.8rem 2rem;background:#fff;border:1px solid #d8e4eb;border-radius:5px;margin:0}
+.case-feature-proof img{display:block;width:170px;height:auto;margin-bottom:1.3rem;max-width:100%}
+.case-feature-proof blockquote{font-family:var(--serif);font-size:1.3rem;line-height:1.5;color:var(--ink);margin:0}
+.case-feature-proof figcaption{font-size:.81rem;line-height:1.5;color:var(--steel);margin-top:1rem}
+.case-feature-proof figcaption strong{display:block;color:var(--lake);font-weight:500}
+.case-service-proof{background:#edf4f6;border-left:3px solid var(--lake);padding:1.7rem 2rem;margin-top:2rem;border-radius:0 5px 5px 0}
+.case-service-proof p{font-size:1rem;color:var(--steel);line-height:1.7;margin:0 0 .8rem;max-width:54em}
+.case-service-proof h3{font-family:var(--serif);font-size:1.6rem;line-height:1.25;color:var(--ink);font-weight:400;margin:0 0 .8rem}
+@media(max-width:760px){.case-feature{padding:2.5rem 1.25rem}.case-feature-inner{grid-template-columns:1fr;gap:1.5rem}.case-feature-proof{padding:1.5rem}.case-service-proof{padding:1.5rem}}

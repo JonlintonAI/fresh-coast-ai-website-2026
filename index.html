@@ -43,8 +43,8 @@ a:hover{color:var(--lake-deep)}
 .nav-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .nav-logo{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--serif);font-size:1.18rem;color:var(--ink);letter-spacing:-.01em;white-space:nowrap;flex:none}
 .nav-logo img{height:44px;width:auto;max-width:245px;object-fit:contain;display:block}
-.nav-links{display:flex;gap:1.8rem;align-items:center;font-family:var(--sans);font-size:.92rem;font-weight:500}
-.nav-links a{color:var(--steel);text-decoration:none;transition:color .2s}
+.nav-links{display:flex;gap:clamp(1rem,1.9vw,2rem);align-items:center;font-family:var(--sans);font-size:.92rem;font-weight:500}
+.nav-links a{white-space:nowrap;color:var(--steel);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a.nav-cta,.nav-links a.nav-cta:visited,.nav-links a.nav-cta:hover,.nav-links a.nav-cta:focus-visible{color:var(--white)!important}
 .nav-cta{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.2rem;border-radius:999px;background:var(--lake);color:var(--white)!important;font-weight:500;font-size:.92rem;transition:all .2s;white-space:nowrap}
@@ -362,6 +362,7 @@ a:hover{color:var(--lake-deep)}
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease);animation:fallback-show .01s 1.6s forwards}
 .fade-up.visible{opacity:1;transform:translateY(0);animation:none}
 @keyframes fallback-show{to{opacity:1;transform:translateY(0)}}
+@media(max-width:1120px){.nav-links{display:none}.mobile-toggle{display:block}.nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:1.5rem 2rem;gap:1rem;border-top:1px solid var(--mist);box-shadow:0 8px 24px rgba(0,0,0,.06)}}
 </style>
 
 <script type="application/ld+json">
@@ -379,6 +380,8 @@ a:hover{color:var(--lake-deep)}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshcoast.ai/"}]}
 </script>
+<script src="case-study-events.js" defer></script>
+<link rel="stylesheet" href="case-study-preview.css">
 </head>
 
 <body>
@@ -392,6 +395,7 @@ a:hover{color:var(--lake-deep)}
 <a href="about.html">About</a>
 <a href="how-we-work.html">How We Work</a>
 <a href="services.html">Services</a>
+<a href="case-studies/stanton-company-kpi-digest.html" data-case-event="case_study_open" data-case-placement="navigation">Case Study</a>
 <a href="blog/index.html">Blog</a>
 <a href="contact.html">Contact</a>
 <a href="contact.html" class="nav-cta">Book a Free Call</a>
@@ -463,8 +467,19 @@ a:hover{color:var(--lake-deep)}
 <span class="logo-bar-label">Trusted by</span>
 <a class="logo-bar-client" href="https://www.cultureconusa.org/" target="_blank" rel="noopener noreferrer" aria-label="CultureCon website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--culture" src="culturecon-logo.png" alt="" width="69" height="54" loading="lazy"><span class="logo-bar-name">CultureCon</span></a>
 <a class="logo-bar-client" href="https://trustedelectricco.com/" target="_blank" rel="noopener noreferrer" aria-label="Trusted Electric website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--trusted" src="trusted-electric-logo.png" alt="" width="300" height="232" loading="lazy"><span class="logo-bar-name">Trusted Electric</span></a>
-<a class="logo-bar-client" href="https://stanton-company.com/" target="_blank" rel="noopener noreferrer" aria-label="Stanton &amp; Co website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--stanton" src="stanton-company-logo.png" alt="" width="702" height="171" loading="lazy"><span class="logo-bar-name">Stanton &amp; Co</span></a>
+<a class="logo-bar-client" href="case-studies/stanton-company-kpi-digest.html" aria-label="Read the Stanton &amp; Company case study" data-case-event="case_study_open" data-case-placement="homepage_logo"><img class="logo-bar-logo logo-bar-logo--stanton" src="stanton-company-logo.png" alt="" width="702" height="171" loading="lazy"><span class="logo-bar-name">Stanton &amp; Co</span></a>
 <a class="logo-bar-client" href="https://www.edieford.com/" target="_blank" rel="noopener noreferrer" aria-label="Edie Ford website (opens in a new tab)"><img class="logo-bar-logo logo-bar-logo--edie" src="edie-ford-logo.png" alt="" width="600" height="444" loading="lazy"><span class="logo-bar-name">Edie Ford</span></a>
+</div></section>
+
+<!-- FEATURED CLIENT CASE STUDY -->
+<section class="case-feature" aria-labelledby="stanton-feature-title"><div class="case-feature-inner">
+<div><p class="case-feature-label">Client case study / Stanton &amp; Company</p>
+<h2 id="stanton-feature-title">Every client's KPI pace.<br><em>One Monday view.</em></h2>
+<p class="case-feature-description">FCAI built a weekly digest that brings Stanton's client trackers into one leadership view. The numbers come from code, and Stanton's own team runs the system.</p>
+<a class="case-feature-link" href="case-studies/stanton-company-kpi-digest.html" data-case-event="case_study_open" data-case-placement="homepage_feature">Read the Stanton case study <span aria-hidden="true">→</span></a></div>
+<figure class="case-feature-proof"><img src="stanton-company-logo.png" alt="Stanton &amp; Company" width="702" height="171" loading="lazy">
+<blockquote>“Now it's clear right away how we're tracking against our targets.”</blockquote>
+<figcaption><strong>Emily Michels</strong>Director of Operations, Stanton &amp; Company</figcaption></figure>
 </div></section>
 
 <!-- START PATHS -->
@@ -479,12 +494,6 @@ a:hover{color:var(--lake-deep)}
 <a href="contact.html" class="start-card featured fade-up stagger-1"><div class="tag">Exploring</div><h3>Talk through your options.</h3><p>Book a free call when you want a practical read on whether AI makes sense for your team right now.</p><div class="action">Book a free call &rarr;</div></a>
 <a href="contact.html" class="start-card fade-up stagger-2"><div class="tag">Ready to start</div><h3>I want a clear plan for my business.</h3><p>Book a scoping call. I will define the workflow, the deliverables, and a fixed price before you commit a dollar. Engagements start at $5,000.</p><div class="footnote">Fixed-fee · Scoped upfront</div><div class="action">Book a scoping call &rarr;</div></a>
 </div>
-</div></section>
-
-<!-- PERSONAL AI SYSTEMS -->
-<section class="start-paths" aria-labelledby="personal-ai-heading"><div class="start-paths-inner">
-<div class="start-head"><div><div class="section-mark"><span class="label">Personal AI Systems</span></div><h2 class="section-title" id="personal-ai-heading">AI that fits <em>your working day.</em></h2></div>
-<div><p>For owners, leaders, and independent professionals: organize the knowledge you rely on, build a few useful AI routines, and learn how to keep the system current yourself.</p><p><a href="services.html#personal-ai">Explore personal AI systems &rarr;</a></p></div></div>
 </div></section>
 
 <!-- PROBLEM -->

@@ -128,7 +128,7 @@ The main page currently displays:
 - Stanton & Co
 - Edie Ford
 
-Living Canvas has been removed because the organization is closed. Additional client names and work require explicit publication approval. Stanton case-study approval remains separate from logo permission.
+Living Canvas has been removed because the organization is closed. Additional client names and work require explicit publication approval. Stanton case-study approval is recorded in the October 8 update to the editorial decisions; use Jonathan’s supplied final PDF for that narrative. Logo permission alone does not approve other case studies.
 
 Earlier placeholder or unverified client names were removed.
 

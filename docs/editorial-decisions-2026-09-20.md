@@ -2,6 +2,27 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 8, 2026 update
+
+Jonathan requested removal of the Personal AI Systems offering and correction of the documentation result. These decisions supersede the September 20 personal AI approval below:
+
+- Remove the personal AI offering from the homepage, Services page, site summary, and article links. Keep the ownership field note focused on team workflows.
+- The documentation result is 25 hours to 12 hours per workflow, a 52% reduction. Use the baseline and result in public copy. Do not reuse the older 40-hour baseline or the claim of a reduction above 70%.
+- This records the requested content decisions, not production deployment status.
+
+## October 8, 2026: named Stanton case study
+
+Jonathan supplied `2026-10-08-stanton-case-study-named-final.pdf`, described it as FCAI's first named case study, and approved the proposed website implementation with “Lets do it!” This supersedes the September 20 pending-case-study status below for the supplied narrative, attribution, quote, and illustrative digest.
+
+- The final PDF is the content source. The public download at `case-studies/stanton-company-kpi-digest.pdf` incorporates Jonathan's subsequent firm-voice and general-CTA corrections; preserve the supplied original in Downloads.
+- Lead with weekly visibility across every account and the internal team's rollout and operation. Do not invent ROI, percentage savings, client counts, or measured benefits.
+- The quote is from Emily Michels, Director of Operations, Stanton & Company. Preserve its wording and attribution.
+- The digest table contains fictional example accounts and sample values. Keep its “Illustrative, sample data” label adjacent to it.
+- Use FCAI or Fresh Coast AI as the subject of delivery throughout the HTML page and downloadable PDF, including the byline and author metadata. Jonathan explicitly corrected “Jon rebuilt it” to “FCAI rebuilt it” and rejected “Jon did” or “I did” framing.
+- The closing invitation is “Let's talk about your business.” Remove the pitch about reproducing Stanton's workflow or asking whether the same pattern fits another team.
+- Add a dedicated HTML story, homepage feature, site navigation and Services links, and a secondary PDF download. The Google tag receives editorial click events only; this does not add a conversion action or verify analytics reporting in the account.
+- Website implementation is staged for preview. This record does not authorize or claim production deployment.
+
 ## Public language
 - Use “No required retainer.” Project fees, optional monthly advisory, separately scoped prepaid support blocks, and third-party software costs are different things.
 - Readiness Assessment: 2–4 weeks. Proof of concept: 2–4 weeks. Rollout: 1–3 months. Full Journey: 3–5 months. Agree each schedule at scoping; do not describe all engagements as 6–10 weeks or add the ranges as a guaranteed schedule.
@@ -12,7 +33,7 @@ Source: Jonathan's September 20 feedback and follow-up in Codex.
 - New field note: “Owning an AI System Means Being Able to Change It.” This is a point-of-view article with an explicitly illustrative example, not a client case study or measured outcome. Date the new article on publication; do not refresh old article dates to imply new writing.
 - Remove the static last-shipped footer rather than maintaining a second, easily stale publication clock.
 
-## Stanton: first case study, pending approval
+## September 20 history: Stanton case study pending approval (superseded October 8)
 Logo permission does not approve a case study. Do not publish a teaser suggesting results have already been approved.
 
 Prepare the story only from approved project material: the original problem, scope, workflow before and after, what the client can operate themselves, and remaining limitations. Separate demo or pilot evidence from live use.

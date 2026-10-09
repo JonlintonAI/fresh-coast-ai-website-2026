@@ -70,6 +70,7 @@ nav.nav .nav-links{
 }
 
 nav.nav .nav-links a{
+  white-space:nowrap;
   color:var(--steel)!important;
   font-family:var(--sans)!important;
   font-size:.92rem!important;
@@ -115,7 +116,7 @@ nav.nav .mobile-toggle span{
 nav.nav + section.page-hero{padding-top:4rem!important}
 
 /* Mobile nav menu open state */
-@media(max-width:1020px){
+@media(max-width:1120px){
   nav.nav .nav-links{display:none!important}
   nav.nav .mobile-toggle{display:inline-flex!important}
   nav.nav .nav-links.open{
@@ -297,7 +298,7 @@ footer.footer .footer-version{
 /* ============================================================
    RESPONSIVE — keep nav sticky behavior consistent
 ============================================================ */
-@media(max-width:1020px){
+@media(max-width:1120px){
   nav.nav{padding:.85rem 1.25rem!important}
   .decorative-meta{font-size:.68rem;top:1rem}
   footer.footer .footer-contact::before{font-size:.95rem}
