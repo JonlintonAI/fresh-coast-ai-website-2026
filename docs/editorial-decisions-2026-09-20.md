@@ -2,6 +2,58 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 10, 2026 booking and professional services preview updates
+
+- Add direct intro-call booking at `https://cal.com/jonlinton/intro`, following Jonathan's October 10 Cal.com builder instructions. Booking links open in a new tab with an accessible notice. The homepage hero is adapted to the current draft's layout. Scoping and general written-inquiry links retain their contact destination; assessment routes and form fields remain unchanged.
+- Contact offers booking above the written inquiry form. Preserve the existing Netlify submission, honeypot, required states, field values, and contact-thank-you destination. Remove the promise to send suggested meeting times.
+- Add `booking-confirmed.html` with `noindex,nofollow` and the same installed Google tags as contact-thank-you. There is no manual conversion event in the source to clone. Google Ads URL matching for the new path remains unverified; copying the global tag is not evidence that bookings count as conversions.
+- Jonathan will configure the Cal.com post-booking redirect after the page is published. Do not change his Cal.com settings or report booking confirmation, email receipt, or Ads attribution as tested.
+- Remove the unverified accounting-firm story and standard ROI figures from the professional-services page and its FAQ schema. Use only the approved Stanton case-study facts as the documented example. The same one-page correction is isolated in PR #11.
+- Jonathan chose to keep PR #11 in preview. Neither these changes nor the broader draft are approved for production release.
+
+## October 10, 2026 withdrawn internal application examples
+
+Jonathan directed removal of the proposed internal testing and acquisition application examples after considering employer concerns. This supersedes the earlier request to add anonymized versions.
+
+- Remove the examples and their related references from Home, Services, and About.
+- Do not reuse these projects as website content, including anonymized descriptions or screenshots, without new explicit approval from Jonathan.
+- The additions were local and uncommitted; they were not pushed or published.
+
+## October 10, 2026 consolidated review draft
+
+Jonathan requested a complete website draft incorporating the warmer revision and the reviewed contact-form feedback.
+
+- Add visible required markers for Name, Email, Company, and the inquiry description. Keep Industry as optional free text and label both Industry and the interest selector optional.
+- Harden the already-hidden honeypot wrapper with hidden and aria-hidden. Exclude its input from keyboard navigation and autocomplete while preserving its name and presence in the form payload.
+- Change the final company-size band to 251+ to remove the overlap with 151–250.
+- Add the supplied correct founder LinkedIn URL, https://www.linkedin.com/in/jonathan-linton/, to the homepage founder and About Person structured data. Do not associate the founder with /in/jonlinton.
+- Keep September 2025, the warmer firm voice, the approved Stanton evidence, and the current pricing. The superseded Cultivate bundle is not restored.
+- The draft remains a preview. Local/mock testing does not establish live Netlify spam filtering or email delivery. Production publication remains subject to Jonathan's approval.
+
+## October 9, 2026 revision after preview review
+
+Jonathan found the first preview less personal and agreed to a warmer revision for review.
+
+- Firm attribution does not require third-person narration throughout. Use natural we/us language while FCAI owns delivery, methods, and client results.
+- Restore the founder portrait near the top of About and a fuller first-person founder note. Its content draws on the existing About narrative; prior career results remain clearly separate from FCAI client work.
+- Bring back the plainspoken point of view about team participation, skepticism, and human judgment. Keep the outcome-led services and approved client evidence.
+- Restore more of the established ink-and-lake visual character, with human imagery on Home, About, and Contact.
+- Concentrate commercial detail on How We Work. Pricing, security claim limits, form behavior, and the Stanton case study remain unchanged.
+- This is a revised draft for preview only. Production publication still requires Jonathan's approval.
+
+## October 9, 2026 core page preview
+
+Jonathan approved implementing the October 9 copy draft as a full review preview and explicitly reserved production publication until after review.
+
+- Core pages use firm voice and business outcomes, with process detail on How We Work. First person appears in the About founder note; approved client quotations retain their wording.
+- Replace the generic invoice demo and unsupported savings examples with the approved Stanton story and CultureCon quotation. Prior career experience stays attributed to the founder.
+- Retain the currently published $5,000–$55,000 project range in this preview. New assessment, implementation, and advisory price bands have not been selected. Do not invent them or publish placeholders.
+- Security copy describes the requirements to address during scoping. It does not assert BAA availability, insurance coverage, compliance certification, or verified retention/deletion controls.
+- Remove departure slogans, repeated no-retainer messaging, the 12-month exclusion, and the bundle discount/automatic 90-day support pitch. Support is defined in the scope.
+- Keep industry positioning open and preserve existing industry and local resources. Shared navigation follows the new core-page order; legacy service section anchors remain valid.
+- Contact field names, required states, existing interest values, Netlify submission, and thank-you routing remain compatible. Display labels describe the business need. Two additional interest values cover reporting/information access and workflow improvement; no repository script routes on those values.
+- This update supersedes conflicting older copy guidance below. It authorizes a preview, not a production deployment.
+
 ## October 8, 2026 update
 
 Jonathan requested removal of the Personal AI Systems offering and correction of the documentation result. These decisions supersede the September 20 personal AI approval below:
