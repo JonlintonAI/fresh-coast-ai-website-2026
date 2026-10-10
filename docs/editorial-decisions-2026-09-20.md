@@ -2,6 +2,23 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 10, 2026 booking and professional services preview updates
+
+- Add direct intro-call booking at `https://cal.com/jonlinton/intro`, following Jonathan's October 10 Cal.com builder instructions. Booking links open in a new tab with an accessible notice. The homepage hero is adapted to the current draft's layout. Scoping and general written-inquiry links retain their contact destination; assessment routes and form fields remain unchanged.
+- Contact offers booking above the written inquiry form. Preserve the existing Netlify submission, honeypot, required states, field values, and contact-thank-you destination. Remove the promise to send suggested meeting times.
+- Add `booking-confirmed.html` with `noindex,nofollow` and the same installed Google tags as contact-thank-you. There is no manual conversion event in the source to clone. Google Ads URL matching for the new path remains unverified; copying the global tag is not evidence that bookings count as conversions.
+- Jonathan will configure the Cal.com post-booking redirect after the page is published. Do not change his Cal.com settings or report booking confirmation, email receipt, or Ads attribution as tested.
+- Remove the unverified accounting-firm story and standard ROI figures from the professional-services page and its FAQ schema. Use only the approved Stanton case-study facts as the documented example. The same one-page correction is isolated in PR #11.
+- Jonathan chose to keep PR #11 in preview. Neither these changes nor the broader draft are approved for production release.
+
+## October 10, 2026 withdrawn internal application examples
+
+Jonathan directed removal of the proposed internal testing and acquisition application examples after considering employer concerns. This supersedes the earlier request to add anonymized versions.
+
+- Remove the examples and their related references from Home, Services, and About.
+- Do not reuse these projects as website content, including anonymized descriptions or screenshots, without new explicit approval from Jonathan.
+- The additions were local and uncommitted; they were not pushed or published.
+
 ## October 10, 2026 consolidated review draft
 
 Jonathan requested a complete website draft incorporating the warmer revision and the reviewed contact-form feedback.
