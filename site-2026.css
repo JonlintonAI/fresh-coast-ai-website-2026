@@ -32,3 +32,6 @@
 
 .booking-card{padding:28px;background:var(--cloud);border:1px solid var(--mist);border-radius:12px;margin-bottom:36px}.booking-card .actions{margin-top:22px}.booking-card h2{margin-top:0}
 @media(max-width:540px){.booking-card{padding:22px}.booking-card .btn{width:100%;font-size:.88rem;padding-inline:18px}}
+
+.book-intro{padding:56px 0 24px}.book-intro h1{font-size:clamp(2.3rem,4vw,3.6rem);margin:16px 0 22px}.book-intro .lede{max-width:760px}.book-calendar{padding:12px 0 60px}#cal-inline-intro{width:100%;min-height:700px;overflow:auto}.book-fallback{margin-top:24px;font-size:.95rem}.book-fallback a{color:var(--lake);text-decoration:underline}
+@media(max-width:540px){.book-intro{padding-top:36px}#cal-inline-intro{min-height:820px}.book-calendar{padding-bottom:40px}}
