@@ -2,6 +2,17 @@
 
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
+## October 10, 2026 consolidated review draft
+
+Jonathan requested a complete website draft incorporating the warmer revision and the reviewed contact-form feedback.
+
+- Add visible required markers for Name, Email, Company, and the inquiry description. Keep Industry as optional free text and label both Industry and the interest selector optional.
+- Harden the already-hidden honeypot wrapper with hidden and aria-hidden. Exclude its input from keyboard navigation and autocomplete while preserving its name and presence in the form payload.
+- Change the final company-size band to 251+ to remove the overlap with 151–250.
+- Add the supplied correct founder LinkedIn URL, https://www.linkedin.com/in/jonathan-linton/, to the homepage founder and About Person structured data. Do not associate the founder with /in/jonlinton.
+- Keep September 2025, the warmer firm voice, the approved Stanton evidence, and the current pricing. The superseded Cultivate bundle is not restored.
+- The draft remains a preview. Local/mock testing does not establish live Netlify spam filtering or email delivery. Production publication remains subject to Jonathan's approval.
+
 ## October 9, 2026 revision after preview review
 
 Jonathan found the first preview less personal and agreed to a warmer revision for review.
