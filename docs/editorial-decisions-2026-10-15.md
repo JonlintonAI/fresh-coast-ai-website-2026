@@ -23,6 +23,8 @@ This record supersedes conflicting booking, assessment, healthcare, About, and r
 ## Assessment
 
 - Keep the 14 questions, scoring thresholds, seven dimension scores, on-screen results, and booking link.
+- Use "Book an intro call" consistently for the assessment navigation, results, and footer booking links, including their accessibility labels.
+- A Clinical Research / CRO industry option is deferred until Jonathan confirms that niche. The existing Healthcare & Medical Practices and Other options remain available; no industry choice is evidence of completed client work.
 - Remove both assessment submissions and email capture. Redirect /assessment-thank-you and its .html variant to /assessment.
 - Qualify the score as self-reported guidance, not an audit, benchmark, or deployment approval. Industry selection does not affect the score or establish industry experience.
 - No replacement completion-tracking event is added. The existing sitewide Google tag remains.
@@ -35,6 +37,7 @@ This record supersedes conflicting booking, assessment, healthcare, About, and r
 - No current-employer results, figures, or project descriptions may be added without new explicit approval.
 - Remove the unsupported example-story sections from Property Management, Manufacturing, Staffing, and Trades rather than relabeling them as client evidence. Remove Property Management's payback sentence from both visible copy and FAQ structured data.
 - Preserve current service pricing. Financial figures belonging to withdrawn illustrative stories are removed with those stories. Broader pricing alignment, platform claims, delivery-time claims, and industry rewrites are deferred.
+- The assessment CTA follow-up does not change pricing. A replacement public pricing position has not been selected or approved.
 
 ## Contact and privacy
 
