@@ -1,13 +1,13 @@
 # Editorial decisions: October 15, 2026
 
-Jonathan approved the reviewed trust and assessment cleanup for implementation and preview review. Production publication, account settings changes, and real form submissions or bookings are not authorized by that approval.
+Jonathan approved the reviewed trust and assessment cleanup for implementation and preview review, then explicitly authorized production deployment on October 15, 2026. Account settings changes and real form submissions or bookings remain outside that authorization.
 
 This record supersedes conflicting booking, assessment, healthcare, About, and release-status statements in the September 20 record, including its October 9 and 10 updates. Historical entries are preserved as history.
 
 ## Production and preview status
 
 - At the start of this work, GitHub main was d6e99c1, the October 10 merge of PR #12. PR #10 and PR #12 are merged; their core-page refresh and inline booking page are already published.
-- This cleanup is a separate review branch based on that main commit. Do not describe its changes as published until approval and live verification are recorded.
+- This cleanup is released through [PR #13](https://github.com/JonlintonAI/fresh-coast-ai-website-2026/pull/13), based on that main commit. Production deployment is authorized. The PR release record will contain the merge commit and post-deployment verification; approval alone is not proof of publication.
 - Intro-call links lead to /book in the same tab. The direct Cal.com fallback remains available on that page.
 - The existing Google tag, Ads configuration, Cal.com embed, query forwarding, and bookingSuccessfulV2 callback are preserved. Do not add a manual Ads conversion snippet.
 - PR #11 remains open. Its intended professional-services story correction is already in main. Closing it without merging is recommended; closure has not been performed.
@@ -45,7 +45,7 @@ This record supersedes conflicting booking, assessment, healthcare, About, and r
 - Add bounded waiting, accessible inline status, autocomplete, and stronger field contrast. Retain entered values after errors and do not retry automatically.
 - A timeout or network error does not prove the server failed to receive a message. Recovery copy must say receipt could not be confirmed.
 - Privacy copy describes browser-based assessment scoring, Netlify Forms, the Google tag, and Cal.com's embed. It does not claim all technical visit data stays in the browser.
-- The preview privacy date is October 15, 2026. Set it to the actual publication date when release is approved. Legal review has not been recorded.
+- The privacy date is October 15, 2026, matching the authorized release date. Legal review has not been recorded.
 
 ## Verification and release prerequisites
 
@@ -53,7 +53,7 @@ This record supersedes conflicting booking, assessment, healthcare, About, and r
 - Source validation passed for all JSON-LD, inline script syntax, sitemap XML, preserved form attributes and fields, preserved Google tags and booking code, and unchanged approved case-study files. Contact placeholder contrast is 4.94:1 on white; field-border contrast is 3.22:1 on white.
 - Local and mocked browser checks can verify score rendering, lack of assessment submissions, contact recovery, success navigation, and layout. They do not verify live email delivery, Netlify spam handling, or Ads attribution.
 - Verify redirects and removed-file responses on the hosted preview, then repeat after an approved production release.
-- Before publishing the assessment thank-you redirect, confirm in Google Ads that no conversion action depends on /assessment-thank-you.
+- Google Ads was inspected read-only on October 15 before release. All six conversion actions were listed, including two removed actions. The three enabled website actions use www.freshcoast.ai/contact-thank-you (starts with), www.freshcoast.ai/booking-confirmed (contains), and freshcoast.ai/contact (starts with); the fourth enabled action is Google hosted. None of the enabled actions depends on /assessment-thank-you. No Ads settings were changed. Existing tracking-status warnings remain; this URL-dependency check does not establish attribution.
 - A production booking through the inline embed, its confirmation redirect, notifications, and conversion request remains unverified. The documented October 10 test predates the embed merge and does not establish that full production path.
 - Confirm Cal.com availability with Jonathan's intended hours. Any real booking and cancellation require separate authorization.
 - Repository privacy and access to old deploy previews remain separate settings decisions. Current source removal does not recall old copies.

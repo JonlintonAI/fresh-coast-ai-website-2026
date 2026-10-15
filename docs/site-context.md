@@ -2,7 +2,7 @@
 
 Last updated: 2026-10-15.
 
-Current editorial decisions: see [editorial-decisions-2026-10-15.md](editorial-decisions-2026-10-15.md). That record supersedes conflicting copy and release-status statements in the older record. The current trust and assessment cleanup is approved for preview review only; it is not a production release.
+Current editorial decisions: see [editorial-decisions-2026-10-15.md](editorial-decisions-2026-10-15.md). That record supersedes conflicting copy and release-status statements in the older record. Jonathan explicitly authorized production deployment of the trust and assessment cleanup on October 15. [PR #13](https://github.com/JonlintonAI/fresh-coast-ai-website-2026/pull/13) holds its merge and live-verification record.
 
 ## Current State
 
@@ -23,7 +23,7 @@ The project used to live at:
 
 The active production site deploys from GitHub `main` to Netlify. The repo folder is linked locally to the Netlify project.
 
-Verified October 15: main is `d6e99c1`, the October 10 merge of PR #12 (inline Cal.com booking), following PR #10 (`71dc8a5`, core-page refresh). The trust and assessment cleanup is a separate preview branch based on that source. Record its merge and live verification only after production publication is approved and completed.
+At the start of the October 15 cleanup, main was `d6e99c1`, the October 10 merge of PR #12 (inline Cal.com booking), following PR #10 (`71dc8a5`, core-page refresh). PR #13 contains the approved cleanup and its release evidence. Verify current GitHub main and the live site before reporting publication status.
 
 ## Domain And Canonical Setup
 
