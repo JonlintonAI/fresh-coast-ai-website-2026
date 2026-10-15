@@ -12,3 +12,14 @@ https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 /google-ads-health-check-2026-03-24.md /404.html 404!
 /google-ads-import/* /404.html 404!
 /README.md /404.html 404!
+
+# Healthcare page withdrawn pending supportable claims.
+/industries/healthcare /services 301!
+/industries/healthcare.html /services 301!
+
+# Draft posts are not public content.
+/blog/pending/* /404.html 404!
+
+# The self-assessment no longer collects email addresses.
+/assessment-thank-you /assessment 301!
+/assessment-thank-you.html /assessment 301!
