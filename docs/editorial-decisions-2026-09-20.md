@@ -1,5 +1,7 @@
 # Editorial decisions: September 20, 2026
 
+Superseded on October 15, 2026 for conflicting booking, production status, PR #11, About, assessment, healthcare, and industry-story decisions. See [editorial-decisions-2026-10-15.md](editorial-decisions-2026-10-15.md). Earlier entries below are historical.
+
 Source: Jonathan's September 20 feedback and follow-up in Codex.
 
 ## October 10, 2026 booking and professional services preview updates
