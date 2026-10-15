@@ -1,8 +1,8 @@
 # Fresh Coast AI Website Context
 
-Last updated: 2026-09-20.
+Last updated: 2026-10-15.
 
-Current editorial decisions: see [editorial-decisions-2026-09-20.md](editorial-decisions-2026-09-20.md). That record supersedes older commercial language and client lists below. Deployment history below is historical, not a claim about the latest release.
+Current editorial decisions: see [editorial-decisions-2026-10-15.md](editorial-decisions-2026-10-15.md). That record supersedes conflicting copy and release-status statements in the older record. Jonathan explicitly authorized production deployment of the trust and assessment cleanup on October 15. [PR #13](https://github.com/JonlintonAI/fresh-coast-ai-website-2026/pull/13) holds its merge and live-verification record.
 
 ## Current State
 
@@ -23,9 +23,7 @@ The project used to live at:
 
 The active production site deploys from GitHub `main` to Netlify. The repo folder is linked locally to the Netlify project.
 
-The most recent major production push was commit `1336e1e`, `Refresh national positioning and about copy`.
-
-After that push, the Netlify CDN cache was purged successfully through the direct purge API with HTTP status `202`.
+At the start of the October 15 cleanup, main was `d6e99c1`, the October 10 merge of PR #12 (inline Cal.com booking), following PR #10 (`71dc8a5`, core-page refresh). PR #13 contains the approved cleanup and its release evidence. Verify current GitHub main and the live site before reporting publication status.
 
 ## Domain And Canonical Setup
 
