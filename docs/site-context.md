@@ -1,8 +1,10 @@
 # Fresh Coast AI Website Context
 
-Last updated: 2026-10-15.
+Last updated: 2026-11-12.
 
 Current editorial decisions: see [editorial-decisions-2026-10-15.md](editorial-decisions-2026-10-15.md). That record supersedes conflicting copy and release-status statements in the older record. Jonathan explicitly authorized production deployment of the trust and assessment cleanup on October 15. [PR #13](https://github.com/JonlintonAI/fresh-coast-ai-website-2026/pull/13) holds its merge and live-verification record.
+
+Current pricing: [November 12 pricing decision](pricing-decision-2026-11-12.md) supersedes earlier fee ranges. SMB Discovery, Assessment & Architecture is the only published paid offer, at $4,799. Further work is scoped and quoted separately. Publication status must be verified against the live site.
 
 ## Current State
 
