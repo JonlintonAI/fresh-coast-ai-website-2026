@@ -8,3 +8,7 @@ Jonathan requested $4,799 for Discovery, Assessment & Architecture as the only p
 - Align visible copy, FAQs, social/search metadata, structured data, and llms.txt. Remove the firm-wide LocalBusiness priceRange; the specific Service/Offer on How We Work carries USD 4799.
 - This supersedes previous public fee ranges and the October 15 instruction to preserve pricing. Historical records and blocked draft articles remain historical/unpublished.
 - This change is prepared on a codex branch for review. Production publication is not yet recorded.
+
+## November 13 scope correction
+
+Jonathan clarified that the $4,799 fixed fee covers **Discovery & Assessment only**. Architecture is a separate project phase that can be the clear next step after the assessment, with its own scope and quote. This correction supersedes the architecture-included wording above. The current offer and phase boundaries are defined on How We Work. Validation and remaining gaps are recorded in the task conversation.
