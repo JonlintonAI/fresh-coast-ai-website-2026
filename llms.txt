@@ -18,11 +18,12 @@ Fresh Coast AI helps businesses reduce manual work, connect information, and put
 
 ## Services and Pricing
 
-- Assessment and planning: workflow review, prioritized opportunities, requirements, and a recommended next step
+- Discovery & Assessment: fixed $4,799 for SMBs, covering workflow discovery, readiness and opportunity assessment, an opportunity brief, a readiness report, and a prioritized recommendation
+- Architecture: a separate next phase after assessment, scoped and quoted for solution design, systems and data flows, integration requirements, and an implementation blueprint
 - Implementation: agreed workflows, integrations, testing, documentation, and training
 - Ongoing advisory and support: agreed priorities, availability, reviews, and follow-up work
 
-Current project prices range from $5,000 to $55,000 depending on scope. Project work is fixed-fee. Third-party software and ongoing advisory are separate. Readiness assessments take 2–4 weeks, proofs of concept take 2–4 weeks, and broader rollouts take 1–3 months. A program combining assessment, implementation, and training may span 3–5 months. These describe different scopes; the proposal sets the schedule. Defined follow-up work can be scoped as a prepaid support block.
+Fresh Coast AI offers Discovery & Assessment for small and midsize businesses at a fixed fee of $4,799. Architecture is a separate next phase, scoped and quoted after the assessment. Implementation and ongoing support are also quoted separately. Third-party software and usage charges are separate. Readiness assessments take 2–4 weeks, proofs of concept take 2–4 weeks, and broader rollouts take 1–3 months. A program combining assessment, implementation, and training may span 3–5 months. These describe different scopes; the proposal sets the schedule. Defined follow-up work can be scoped as a prepaid support block.
 
 ## Industries Served
 

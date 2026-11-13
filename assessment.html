@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Readiness Self-Assessment | Fresh Coast AI</title>
-<meta name="description" content="Free AI readiness self-assessment for businesses. Rate your organization across 7 dimensions in 5 minutes. Get your score and personalized next steps.">
+<meta name="description" content="Free AI readiness self-assessment for businesses. Rate your organization across 7 dimensions in 5 minutes. See your on-screen score and suggested next steps.">
 <meta property="og:title" content="AI Readiness Self-Assessment | Fresh Coast AI">
 <meta property="og:description" content="How ready is your business for AI? Take this free 5-minute assessment and find out.">
 <meta property="og:type" content="website">
@@ -68,6 +68,11 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 @media(max-width:900px){.nav .nav-logo img{height:50px}.nav-links{display:none}.mobile-toggle{display:block}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--ink);padding:1.5rem 2rem;gap:1rem;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 8px 24px rgba(0,0,0,.3)}.nav-links.open .nav-cta{text-align:center;margin-top:.5rem}.dimension-scores{grid-template-columns:repeat(3,1fr)}.assess-progress-items{flex-wrap:wrap;gap:.35rem}.footer-row{flex-direction:column;text-align:center}}
 @media(max-width:600px){section{padding:4rem 1.25rem}.page-hero{padding:8rem 1.25rem 4rem}.page-hero-meta{flex-direction:column;gap:.5rem;align-items:center}.rating-scale{gap:.35rem}.rating-label{display:block;font-size:.5rem}.dimension-scores{grid-template-columns:repeat(2,1fr)}.btn{width:100%;max-width:340px;justify-content:center}.assess-progress-label{font-size:.55rem}}
 @keyframes fallback-show{to{opacity:1;transform:translateY(0)}}
+.assess-progress-item{border:0;background:transparent;font-family:inherit;min-width:0;min-height:44px}.assess-progress-bar,.assess-progress-label{display:block}
+.industry-label{display:block;font-weight:600;color:var(--ink);margin-bottom:.5rem}.industry-label span{font-weight:400}.industry-control{width:100%;padding:.75rem 1rem;border:1px solid #8996a4;border-radius:8px;font:inherit;color:var(--ink);background:var(--white)}.industry-control::placeholder{color:#66758a;opacity:1}
+.industry-control:focus-visible,.rating-btn:focus-visible,.assess-progress-item:focus-visible{outline:3px solid var(--lake);outline-offset:3px}.rating-btn.selected .rating-label{color:var(--white)}
+#resultsSection{scroll-margin-top:100px}
+@media(prefers-reduced-motion:reduce){.fade-up,.score-fill{transition:none!important}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"AI Readiness Self-Assessment","url":"https://www.freshcoast.ai/assessment","description":"Free AI readiness self-assessment for businesses. Rate your organization across 7 dimensions and get your readiness score instantly.","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Fresh Coast AI"}}
@@ -104,171 +109,33 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 <section class="assessment" id="assessmentSection"><div class="assessment-inner">
 
 <div class="assess-progress" id="progressBar">
-<div class="assess-progress-header">Your progress: click to jump</div>
+<div class="assess-progress-header">Your progress: choose a section</div>
 <div class="assess-progress-items">
-<div class="assess-progress-item" onclick="scrollToDim(0)" title="Jump to Leadership &amp; Strategy"><div class="assess-progress-bar active" id="prog0"></div><div class="assess-progress-label">Leadership</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(1)" title="Jump to People &amp; Culture"><div class="assess-progress-bar" id="prog1"></div><div class="assess-progress-label">People</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(2)" title="Jump to Data &amp; Infrastructure"><div class="assess-progress-bar" id="prog2"></div><div class="assess-progress-label">Data</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(3)" title="Jump to Processes &amp; Workflows"><div class="assess-progress-bar" id="prog3"></div><div class="assess-progress-label">Processes</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(4)" title="Jump to Governance &amp; Risk"><div class="assess-progress-bar" id="prog4"></div><div class="assess-progress-label">Governance</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(5)" title="Jump to Security &amp; Compliance"><div class="assess-progress-bar" id="prog5"></div><div class="assess-progress-label">Security</div></div>
-<div class="assess-progress-item" onclick="scrollToDim(6)" title="Jump to Vendor &amp; Tool Ecosystem"><div class="assess-progress-bar" id="prog6"></div><div class="assess-progress-label">Vendors</div></div>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(0)" aria-label="Jump to Leadership &amp; Strategy" title="Jump to Leadership &amp; Strategy"><span class="assess-progress-bar active" id="prog0" aria-hidden="true"></span><span class="assess-progress-label">Leadership</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(1)" aria-label="Jump to People &amp; Culture" title="Jump to People &amp; Culture"><span class="assess-progress-bar" id="prog1" aria-hidden="true"></span><span class="assess-progress-label">People</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(2)" aria-label="Jump to Data &amp; Infrastructure" title="Jump to Data &amp; Infrastructure"><span class="assess-progress-bar" id="prog2" aria-hidden="true"></span><span class="assess-progress-label">Data</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(3)" aria-label="Jump to Processes &amp; Workflows" title="Jump to Processes &amp; Workflows"><span class="assess-progress-bar" id="prog3" aria-hidden="true"></span><span class="assess-progress-label">Processes</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(4)" aria-label="Jump to Governance &amp; Risk" title="Jump to Governance &amp; Risk"><span class="assess-progress-bar" id="prog4" aria-hidden="true"></span><span class="assess-progress-label">Governance</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(5)" aria-label="Jump to Security &amp; Compliance" title="Jump to Security &amp; Compliance"><span class="assess-progress-bar" id="prog5" aria-hidden="true"></span><span class="assess-progress-label">Security</span></button>
+<button type="button" class="assess-progress-item" onclick="scrollToDim(6)" aria-label="Jump to Vendor &amp; Tool Ecosystem" title="Jump to Vendor &amp; Tool Ecosystem"><span class="assess-progress-bar" id="prog6" aria-hidden="true"></span><span class="assess-progress-label">Vendors</span></button>
 </div>
 </div>
 
-<div class="dimension fade-up" id="industrySelect" style="border-bottom:1px solid var(--mist);padding-bottom:2rem;margin-bottom:3rem;position:relative;z-index:50">
-<div class="dimension-header"><div class="dimension-icon" style="background:var(--lake)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>What industry are you in?</h3></div>
-<p style="font-size:.95rem;color:var(--steel);margin-bottom:1rem">Optional: select the closest match. Your industry does not change your score.</p>
-<div id="industryCombobox" style="position:relative;width:100%">
-<input type="text" id="industryInput" placeholder="Search or select your industry…" autocomplete="off"
-  style="width:100%;padding:.75rem 1rem;padding-right:2.5rem;border-radius:8px;border:1px solid var(--mist);font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);cursor:text;outline:none;transition:border-color .2s"
-  onfocus="openIndustryList()" oninput="filterIndustries()">
-<svg style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);pointer-events:none;opacity:.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A506B" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-<ul id="industryList" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;max-height:260px;overflow-y:auto;background:var(--white);border:1px solid var(--mist);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.15);list-style:none;z-index:9999;padding:4px 0;margin:0;scrollbar-width:thin"></ul>
-<input type="hidden" id="industryDropdown" value="">
-</div>
-<div id="industryOtherWrap" style="display:none;margin-top:.75rem">
-<input type="text" id="industryOtherInput" placeholder="Type your industry…"
-  style="width:100%;padding:.75rem 1rem;border-radius:8px;border:1px solid var(--mist);font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--white);outline:none;transition:border-color .2s"
-  oninput="document.getElementById('industryDropdown').value=this.value||'Other'">
+<div class="dimension fade-up" id="industrySelect" style="border-bottom:1px solid var(--mist);padding-bottom:2rem;margin-bottom:3rem">
+<label for="industryDropdown" class="industry-label">What industry are you in? <span>(optional)</span></label>
+<p id="industryHelp" style="font-size:.95rem;color:var(--steel);margin-bottom:1rem">Select the closest match. Your industry does not change your score.</p>
+<select id="industryDropdown" class="industry-control" aria-describedby="industryHelp"><option value="">Select an industry (optional)</option><optgroup label="Services"><option value="Professional Services">Professional Services</option><option value="Accounting &amp; Financial Services">Accounting &amp; Financial Services</option><option value="Legal Services">Legal Services</option><option value="Marketing &amp; Advertising">Marketing &amp; Advertising</option><option value="IT Services &amp; Managed IT">IT Services &amp; Managed IT</option><option value="Engineering &amp; Architecture">Engineering &amp; Architecture</option><option value="Consulting">Consulting</option><option value="Insurance">Insurance</option></optgroup><optgroup label="Industrial"><option value="Manufacturing &amp; Distribution">Manufacturing &amp; Distribution</option><option value="Food &amp; Beverage Manufacturing">Food &amp; Beverage Manufacturing</option><option value="Metal Fabrication &amp; Machining">Metal Fabrication &amp; Machining</option><option value="Plastics &amp; Packaging">Plastics &amp; Packaging</option><option value="Printing &amp; Print Services">Printing &amp; Print Services</option><option value="Automotive &amp; Transportation">Automotive &amp; Transportation</option><option value="Warehousing &amp; Logistics">Warehousing &amp; Logistics</option><option value="Wholesale &amp; Distribution">Wholesale &amp; Distribution</option></optgroup><optgroup label="Trades"><option value="Skilled Trades &amp; Home Services">Skilled Trades &amp; Home Services</option><option value="HVAC &amp; Plumbing">HVAC &amp; Plumbing</option><option value="Electrical Contractors">Electrical Contractors</option><option value="General Contracting &amp; Remodeling">General Contracting &amp; Remodeling</option><option value="Landscaping &amp; Lawn Care">Landscaping &amp; Lawn Care</option><option value="Cleaning &amp; Janitorial Services">Cleaning &amp; Janitorial Services</option></optgroup><optgroup label="Workforce"><option value="Staffing &amp; Recruiting">Staffing &amp; Recruiting</option><option value="Human Resources &amp; Payroll">Human Resources &amp; Payroll</option></optgroup><optgroup label="Real Estate"><option value="Property Management">Property Management</option><option value="Real Estate &amp; Brokerage">Real Estate &amp; Brokerage</option><option value="Construction &amp; Development">Construction &amp; Development</option></optgroup><optgroup label="Healthcare"><option value="Healthcare &amp; Medical Practices">Healthcare &amp; Medical Practices</option><option value="Dental Practices">Dental Practices</option><option value="Veterinary Services">Veterinary Services</option><option value="Behavioral Health &amp; Counseling">Behavioral Health &amp; Counseling</option><option value="Senior Care &amp; Assisted Living">Senior Care &amp; Assisted Living</option><option value="Home Health &amp; Hospice">Home Health &amp; Hospice</option><option value="Pharmacy &amp; Medical Supplies">Pharmacy &amp; Medical Supplies</option></optgroup><optgroup label="Community"><option value="Nonprofit &amp; Social Services">Nonprofit &amp; Social Services</option><option value="Education &amp; Training">Education &amp; Training</option><option value="Religious &amp; Faith-Based Organizations">Religious &amp; Faith-Based Organizations</option></optgroup><optgroup label="Agriculture"><option value="Agriculture &amp; Farming">Agriculture &amp; Farming</option></optgroup><optgroup label="Retail"><option value="Retail &amp; E-Commerce">Retail &amp; E-Commerce</option><option value="Restaurants &amp; Hospitality">Restaurants &amp; Hospitality</option><option value="Fitness &amp; Wellness">Fitness &amp; Wellness</option><option value="Auto Dealerships &amp; Repair">Auto Dealerships &amp; Repair</option><option value="Salon, Spa &amp; Personal Care">Salon, Spa &amp; Personal Care</option></optgroup><optgroup label="Creative"><option value="Media &amp; Publishing">Media &amp; Publishing</option><option value="Graphic Design &amp; Creative Services">Graphic Design &amp; Creative Services</option><option value="Photography &amp; Videography">Photography &amp; Videography</option></optgroup><option value="Other">Other (enter your own)</option></select>
+<div id="industryOtherWrap" hidden style="margin-top:.75rem"><label for="industryOtherInput" class="industry-label">Your industry <span>(optional)</span></label><input type="text" id="industryOtherInput" class="industry-control" autocomplete="off" placeholder="Describe your industry"></div>
 </div>
 <script>
-const industryOptions=[
-  {label:'Professional Services',group:'Services'},
-  {label:'Accounting & Financial Services',group:'Services'},
-  {label:'Legal Services',group:'Services'},
-  {label:'Marketing & Advertising',group:'Services'},
-  {label:'IT Services & Managed IT',group:'Services'},
-  {label:'Engineering & Architecture',group:'Services'},
-  {label:'Consulting',group:'Services'},
-  {label:'Insurance',group:'Services'},
-  {label:'Manufacturing & Distribution',group:'Industrial'},
-  {label:'Food & Beverage Manufacturing',group:'Industrial'},
-  {label:'Metal Fabrication & Machining',group:'Industrial'},
-  {label:'Plastics & Packaging',group:'Industrial'},
-  {label:'Printing & Print Services',group:'Industrial'},
-  {label:'Automotive & Transportation',group:'Industrial'},
-  {label:'Warehousing & Logistics',group:'Industrial'},
-  {label:'Wholesale & Distribution',group:'Industrial'},
-  {label:'Skilled Trades & Home Services',group:'Trades'},
-  {label:'HVAC & Plumbing',group:'Trades'},
-  {label:'Electrical Contractors',group:'Trades'},
-  {label:'General Contracting & Remodeling',group:'Trades'},
-  {label:'Landscaping & Lawn Care',group:'Trades'},
-  {label:'Cleaning & Janitorial Services',group:'Trades'},
-  {label:'Staffing & Recruiting',group:'Workforce'},
-  {label:'Human Resources & Payroll',group:'Workforce'},
-  {label:'Property Management',group:'Real Estate'},
-  {label:'Real Estate & Brokerage',group:'Real Estate'},
-  {label:'Construction & Development',group:'Real Estate'},
-  {label:'Healthcare & Medical Practices',group:'Healthcare'},
-  {label:'Dental Practices',group:'Healthcare'},
-  {label:'Veterinary Services',group:'Healthcare'},
-  {label:'Behavioral Health & Counseling',group:'Healthcare'},
-  {label:'Senior Care & Assisted Living',group:'Healthcare'},
-  {label:'Home Health & Hospice',group:'Healthcare'},
-  {label:'Pharmacy & Medical Supplies',group:'Healthcare'},
-  {label:'Nonprofit & Social Services',group:'Community'},
-  {label:'Education & Training',group:'Community'},
-  {label:'Religious & Faith-Based Organizations',group:'Community'},
-  {label:'Agriculture & Farming',group:'Agriculture'},
-  {label:'Retail & E-Commerce',group:'Retail'},
-  {label:'Restaurants & Hospitality',group:'Retail'},
-  {label:'Fitness & Wellness',group:'Retail'},
-  {label:'Auto Dealerships & Repair',group:'Retail'},
-  {label:'Salon, Spa & Personal Care',group:'Retail'},
-  {label:'Media & Publishing',group:'Creative'},
-  {label:'Graphic Design & Creative Services',group:'Creative'},
-  {label:'Photography & Videography',group:'Creative'},
-  {label:'Other',group:''}
-];
-let industryListOpen=false;
-
-function renderIndustryList(filter=''){
-  const ul=document.getElementById('industryList');
-  const f=filter.toLowerCase().trim();
-  const matches=f?industryOptions.filter(o=>o.label.toLowerCase().includes(f)):industryOptions;
-  if(matches.length===0){
-    ul.innerHTML='<li style="padding:.6rem 1rem;color:var(--steel);font-size:.9rem;font-style:italic">No matches, select "Other" to enter your own</li>';
-    if(f){
-      ul.innerHTML+='<li class="ind-opt" data-val="Other" style="padding:.6rem 1rem;cursor:pointer;font-size:.95rem;border-top:1px solid var(--mist)" onmousedown="selectIndustry(\'Other\')">Other (enter your own)</li>';
-    }
-    return;
-  }
-  let currentGroup='';
-  ul.innerHTML=matches.map(o=>{
-    let groupHeader='';
-    if(o.group && o.group!==currentGroup && !f){
-      currentGroup=o.group;
-      groupHeader=`<li style="padding:.35rem 1rem .2rem;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--steel);background:var(--cloud);pointer-events:none">${o.group}</li>`;
-    }
-    const highlight=f?o.label.replace(new RegExp('('+f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<strong>$1</strong>'):o.label;
-    return groupHeader+`<li class="ind-opt" data-val="${o.label}" style="padding:.55rem 1rem;cursor:pointer;font-size:.95rem;transition:background .15s" onmouseenter="this.style.background='var(--cloud)'" onmouseleave="this.style.background=''" onmousedown="selectIndustry('${o.label.replace(/'/g,"\\'")}')">${o.label==='Other'?'Other (enter your own)':highlight}</li>`;
-  }).join('');
-}
-
-function openIndustryList(){
-  const ul=document.getElementById('industryList');
-  renderIndustryList(document.getElementById('industryInput').value);
-  ul.style.display='block';
-  industryListOpen=true;
-  document.getElementById('industryInput').style.borderColor='var(--lake)';
-}
-
-function closeIndustryList(){
-  setTimeout(()=>{
-    document.getElementById('industryList').style.display='none';
-    industryListOpen=false;
-    document.getElementById('industryInput').style.borderColor='var(--mist)';
-  },150);
-}
-
-function filterIndustries(){
-  renderIndustryList(document.getElementById('industryInput').value);
-  if(!industryListOpen)openIndustryList();
-  // If typed text doesn't match any option, clear hidden value
-  const v=document.getElementById('industryInput').value;
-  const exact=industryOptions.find(o=>o.label.toLowerCase()===v.toLowerCase());
-  document.getElementById('industryDropdown').value=exact?exact.label:'';
-}
-
-function selectIndustry(val){
-  const inp=document.getElementById('industryInput');
-  const hidden=document.getElementById('industryDropdown');
-  const otherWrap=document.getElementById('industryOtherWrap');
-  if(val==='Other'){
-    inp.value='Other';
-    hidden.value='Other';
-    otherWrap.style.display='block';
-    setTimeout(()=>document.getElementById('industryOtherInput').focus(),50);
-  } else {
-    inp.value=val;
-    hidden.value=val;
-    otherWrap.style.display='none';
-    document.getElementById('industryOtherInput').value='';
-  }
-  closeIndustryList();
-}
-
-document.getElementById('industryInput').addEventListener('blur',closeIndustryList);
-document.getElementById('industryInput').addEventListener('keydown',function(e){
-  if(e.key==='Escape'){closeIndustryList();this.blur();}
-  if(e.key==='Enter'){
-    e.preventDefault();
-    const opts=document.querySelectorAll('.ind-opt');
-    if(opts.length===1)selectIndustry(opts[0].dataset.val);
-    else if(opts.length>1){
-      const v=this.value.toLowerCase();
-      const exact=[...opts].find(o=>o.dataset.val.toLowerCase()===v);
-      if(exact)selectIndustry(exact.dataset.val);
-      else selectIndustry(opts[0].dataset.val);
-    }
-  }
+document.getElementById('industryDropdown').addEventListener('change',function(){
+  const other=document.getElementById('industryOtherWrap');
+  other.hidden=this.value!=='Other';
+  if(!other.hidden)document.getElementById('industryOtherInput').focus();
 });
 </script>
-</div>
 
-<div id="questionsContainer"></div>
+<p id="answerProgress" role="status" aria-live="polite" style="font-size:.9rem;color:var(--steel)">0 of 14 questions answered.</p><div id="questionsContainer"></div>
 
 <div class="assess-submit" id="submitArea" style="display:none"><button type="button" class="btn btn-primary" onclick="showResults()">See My Results <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button><p style="font-size:.8rem;color:var(--steel);margin-top:.75rem">Your answers are scored in your browser. This assessment does not send your answers or score to us.</p></div>
 
@@ -277,7 +144,7 @@ document.getElementById('industryInput').addEventListener('keydown',function(e){
 <!-- RESULTS -->
 <section class="results-section" id="resultsSection"><div class="results-inner fade-up">
 <div class="section-label">Your Results</div>
-<h2 class="section-title" id="resultTitle"></h2>
+<h2 class="section-title" id="resultTitle" tabindex="-1"></h2>
 <div class="score-display"><svg width="180" height="180" viewBox="0 0 180 180"><circle class="score-bg" cx="90" cy="90" r="80"/><circle class="score-fill" id="scoreCircle" cx="90" cy="90" r="80" stroke-dasharray="502" stroke-dashoffset="502"/></svg><div class="score-text"><div class="score-num" id="scoreNum">0</div><div class="score-of">out of 70</div></div></div>
 <div class="score-tier" id="scoreTier"></div>
 <p class="score-desc" id="scoreDesc"></p>
@@ -285,7 +152,7 @@ document.getElementById('industryInput').addEventListener('keydown',function(e){
 <div class="dimension-scores" id="dimScores"></div>
 <p id="industryNote" style="display:none;font-size:.9rem;color:var(--lake);background:rgba(43,122,158,.06);border:1px solid rgba(43,122,158,.12);border-radius:10px;padding:1rem 1.25rem;margin-bottom:2rem;line-height:1.6;text-align:left"></p>
 
-<div class="results-cta"><h3>Want to go deeper?</h3><p>This self-assessment is a starting point. A full engagement evaluates your workflows across seven dimensions and delivers a prioritized plan your team believes in because they helped shape it.</p><a href="/book" class="btn btn-primary" aria-label="Book an intro call">Book an intro call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+<div class="results-cta"><h3>Turn your answers into a next step</h3><p>The free self-assessment is a starting point. Our $4,799 SMB Discovery &amp; Assessment engagement maps your workflows, evaluates readiness and opportunities, and produces an opportunity brief, a readiness report, and a prioritized recommendation. Architecture is a separate next phase if you choose to proceed.</p><p><a href="how-we-work.html#pricing">Explore Discovery &amp; Assessment</a></p><a href="/book" class="btn btn-primary" aria-label="Book an intro call">Book an intro call <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
 </div></section>
 
 <!-- FOOTER -->
@@ -337,9 +204,9 @@ const container=document.getElementById('questionsContainer');
 let qIdx=0;
 container.innerHTML=dimensions.map((dim,di)=>`
 <div class="dimension fade-up" id="dim${di}">
-<div class="dimension-header"><div class="dimension-icon ${dim.cls}">${dim.icon}</div><h3>${dim.name}</h3></div>
+<div class="dimension-header"><div class="dimension-icon ${dim.cls}">${dim.icon}</div><h3 tabindex="-1">${dim.name}</h3></div>
 ${dim.questions.map(q=>{const idx=qIdx++;return`
-<div class="question"><p id="question-${idx}">${q}</p><div class="rating-scale" role="radiogroup" aria-labelledby="question-${idx}">${[1,2,3,4,5].map(v=>`<button type="button" class="rating-btn" role="radio" aria-checked="false" aria-label="${labels[v-1]}" data-q="${idx}" data-v="${v}" onclick="selectRating(${idx},${v},this)"><span class="rating-num">${v}</span><span class="rating-label">${labels[v-1]}</span></button>`).join('')}</div></div>`}).join('')}
+<div class="question"><p id="question-${idx}">${q}</p><div class="rating-scale" role="radiogroup" aria-labelledby="question-${idx}">${[1,2,3,4,5].map(v=>`<button type="button" class="rating-btn" role="radio" aria-checked="false" tabindex="${v===1?0:-1}" aria-label="${labels[v-1]}" data-q="${idx}" data-v="${v}" onclick="selectRating(${idx},${v},this)" onkeydown="handleRatingKey(event,${idx},${v},this)"><span class="rating-num">${v}</span><span class="rating-label">${labels[v-1]}</span></button>`).join('')}</div></div>`}).join('')}
 </div>`).join('');
 if(fadeObserver){document.querySelectorAll('.dimension.fade-up').forEach(e=>fadeObserver.observe(e))}
 else{document.querySelectorAll('.dimension.fade-up').forEach(e=>e.classList.add('visible'))}
@@ -347,14 +214,27 @@ else{document.querySelectorAll('.dimension.fade-up').forEach(e=>e.classList.add(
 
 function selectRating(q,v,btn){
 answers[q]=v;
-btn.parentElement.querySelectorAll('.rating-btn').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-checked','false')});
+btn.parentElement.querySelectorAll('.rating-btn').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-checked','false');b.tabIndex=-1});
 btn.classList.add('selected');
 btn.setAttribute('aria-checked','true');
+btn.tabIndex=0;
 updateProgress();
 if(Object.keys(answers).length===14){document.getElementById('submitArea').style.display='block'}
 }
 
+function handleRatingKey(event,q,v,btn){
+const forward=event.key==='ArrowRight'||event.key==='ArrowDown';
+const back=event.key==='ArrowLeft'||event.key==='ArrowUp';
+if(!forward&&!back&&event.key!=='Home'&&event.key!=='End')return;
+event.preventDefault();
+const next=event.key==='Home'?1:event.key==='End'?5:((v-1+(forward?1:-1)+5)%5)+1;
+const target=btn.parentElement.querySelector('[data-v="'+next+'"]');
+selectRating(q,next,target);
+target.focus();
+}
+
 function updateProgress(){
+document.getElementById('answerProgress').textContent=Object.keys(answers).length+' of 14 questions answered.';
 dimensions.forEach((dim,di)=>{
 const startQ=di*2;
 const bar=document.getElementById('prog'+di);
@@ -387,7 +267,7 @@ if(total<=35){tier='Early Stage';desc='Your organization is in the early stages 
 else if(total<=53){tier='Building Momentum';desc='You have a solid foundation. Leadership is engaged, your data is reasonably organized, and your team is open to change. The risk at this stage is moving too fast without a plan or too slow out of caution. Your next step is developing an AI strategy that prioritizes the right use cases and includes change management so adoption sticks.'}
 else{tier='Ready to Move';desc='Your organization has strong fundamentals for AI adoption. You have leadership buy-in, capable infrastructure, identifiable use cases, and a culture that supports change. Your next step is selecting the right tools, building governance, and executing with structured implementation support.'}
 
-document.getElementById('resultTitle').textContent='Your AI Readiness Score';
+document.getElementById('resultTitle').textContent='Your AI Readiness Score: '+total+' out of 70';
 document.getElementById('scoreTier').textContent=tier;
 document.getElementById('scoreDesc').textContent=desc;
 
@@ -408,12 +288,15 @@ dimScoresEl.innerHTML=dimensions.map((dim,di)=>{
 const score=answers[di*2]+answers[di*2+1];
 return`<div class="dim-score"><div class="dim-score-num">${score}/10</div><div class="dim-score-label">${dimNames[di]}</div></div>`;
 }).join('');
+rs.querySelector('.fade-up').classList.add('visible');
+document.getElementById('resultTitle').focus({preventScroll:true});
+rs.scrollIntoView({behavior:'auto',block:'start'});
 
 }
 
 function scrollToDim(idx){
 const el=document.getElementById('dim'+idx);
-if(el){const offset=el.getBoundingClientRect().top+window.scrollY-140;window.scrollTo({top:offset,behavior:'smooth'})}
+if(el){el.querySelector('h3').focus({preventScroll:true});const offset=el.getBoundingClientRect().top+window.scrollY-140;window.scrollTo({top:offset,behavior:'auto'})}
 }
 
 renderQuestions();

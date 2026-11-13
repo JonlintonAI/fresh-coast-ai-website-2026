@@ -64,6 +64,12 @@
 - The optional Bourdain line for the About page should not be added unless the user explicitly confirms it.
 - Do not create new metro/location pages without user direction.
 
+## Current Pricing
+
+- See `docs/pricing-decision-2026-11-12.md`.
+- The only published paid SMB service fee is $4,799 for Discovery & Assessment.
+- Architecture is a separate next project phase after Discovery & Assessment. Architecture, implementation, and ongoing support are scoped and quoted separately. Do not bundle architecture into the $4,799 fee or restore old price ranges.
+
 ## Verification
 
 - Use `rg` for content scans.
