@@ -59,15 +59,15 @@
           "name": "How long is this really going to take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For most small businesses, meaningful AI adoption takes 8–16 weeks when done right. The first 2–4 weeks focus on assessment and planning, the next 4–8 weeks on implementation and training, and the final 2–4 weeks on reinforcement and handoff. Rushing the process usually costs more time in the long run because you end up fighting resistance that could have been prevented."
+            "text": "The schedule depends on the workflow, who needs training and what requires review. Start with a small trial and give the team time to use it on more than one kind of case before setting a rollout date."
           }
         },
         {
           "@type": "Question",
-          "name": "What's the number one reason these projects fail?",
+          "name": "Why might a team stop using a new AI tool?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The number one reason is lack of change management, not technical failure. The AI works fine, but the team doesn't use it because they weren't involved in choosing it, weren't trained properly, or don't trust that it won't replace them. Most failed AI projects could have succeeded with better communication, earlier team involvement, and a focus on making people's jobs easier rather than just 'more efficient.'"
+            "text": "A rollout can stall when a new tool adds work or people have no way to flag mistakes. Ask someone who stopped using it to walk you through the last time they tried."
           }
         },
         {
@@ -75,7 +75,7 @@
           "name": "I've got a few people who are never going to go for this. What do I do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Start by understanding why they're resistant. Usually it's fear (will this replace me?), comfort (I already know how to do this), or skepticism (this is just another management fad). Address each directly: be honest that AI won't eliminate their role, show them specifically how it removes the parts of their job they like least, and start with a small win they can see immediately. The most effective approach is involving resistant employees in the selection and testing process, people don't fight what they helped build."
+            "text": "Ask what worries them about the change. Show what the tool does on a familiar task and be specific about which decisions they will still make."
           }
         },
         {
@@ -83,7 +83,7 @@
           "name": "Should I tell the team before or after we've picked the tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Before. Always before. Surprising your team with new AI tools is one of the fastest ways to create resistance. You don't need to have all the answers, just be transparent about what you're exploring, why, and what it means for them. A simple team meeting that says 'We're looking at AI tools to reduce the manual work that's eating your time' goes a long way. Invite questions, acknowledge concerns, and involve key team members in the evaluation process."
+            "text": "Talk with the team while you can still change the decision. Explain the problem you want to solve and invite the people who do the work to help evaluate the options."
           }
         }
       ]
@@ -164,9 +164,8 @@
         .faq-question { cursor: pointer; font-weight: 600; color: var(--ink); display: flex; justify-content: space-between; align-items: center; user-select: none; padding: 0.75rem 0; }
         .faq-question:hover { color: var(--lake); }
         .faq-toggle { color: var(--lake); font-size: 1.3rem; transition: transform 0.3s; }
-        .faq-toggle.active { transform: rotate(180deg); }
-        .faq-answer { display: none; padding-top: 0.75rem; color: var(--steel); font-size: 0.95rem; line-height: 1.7; }
-        .faq-answer.active { display: block; }
+        .faq-item[open] .faq-toggle { transform: rotate(180deg); }
+        .faq-answer { padding-top: 0.75rem; color: var(--steel); font-size: 0.95rem; line-height: 1.7; }
 
         /* Author Bio */
         .author-bio { background: var(--cloud); border-radius: 8px; padding: 2rem; margin: 3rem 0; display: flex; gap: 2rem; align-items: flex-start; }
@@ -235,6 +234,7 @@
             </button>
         </div>
     </nav>
+<main id="main">
 
     <section class="page-hero">
         <div class="page-hero-content">
@@ -252,12 +252,12 @@
         <a href="index.html" class="back-link">← Back to all posts</a>
 
         <article>
-            <p><strong>TL;DR:</strong> Most AI projects don't fail because the technology doesn't work. They fail because the team doesn't adopt it. Change management is the difference between an AI tool that transforms your operation and one that collects dust. This guide covers the practical, people-first approach to AI adoption that works for small and mid-sized businesses, no corporate jargon, no eight-figure budgets, just what actually works when you have a small team and real work to get done.</p>
+            <p>Before you pick an AI tool, watch someone do the task you want to change. Agree on what would make the work easier, then have that person try the new process on a real example.</p>
 
             <div style="background:linear-gradient(135deg,rgba(43,122,158,.08),rgba(72,181,210,.06));border-left:4px solid var(--lake);border-radius:0 8px 8px 0;padding:1.5rem 1.75rem;margin:2rem 0">
                 <div style="font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--lake);margin-bottom:.75rem">Key Takeaways</div>
                 <ul style="margin:0;padding-left:1.25rem;list-style:disc">
-                    <li style="margin-bottom:.5rem;color:var(--ink);font-weight:500">70% of AI implementation failures are people problems, not technology problems</li>
+                    <li style="margin-bottom:.5rem;color:var(--ink);font-weight:500">Ask the people who do the work where the proposed tool fits and where it gets in the way.</li>
                     <li style="margin-bottom:.5rem;color:var(--ink);font-weight:500">Start with the team's pain points, not the AI's capabilities</li>
                     <li style="margin-bottom:.5rem;color:var(--ink);font-weight:500">Involve your most skeptical employees early, they become your best advocates</li>
                     <li style="margin-bottom:.5rem;color:var(--ink);font-weight:500">One successful small win builds more trust than any presentation or demo</li>
@@ -269,15 +269,9 @@
 
             <h2>The Real Reason AI Projects Fail</h2>
 
-            <p>Here's something that doesn't get talked about enough in the AI consulting world: the technology almost always works. The models are good. The integrations are solid. The tools do what they're supposed to do.</p>
+            <p>A tool can pass a demo and still be awkward at the desk. A dispatcher who has to copy every suggested change back to the whiteboard has a good reason to keep using the board.</p>
 
-            <p>And yet, most AI projects at small businesses fail.</p>
-
-            <p>Not because the AI was wrong for the business. Not because it was too expensive or too complicated. They fail because the team didn't use it. The office manager went back to her spreadsheet. The dispatcher kept using the whiteboard. The recruiter kept screening resumes by hand.</p>
-
-            <p>Why? Because nobody thought about the humans.</p>
-
-            <p>This is the change management problem, and it's the most important factor in whether your AI investment pays off or becomes another line item on the list of "things we tried that didn't work."</p>
+            <p>Ask the dispatcher to show you where that extra step happens. That gives you something specific to fix before asking the rest of the team to switch.</p>
 
             <hr class="hr-divider">
 
@@ -301,7 +295,7 @@
 
             <p>When you lead with their pain points, AI becomes the solution to a problem they already want solved. That's a fundamentally different conversation than "we bought this new tool and you need to learn it."</p>
 
-            <p>I've seen this play out dozens of times. An office manager who resists "AI implementation" will champion "the thing that stopped me from re-keying data for two hours every morning." Same tool. Completely different framing.</p>
+            <p>For example, ask an office manager to show you where they re-enter the same information. Try the new workflow on one record together.</p>
 
             <h3>Involve the skeptics early</h3>
 
@@ -309,23 +303,21 @@
 
             <p>Most leaders try to work around these people. That's a mistake. Bring them in early. Ask them to help evaluate tools. Let them poke holes in the plan. Give them a seat at the table.</p>
 
-            <p>Here's what happens: when a skeptic is involved in choosing and testing a tool, they develop ownership over it. They're not fighting something that was imposed on them, they're advocating for something they helped select. I've watched the most resistant employee in a company become the person who trains everyone else, simply because they were involved from week one.</p>
+            <p>Ask a skeptical employee to pick a difficult example. Find out what would make them trust the result and what they would still check themselves.</p>
 
             <h3>Prove it small before you go big</h3>
 
             <p>Don't try to transform your entire operation at once. Pick one workflow, one team, one measurable outcome. Implement it, measure the result, and let success speak for itself.</p>
 
-            <p>At a trades company I worked with, I did not start with a company-wide AI rollout. We started with after-hours call handling, one workflow, one clear metric (missed calls), one team that could see the results immediately. Within two weeks, the dispatcher was telling every other department about it. Within a month, three more teams were asking when they could get something similar.</p>
+            <p>For an after-hours call pilot, a dispatcher could compare the call log with the next morning’s work orders. A missed callback gives the team a specific handoff to fix.</p>
 
             <p>That's the power of a small win. It creates pull instead of push. Your team starts asking for AI instead of resisting it.</p>
 
             <h3>Train for the workflow, not the tool</h3>
 
-            <p>Nobody wants to sit through a training session on "how to use the AI platform." They want to know how to do their job faster. Training should be workflow-first: here's how you process a job order now, here's how you'll process it with this tool, and here's the thirty minutes you'll save every day.</p>
+            <p>Use a familiar job order for training. Let the person who normally handles it run through the new process and show you where they get stuck.</p>
 
             <p>Keep training sessions short, 30 to 45 minutes, maximum. Use real data from your actual business, not demo scenarios. Have the trainer sit with each person at their desk and walk through their specific workflow. And always, always give people a way to ask questions after the session without feeling dumb about it.</p>
-
-            <p>The best training I have ever seen stick was hands-on, at the desk, with the employee's own data, taking less than an hour. The worst was a two-hour conference room presentation with slides. You can guess which one stuck.</p>
 
             <h3>Make it safe to struggle</h3>
 
@@ -377,7 +369,7 @@
 
             <p><strong>Rolling out to everyone at once.</strong> Start with one team. Let them work out the kinks. Then expand.</p>
 
-            <p><strong>Skipping the "why."</strong> Your team needs to understand why this matters to them, not why it matters to the company. "This will save you 45 minutes every morning" beats "this will improve your operational efficiency."</p>
+            <p><strong>Skipping the reason for the change.</strong> Show which step you hope to remove and ask the team to check whether the new process actually removes it.</p>
 
             <p><strong>Over-training upfront.</strong> Teach the minimum they need to get started, then add more as they build confidence. Information overload kills adoption.</p>
 
@@ -401,45 +393,45 @@
             <div class="faq-section">
                 <h3>Frequently Asked Questions</h3>
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>"How long is this really going to take?"</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                <details class="faq-item" name="article-faq">
+                    <summary class="faq-question">
+                        <span>How long is this really going to take?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </summary>
                     <div class="faq-answer">
-                        <p>For most small businesses, meaningful AI adoption takes 8–16 weeks when done right. The first 2–4 weeks focus on assessment and planning, the next 4–8 weeks on implementation and training, and the final 2–4 weeks on reinforcement and handoff. Rushing the process usually costs more time in the long run because you end up fighting resistance that could have been prevented.</p>
+                        <p>The schedule depends on the workflow, who needs training and what requires review. Start with a small trial and give the team time to use it on more than one kind of case before setting a rollout date.</p>
                     </div>
-                </div>
+                </details>
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>"What's the number one reason these projects fail?"</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                <details class="faq-item" name="article-faq">
+                    <summary class="faq-question">
+                        <span>Why might a team stop using a new AI tool?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </summary>
                     <div class="faq-answer">
-                        <p>The number one reason is lack of change management, not technical failure. The AI works fine, but the team doesn't use it because they weren't involved in choosing it, weren't trained properly, or don't trust that it won't replace them. Most failed AI projects could have succeeded with better communication, earlier team involvement, and a focus on making people's jobs easier rather than just "more efficient."</p>
+                        <p>A rollout can stall when a new tool adds work or people have no way to flag mistakes. Ask someone who stopped using it to walk you through the last time they tried.</p>
                     </div>
-                </div>
+                </details>
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>"I've got a few people who are never going to go for this. What do I do?"</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                <details class="faq-item" name="article-faq">
+                    <summary class="faq-question">
+                        <span>I've got a few people who are never going to go for this. What do I do?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </summary>
                     <div class="faq-answer">
-                        <p>Start by understanding why they're resistant. Usually it's fear (will this replace me?), comfort (I already know how to do this), or skepticism (this is just another management fad). Address each directly: be honest that AI won't eliminate their role, show them specifically how it removes the parts of their job they like least, and start with a small win they can see immediately. The most effective approach is involving resistant employees in the selection and testing process, people don't fight what they helped build.</p>
+                        <p>Ask what worries them about the change. Show what the tool does on a familiar task and be specific about which decisions they will still make.</p>
                     </div>
-                </div>
+                </details>
 
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        <span>"Should I tell the team before or after we've picked the tools?"</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                <details class="faq-item" name="article-faq">
+                    <summary class="faq-question">
+                        <span>Should I tell the team before or after we've picked the tools?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </summary>
                     <div class="faq-answer">
-                        <p>Before. Always before. Surprising your team with new AI tools is one of the fastest ways to create resistance. You don't need to have all the answers, just be transparent about what you're exploring, why, and what it means for them. A simple team meeting that says "We're looking at AI tools to reduce the manual work that's eating your time" goes a long way. Invite questions, acknowledge concerns, and involve key team members in the evaluation process.</p>
+                        <p>Talk with the team while you can still change the decision. Explain the problem you want to solve and invite the people who do the work to help evaluate the options.</p>
                     </div>
-                </div>
+                </details>
             </div>
 
             <!-- CTA Section -->
@@ -469,15 +461,17 @@
                         <p>What to look for, red flags to avoid, and the right questions to ask before signing anything.</p>
                     </a>
                     <a href="five-ai-quick-wins.html" class="related-post-card">
-                        <h4>5 AI Quick Wins Any Small Business Can Implement</h4>
-                        <p>Start small and prove value. Here are five AI implementations you can set up this month.</p>
+                        <h4>5 AI Quick Wins to Try With Your Team</h4>
+                        <p>Try a task such as drafting meeting notes or routing an inquiry, then measure the time spent checking the result.</p>
                     </a>
                 </div>
             </div>
         </article>
     </div>
 
-    <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, working with teams wherever they are.</div></div>
+    </main>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, working with teams wherever they are.</div></div>
 <div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="../about.html">About</a><a href="../how-we-work.html">How We Work</a><a href="../contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="/services#information">Information</a><a href="/services#workflows">Workflows</a><a href="/services#decisions">Tool decisions</a><a href="/services#adoption">Adoption</a><a href="/services#ongoing">Ongoing support</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="/industries/marketing-pr-agencies">Marketing &amp; PR Agencies</a><a href="/industries/real-estate">Real Estate</a><a href="/industries/clinical-research">Clinical Research</a><a href="/industries/professional-services">Professional Services</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="../milwaukee-ai-consulting.html">Milwaukee</a><a href="../wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="../blog/index.html">Blog</a><a href="../deliverables.html">Deliverables</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
 <div class="footer-bottom"><div class="footer-bottom-left"><a href="../index.html" class="nav-logo"><img src="../freshcoastai_nav_logo_white.svg" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="/book" class="footer-cta" aria-label="Book an intro call">Book an intro call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
 
@@ -491,18 +485,6 @@
         navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open');
                 mobileToggle.setAttribute('aria-expanded','false'); }); });
 
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const toggle = element.querySelector('.faq-toggle');
-            document.querySelectorAll('.faq-answer.active').forEach(activeAnswer => {
-                if (activeAnswer !== answer) {
-                    activeAnswer.classList.remove('active');
-                    activeAnswer.previousElementSibling.querySelector('.faq-toggle').classList.remove('active');
-                }
-            });
-            answer.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }
 
         const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver(entries => {

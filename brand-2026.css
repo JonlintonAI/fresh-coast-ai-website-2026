@@ -312,3 +312,11 @@ footer.footer .footer-version{
   nav.nav + main > .page-hero:first-child{padding-top:3rem!important}
   nav.nav .nav-logo img{height:36px!important;max-width:205px}
 }
+
+details.faq-item > summary:focus-visible {
+  outline: 3px solid var(--lake-deep, #1d5f7e);
+  outline-offset: -3px;
+}
+details.faq-item > summary::-webkit-details-marker {
+  display: none;
+}

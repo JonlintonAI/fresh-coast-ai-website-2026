@@ -45,7 +45,7 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 .industries{background:var(--cloud)}.industry-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.industry-card{background:var(--white);border-radius:12px;padding:1.75rem;border:1px solid var(--mist);text-align:center;transition:all .25s var(--ease)}.industry-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.06)}.industry-card h3{font-size:1rem;font-weight:600;margin-bottom:.35rem}.industry-card p{font-size:.85rem;color:var(--steel);line-height:1.55}
 
 /* FAQ */
-.faq{background:var(--white)}.faq-list{max-width:720px;margin:0 auto;margin-top:2rem}.faq-item{border-bottom:1px solid var(--mist);overflow:hidden}.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;cursor:pointer;font-size:1.05rem;font-weight:500;color:var(--ink);gap:1rem;transition:color .2s}.faq-q:hover{color:var(--lake)}.faq-q svg{width:20px;min-width:20px;height:20px;transition:transform .3s var(--ease);color:var(--steel)}.faq-item.open .faq-q svg{transform:rotate(45deg);color:var(--lake)}.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}.faq-a-inner{padding:0 0 1.5rem;font-size:.95rem;color:var(--steel);line-height:1.7}
+.faq{background:var(--white)}.faq-list{max-width:720px;margin:0 auto;margin-top:2rem}.faq-item{border-bottom:1px solid var(--mist);overflow:hidden}.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;cursor:pointer;font-size:1.05rem;font-weight:500;color:var(--ink);gap:1rem;transition:color .2s}.faq-q:hover{color:var(--lake)}.faq-q svg{width:20px;min-width:20px;height:20px;transition:transform .3s var(--ease);color:var(--steel)}.faq-item[open] .faq-q svg{transform:rotate(45deg);color:var(--lake)}.faq-a-inner{padding:0 0 1.5rem;font-size:.95rem;color:var(--steel);line-height:1.7}
 
 /* CTA */
 .cta-final{background:var(--ink);text-align:center;padding:5rem 2rem;position:relative;overflow:hidden}.cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 80%,rgba(43,122,158,.2),transparent)}.cta-final-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}.cta-final h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--white);margin-bottom:1rem;line-height:1.25}.cta-final p{color:rgba(255,255,255,.6);font-size:1.05rem;margin-bottom:2rem;line-height:1.7;font-weight:300}
@@ -89,6 +89,7 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 <a href="blog/index.html">Blog</a>
 <a href="contact.html">Contact</a>
 <a href="/book" class="nav-cta" aria-label="Book an intro call">Book an intro call</a></div><button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
+<main id="main">
 
 <!-- HERO -->
 <section class="page-hero">
@@ -246,22 +247,22 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
         <h2 class="section-title">Common Questions About AI Consulting in Milwaukee</h2>
     </div>
     <div class="faq-list">
-        <div class="faq-item">
-            <div class="faq-q" onclick="this.parentElement.classList.toggle('open');const a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">What does an AI consultant actually do?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <details class="faq-item">
+            <summary class="faq-q">What does an AI consultant actually do?<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
             <div class="faq-a"><div class="faq-a-inner">We help you figure out where AI makes sense in your business, evaluate whether you are ready, select the right tools, build AI into your actual workflows, and train your team to use it without needing us.</div></div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q" onclick="this.parentElement.classList.toggle('open');const a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">How much does AI consulting cost?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-q">How much does AI consulting cost?<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
             <div class="faq-a"><div class="faq-a-inner">Fresh Coast AI offers Discovery &amp; Assessment for small and midsize businesses at a fixed fee of $4,799. Architecture is a separate next phase, scoped and quoted after the assessment. Implementation and ongoing support are also quoted separately. Third-party software and usage charges are separate. <a href="how-we-work.html" style="color:var(--lake)">View discovery scope and pricing →</a></div></div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q" onclick="this.parentElement.classList.toggle('open');const a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">How long does a typical engagement take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-q">How long does a typical engagement take?<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
             <div class="faq-a"><div class="faq-a-inner">It depends on the scope, and your proposal sets the schedule. Discovery &amp; Assessment takes 2 to 4 weeks. After that, a proof of concept takes 2 to 4 weeks, a broader rollout takes 1 to 3 months, and a program combining assessment, implementation, and training may span 3 to 5 months.</div></div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-q" onclick="this.parentElement.classList.toggle('open');const a=this.nextElementSibling;a.style.maxHeight=a.style.maxHeight?null:a.scrollHeight+'px'">Is my business too small for AI consulting?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </details>
+        <details class="faq-item">
+            <summary class="faq-q">Is my business too small for AI consulting?<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
             <div class="faq-a"><div class="faq-a-inner">If you have repetitive workflows like data entry, scheduling, customer communication, or document processing, AI can likely save you meaningful time regardless of company size. The free 30-minute call or the free self-assessment is a low-risk way to start.</div></div>
-        </div>
+        </details>
     </div>
 </div>
 </section>
@@ -287,6 +288,8 @@ section{padding:6rem 2rem}.section-inner{max-width:var(--max-w);margin:0 auto}.s
 </div>
 </div>
 </section>
+
+</main>
 
 <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, working with teams wherever they are.</div></div>
 <div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About</a><a href="how-we-work.html">How We Work</a><a href="contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="/services#information">Information</a><a href="/services#workflows">Workflows</a><a href="/services#decisions">Tool decisions</a><a href="/services#adoption">Adoption</a><a href="/services#ongoing">Ongoing support</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="/industries/marketing-pr-agencies">Marketing &amp; PR Agencies</a><a href="/industries/real-estate">Real Estate</a><a href="/industries/clinical-research">Clinical Research</a><a href="/industries/professional-services">Professional Services</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="milwaukee-ai-consulting.html">Milwaukee</a><a href="wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="blog/index.html">Blog</a><a href="deliverables.html">Deliverables</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>

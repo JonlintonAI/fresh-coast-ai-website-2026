@@ -51,7 +51,7 @@
                 "name": "Do I really need all this if we're just using ChatGPT?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You need at least the basics, an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. It takes an afternoon to set this up. It might take months to fix a data breach."
+                    "text": "You need at least the basics, an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. Write down who can approve exceptions and how to reach them."
                 }
             },
             {
@@ -409,22 +409,17 @@
             transition: transform 0.3s ease;
         }
 
-        .faq-item.active .faq-toggle {
+        .faq-item[open] .faq-toggle {
             transform: rotate(180deg);
         }
 
         .faq-answer {
-            display: none;
             padding: 1.5rem;
             background: var(--white);
             border-top: 1px solid var(--mist);
             font-size: 0.95rem;
             line-height: 1.8;
             color: var(--steel);
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
         }
 
         /* CTA Section */
@@ -690,6 +685,7 @@
             </button>
         </div>
     </nav>
+<main id="main">
 
     <!-- Hero -->
     <section class="hero">
@@ -712,18 +708,16 @@
             <h2>The Governance Disconnect</h2>
             <p>When most people hear "AI governance," they picture mahogany conference rooms, 200-page policy documents, and a whole department whose job is saying no to things. That's what governance looks like at Fortune 500 companies. That's not what it looks like for you.</p>
 
-            <p>I've spent the last three years building AI governance at a regulated professional services firm: the kind of place with compliance teams, audit trails, and enough red tape to choke a horse. But here's what I've learned since: the principles that made that work are actually <strong>simpler</strong> when you're smaller, not harder.</p>
-
             <p>The problem is that most small business owners either assume they don't need governance at all, or they try to copy the enterprise playbook and end up creating processes so bureaucratic that nobody follows them. Both approaches are mistakes.</p>
 
             <p>You need governance. It just needs to be right-sized.</p>
 
             <h2>Why Governance Matters When You're "Just Using ChatGPT"</h2>
-            <p>Let me be direct: your employees are already using AI tools. Survey after survey finds the same thing: a large share of workers, often more than half, use AI tools at work without their employer's explicit knowledge. That's not a judgment, it's reality.</p>
+            <p>Ask which tools people use, what they put into them and where they keep the output. The answers give you a starting point for the policy.</p>
 
             <p>Here's where it gets risky. Without guidelines, someone will eventually paste client data into ChatGPT. Or financial information from your last budget review. Or that proposal that includes intellectual property you can't afford to lose. They won't do it maliciously. They'll do it because it's convenient and because nobody ever told them not to.</p>
 
-            <p>If you're in any regulated industry, financial services, anything healthcare-adjacent, professional services, the stakes are higher. Regulators expect you to have <strong>some</strong> documented approach to data handling, even if you're small.</p>
+            <p>If your team handles regulated or client-confidential information, ask the person responsible for compliance to review your rules for that data.</p>
 
             <p>But here's the thing that usually gets overlooked: governance is not about control. It's not about making it harder for your team to do their jobs. Good governance is about making it <strong>safe</strong> for them to use AI confidently, without constantly wondering whether they're about to get the company sued.</p>
 
@@ -743,8 +737,8 @@
             <p>Create three simple buckets:</p>
 
             <ul>
-                <li><strong>Public</strong>: Information that's already public. Use any tool you want.</li>
-                <li><strong>Internal</strong>: Information that's yours but not confidential. Use only approved enterprise tools (like Copilot or Claude for Work, where your data isn't fed into training models).</li>
+                <li><strong>Public</strong>: Information already published for anyone to read. Use a tool your organization permits.</li>
+                <li><strong>Internal</strong>: Information that's yours but not confidential. Use an approved account and check its settings for data retention and training.</li>
                 <li><strong>Confidential</strong>: Client data, employee information, financial details, anything covered by NDA or regulation. Never put this in an AI tool, period.</li>
             </ul>
 
@@ -754,9 +748,9 @@
             <p>Name the specific tools your team is allowed to use. Update it quarterly. The tools change fast enough that this list will be outdated before you know it, but having <strong>a</strong> list removes ambiguity. People know what they're supposed to use.</p>
 
             <h3>A Point Person</h3>
-            <p>Someone your team can ask questions to. Doesn't need to be a full-time role. Could be your operations manager, your tech-savvy admin, or whoever you trust to learn this stuff. Someone people can ping and say, "Hey, can I use this tool for this?" and get an answer in under an hour.</p>
+            <p>Someone your team can ask questions to. Doesn't need to be a full-time role. Could be your operations manager, your tech-savvy admin, or whoever you trust to learn this stuff. Tell people how to reach that person when they have a question about a tool or a document.</p>
 
-            <p>That's your governance framework. You're welcome to add more, but that foundation will handle 90% of your needs.</p>
+            <p>Try the policy on a real request. If a colleague wants to summarize a client call, can they tell which tool is approved, what they can share and who can answer a question? Use any gaps to revise the policy.</p>
 
             <hr>
 
@@ -774,13 +768,13 @@
             <h2>Data Handling Basics: What to Feed AI and What to Keep Out</h2>
             <p>This is the practical stuff. Let's talk about what actually goes into those categories.</p>
 
-            <p><strong>Safe to use with any AI tool</strong>: Publicly available information, general templates, your own draft writing, brainstorming sessions, research questions, publicly available competitor analysis.</p>
+            <p><strong>Public material.</strong> A published product description or a public event listing can be a starting point for testing an approved tool. Check that your prompt adds no private information.</p>
 
             <p><strong>Caution, use enterprise tools only</strong>: Internal processes and procedures, proprietary methods that aren't obvious, non-confidential client names, general project timelines, anything that's yours but could give a competitor an advantage if they knew it.</p>
 
             <p><strong>Never put into AI</strong>: Client data of any kind, employee personal information (names, addresses, Social Security numbers), financial account numbers, details from contracts, anything covered by an NDA, anything regulated (HIPAA, GDPR, state privacy laws), legal documents, passwords or credentials.</p>
 
-            <p>Here's my rule of thumb: If you wouldn't paste it into an email to your entire company in the break room, don't paste it into a public AI tool. Your employees can see an all-company email. So can strangers if Anthropic or OpenAI decides to use it for training.</p>
+            <p>Check the approved account and its data settings before sharing internal material. Use invented examples when you only need to test how a tool works.</p>
 
             <hr>
 
@@ -802,7 +796,7 @@
 
             <p>But what we're really talking about is this: "How do we use these tools responsibly so everyone on the team feels confident they're not about to create a problem?"</p>
 
-            <p>That's a conversation worth having. And it doesn't take a Fortune 500 budget. It doesn't take a dedicated department. It takes an afternoon with your leadership team and maybe a few hours to write it down.</p>
+            <p>Ask the people who use the tools to walk through a routine task with the draft policy in hand. Revise the instructions wherever they have to guess.</p>
 
             <p>The Midwest doesn't need more complexity. We need clarity, practicality, and permission to move forward. That's what good governance gives you. Learn more about <a href="../services.html">how Fresh Coast AI helps companies implement this</a>, or <a href="../assessment.html">take the assessment</a> to identify where governance fits into your broader AI strategy.</p>
 
@@ -812,45 +806,45 @@
         <!-- FAQ Section -->
         <section class="faq-section">
             <h2>FAQ</h2>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
+            <details class="faq-item">
+                <summary class="faq-question">
                     <span>Do I really need all this if we're just using ChatGPT?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
+                    <span class="faq-toggle" aria-hidden="true">▼</span>
+                </summary>
                 <div class="faq-answer">
-                    You need at least the basics, an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. It takes an afternoon to set this up. It might take months to fix a data breach.
+                    You need at least the basics, an acceptable use policy and a data classification guide. It doesn't have to be fancy, but yes. If someone accidentally pastes a client's financial information into a public AI tool, you'll wish you had told them not to. Write down who can approve exceptions and how to reach them.
                 </div>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
+            <details class="faq-item">
+                <summary class="faq-question">
                     <span>What if I'm in a regulated industry?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
+                    <span class="faq-toggle" aria-hidden="true">▼</span>
+                </summary>
                 <div class="faq-answer">
                     Your stakes are higher. You probably need to document your approach to AI tool governance for compliance reasons. But the framework is still the same, just with more specificity around what "confidential" means and possibly some documentation of how decisions got made. Talk to your compliance person, but it doesn't require a major overhaul.
                 </div>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
+            <details class="faq-item">
+                <summary class="faq-question">
                     <span>Does my policy have to be perfect?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
+                    <span class="faq-toggle" aria-hidden="true">▼</span>
+                </summary>
                 <div class="faq-answer">
                     No. It has to be clear. A clear one-pager that your team actually reads and follows is a thousand times better than a perfect 30-pager that sits in a shared drive. You'll refine it over time. Start with something that works.
                 </div>
-            </div>
+            </details>
 
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
+            <details class="faq-item">
+                <summary class="faq-question">
                     <span>How do I handle employees who are already using AI tools I don't know about?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
+                    <span class="faq-toggle" aria-hidden="true">▼</span>
+                </summary>
                 <div class="faq-answer">
                     Don't come at it as punishment. Come at it as clarification. "We're defining how we use AI responsibly. Here are the tools we're approving. Here's what data is off-limits. Here's who to ask questions. We're not banning anything, we're giving you permission to use these tools confidently." People usually respond well to that framing.
                 </div>
-            </div>
+            </details>
         </section>
 
         <!-- CTA Section -->
@@ -887,7 +881,9 @@
         </section>
     </div>
 
-    <!-- Footer -->
+    </main>
+
+<!-- Footer -->
     <footer class="footer"><div class="footer-inner"><div class="footer-contact"><div class="footer-contact-label">Questions? Get in touch</div><a href="mailto:jon@freshcoast.ai">jon@freshcoast.ai</a> <span style="margin:0 .75rem;opacity:.3">|</span> <a href="tel:+14147371749">(414) 737-1749</a><div style="font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.4rem">Based in Milwaukee, working with teams wherever they are.</div></div>
 <div class="footer-nav"><div class="footer-nav-col"><h4>Company</h4><a href="../about.html">About</a><a href="../how-we-work.html">How We Work</a><a href="../contact.html">Contact</a></div><div class="footer-nav-col"><h4>Services</h4><a href="/services#information">Information</a><a href="/services#workflows">Workflows</a><a href="/services#decisions">Tool decisions</a><a href="/services#adoption">Adoption</a><a href="/services#ongoing">Ongoing support</a></div><div class="footer-nav-col"><h4>Industries</h4><a href="/industries/marketing-pr-agencies">Marketing &amp; PR Agencies</a><a href="/industries/real-estate">Real Estate</a><a href="/industries/clinical-research">Clinical Research</a><a href="/industries/professional-services">Professional Services</a></div><div class="footer-nav-col"><h4>Locations</h4><a href="../milwaukee-ai-consulting.html">Milwaukee</a><a href="../wisconsin-ai-consulting.html">All Wisconsin</a></div><div class="footer-nav-col"><h4>Resources</h4><a href="../blog/index.html">Blog</a><a href="../deliverables.html">Deliverables</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div></div>
 <div class="footer-bottom"><div class="footer-bottom-left"><a href="../index.html" class="nav-logo"><img src="../freshcoastai_nav_logo_white.svg" alt="Fresh Coast AI" style="height:36px;width:auto"></a><div class="footer-social"><a href="https://www.linkedin.com/company/fresh-coast-ai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div></div><div class="footer-cta-wrap"><a href="/book" class="footer-cta" aria-label="Book an intro call">Book an intro call <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="footer-copy">&copy; 2026 Fresh Coast AI. All rights reserved.</div></div></div></footer>
@@ -910,11 +906,6 @@
             });
         });
 
-        // FAQ Accordion
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            faqItem.classList.toggle('active');
-        }
 
         // Intersection Observer for fade-up animations
         const observerOptions = {
