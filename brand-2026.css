@@ -104,6 +104,8 @@ nav.nav .mobile-toggle{
 }
 nav.nav .mobile-toggle span{
   display:block!important;
+  flex:0 0 3px;
+  margin:0!important;
   width:25px!important;
   height:3px!important;
   border-radius:2px;
@@ -113,7 +115,8 @@ nav.nav .mobile-toggle span{
 /* Page-content top spacing — old design used fixed nav (needed padding-top on body),
    new sticky nav doesn't need it. Pull hero up only when sticky:
    pages that have a .page-hero immediately under the nav will overlap. Add safety. */
-nav.nav + section.page-hero{padding-top:4rem!important}
+nav.nav + section.page-hero,
+nav.nav + main > .page-hero:first-child{padding-top:4rem!important}
 
 /* Mobile nav menu open state */
 @media(max-width:1120px){
@@ -305,6 +308,7 @@ footer.footer .footer-version{
 }
 @media(max-width:600px){
   .decorative-meta{display:none}
-  nav.nav + section.page-hero{padding-top:3rem!important}
+  nav.nav + section.page-hero,
+  nav.nav + main > .page-hero:first-child{padding-top:3rem!important}
   nav.nav .nav-logo img{height:36px!important;max-width:205px}
 }
