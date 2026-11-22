@@ -26,3 +26,7 @@ https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 
 /madison-ai-consulting  /wisconsin-ai-consulting  301
 /green-bay-fox-valley-ai-consulting  /wisconsin-ai-consulting  301
+
+# Property management is now part of the real estate industry page.
+/industries/property-management.html  /industries/real-estate  301!
+/industries/property-management       /industries/real-estate  301!
