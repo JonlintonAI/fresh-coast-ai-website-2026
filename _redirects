@@ -23,3 +23,6 @@ https://www.freshcoastai.com/* https://www.freshcoast.ai/:splat 301!
 # The self-assessment no longer collects email addresses.
 /assessment-thank-you /assessment 301!
 /assessment-thank-you.html /assessment 301!
+
+/madison-ai-consulting  /wisconsin-ai-consulting  301
+/green-bay-fox-valley-ai-consulting  /wisconsin-ai-consulting  301
