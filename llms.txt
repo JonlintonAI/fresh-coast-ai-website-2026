@@ -1,6 +1,6 @@
 # Fresh Coast AI
 
-> AI consulting and implementation for businesses. Clearer information, less repetitive work, better tool decisions, and team adoption. Founded in September 2025 in Milwaukee, Wisconsin.
+> AI consulting and implementation for businesses. Clearer information, less repetitive work, better tool decisions, and team adoption. Founded in January 2025 in Milwaukee, Wisconsin.
 
 Fresh Coast AI helps businesses reduce manual work, connect information, and put useful AI into everyday operations. FCAI combines practical implementation with change management. Project scopes and fees are agreed before work begins. Ongoing advisory and support have their own agreed scope, availability, and fee.
 
@@ -25,20 +25,17 @@ Fresh Coast AI helps businesses reduce manual work, connect information, and put
 
 Fresh Coast AI offers Discovery & Assessment for small and midsize businesses at a fixed fee of $4,799. Architecture is a separate next phase, scoped and quoted after the assessment. Implementation and ongoing support are also quoted separately. Third-party software and usage charges are separate. Readiness assessments take 2–4 weeks, proofs of concept take 2–4 weeks, and broader rollouts take 1–3 months. A program combining assessment, implementation, and training may span 3–5 months. These describe different scopes; the proposal sets the schedule. Defined follow-up work can be scoped as a prepaid support block.
 
-## Industries Served
+## Industry Focus
 
-- [Professional Services](https://www.freshcoast.ai/industries/professional-services)
-- [Manufacturing](https://www.freshcoast.ai/industries/manufacturing)
-- [Skilled Trades](https://www.freshcoast.ai/industries/trades)
-- [Staffing](https://www.freshcoast.ai/industries/staffing)
-- [Property Management](https://www.freshcoast.ai/industries/property-management)
+- [Marketing & PR Agencies](https://www.freshcoast.ai/industries/marketing-pr-agencies): Account trackers, weekly KPI reporting, and drafts for client updates.
+- [Real Estate](https://www.freshcoast.ai/industries/real-estate): Tenant requests, lease dates, deal pipelines, and owner reports.
+- [Clinical Research](https://www.freshcoast.ai/industries/clinical-research): Visit schedules, staff availability, room conflicts, and coverage changes.
+- [Professional Services](https://www.freshcoast.ai/industries/professional-services): Proposals, project handoffs, and client reports built from approved source material.
 
 ## Location Pages
 
 - [Milwaukee AI Consulting](https://www.freshcoast.ai/milwaukee-ai-consulting)
 - [Wisconsin AI Consulting](https://www.freshcoast.ai/wisconsin-ai-consulting)
-- [Madison AI Consulting](https://www.freshcoast.ai/madison-ai-consulting)
-- [Green Bay & Fox Valley AI Consulting](https://www.freshcoast.ai/green-bay-fox-valley-ai-consulting)
 
 ## Blog
 
