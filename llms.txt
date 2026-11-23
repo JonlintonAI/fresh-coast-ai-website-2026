@@ -29,7 +29,7 @@ Fresh Coast AI offers Discovery & Assessment for small and midsize businesses at
 
 - [Marketing & PR Agencies](https://www.freshcoast.ai/industries/marketing-pr-agencies): Account trackers, weekly KPI reporting, and drafts for client updates.
 - [Real Estate](https://www.freshcoast.ai/industries/real-estate): Tenant requests, lease dates, deal pipelines, and owner reports.
-- [Clinical Research](https://www.freshcoast.ai/industries/clinical-research): Visit schedules, staff availability, room conflicts, and coverage changes.
+- [Clinical Research](https://www.freshcoast.ai/industries/clinical-research): Staffing rules workbooks, draft assignments, capacity planning across studies, visit rescheduling, and shift handoffs.
 - [Professional Services](https://www.freshcoast.ai/industries/professional-services): Proposals, project handoffs, and client reports built from approved source material.
 
 ## Location Pages

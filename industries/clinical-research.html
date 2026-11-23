@@ -7,9 +7,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Scheduling &amp; Operations for Clinical Research | Fresh Coast AI</title>
-<meta name="description" content="Scheduling support for clinical research sites. Plan staff and room coverage, flag conflicts, and prepare schedule changes for coordinator review.">
+<meta name="description" content="Scheduling tools for clinical trial sites. Build staff assignment sheets, compare capacity across studies, and prepare visit changes for coordinator review.">
 <meta property="og:title" content="Scheduling &amp; Operations for Clinical Research | Fresh Coast AI">
-<meta property="og:description" content="Scheduling support for clinical research sites. Plan staff and room coverage, flag conflicts, and prepare schedule changes for coordinator review.">
+<meta property="og:description" content="Scheduling tools for clinical trial sites. Build staff assignment sheets, compare capacity across studies, and prepare visit changes for coordinator review.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.freshcoast.ai/industries/clinical-research">
 <meta property="og:image" content="https://www.freshcoast.ai/og-image.png">
@@ -36,6 +36,8 @@
 .content{padding:5rem 2rem}.content-inner{max-width:760px;margin:0 auto}
 .use-cases{display:grid;gap:1.5rem;margin:2.5rem 0}.use-case{background:var(--cloud);border-radius:12px;padding:1.75rem;border:1px solid var(--mist)}.use-case h3{font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}.use-case p{font-size:.95rem;color:var(--steel);line-height:1.65;margin:0}
 
+@media(min-width:760px){.clinical-services{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.clinical-services .use-case{padding:1.25rem}}
+
 /* CTA */
 .cta-final{background:var(--cloud);text-align:center;padding:5rem 2rem}.cta-final-inner{max-width:600px;margin:0 auto}.cta-final h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--ink);margin-bottom:1rem;line-height:1.25}.cta-final p{color:var(--steel);font-size:1.05rem;margin-bottom:2rem;line-height:1.7;font-weight:300}
 
@@ -53,13 +55,13 @@
 @media(max-width:600px){.page-hero{padding:8rem 1.25rem 4rem}.content{padding:4rem 1.25rem}.cta-final{padding:4rem 1.25rem}.btn{width:100%;max-width:340px;justify-content:center}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Scheduling & Operations for Clinical Research","description":"Scheduling support for clinical research sites. Plan staff and room coverage, flag conflicts, and prepare schedule changes for coordinator review.","url":"https://www.freshcoast.ai/industries/clinical-research","provider":{"@type":"Organization","name":"Fresh Coast AI","url":"https://www.freshcoast.ai"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Scheduling & Operations for Clinical Research","description":"Scheduling tools for clinical trial sites. Build staff assignment sheets, compare capacity across studies, and prepare visit changes for coordinator review.","url":"https://www.freshcoast.ai/industries/clinical-research","provider":{"@type":"Organization","name":"Fresh Coast AI","url":"https://www.freshcoast.ai"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshcoast.ai/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.freshcoast.ai/services"},{"@type":"ListItem","position":3,"name":"Clinical Research","item":"https://www.freshcoast.ai/industries/clinical-research"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can we start with a spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Yes. A sample roster, room calendar, and the scheduling rules your team already uses are enough for an initial discussion. We can work with fictional visits and staff names."}},{"@type":"Question","name":"Who approves a proposed schedule?","acceptedAnswer":{"@type":"Answer","text":"Your designated scheduler reviews proposed assignments and changes. Your study team sets the visit requirements and makes all decisions about participant care and protocol interpretation."}},{"@type":"Question","name":"Does FCAI carry insurance for this work?","acceptedAnswer":{"@type":"Answer","text":"Yes. FCAI carries insurance for its clinical research consulting work. We can discuss your site’s coverage requirements during scoping."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can we start with a spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Yes. A sample roster, room calendar, and the scheduling rules your team already uses are enough for an initial discussion. We can work with fictional visits and staff names."}},{"@type":"Question","name":"Can we use our existing scheduling software?","acceptedAnswer":{"@type":"Answer","text":"We can start with a sample export from your scheduling system. If your system accepts imports, we can test a file in the format it expects. Your scheduler reviews the assignments before importing them."}},{"@type":"Question","name":"Who approves a proposed schedule?","acceptedAnswer":{"@type":"Answer","text":"Your designated scheduler reviews proposed assignments and changes. Your study team sets the visit requirements and makes all decisions about participant care and protocol interpretation."}},{"@type":"Question","name":"Does FCAI carry insurance for this work?","acceptedAnswer":{"@type":"Answer","text":"Yes. FCAI carries insurance for its clinical research consulting work. We can discuss your site’s coverage requirements during scoping."}}]}
 </script>
 
 <script type="application/ld+json">
@@ -79,21 +81,29 @@
 <a href="/book" class="nav-cta" aria-label="Book an intro call">Book an intro call</a></div><button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
 
 <main id="main">
-<section class="page-hero"><div class="page-hero-inner"><div class="section-label">Clinical Research</div><h1>When a visit moves, <em>who else needs to know?</em></h1><p>A time change can affect the coordinator, the staff assigned to the visit, and the room they need. We help research teams plan that work and give the person managing the schedule a clear view of what still needs a decision.</p></div></section>
+<section class="page-hero"><div class="page-hero-inner"><div class="section-label">Clinical Research</div><h1>When a visit moves, <em>who else needs to know?</em></h1><p>When a visit shifts by an hour, a coordinator may have to find another room and move a staff assignment on the same morning. We build scheduling tools for clinical trial sites so the person making that call can see who is available and what else would change.</p></div></section>
 
 <section class="content"><div class="content-inner">
 
-<h2 class="section-title">Start with one scheduling problem</h2>
+<h2 class="section-title">Planning staff coverage</h2>
 
-<div class="use-cases">
-<div class="use-case"><h3>Staff and room coverage</h3><p>Compare a draft visit schedule with staff availability, required roles, and room bookings. Flag open assignments and double bookings for the scheduler to resolve.</p></div>
-<div class="use-case"><h3>Rescheduling a visit</h3><p>Use the dates and constraints supplied by your study team to draft available options. The coordinator checks the options and confirms the change before anyone is notified.</p></div>
-<div class="use-case"><h3>Schedule handoffs</h3><p>Prepare a list of confirmed changes, open coverage questions, and follow-ups for the next shift. Your team chooses who receives it and which details each person needs.</p></div>
+<div class="use-cases clinical-services">
+<div class="use-case"><h3>Staffing rules workbook</h3><p>We can turn the rules your scheduler uses into a workbook. It records which roles can cover each task, when two people are needed together, and which exceptions need a supervisor’s decision.</p></div>
+<div class="use-case"><h3>Draft staff assignments</h3><p>Using your approved visit schedule and staff availability, we can build a tool that drafts a shift assignment sheet. If no available person meets a requirement, the sheet flags the gap for your scheduler.</p></div>
+<div class="use-case"><h3>Capacity across studies</h3><p>If two studies need the same staff or rooms on Tuesday morning, where does coverage run short? We can build a weekly view by role, room, and time so you can compare options before committing to a schedule.</p></div>
 </div>
 
-<h2 class="section-title">What we would try first</h2>
+<h2 class="section-title">Managing the day’s changes</h2>
 
-<p style="font-size:1.05rem;color:var(--steel);line-height:1.75;margin-bottom:1.5rem">Bring a sample schedule with participant identifiers removed and a change that was hard to coordinate. Together we can walk through who noticed it, who had to approve it, and what had to be updated. That gives us a specific workflow to test with your scheduler.</p>
+<div class="use-cases clinical-services">
+<div class="use-case"><h3>Staff and room checks</h3><p>Before a shift starts, compare the visit schedule with the latest roster and room bookings. Give the shift lead a short list of double bookings, uncovered tasks, and assignments that need confirmation.</p></div>
+<div class="use-case"><h3>Visit rescheduling</h3><p>When a visit moves, use the dates your study team allows to draft alternatives. Show which room and staff assignments would change with each option. Your coordinator chooses the option and confirms who needs an update.</p></div>
+<div class="use-case"><h3>Shift handoffs and worklists</h3><p>Prepare a worklist from the approved schedule. The incoming shift can see what changed, which visits still need coverage, and who is following up on each open item.</p></div>
+</div>
+
+<h2 class="section-title">Try it on a schedule you know</h2>
+
+<p style="font-size:1.05rem;color:var(--steel);line-height:1.75;margin-bottom:1.5rem">Pick a past shift where someone called out or a visit moved. We can recreate it with fictional names and visits, then compare a draft assignment sheet with the choices your scheduler made. That shows which rules a tool can apply and where the scheduler needs to make a judgment call.</p>
 
 <p><a href="/how-we-work#security">How we handle systems and data</a></p>
 
@@ -101,6 +111,7 @@
 
 <div class="use-cases">
 <div class="use-case"><h3>Can we start with a spreadsheet?</h3><p>Yes. A sample roster, room calendar, and the scheduling rules your team already uses are enough for an initial discussion. We can work with fictional visits and staff names.</p></div>
+<div class="use-case"><h3>Can we use our existing scheduling software?</h3><p>We can start with a sample export from your scheduling system. If your system accepts imports, we can test a file in the format it expects. Your scheduler reviews the assignments before importing them.</p></div>
 <div class="use-case"><h3>Who approves a proposed schedule?</h3><p>Your designated scheduler reviews proposed assignments and changes. Your study team sets the visit requirements and makes all decisions about participant care and protocol interpretation.</p></div>
 <div class="use-case"><h3>Does FCAI carry insurance for this work?</h3><p>Yes. FCAI carries insurance for its clinical research consulting work. We can discuss your site’s coverage requirements during scoping.</p></div>
 </div>
